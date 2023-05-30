@@ -1,11 +1,17 @@
 {
   "TOTEM.WorldSettings.GameMode.Name":"Choix du mode de jeu",
   "TOTEM.WorldSettings.GameMode.Hint":"À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers.",
-
+  "GAME_MODES": {
+    "heroic": { "name": "Héroique"},
+    "epic": { "name": "Epique"},
+    "legendary": { "name": "Légendaire"}
+  },
   "TOTEM.roll_tool": "Lanceur de dés",
   "TOTEM.roll_dice": "Jeter les dés",
   
   "TOTEM.level": "Niveau",
+  "TOTEM.experience": "Expérience",
+  "TOTEM.reputation": "Réputation",
   "TOTEM.pool": "Réserve",
   "TOTEM.pools": "Réserves",
   "TOTEM.self_control": "Sang-Froid",
@@ -20,19 +26,22 @@
   "TOTEM.penalty":"Malus",
   "TOTEM.reroll":"Relance",
   "TOTEM.specialty":"Spécialité",
+  "TOTEM.technique":"Technique",
+  "TOTEM.techniques":"Techniques",
   "TOTEM.difficulty":"Difficulté",  
   "TOTEM.help":"Entraide",  
-  "TOTEM.tooling":"Matériel",  
+  "TOTEM.tooling":"Equipement",  
   
-
-  "TOTEM.vigor_ability":"Vigueur",
-  "TOTEM.health_ability":"Santé",
-  "TOTEM.precision_ability":"Précision",
-  "TOTEM.reflexes_ability":"Réflexes",
-  "TOTEM.knowledge_ability":"Savoir",
-  "TOTEM.perception_ability":"Perception",
-  "TOTEM.will_ability":"Volonté",
-  "TOTEM.empathy_ability":"Empathie",
+  "ABILITIES": {
+    "strength": { "name": "Puissance"},
+    "constitution": { "name": "Résistance"},
+    "precision":{ "name": "Précision"},
+    "reflexes":{ "name": "Réflexes"},
+    "knowledge":{ "name": "Connaissance"},
+    "perception":{ "name": "Perception"},
+    "will":{ "name": "Volonté"},
+    "empathy":{ "name": "Empathie"}  
+  },
 
   "TOTEM.effect_treate": "Create Effect",
   "TOTEM.effect_toggle": "Toggle Effect",
@@ -47,56 +56,104 @@
   "TOTEM.skill_level.master": "Maître",
   "TOTEM.skill_level.legend": "Légende",
   
-  "TOTEM.totems.human": "l'Humain",
-  "TOTEM.totems.scavenger": "le Prédateur",
-  "TOTEM.totems.symbiote": "le Symbiote",
-  "TOTEM.totems.parasite": "le Parasite",
-  "TOTEM.totems.builder": "le Bâtisseur",
-  "TOTEM.totems.horde": "la Horde",
-  "TOTEM.totems.hive": "la Ruche",
-  "TOTEM.totems.solitary": "le Solitaire",
-  "TOTEM.totems.adapted": "l'Adapté",
-  
-  "TOTEM.ability_category.physical": "Physiques",
-  "TOTEM.ability_category.manual": "Manuelles",
-  "TOTEM.ability_category.mental": "Mentales",
-  "TOTEM.ability_category.social": "Sociales",
-  
-  "TOTEM.skill_category.man": "L'Homme",
-  "TOTEM.skill_category.animal": "L'Animal",
-  "TOTEM.skill_category.machine": "La Machine",
-  "TOTEM.skill_category.weapon": "L'Arme",
-  "TOTEM.skill_category.survival": "La Survie",
-  "TOTEM.skill_category.earth": "La Terre",
-  
-  "TOTEM.skills.arts":"Arts",
-  "TOTEM.skills.civilization":"Civilisation",
-  "TOTEM.skills.psychology":"Psychologie",
-  "TOTEM.skills.rumors":"Rumeurs",
-  "TOTEM.skills.healing":"Soins",
-  "TOTEM.skills.animalism":"Animalisme",
-  "TOTEM.skills.dissection":"Dissection",
-  "TOTEM.skills.wildlife":"Faune",
-  "TOTEM.skills.repulsion":"Répulsion",
-  "TOTEM.skills.tracks":"Traces",
-  "TOTEM.skills.crafting":"Artisanat",
-  "TOTEM.skills.diy":"Bricolage",
-  "TOTEM.skills.mecanical":"Mécanique",
-  "TOTEM.skills.driving":"Pilotage",
-  "TOTEM.skills.technology":"Technologie",
-  "TOTEM.skills.firearms":"Armes à feu",
-  "TOTEM.skills.archery":"Armes de tir",
-  "TOTEM.skills.armory":"Armurerie",
-  "TOTEM.skills.throwing":"Armes de jet",
-  "TOTEM.skills.melee":"Mêlée",
-  "TOTEM.skills.feed":"Alimentation",
-  "TOTEM.skills.atletics":"Atlétisme",
-  "TOTEM.skills.brawling":"Corps à corps",
-  "TOTEM.skills.stealth":"Furtivité",
-  "TOTEM.skills.alertness":"Vigilance",
-  "TOTEM.skills.environment":"Environnement",
-  "TOTEM.skills.flora":"Flote",
-  "TOTEM.skills.road":"Route",
-  "TOTEM.skills.toxics":"Toxiques",
-  "TOTEM.skills.remains":"Vestiges"
+  "INSTINCTS": {
+    "architect": { "name": "L'Architecte"},
+    "sword": { "name": "L'épée"},
+    "flail": { "name": "Le fléau"},
+    "man": { "name": "L'Homme"},
+    "keeper": { "name": "Le Gardien"},
+    "hand": { "name": "La Main"},
+    "mask": { "name": "Le Masque"},
+    "void": { "name": "Le Néant"},
+    "bone": { "name": "L'Os"},
+    "traveller": { "name": "Le Voyageur"}
+  },
+  "ABILITY_CATEGORIES": {
+    "physical": { "name": "Physique"},
+    "manual": { "name": "Manuel"},
+    "mental": { "name": "Mental"},
+    "social": { "name": "Social"}
+  },
+  "SKILLS_CATEGORIES": {
+    "man": { "name": "L'Homme" },
+    "animal": { "name": "L'Animal" },
+    "tool": { "name": "L'Outil" },
+    "weapon": { "name": "L'Arme" },
+    "survival": { "name": "Les Terres Sauvages" },
+    "world": { "name": "L'Inconnu" }
+  },
+  "SKILLS": {
+    "arts": { "name": "Arts"},
+    "civilization": { "name": "Civilisations"},
+    "psychology": { "name": "Relationnel"},
+    "rumors": { "name": "Cité"},
+    "healing": { "name": "Soins"},
+    "animalism": { "name": "Animalisme"},
+    "riding": { "name": "Monture"},
+    "wildlife": { "name": "Faune"},
+    "territory": { "name": "Territoire"},
+    "tracks": { "name": "Pistage"},
+    "crafting": { "name": "Artisanat"},
+    "manipulation": { "name": "Adresse"},
+    "mecanisms": { "name": "Mécanismes"},
+    "runes": { "name": "Runes"},
+    "armory": { "name": "Armurerie"},
+    "shield": { "name": "Bouclier"},
+    "close": { "name": "Corps-à-corps"},
+    "archery": { "name": "Tir"},
+    "throwing": { "name": "Lancer"},
+    "melee": { "name": "Mêlée"},
+    "atletics": { "name": "Atlétisme"},
+    "stealth": { "name": "Discrétion"},
+    "alertness": { "name": "Vigilance"},
+    "flora": { "name": "Flore"},
+    "road": { "name": "Voyage"},
+    "burst": { "name": "Eclat"},
+    "moons": { "name": "Lunes"},
+    "myths": { "name": "Mythes"},
+    "pantheons": { "name": "Panthéons"},
+    "rituals": { "name": "Rituels"}
+  },
+
+  "TOTEM.sexes.male":"Masculin",
+  "TOTEM.sexes.female":"Féminin",
+
+  "SIGNS": {
+    "wolf":{
+      "name":"Le Loup",
+      "description":""
+    },
+    "child":{
+      "name":"L'Enfant",
+      "description":""
+    },
+    "tree":{
+      "name":"L'Arbre",
+      "description":""
+    },
+    "specter":{
+      "name":"Le Spectre",
+      "description":""
+    },
+    "whirlwind":{
+      "name":"Le Tourbillon",
+      "description":""
+    },
+    "vulture":{
+      "name":"Le Vautour",
+      "description":""
+    },
+    "ship":{
+      "name":"Le Navire",
+      "description":""
+    },
+    "sword":{
+      "name":"Le Glaive",
+      "description":""
+    },
+    "cat":{
+      "name":"Le Chat",
+      "description":""
+    }
+  }
 }

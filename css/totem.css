@@ -14,22 +14,338 @@
 
 /* custom styles */
 body.system-totem img#logo {
-  content: url("/systems/totem/assets/images/ui/logo_totem_foundry.webp");
+  content: url("/systems/totem/assets/images/ui/logo_gods_foundry.webp");
   height:auto;
 }
 
-
 /* Customize the chat roll area! */
 #chat-form textarea {
-  /*background: url(systems/totem/assets/images/ui/box_background.png) repeat; 
-  font-family: monospace; 
+  background: url(/systems/totem/assets/images/ui/box_background.webp) repeat; 
+  /*font-family: monospace; 
   font-size: 14px; 
   color: black; */
 }
 
 /* Customize the chat history area! */
 #chat-log .message {
-  /*background: url(systems/totem/assets/images/ui/box_background.png) repeat; 
-  color: #191813; */
+  background: url(/systems/totem/assets/images/ui/box_background.webp) repeat; 
+  /*color: #191813; */
 }
 
+img {
+  border:none;
+}
+
+ul.unstyled {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+ul.unstyled li {
+  padding:0;
+  margin:0;
+}
+
+.padding-with-frieze {
+  margin: 0 23% !important;
+}
+
+.padding-with-frieze li {
+  max-width:100%;
+}
+
+.w-full {
+  width:100%;
+}
+
+/* ----------------------------------------- */
+/* Sheet Structure                           */
+/* ----------------------------------------- */
+.system-totem .window-content {
+  background: url(/systems/totem/assets/images/ui/box_background.webp);
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.actor.sheet form .form {
+  display: grid;
+  /*grid:
+      "sidebar header" 75px
+      "sidebar nav" minmax(min-content, max-content)
+      "sidebar content" 1fr/230px 1fr;*/
+  grid-template-columns: minmax(230px,1fr) 3fr;    
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.actor.sheet .form aside {
+  display: flex;
+  grid-row: span 1 / span 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/systems/totem/assets/images/ui/barre_lateral.webp);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+
+.actor.sheet .form main {
+  grid-row: span 1 / span 1;
+}
+
+.system-totem .char-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 0 0 100%;
+  height: 102px;
+}
+.system-totem .char-level {
+  background: url(/systems/totem/assets/images/ui/gods_navig_top.webp);
+  height: 56px;
+  background-size: cover;
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.system-totem .sheet.actor .sheet-body {
+  height: calc(100% - 35px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.system-totem .sheet.actor form {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.system-totem .sheet.actor form input[type=text], .system-totem .sheet.actor form input[type=number] {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: none;
+  padding: 0;
+  margin: 1px 0;
+  color: #333;
+  border: 1px solid transparent;
+}
+.system-totem .sheet.actor form input[type=text]:hover:not(:disabled), .system-totem .sheet.actor form input[type=text]:focus, .system-totem .sheet.actor form input[type=number]:hover:not(:disabled), .system-totem .sheet.actor form input[type=number]:focus {
+  border: 1px solid black;
+  box-shadow: 0 0 10px #00005a;
+}
+.system-totem .sheet.actor form select {
+  font-size: var(--font-size-10);
+  height: 18px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.system-totem .sheet.actor form label {
+  display: block;
+}
+.system-totem .sheet.actor form .mce-panel span {
+  display: inherit;
+}
+.system-totem .sheet.actor form.editable .rollable:hover {
+  color: #000;
+  text-shadow: 0 0 10px #00005a;
+  cursor: pointer;
+}
+.system-totem .sheet.actor form .sheet-tabs {
+  font-weight: 500;
+  height: 30px;
+}
+.system-totem .sheet.actor form .sheet-tabs > .list-row {
+  line-height: 24px;
+  padding-top: 3px;
+  font-size: var(--font-size-12);
+  text-align: center;
+}
+.system-totem .sheet.actor form .sheet-tabs > .list-row:last-of-type {
+  padding-right: 4px;
+}
+.system-totem .sheet.actor form .sheet-tabs > .list-row.active {
+  color: #000;
+  font-weight: 700;
+}
+.system-totem .sheet.actor form .tab {
+  flex: 1;
+  overflow: hidden;
+}
+.system-totem .sheet.actor form .tag-legacy {
+  float: left;
+  margin: 0 2px 2px 0;
+  padding: 0 3px;
+  font-size: var(--font-size-10);
+  line-height: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  white-space: normal;
+  font-weight: 500;
+}
+
+/* ---------------------------------------- */
+/* Actor Sheet                              */
+/* ---------------------------------------- */
+.system-totem .sheet.actor {
+  min-width: 650px;
+  min-height: 450px;
+}
+.system-totem .sheet.actor .sidebar {
+  width: 230px;
+  min-height:518px;
+}
+
+.system-totem .sheet.actor .floatright {
+  float: right;
+}
+.system-totem .sheet.actor .sheet-upper {
+  height: 268px;
+}
+.system-totem .sheet.actor .sheet-upper .sheet-header {
+  height: 48px;
+}
+.system-totem .sheet.actor .sheet-upper .sheet-profile, .system-totem .sheet.actor .sheet-upper .sheet-showcase {
+  height: 220px;
+}
+
+.system-totem .sheet.actor .sheet-content {
+  padding:4px;
+}
+.system-totem .sheet.actor .sheet-sidebar {
+  height: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.system-totem .sheet.actor .sheet-sidebar > * {
+  flex: 1;
+}
+.system-totem .sheet.actor .sheet-sidebar .sidebar-summary {
+  overflow-y: hidden;
+}
+.system-totem .sheet.actor.npc-sheet .sheet-upper {
+  height: 220px;
+}
+.system-totem .sheet.actor.npc-sheet .sheet-upper .sheet-showcase {
+  height: 172px;
+}
+.system-totem .sheet.actor.npc-sheet .sheet-lower {
+  height: calc(100% - 220px - 32px);
+}
+.system-totem .sheet.actor.npc-sheet section.sheet-body {
+  height: calc(100% - 48px);
+}
+.system-totem .sheet.actor .sheet-navigation {
+  border-top: 1px solid var(--secondary-background);
+  border-bottom: 1px solid var(--primary-background);
+}
+.system-totem .sheet.actor .sheet-navigation .sheet-tabs > .list-row {
+  border-radius: 5px 5px 0 0;
+}
+.system-totem .sheet.actor .sheet-navigation .sheet-tabs > .list-row.active {
+  border: 1px solid #666;
+  border-bottom: none;
+  /* box-shadow: 0 0 10px inset #ff6400;
+   */
+  background: var(--primary-background);
+  color: #fff;
+  text-shadow: none;
+}
+.system-totem .sheet.actor .sheet-header {
+  border-bottom: 1px solid var(--primary-background);
+}
+.system-totem .sheet.actor .sheet-header h1 {
+  margin: 0;
+  border: none;
+}
+.system-totem .sheet.actor .sheet-header h1.charname {
+  flex-basis: 50%;
+}
+.system-totem .sheet.actor .sheet-header .editsheet {
+  flex: 3;
+  font-size: 0.625rem;
+  text-align: center;
+  margin-top: 3px;
+}
+.system-totem .sheet.actor .sheet-header .charlevel {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.system-totem .sheet.actor .sheet-header .charlevel > * {
+  flex: 1;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .level {
+  font-family: var(--serif-condensed);
+  font-weight: 700;
+  align-items: center;
+  color: #444;
+  display: flex;
+  justify-content: end;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .level input {
+  flex-basis: 1.5rem;
+  margin-left: 0.1em;
+  text-align: center;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .xpbar {
+  width: 100%;
+  flex: 0 0 8px;
+  background: #666;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .xpbar .bar {
+  height: 4px;
+  margin: 1px;
+  display: block;
+  background: #afebff;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .experience {
+  flex: 0 0 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: flex-end;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .experience > * {
+  flex: 1;
+}
+.system-totem .sheet.actor .sheet-header .charlevel .experience > input[type=text], .system-totem .sheet.actor .sheet-header .charlevel .experience > input[type=number] {
+  flex: 1;
+  text-align: right;
+  height: 16px;
+}
+
+.actor.sheet nav.sheet-navigation {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  background: var(--secondary);
+  background: url(../assets/sheet/border-pattern.webp) repeat-x top, url(../assets/sheet/border-pattern.webp) repeat-x bottom, var(--secondary);
+  transition: all 0.1s ease-out;
+  box-shadow: 0 -1px 1px rgb(0 0 0 / 25%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width:95%;
+  position: relative;
+}
+
+.actor.sheet nav.sheet-navigation .item {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}

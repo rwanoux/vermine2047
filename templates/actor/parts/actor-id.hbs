@@ -1,0 +1,48 @@
+<ul class="padding-with-frieze unstyled">
+      <li>
+        <div class="flexrow flex-group-center items-center">
+            <label for="system.identity.age" class="resource-label flexlarge align-left">Age</label>
+            <input type="number" name="system.identity.age" value="{{ system.identity.age }}" data-dtype="Number"/>
+            <span>cm</span>
+        </div>
+      </li>  
+      <li>
+        <div class="flexrow flex-group-center items-center">
+            <label for="system.identity.height" class="resource-label flexlarge align-left">Taille</label>
+            <input type="number" name="system.identity.height" value="{{ system.identity.height }}" data-dtype="Number"/>
+            <span>cm</span>
+          </div>
+      </li>  
+        <li>
+        <div class="flexrow flex-group-center items-center">
+            <label for="system.identity.weigth" class="resource-label flexlarge align-left">Poids</label>
+            <input type="number" name="system.identity.weigth" value="{{ system.identity.weigth }}" data-dtype="Number"/> 
+            <span>kgs</span>
+          </div>
+      </li>   
+
+        <li>
+        <div class="flexcol flex-group-center items-center w-full">
+            <label for="system.identity.gender" class="resource-label flexlarge align-left">Sexe</label>
+            <select name="system.identity.gender" class="w-full">
+              {{selectOptions config.sexes selected=system.identity.gender localize=true}}
+            </select>
+          </div>
+      </li>   
+      <li>
+        <div class="flexcol flex-group-center items-center w-full">
+            <label for="system.identity.sign" class="resource-label flexlarge align-left">Signe astro.</label>
+            <select name="system.identity.sign" class="w-full">
+              {{selectOptions config.signs selected=system.identity.sign localize=true}}
+            </select>
+          </div>
+      </li>   
+      <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.origin" class="resource-label flexlarge align-left">Origine</label>
+             <select name="system.identity.origin" class="w-full">
+              {{selectOptions config.origins selected=system.identity.origin localize=true}}
+            </select>
+          </div>
+      </li>   
+  </ul>

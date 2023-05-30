@@ -6,10 +6,15 @@
  export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
 
+
     // Actor partials.
     "systems/totem/templates/actor/parts/actor-spells.html",
     "systems/totem/templates/actor/parts/actor-features.html",
-    // "systems/totem/templates/actor/parts/actor-skills.html",
+    "systems/totem/templates/actor/parts/actor-spells.html",
+    "systems/totem/templates/actor/parts/actor-id.hbs",
+    "systems/totem/templates/actor/parts/actor-instincts.hbs",
+    "systems/totem/templates/actor/parts/character-features.hbs",
+    "systems/totem/templates/actor/parts/character-header.hbs",
     "systems/totem/templates/actor/parts/actor-items.html",
     "systems/totem/templates/actor/parts/actor-effects.html",
 
@@ -27,20 +32,8 @@ export const registerHandlebarsHelpers = function () {
       return str.toLowerCase();
   });
 
-  // Ifis not equal
-  Handlebars.registerHelper('ifne', function (v1, v2, options) {
-    if (v1 !== v2) return options.fn(this);
-    else return options.inverse(this);
-  });
-
-  // if equal
-  Handlebars.registerHelper('ife', function (v1, v2, options) {
-    if (v1 === v2) return options.fn(this);
-    else return options.inverse(this);
-  });
-  // if equal
-  Handlebars.registerHelper('ifgt', function (v1, v2, options) {
-    if (v1 > v2) return options.fn(this);
-    else return options.inverse(this);
+  // search translation with variables
+  Handlebars.registerHelper('smarttl', function (arrayLabel,objectLabel, options) {
+    return game.i18n.localize(arrayLabel +"."+objectLabel+".name");
   });
 }

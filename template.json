@@ -12,89 +12,100 @@
           "value": 0,
           "min": 0,
           "max": 2
+        }        ,
+        "deadlyWound": {
+          "value": 0,
+          "min": 0,
+          "max": 2
         },
-        "totem":0,
-        "activity": ""
+        "instinct":0,
+        "identity": {
+          "height": 0,
+          "weight": 0,
+          "sign": "",
+          "age": 15,
+          "origin": ""
+        }, 
+        "stories": {
+          "biography": ""
+        }
       }
     },
     "character": {
       "templates": ["base"],
       "attributes": {
         "level": {
-          "label":"TOTEM.level",
-          "value": 1
+          "value": 1,
+          "max":10
+        },
+        "xp": {
+          "value": 0,
+          "max":0
+        },
+        "reputation": {
+          "value": 0,
+          "max":0
         },
         "self_control": {
-          "label":"TOTEM.self_control",
           "value": 0,
           "min": 0,
           "max": 5
         },
         "effort": {
-          "label":"TOTEM.effort",
           "value": 0, 
           "min": 0,
           "max": 5
         },
         "group": {
-          "label":"TOTEM.group",
           "value": 0,
           "min": 0,
           "max": 5
         }
       },      
       "abilities": {
-        "vig": {
-          "label":"TOTEM.vigor_ability",
+        "strength": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "physical"
         },
-        "vie": {
-          "label":"TOTEM.health_ability",
+        "constitution": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "physical"
         },
-        "pre": {
-          "label":"TOTEM.precision_ability",
+        "precision": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "manual"
         },
-        "ref": {
-          "label":"TOTEM.reflexes_ability",
+        "reflexes": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "manual"
         },
-        "sav": {
-          "label":"TOTEM.knowledge_ability",
+        "knowledge": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "mental"
         },
-        "per": {
-          "label":"TOTEM.perception_ability",
+        "perception": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "mental"
         },
-        "vol": {
-          "label":"TOTEM.will_ability",
+        "will": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "social"
         },
-        "emp": {
-          "label":"TOTEM.empathy_ability",
+        "empathy": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -103,31 +114,27 @@
       },
       "skills": {
         "arts": {
-          "label":"TOTEM.skills.arts",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity":0
         },
         "civilization": {
-          "label":"TOTEM.skills.civilization",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":2
+          "rarity":0
         },
         "psychology": {
-          "label":"TOTEM.skills.psychology",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity":0
         },
         "rumors": {
-          "label":"TOTEM.skills.rumors",
           "value": 0,
           "min": 0,
           "max": 5,
@@ -135,23 +142,20 @@
           "rarity":0
         },
         "healing": {
-          "label":"TOTEM.skills.healing",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity":0
         },
         "animalism": {
-          "label":"TOTEM.skills.animalism",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
           "rarity":1
         },
-        "dissection": {
-          "label":"TOTEM.skills.dissection",
+        "riding": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -159,15 +163,13 @@
           "rarity":2
         },
         "wildlife": {
-          "label":"TOTEM.skills.wildlife",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":1
+          "rarity":0
         },
-        "repulsion": {
-          "label":"TOTEM.skills.repulsion",
+        "territory": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -175,7 +177,6 @@
           "rarity":0
         },
         "tracks": {
-          "label":"TOTEM.skills.tracks",
           "value": 0,
           "min": 0,
           "max": 5,
@@ -183,71 +184,62 @@
           "rarity":0
         },
         "crafting": {
-          "label":"TOTEM.skills.crafting",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "tool",
-          "rarity":2
-        },
-        "diy": {
-          "label":"TOTEM.skills.diy",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "tool",
-          "rarity":0
-        },
-        "mecanical": {
-          "label":"TOTEM.skills.mecanical",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "tool",
-          "rarity":2
-        },
-        "driving": {
-          "label":"TOTEM.skills.driving",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":1
         },
-        "technology": {
-          "label":"TOTEM.skills.technology",
+        "manipulation": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "tool",
+          "rarity":0
+        },
+        "mecanisms": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":2
         },
-        "firearms": {
-          "label":"TOTEM.skills.firearms",
+        "runes": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "tool",
+          "rarity":1
+        },
+        "armory": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "tool",
+          "rarity":2
+        },
+        "shield": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":2
+          "rarity":1
         },
         "archery": {
-          "label":"TOTEM.skills.archery",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
           "rarity":0
         },
-        "armory": {
-          "label":"TOTEM.skills.armory",
+        "close": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":2
+          "rarity":0
         },
         "throwing": {
-          "label":"TOTEM.skills.throwing",
           "value": 0,
           "min": 0,
           "max": 5,
@@ -255,15 +247,13 @@
           "rarity":0
         },
         "melee": {
-          "label":"TOTEM.skills.melee",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
           "rarity":0
         },
-        "feed": {
-          "label":"TOTEM.skills.feed",
+        "alertness": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -271,15 +261,13 @@
           "rarity":0
         },
         "atletics": {
-          "label":"TOTEM.skills.atletics",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
           "rarity":0
         },
-        "brawling": {
-          "label":"TOTEM.skills.brawling",
+        "flora": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -287,60 +275,53 @@
           "rarity":0
         },
         "stealth": {
-          "label":"TOTEM.skills.stealth",
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
-        },
-        "alertness": {
-          "label":"TOTEM.skills.alertness",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "survival",
-          "rarity":0
-        },
-        "environment": {
-          "label":"TOTEM.skills.environment",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "world",
-          "rarity":0
-        },
-        "flora": {
-          "label":"TOTEM.skills.flora",
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "world",
           "rarity":0
         },
         "road": {
-          "label":"TOTEM.skills.road",
           "value": 0,
           "min": 0,
           "max": 5,
-          "category": "world",
+          "category": "survival",
           "rarity":0
         },
-        "toxics": {
-          "label":"TOTEM.skills.toxics",
+        "burst": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":0
+          "rarity":2
         },
-        "remains": {
-          "label":"TOTEM.skills.remains",
+        "moons": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":0
+          "rarity":1
+        },
+        "myths": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":1
+        },
+        "pantheons": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":1
+        },
+        "rituals": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":2
         }      
       }
     },
@@ -384,7 +365,7 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "weapons", "defense", "ritual", "technique"],
     "templates": {
       "base": {
         "description": ""

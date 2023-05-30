@@ -5,24 +5,27 @@ export const TOTEM = {};
  * @type {Object}
  */
 
+
 TOTEM.SkillLevels = {
   1:{ "label":"TOTEM.skill_level.beginner", "dicePool":1, "reroll":0},
   2:{ "label":"TOTEM.skill_level.proficient", "dicePool":1, "reroll":1},
   3:{ "label":"TOTEM.skill_level.expert", "dicePool":2, "reroll":1},
   4:{ "label":"TOTEM.skill_level.master", "dicePool":2, "reroll":2},
-  5:{ "label":"TOTEM.skill_level.legend", "dicePool":3, "reroll":2},
+  5:{ "label":"TOTEM.skill_level.archmaster", "dicePool":3, "reroll":2},
+  5:{ "label":"TOTEM.skill_level.legend", "dicePool":3, "reroll":3},
 }
 
-TOTEM.TotemNumbers = {
-  1:{ "label":"TOTEM.totems.human", "key":"human"},
-  2:{ "label":"TOTEM.totems.scavenger", "key":"scavenger"},
-  3:{ "label":"TOTEM.totems.symbiote", "key":"symbiote"},
-  4:{ "label":"TOTEM.totems.parasite", "key":"parasite"},
-  5:{ "label":"TOTEM.totems.builder", "key":"builder"},
-  6:{ "label":"TOTEM.totems.horde", "key":"horde"},
-  7:{ "label":"TOTEM.totems.hive", "key":"hive"},
-  8:{ "label":"TOTEM.totems.solitary", "key":"solitary"},
-  9:{ "label":"TOTEM.totems.adapted", "key":"adapted"}
+TOTEM.Instincts = {
+  1:{ "key":"architect"},
+  2:{ "key":"sword"},
+  3:{ "key":"flail"},
+  4:{ "key":"man"},
+  5:{ "key":"keeper"},
+  6:{ "key":"hand"},
+  7:{ "key":"mask"},
+  8:{ "key":"void"},
+  9:{ "key":"bone"},
+  0:{ "key":"traveller"}
 }
 
 
@@ -49,7 +52,7 @@ TOTEM.skillCategories = {
     "label":"TOTEM.skill_category.animal"
   },
   "tool": {
-    "label":"TOTEM.skill_category.machine"
+    "label":"TOTEM.skill_category.tool"
   },
   "weapon": {
     "label":"TOTEM.skill_category.weapon"
@@ -58,6 +61,33 @@ TOTEM.skillCategories = {
     "label":"TOTEM.skill_category.survival"
   },
   "world": {
-    "label":"TOTEM.skill_category.earth"
+    "label":"TOTEM.skill_category.world"
   }
+}
+
+TOTEM.sexes = {"male": "TOTEM.sexes.male", "female": "TOTEM.sexes.female"};
+
+TOTEM.signs = {"wolf":"SIGNS.wolf.name","child": "SIGNS.child.name" ,
+"tree": "SIGNS.tree.name" ,
+"specter": "SIGNS.specter.name" ,
+"whirlwind": "SIGNS.whirlwind.name" ,
+"vulture": "SIGNS.vulture.name" ,
+"ship": "SIGNS.ship.name" ,
+"sword": "SIGNS.sword.name" ,
+"cat": "SIGNS.cat.name" }
+
+TOTEM.origins = {"aon":"Aon",
+"avhorae": "Avhorae" ,
+"babel": "Babel",
+"soleil_noir": "Empire du Soleil Noir",
+"fakhar": "Fakhar",
+"horde": "Horde",
+"khashan": "Khashan",
+"ool": "Ool",
+"shattered_kingdoms": "Royaumes divisés",
+"saeth": "Saeth",
+"tegee": "Tégée (Thalos)",
+"tuuhle": "Tuuhle",
+"vaelor": "Vaelor",
+"valdheim": "Valdheim"
 }
