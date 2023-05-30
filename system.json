@@ -2,14 +2,14 @@
   "id": "totem",
   "title": "Totem",
   "description": "The Totem system for FoundryVTT!",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "compatibility": {
     "minimum": 10,
     "verified": "10.287",
     "maximum": 10
   },
   "authors": [{
-    "name": "Asacolips"
+    "name": "François-Xavier Guillois"
   }],
   "esmodules": ["module/totem.mjs"],
   "styles": ["css/style.css", "css/totem.css"],

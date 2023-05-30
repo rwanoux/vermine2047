@@ -1,5 +1,9 @@
 # CHANGELOG
 
+
+## 0.0.5
+- design de la feuille de personnage
+
 ## 0.0.4
 - dialog box pour lancer les dés
 
