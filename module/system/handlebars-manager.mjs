@@ -12,7 +12,7 @@
     "systems/totem/templates/actor/parts/actor-features.html",
     "systems/totem/templates/actor/parts/actor-spells.html",
     "systems/totem/templates/actor/parts/actor-id.hbs",
-    "systems/totem/templates/actor/parts/actor-instincts.hbs",
+    "systems/totem/templates/actor/parts/actor-totem.hbs",
     "systems/totem/templates/actor/parts/character-features.hbs",
     "systems/totem/templates/actor/parts/character-header.hbs",
     "systems/totem/templates/actor/parts/actor-items.html",

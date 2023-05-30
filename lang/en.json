@@ -33,8 +33,8 @@
   "TOTEM.tooling":"Equipement",  
   
   "ABILITIES": {
-    "strength": { "name": "Puissance"},
-    "constitution": { "name": "Résistance"},
+    "vigor": { "name": "Vigueur"},
+    "health": { "name": "Santé"},
     "precision":{ "name": "Précision"},
     "reflexes":{ "name": "Réflexes"},
     "knowledge":{ "name": "Connaissance"},
@@ -56,17 +56,17 @@
   "TOTEM.skill_level.master": "Maître",
   "TOTEM.skill_level.legend": "Légende",
   
-  "INSTINCTS": {
-    "architect": { "name": "L'Architecte"},
-    "sword": { "name": "L'épée"},
-    "flail": { "name": "Le fléau"},
-    "man": { "name": "L'Homme"},
-    "keeper": { "name": "Le Gardien"},
-    "hand": { "name": "La Main"},
-    "mask": { "name": "Le Masque"},
-    "void": { "name": "Le Néant"},
-    "bone": { "name": "L'Os"},
-    "traveller": { "name": "Le Voyageur"}
+  "TOTEMS": {
+    "human": { "name": "L'Humain", "number":1},
+    "predator": { "name": "Le prédateur", "number":2},
+    "scavenger": { "name": "Le Charognard", "number":3},
+    "symbiote": { "name": "Le Symbiote", "number":4},
+    "parasite": { "name": "Le Parasite", "number":5},
+    "builder": { "name": "Le Bâtisseur", "number":6},
+    "horde": { "name": "La Horde", "number":7},
+    "hive": { "name": "La Ruche", "number":8},
+    "loner": { "name": "Le solitaire", "number":9},
+    "adapted": { "name": "L'adapté", "number":10}
   },
   "ABILITY_CATEGORIES": {
     "physical": { "name": "Physique"},
@@ -89,71 +89,33 @@
     "rumors": { "name": "Cité"},
     "healing": { "name": "Soins"},
     "animalism": { "name": "Animalisme"},
-    "riding": { "name": "Monture"},
+    "dissection": { "name": "Dissection"},
     "wildlife": { "name": "Faune"},
-    "territory": { "name": "Territoire"},
-    "tracks": { "name": "Pistage"},
+    "repulsion": { "name": "Répulsion"},
+    "tracks": { "name": "Traces"},
     "crafting": { "name": "Artisanat"},
-    "manipulation": { "name": "Adresse"},
-    "mecanisms": { "name": "Mécanismes"},
-    "runes": { "name": "Runes"},
+    "diy": { "name": "Bricolage"},
+    "mecanical": { "name": "Mécanique"},
+    "piloting": { "name": "Pilotage"},
+    "technology": { "name": "Technologie"},
+    "firearms": { "name": "Armes à feu"},
     "armory": { "name": "Armurerie"},
     "shield": { "name": "Bouclier"},
     "close": { "name": "Corps-à-corps"},
-    "archery": { "name": "Tir"},
+    "archery": { "name": "Armes de tir"},
     "throwing": { "name": "Lancer"},
     "melee": { "name": "Mêlée"},
     "atletics": { "name": "Atlétisme"},
     "stealth": { "name": "Discrétion"},
     "alertness": { "name": "Vigilance"},
     "flora": { "name": "Flore"},
-    "road": { "name": "Voyage"},
-    "burst": { "name": "Eclat"},
-    "moons": { "name": "Lunes"},
-    "myths": { "name": "Mythes"},
-    "pantheons": { "name": "Panthéons"},
-    "rituals": { "name": "Rituels"}
+    "food": { "name": "Alimentation"},
+    "environment": { "name": "Environnement"},
+    "road": { "name": "Route"},
+    "toxics": { "name": "Toxiques"},
+    "ruins": { "name": "Vestiges"}
   },
 
   "TOTEM.sexes.male":"Masculin",
-  "TOTEM.sexes.female":"Féminin",
-
-  "SIGNS": {
-    "wolf":{
-      "name":"Le Loup",
-      "description":""
-    },
-    "child":{
-      "name":"L'Enfant",
-      "description":""
-    },
-    "tree":{
-      "name":"L'Arbre",
-      "description":""
-    },
-    "specter":{
-      "name":"Le Spectre",
-      "description":""
-    },
-    "whirlwind":{
-      "name":"Le Tourbillon",
-      "description":""
-    },
-    "vulture":{
-      "name":"Le Vautour",
-      "description":""
-    },
-    "ship":{
-      "name":"Le Navire",
-      "description":""
-    },
-    "sword":{
-      "name":"Le Glaive",
-      "description":""
-    },
-    "cat":{
-      "name":"Le Chat",
-      "description":""
-    }
-  }
+  "TOTEM.sexes.female":"Féminin"
 }

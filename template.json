@@ -22,7 +22,7 @@
         "identity": {
           "height": 0,
           "weight": 0,
-          "sign": "",
+          "totem": "",
           "age": 15,
           "origin": ""
         }, 
@@ -63,13 +63,13 @@
         }
       },      
       "abilities": {
-        "strength": {
+        "vigor": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "physical"
         },
-        "constitution": {
+        "health": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -118,21 +118,21 @@
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":0
+          "rarity":1
         },
         "civilization": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":0
+          "rarity":2
         },
         "psychology": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":0
+          "rarity":1
         },
         "rumors": {
           "value": 0,
@@ -146,7 +146,7 @@
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":0
+          "rarity":1
         },
         "animalism": {
           "value": 0,
@@ -155,7 +155,7 @@
           "category": "animal",
           "rarity":1
         },
-        "riding": {
+        "dissection": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -167,9 +167,9 @@
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":0
+          "rarity":1
         },
-        "territory": {
+        "repulsion": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -188,42 +188,42 @@
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":1
+          "rarity":2
         },
-        "manipulation": {
+        "diy": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":0
         },
-        "mecanisms": {
+        "mecanical": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":2
         },
-        "runes": {
+        "piloting": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":1
         },
-        "armory": {
+        "technology": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
           "rarity":2
         },
-        "shield": {
+        "firearms": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":1
+          "rarity":2
         },
         "archery": {
           "value": 0,
@@ -232,12 +232,12 @@
           "category": "weapon",
           "rarity":0
         },
-        "close": {
+        "armory": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":0
+          "rarity":2
         },
         "throwing": {
           "value": 0,
@@ -267,7 +267,7 @@
           "category": "survival",
           "rarity":0
         },
-        "flora": {
+        "food": {
           "value": 0,
           "min": 0,
           "max": 5,
@@ -281,47 +281,47 @@
           "category": "survival",
           "rarity":0
         },
-        "road": {
+        "close": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
           "rarity":0
         },
-        "burst": {
+        "environment": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":1
+        },
+        "flora": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":1
+        },
+        "road": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "category": "world",
+          "rarity":0
+        },
+        "toxics": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
           "rarity":2
         },
-        "moons": {
+        "ruins": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
           "rarity":1
-        },
-        "myths": {
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "world",
-          "rarity":1
-        },
-        "pantheons": {
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "world",
-          "rarity":1
-        },
-        "rituals": {
-          "value": 0,
-          "min": 0,
-          "max": 5,
-          "category": "world",
-          "rarity":2
         }      
       }
     },

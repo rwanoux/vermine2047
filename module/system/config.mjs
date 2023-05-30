@@ -67,14 +67,16 @@ TOTEM.skillCategories = {
 
 TOTEM.sexes = {"male": "TOTEM.sexes.male", "female": "TOTEM.sexes.female"};
 
-TOTEM.signs = {"wolf":"SIGNS.wolf.name","child": "SIGNS.child.name" ,
-"tree": "SIGNS.tree.name" ,
-"specter": "SIGNS.specter.name" ,
-"whirlwind": "SIGNS.whirlwind.name" ,
-"vulture": "SIGNS.vulture.name" ,
-"ship": "SIGNS.ship.name" ,
-"sword": "SIGNS.sword.name" ,
-"cat": "SIGNS.cat.name" }
+TOTEM.totems = {"human":"TOTEMS.human.name",
+"predator": "TOTEMS.predator.name" ,
+"scavenger": "TOTEMS.scavenger.name" ,
+"symbiote": "TOTEMS.symbiote.name" ,
+"parasite": "TOTEMS.parasite.name" ,
+"builder": "TOTEMS.builder.name" ,
+"horde": "TOTEMS.horde.name" ,
+"hive": "TOTEMS.hive.name" ,
+"loner": "TOTEMS.loner.name",
+"adapted": "TOTEMS.adapted.name" }
 
 TOTEM.origins = {"aon":"Aon",
 "avhorae": "Avhorae" ,
