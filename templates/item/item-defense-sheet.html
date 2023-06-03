@@ -5,11 +5,9 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </div>
   </header>
-
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item active" data-tab="description">Description</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -18,15 +16,11 @@
     {{!-- Description Tab --}}
     <div class="tab" data-group="primary" data-tab="description">
       {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+      <div class="resource">
+        <label class="resource-label">Niveau</label>
+        <input type="number" name="system.level" value="{{system.level}}" data-dtype="Number"/>
+      </div>     
     </div>
 
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
-      <div class="resource">
-        <label class="resource-label">Spell Level</label>
-        <input type="text" name="system.spellLevel" value="{{system.spellLevel}}" data-dtype="Number"/>
-      </div>
-    </div>
   </section>
 </form>

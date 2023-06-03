@@ -281,10 +281,10 @@
   flex: 0;
 }
 .totem .sheet-body,
-.totem .sheet-body .tab,
-.totem .sheet-body .tab .editor {
-  height: auto;
-  min-height:164px;
+.totem .sheet-body .editor-wrapper,
+.totem .sheet-body .editor-wraaper,
+.totem .sheet-body .editor-wrapper .editor {
+  height: 100%;
 }
 .totem .tox .tox-editor-container {
   background: #fff;
