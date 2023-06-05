@@ -121,8 +121,8 @@
     "animal": { "name": "L'Animal" },
     "tool": { "name": "L'Outil" },
     "weapon": { "name": "L'Arme" },
-    "survival": { "name": "Les Terres Sauvages" },
-    "world": { "name": "L'Inconnu" }
+    "survival": { "name": "La Survie" },
+    "world": { "name": "La Terre" }
   },
   "SKILLS": {
     "arts": { "name": "Arts"},

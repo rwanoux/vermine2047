@@ -293,6 +293,14 @@
 .totem .sheet-body .tab .editor {
   height: 100%;
 }
+.totem .sheet-body .editor {
+  min-height:75px;
+  margin-bottom:1rem;
+}
+
+.totem editor:hover .editor-edit {
+  display: block;
+}
 .totem .tox .tox-editor-container {
   background: #fff;
 }

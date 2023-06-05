@@ -44,9 +44,8 @@
               <!-- Character -->
             {{> "systems/totem/templates/actor/parts/character-features.hbs"}}
           </div>
-          <div class="tab instincts" data-group="primary" data-tab="totem">
+          <div class="tab totem" data-group="primary" data-tab="totem">
             <h3>Totem</h3>
-            <!-- Rituals -->
             {{> "systems/totem/templates/actor/parts/actor-totem.hbs"}}
           </div>
           <div class="tab equipment" data-group="primary" data-tab="equipment">
@@ -61,11 +60,19 @@
           </div>
         
           <div class="tab stories" data-group="primary" data-tab="stories">
-            <h3>Histoire</h3>
-            <section class="biography-details">
-              <label class="details-label">Bio</label>
-              {{editor system.stories.biography target="system.stories.biography" button=true owner=owner editable=editable}}
-            </section>
+              <h3>Histoire</h3>
+              <h4>{{ localize 'IDENTITY.theme'}}</h4>
+              {{editor system.identity.theme target="system.identity.theme" button=true owner=owner}}
+              <h4>{{ localize 'IDENTITY.instincts'}}</h4>
+              {{editor system.identity.instincts target="system.identity.instincts" button=true owner=owner editable=editable}}
+              <h4>{{ localize 'IDENTITY.prohibits'}}</h4>
+              {{editor system.identity.prohibits target="system.identity.prohibits" button=true owner=owner editable=editable}}
+              <h4>{{ localize 'IDENTITY.objectives'}}</h4>
+              {{editor system.identity.objectives target="system.identity.objectives" button=true owner=owner editable=editable}}
+              <h4>{{ localize 'IDENTITY.relations'}}</h4>
+              {{editor system.identity.relations target="system.identity.relations" button=true owner=owner editable=editable}}
+              <h4>{{ localize 'IDENTITY.biography'}}</h4>
+              {{editor system.identity.biography target="system.identity.biography" button=true owner=owner editable=editable}}
         </div>
         
         </section>

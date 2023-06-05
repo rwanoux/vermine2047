@@ -1,11 +1,7 @@
-<ul class="padding-with-frieze unstyled">
-      <li>
-        <div class="flexrow flex-group-center items-center">
-            <label for="system.identity.age" class="resource-label flexlarge align-left">{{ localize "IDENTITY.age"}}</label>
-            <input type="number" name="system.identity.age" value="{{ system.identity.age }}" data-dtype="Number"/>
-            <span>ans</span>
-        </div>
-      </li>  
+<div class="image-wrapper">
+  <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+</div>
+<ul class="padding-with-frieze unstyled paper">     
       <li>
         <div class="flexrow flex-group-center items-center">
             <label for="system.identity.height" class="resource-label flexlarge align-left">{{ localize "IDENTITY.height"}}</label>
@@ -28,15 +24,7 @@
               {{selectOptions config.sexes selected=system.identity.gender localize=true}}
             </select>
           </div>
-      </li>   
-      <li>
-        <div class="flexcol flex-group-center items-center w-full">
-            <label for="system.identity.totem" class="resource-label flexlarge align-left">{{ localize "IDENTITY.totem"}}</label>
-            <select name="system.identity.totem" class="w-full">
-              {{selectOptions config.totems selected=system.identity.totem localize=true}}
-            </select>
-          </div>
-      </li>   
+      </li>          
       <li>
         <div class="flexcol flex-group-center items-center  w-full">
             <label for="system.identity.origin" class="resource-label flexlarge align-left">{{ localize "IDENTITY.origin"}}</label>
@@ -45,4 +33,46 @@
             </select>
           </div>
       </li>   
+      {{#if system.identity.theme}}
+      <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.theme" class="resource-label flexlarge align-left">{{ localize "IDENTITY.theme"}}</label>
+            {{{ system.identity.theme }}}
+          </div>
+      </li>  
+      {{/if}}
+      {{#if system.identity.instincts}}
+      <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.instincts" class="resource-label flexlarge align-left">{{ localize "IDENTITY.instincts"}}</label>
+            {{{ system.identity.instincts }}}
+          </div>
+      </li>   
+      {{/if}}
+      {{#if system.identity.prohibits}}
+      <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.prohibits" class="resource-label flexlarge align-left">{{ localize "IDENTITY.prohibits"}}</label>
+            {{{ system.identity.prohibits }}}
+          </div>
+      </li>   
+      {{/if}}
+      {{#if system.identity.objectives}}
+      <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.objectives" class="resource-label flexlarge align-left">{{ localize "IDENTITY.objectives"}}</label>
+            {{{ system.identity.objectives }}}
+          </div>
+      </li>   
+      {{/if}}     
   </ul>
+ {{#if system.identity.relations}}
+  <ul class="padding-with-frieze unstyled second-paper">     
+       <li>
+        <div class="flexcol flex-group-center items-center  w-full">
+            <label for="system.identity.relations" class="resource-label flexlarge align-left">{{ localize "IDENTITY.relations"}}</label>
+            {{{ system.identity.relations }}}
+          </div>
+      </li> 
+  </ul>
+  {{/if}}

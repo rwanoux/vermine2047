@@ -52,7 +52,8 @@ ul.unstyled li {
 }
 
 .padding-with-frieze {
-  margin: 0 23% !important;
+  margin-left:18% !important;
+  margin-right:10% !important;
 }
 
 .padding-with-frieze li {
@@ -91,11 +92,7 @@ ul.unstyled li {
 }
 
 .actor.sheet .form aside {
-  display: flex;
   grid-row: span 1 / span 1;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   background-image: url(/systems/totem/assets/images/ui/barre_lateral.webp);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -104,6 +101,23 @@ ul.unstyled li {
 
 .actor.sheet .form main {
   grid-row: span 1 / span 1;
+}
+
+.actor.sheet .form aside .image-wrapper {
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+.actor.sheet .form aside .image-wrapper img {
+  width:170px;
+  height:145px;
+}
+.actor.sheet .form aside .paper {
+  margin-top: 1rem;
+  height: 350px;
+}
+.actor.sheet .form aside .second-paper {
+  margin-top: 4rem;
+  height: 150px;
 }
 
 .actor.sheet .form h3 {
@@ -137,10 +151,13 @@ ul.unstyled li {
 
 .system-totem .sheet.actor .sheet-body {
   height: calc(100% - 35px);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  max-height: 720px;
+  padding-bottom:1rem;
 }
 .system-totem .sheet.actor form {
   width: 100%;
