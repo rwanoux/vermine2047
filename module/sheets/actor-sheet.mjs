@@ -11,8 +11,9 @@ export class TotemActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["totem", "sheet", "actor"],
       template: "systems/totem/templates/actor/actor-sheet.html",
+      height: 820,
       width: 690,
-      height: 800,
+      resizable: false,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
     });
   }

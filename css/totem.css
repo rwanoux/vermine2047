@@ -64,6 +64,11 @@ ul.unstyled li {
   width:100%;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right:auto;
+}
+
 /* ----------------------------------------- */
 /* Sheet Structure                           */
 /* ----------------------------------------- */
@@ -132,6 +137,7 @@ ul.unstyled li {
   font-family: "DistressBlack", sans-serif; 
   font-size: 2em;
   text-transform: uppercase;
+  margin-top:0.875rem;
 }
 
 .system-totem .char-header {
@@ -156,7 +162,7 @@ ul.unstyled li {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  max-height: 720px;
+  max-height: 688px;
   padding-bottom:1rem;
 }
 .system-totem .sheet.actor form {
@@ -230,8 +236,8 @@ ul.unstyled li {
 /* Actor Sheet                              */
 /* ---------------------------------------- */
 .system-totem .sheet.actor {
-  min-width: 650px;
-  min-height: 450px;
+  min-width: 690px;
+  min-height: 800px;
 }
 .system-totem .sheet.actor .sidebar {
   width: 230px;
@@ -307,13 +313,18 @@ ul.unstyled li {
   background: url(../assets/images/ui/barre_haut.webp) no-repeat right top;
   width:100%;
   position: relative;
-  padding-right:2rem;
+  padding-right:4rem;
 }
 
 .actor.sheet nav.sheet-navigation .item {
-  height: 24px;
+  line-height: 54px;
   width: 24px;
+  display: inline-block;
   border-radius: 50%;
   z-index: 1;
   transition: all 0.1s ease-out;
+}
+
+.system-totem .sheet.actor form nav.sheet-navigation.sheet-tabs {
+  height:54px;
 }

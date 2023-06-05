@@ -192,6 +192,11 @@
   align-items: flex-end;
 }
 
+.gap-xs { gap: 2px; }
+.gap-sm { gap: 4px; }
+.gap-md { gap: 8px; }
+.gap-lg { gap: 16px; }
+
 .flexshrink {
   -webkit-box-flex: 0;
   -ms-flex: 0;

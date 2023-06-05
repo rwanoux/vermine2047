@@ -1,7 +1,7 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
   <div class="form">
     <aside>
-      <img class="logo" src="systems/totem/assets/images/ui/logo.webp" height="56" width="230" alt="logo TOTEM" />
+      <img class="logo mx-auto" src="systems/totem/assets/images/ui/logo.webp" width="200" alt="logo Vermine" />
       <div class="sidebar" data-group="dashboard" data-tab="sidebar">
           <!--ID -->
           {{> "systems/totem/templates/actor/parts/actor-id.hbs"}}
@@ -32,9 +32,9 @@
             <i class="fas fa-medal"></i>
         </a>
 
-        <a class="manage-tabs" data-action="manage-tabs" title="{{localize "TOTEM.tab_options"}}">
+        <!--a class="manage-tabs" data-action="manage-tabs" title="{{localize "TOTEM.tab_options"}}">
             <i class="fas fa-fw fa-ellipsis-v"></i>
-        </a>
+        </a-->
     </nav>
 
     <!-- BODY -->
@@ -61,18 +61,7 @@
         
           <div class="tab stories" data-group="primary" data-tab="stories">
               <h3>Histoire</h3>
-              <h4>{{ localize 'IDENTITY.theme'}}</h4>
-              {{editor system.identity.theme target="system.identity.theme" button=true owner=owner}}
-              <h4>{{ localize 'IDENTITY.instincts'}}</h4>
-              {{editor system.identity.instincts target="system.identity.instincts" button=true owner=owner editable=editable}}
-              <h4>{{ localize 'IDENTITY.prohibits'}}</h4>
-              {{editor system.identity.prohibits target="system.identity.prohibits" button=true owner=owner editable=editable}}
-              <h4>{{ localize 'IDENTITY.objectives'}}</h4>
-              {{editor system.identity.objectives target="system.identity.objectives" button=true owner=owner editable=editable}}
-              <h4>{{ localize 'IDENTITY.relations'}}</h4>
-              {{editor system.identity.relations target="system.identity.relations" button=true owner=owner editable=editable}}
-              <h4>{{ localize 'IDENTITY.biography'}}</h4>
-              {{editor system.identity.biography target="system.identity.biography" button=true owner=owner editable=editable}}
+              {{> "systems/totem/templates/actor/parts/actor-stories.hbs"}}
         </div>
         
         </section>

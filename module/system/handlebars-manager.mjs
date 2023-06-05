@@ -18,6 +18,7 @@
     "systems/totem/templates/actor/parts/actor-items.html",
     "systems/totem/templates/actor/parts/actor-weapons.hbs",
     "systems/totem/templates/actor/parts/actor-defenses.hbs",
+    "systems/totem/templates/actor/parts/actor-stories.hbs",
     "systems/totem/templates/actor/parts/actor-effects.html",
 
     // additional templates
