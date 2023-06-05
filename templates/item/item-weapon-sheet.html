@@ -5,34 +5,35 @@
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </div>
   </header>
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item active" data-tab="description">Description</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
   <section class="sheet-body">
-
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-      <div class="resource">
-        <label class="resource-label">Portée</label>
-        <input type="number" name="system.range" value="{{system.range}}" data-dtype="Number"/>
-      </div>
-
-      <div class="resource">
-        <label class="resource-label">Dommage</label>
-        <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
-      </div>
-
-      <div class="resource">
-        <label class="resource-label">Munitions</label>
-        <input type="number" name="system.ammo" value="{{system.ammo}}" data-dtype="Number"/>
-      </div>
-
+    {{ log item }}
+    <div class="tab flexrow" data-group="primary" data-tab="description">
+      <aside style="flex:1">
+        <div class="resource">
+          <label class="resource-label">{{ localize "TOTEM.ranges"}}</label>
+          <input type="number" name="system.min_range" value="{{system.min_range}}" data-dtype="Number"/> /
+          <input type="number" name="system.max_range" value="{{system.max_range}}" data-dtype="Number"/>
+        </div> 
+        <div class="resource">
+          <label class="resource-label">{{ localize "TOTEM.damages"}}</label>
+          <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
+        </div> 
+        <div class="resource">
+          <label class="resource-label">{{ localize "TOTEM.mobility"}}</label>
+          <input type="number" name="system.mobility" value="{{system.ammo}}" data-dtype="Number"/>
+        </div> 
+        <div class="resource">
+          <label class="resource-label">{{ localize "TOTEM.rarity"}}</label>
+          <input type="number" name="system.rarity" value="{{system.rarity}}" data-dtype="Number"/>
+        </div> 
+        <div class="resource">
+          <label class="resource-label">{{ localize "TOTEM.reliability"}}</label>
+          <input type="number" name="system.reliability" value="{{system.reliability}}" data-dtype="Number"/>
+        </div> 
+      </aside>    
+      <main class="editor-wrapper"  style="flex:10">
+        {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+      </main>
     </div>
-
   </section>
 </form>

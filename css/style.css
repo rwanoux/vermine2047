@@ -283,8 +283,7 @@
 .totem .sheet-body,
 .totem .sheet-body .tab,
 .totem .sheet-body .tab .editor {
-  height: auto;
-  min-height:164px;
+  height: 100%;
 }
 .totem .tox .tox-editor-container {
   background: #fff;
