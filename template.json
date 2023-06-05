@@ -37,17 +37,13 @@
         "biography": ""
       },
       "attributes": {
-        "level": {
-          "value": 1,
-          "max":10
-        },
         "xp": {
           "value": 0,
-          "max":0
+          "max":10
         },
         "reputation": {
           "value": 0,
-          "max":0
+          "max":10
         },
         "self_control": {
           "value": 0,

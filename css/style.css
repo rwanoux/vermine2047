@@ -184,6 +184,14 @@
   text-align: right;
 }
 
+.flex-align-left {
+  align-items: flex-start;
+}
+
+.flex-align-right {
+  align-items: flex-end;
+}
+
 .flexshrink {
   -webkit-box-flex: 0;
   -ms-flex: 0;

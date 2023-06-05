@@ -8,7 +8,22 @@
   },
   "TOTEM.roll_tool": "Lanceur de dés",
   "TOTEM.roll_dice": "Jeter les dés",
-  
+  "IDENTITY": {
+    "name": "Nom",
+    "height": "Taille",
+    "weight": "Poids",
+    "totem": "Totem",
+    "age": "Age",
+    "gender": "Sexe",
+    "profile": "Profil",
+    "origin": "Origine",
+    "theme": "Concept",
+    "instincts": "Instincts",
+    "prohibits": "Interdits",
+    "objectives": "Objectifs",
+    "relations": "Relations",
+    "biography": "Histoire"
+  },
   "TOTEM": {
     "stats": "Statistiques",
     "level": "Niveau",
@@ -43,13 +58,6 @@
     "ammo": "Munitions",
     "trait": "Trait",
     "traits": "Traits",
-    "objectives": "Objectifs",
-    "theme": "Concept",
-    "instinct": "Instinct",
-    "instincts": "Instincts",
-    "prohibited": "Interdit",
-    "prohibits": "Interdits",
-    "relations": "Relations",
     "clew": "Indice"
   },
   "ITEMS": {

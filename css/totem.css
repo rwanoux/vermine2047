@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "DistressBlack";
+  src: url("../assets/fonts/dcc_sharp_distress_black_by_dccanim.otf");
+}
+
 /* Change shadow colors and Foundry general font color!! */
 .app {
   box-shadow: 0 0 20px #7e4444; /* Change the color code here for a nice shadow color! */
@@ -5,9 +10,9 @@
 }
 
 /* Character and Item Name Titles Text style! */
-.sandbox.sheet .charname input {
+.sheet .charname input {
     color: #191813;
-    font-family: "Signika", sans-serif;
+    font-family: "DistressBlack", sans-serif;
     font-size: 30px;
     font-style: normal;
 }
@@ -101,22 +106,33 @@ ul.unstyled li {
   grid-row: span 1 / span 1;
 }
 
-.system-totem .char-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex: 0 0 100%;
-  height: 102px;
+.actor.sheet .form h3 {
+  font-family: "DistressBlack", sans-serif; 
+  text-align: center;
+  text-transform: uppercase;
+  color:#bec2bd;
+  font-size: 1.25em;
+  border-bottom: none;
 }
-.system-totem .char-level {
-  background: url(/systems/totem/assets/images/ui/barre_haut.webp);
-  height: 56px;
-  background-size: cover;
-  width: 100%;
+.actor.sheet .form h4 {
+  font-family: "DistressBlack", sans-serif; 
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.system-totem .char-header {
+  font-family: "DistressBlack", sans-serif; 
+}
+.system-totem .char-header section {
   display:flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.system-totem .char-header h1.char-name {
+  border-bottom: none;; 
 }
 
 .system-totem .sheet.actor .sheet-body {
@@ -263,89 +279,18 @@ ul.unstyled li {
   color: #fff;
   text-shadow: none;
 }
-.system-totem .sheet.actor .sheet-header {
-  border-bottom: 1px solid var(--primary-background);
-}
-.system-totem .sheet.actor .sheet-header h1 {
-  margin: 0;
-  border: none;
-}
-.system-totem .sheet.actor .sheet-header h1.charname {
-  flex-basis: 50%;
-}
-.system-totem .sheet.actor .sheet-header .editsheet {
-  flex: 3;
-  font-size: 0.625rem;
-  text-align: center;
-  margin-top: 3px;
-}
-.system-totem .sheet.actor .sheet-header .charlevel {
-  flex: 0 0 150px;
-  display: flex;
-  align-items: center;
-  text-align: right;
-}
-.system-totem .sheet.actor .sheet-header .charlevel > * {
-  flex: 1;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .level {
-  font-family: var(--serif-condensed);
-  font-weight: 700;
-  align-items: center;
-  color: #444;
-  display: flex;
-  justify-content: end;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .level input {
-  flex-basis: 1.5rem;
-  margin-left: 0.1em;
-  text-align: center;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .xpbar {
-  width: 100%;
-  flex: 0 0 8px;
-  background: #666;
-  border: 1px solid #000;
-  border-radius: 3px;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .xpbar .bar {
-  height: 4px;
-  margin: 1px;
-  display: block;
-  background: #afebff;
-  border: 1px solid #000;
-  border-radius: 2px;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .experience {
-  flex: 0 0 16px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  justify-content: flex-end;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .experience > * {
-  flex: 1;
-}
-.system-totem .sheet.actor .sheet-header .charlevel .experience > input[type=text], .system-totem .sheet.actor .sheet-header .charlevel .experience > input[type=number] {
-  flex: 1;
-  text-align: right;
-  height: 16px;
-}
+
 
 .actor.sheet nav.sheet-navigation {
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
-  height: 30px;
+  height: 54px;
   background: var(--secondary);
-  background: url(../assets/sheet/border-pattern.webp) repeat-x top, url(../assets/sheet/border-pattern.webp) repeat-x bottom, var(--secondary);
-  transition: all 0.1s ease-out;
-  box-shadow: 0 -1px 1px rgb(0 0 0 / 25%);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  width:95%;
+  background: url(../assets/images/ui/barre_haut.webp) no-repeat right top;
+  width:100%;
   position: relative;
+  padding-right:2rem;
 }
 
 .actor.sheet nav.sheet-navigation .item {
