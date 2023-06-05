@@ -3,9 +3,6 @@ import { registerSettings } from "./system/settings.mjs";
 
 // Import document classes.
 import { TotemActor } from "./documents/actor.mjs";
-import { TotemCharacter } from "./documents/character.mjs";
-import { TotemNpc } from "./documents/npc.mjs";
-import { TotemCreature } from "./documents/creature.mjs";
 
 import { TotemCharacterSheet } from "./sheets/character-sheet.mjs";
 import { TotemNpcSheet } from "./sheets/npc-sheet.mjs";
@@ -30,9 +27,7 @@ Hooks.once('init', async function() {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.totem = {
-    TotemCharacter,
-    TotemNpc,
-    TotemCreature,
+    TotemActor,
     TotemItem,
     TotemRoll,
     TotemCombat

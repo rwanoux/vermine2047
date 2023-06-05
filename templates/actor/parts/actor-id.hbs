@@ -3,29 +3,6 @@
 </div>
 <ul class="padding-with-frieze unstyled paper">     
       <li>
-        <div class="flexrow flex-group-center items-center">
-            <label for="system.identity.height" class="resource-label flexlarge align-left">{{ localize "IDENTITY.height"}}</label>
-            <input type="number" name="system.identity.height" value="{{ system.identity.height }}" data-dtype="Number"/>
-            <span>cm</span>
-          </div>
-      </li>  
-        <li>
-        <div class="flexrow flex-group-center items-center">
-            <label for="system.identity.weight" class="resource-label flexlarge align-left">{{ localize "IDENTITY.weight"}}</label>
-            <input type="number" name="system.identity.weight" value="{{ system.identity.weight }}" data-dtype="Number"/> 
-            <span>kgs</span>
-          </div>
-      </li>   
-
-        <li>
-        <div class="flexcol flex-group-center items-center w-full">
-            <label for="system.identity.gender" class="resource-label flexlarge align-left">{{ localize "IDENTITY.gender"}}</label>
-            <select name="system.identity.gender" class="w-full">
-              {{selectOptions config.sexes selected=system.identity.gender localize=true}}
-            </select>
-          </div>
-      </li>          
-      <li>
         <div class="flexcol flex-group-center items-center  w-full">
             <label for="system.identity.origin" class="resource-label flexlarge align-left">{{ localize "IDENTITY.origin"}}</label>
              <select name="system.identity.origin" class="w-full">
