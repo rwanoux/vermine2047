@@ -1,18 +1,28 @@
 <ol class="items-list">
   <li class="item flexrow items-header">
-    <div class="item-name">Name</div>
+    <div class="item-name" style="flex:4;">{{ localize 'IDENTITY.name'}}</div>
+    <div class="item-ranges">{{ localize 'VERMINE.ranges'}}</div>
+    <div class="item-damages">{{ localize 'VERMINE.dmg'}}</div>
+    <div class="item-ammo">{{ localize 'VERMINE.ammo_sm'}}</div>
+    <div class="item-rarity">{{ localize 'VERMINE.rarity_sm'}}</div>
+    <div class="item-reliability">{{ localize 'VERMINE.reliability_sm'}}</div>
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="weapon"><i class="fas fa-plus"></i> Add item</a>
+      <a class="item-control item-create" title="Create item" data-type="weapon"><i class="fas fa-plus"></i></a>
     </div>
   </li>
   {{#each weapons as |item id|}}
-    <li class="item flexrow" data-item-id="{{item._id}}">
-      <div class="item-name">
+    <li class="item flexrow  flex-group-center" data-item-id="{{item._id}}">
+      <div class="item-name flexrow" style="flex:4;">
         <div class="item-image">
           <a class="item-control item-edit" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
+        <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
       </div>
-      <p><a class="item-control item-edit" title="Edit Item">{{item.name}}</a></p>
+      <p><a class="item-control item-edit" title="Edit Item">{{item.system.min_range}} / {{item.system.max_range}}</a></p>
+      <p><a class="item-control item-edit" title="Edit Item">{{item.system.damage}}</a></p>
+      <p><a class="item-control item-edit" title="Edit Item">{{item.system.ammo}}</a></p>
+      <p><a class="item-control item-edit" title="Edit Item">{{item.system.rarity}}</a></p>
+      <p><a class="item-control item-edit" title="Edit Item">{{item.system.reliability}}</a></p>
       <div class="item-controls">
         <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
       </div>

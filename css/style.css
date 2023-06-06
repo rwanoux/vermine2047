@@ -237,16 +237,16 @@
 }
 
 /* Styles limited to vermine2047 sheets */
-.vermine2047 {
+.system-vermine2047 {
   /* ----------------------------------------- */
   /*  Items Lists                              */
   /* ----------------------------------------- */
   /* Example style for Vermine 2047 (can be removed if not needed) */
 }
-.vermine2047 .item-form {
+.system-vermine2047 .item-form {
   font-family: "Roboto", sans-serif;
 }
-.vermine2047 .sheet-header {
+.system-vermine2047 .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
   flex: 0 auto;
@@ -265,57 +265,61 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.vermine2047 .sheet-header .profile-img {
+.system-vermine2047 .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.vermine2047 .sheet-header .header-fields {
+.system-vermine2047 .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-.vermine2047 .sheet-header h1.charname {
+.system-vermine2047 .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.vermine2047 .sheet-header h1.charname input {
+.system-vermine2047 .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.vermine2047 .sheet-tabs {
+.system-vermine2047 .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
-.vermine2047 .sheet-body,
-.vermine2047 .sheet-body .tab,
-.vermine2047 .sheet-body .tab .editor {
+.system-vermine2047 .sheet-body,
+.system-vermine2047 .sheet-body .tab,
+.system-vermine2047 .sheet-body .tab .editor {
   height: 100%;
+  
 }
-.vermine2047 .sheet-body .editor {
+.system-vermine2047 .sheet-body .editor {
   min-height:75px;
   margin-bottom:1rem;
 }
 
-.vermine2047 editor:hover .editor-edit {
+.system-vermine2047 editor:hover .editor-edit {
   display: block;
 }
-.vermine2047 .tox .tox-editor-container {
-  background: #fff;
+.system-vermine2047 .tox {
+  min-height:25vh;
 }
-.vermine2047 .tox .tox-edit-area {
+.system-vermine2047 .tox .tox-editor-container {
+  background: #fff;  
+}
+.system-vermine2047 .tox .tox-edit-area {
   padding: 0 8px;
 }
-.vermine2047 .resource-label {
+.system-vermine2047 .resource-label {
   font-weight: bold;
 }
-.vermine2047 .items-header {
+.system-vermine2047 .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -326,11 +330,11 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.vermine2047 .items-header > * {
+.system-vermine2047 .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.vermine2047 .items-header .item-name {
+.system-vermine2047 .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
@@ -338,7 +342,7 @@
   display: -ms-flexbox;
   display: flex;
 }
-.vermine2047 .items-list {
+.system-vermine2047 .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -346,12 +350,13 @@
   scrollbar-width: thin;
   color: #444;
 }
-.vermine2047 .items-list .item-list {
+.system-vermine2047 .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.vermine2047 .items-list .item-name {
+
+.system-vermine2047 .items-list .item-name {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
@@ -366,41 +371,39 @@
   display: -ms-flexbox;
   display: flex;
 }
-.vermine2047 .items-list .item-name h3, .vermine2047 .items-list .item-name h4 {
+.system-vermine2047 .items-list .item-name h3, .system-vermine2047 .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.vermine2047 .items-list .item-controls {
+.system-vermine2047 .items-list .item-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.vermine2047 .items-list .item-controls a {
+.system-vermine2047 .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.vermine2047 .items-list .item {
+.system-vermine2047 .items-list .item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.vermine2047 .items-list .item:last-child {
+.system-vermine2047 .items-list .item:last-child {
   border-bottom: none;
 }
-.vermine2047 .items-list .item .item-name {
+.system-vermine2047 .items-list .item .item-name {
   color: #191813;
 }
-.vermine2047 .items-list .item .item-name .item-image {
+.system-vermine2047 .items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -409,13 +412,13 @@
   border: none;
   margin-right: 5px;
 }
-.vermine2047 .items-list .item-prop {
+.system-vermine2047 .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.vermine2047 .items-list .items-header {
+.system-vermine2047 .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -426,29 +429,29 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.vermine2047 .items-list .items-header > * {
+.system-vermine2047 .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.vermine2047 .items-list .items-header .item-name {
+.system-vermine2047 .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.vermine2047 .item-formula {
+.system-vermine2047 .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.vermine2047 .effects .item .effect-source,
-.vermine2047 .effects .item .effect-duration,
-.vermine2047 .effects .item .effect-controls {
+.system-vermine2047 .effects .item .effect-source,
+.system-vermine2047 .effects .item .effect-duration,
+.system-vermine2047 .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.vermine2047 .effects .item .effect-controls {
+.system-vermine2047 .effects .item .effect-controls {
   border: none;
 }
 

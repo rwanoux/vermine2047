@@ -6,11 +6,11 @@
     <div class="item-rarity">{{ localize 'VERMINE.rarity'}}</div>
     <div class="item-reliability">{{ localize 'VERMINE.reliability'}}</div>
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="defense"><i class="fas fa-plus"></i> Add item</a>
+      <a class="item-control item-create" title="Create item" data-type="defense"><i class="fas fa-plus"></i></a>
     </div>
   </li>
   {{#each defenses as |item id|}}
-    <li class="item flexrow" data-item-id="{{item._id}}">
+    <li class="item flexrow flex-group-center" data-item-id="{{item._id}}">
       <div class="item-name" style="flex:4;">
         <div class="item-image">
           <a class="item-control item-edit" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>

@@ -36,6 +36,9 @@
         "relations": "",
         "biography": ""
       },
+      "equipment": {
+        "description": ""
+      },  
       "attributes": {
         "xp": {
           "value": 0,

@@ -6,20 +6,23 @@
     </div>
   </header>
   <section class="sheet-body">
-    <div class="tab flexrow" data-group="primary" data-tab="description">
+    <div class="flexrow" data-group="primary" data-tab="description">
+      {{ log system }}
       <aside style="flex:1">
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.ranges"}}</label>
-          <input type="number" name="system.min_range" value="{{system.min_range}}" data-dtype="Number"/> /
-          <input type="number" name="system.max_range" value="{{system.max_range}}" data-dtype="Number"/>
+          <div class="flexrow">
+            <input type="number" name="system.min_range" value="{{system.min_range}}" data-dtype="Number"/> /
+            <input type="number" name="system.max_range" value="{{system.max_range}}" data-dtype="Number"/>
+          </div>
         </div> 
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.damages"}}</label>
           <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
         </div> 
         <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.mobility"}}</label>
-          <input type="number" name="system.mobility" value="{{system.ammo}}" data-dtype="Number"/>
+          <label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
+          <input type="number" name="system.ammo" value="{{system.ammo}}" data-dtype="Number"/>
         </div> 
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.rarity"}}</label>
@@ -30,7 +33,7 @@
           <input type="number" name="system.reliability" value="{{system.reliability}}" data-dtype="Number"/>
         </div> 
       </aside>    
-      <main class="editor-wrapper"  style="flex:10">
+      <main class="editor-wrapper"  style="flex:5">
         {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
       </main>
     </div>
