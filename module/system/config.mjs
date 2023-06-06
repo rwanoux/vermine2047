@@ -1,4 +1,4 @@
-export const TOTEM = {};
+export const VERMINE = {};
 
 /**
  * The set of Ability Scores used within the sytem.
@@ -6,16 +6,16 @@ export const TOTEM = {};
  */
 
 
-TOTEM.SkillLevels = {
-  1:{ "label":"TOTEM.skill_level.beginner", "dicePool":1, "reroll":0},
-  2:{ "label":"TOTEM.skill_level.proficient", "dicePool":1, "reroll":1},
-  3:{ "label":"TOTEM.skill_level.expert", "dicePool":2, "reroll":1},
-  4:{ "label":"TOTEM.skill_level.master", "dicePool":2, "reroll":2},
-  5:{ "label":"TOTEM.skill_level.archmaster", "dicePool":3, "reroll":2},
-  5:{ "label":"TOTEM.skill_level.legend", "dicePool":3, "reroll":3},
+VERMINE.SkillLevels = {
+  1:{ "label":"VERMINE.skill_level.beginner", "dicePool":1, "reroll":0},
+  2:{ "label":"VERMINE.skill_level.proficient", "dicePool":1, "reroll":1},
+  3:{ "label":"VERMINE.skill_level.expert", "dicePool":2, "reroll":1},
+  4:{ "label":"VERMINE.skill_level.master", "dicePool":2, "reroll":2},
+  5:{ "label":"VERMINE.skill_level.archmaster", "dicePool":3, "reroll":2},
+  5:{ "label":"VERMINE.skill_level.legend", "dicePool":3, "reroll":3},
 }
 
-TOTEM.Instincts = {
+VERMINE.Instincts = {
   1:{ "key":"architect"},
   2:{ "key":"sword"},
   3:{ "key":"flail"},
@@ -29,45 +29,45 @@ TOTEM.Instincts = {
 }
 
 
-TOTEM.abilityCategories = {
+VERMINE.abilityCategories = {
   "physical": {
-    "label":"TOTEM.ability_category.physical"
+    "label":"VERMINE.ability_category.physical"
   },
   "manual": {
-    "label":"TOTEM.ability_category.manual"
+    "label":"VERMINE.ability_category.manual"
   },
   "mental": {
-    "label":"TOTEM.ability_category.mental"
+    "label":"VERMINE.ability_category.mental"
   },
   "social": {
-    "label":"TOTEM.ability_category.social"
+    "label":"VERMINE.ability_category.social"
   }
 }
 
-TOTEM.skillCategories = {
+VERMINE.skillCategories = {
   "man": {
-    "label":"TOTEM.skill_category.man"
+    "label":"VERMINE.skill_category.man"
   },
   "animal": {
-    "label":"TOTEM.skill_category.animal"
+    "label":"VERMINE.skill_category.animal"
   },
   "tool": {
-    "label":"TOTEM.skill_category.tool"
+    "label":"VERMINE.skill_category.tool"
   },
   "weapon": {
-    "label":"TOTEM.skill_category.weapon"
+    "label":"VERMINE.skill_category.weapon"
   },
   "survival": {
-    "label":"TOTEM.skill_category.survival"
+    "label":"VERMINE.skill_category.survival"
   },
   "world": {
-    "label":"TOTEM.skill_category.world"
+    "label":"VERMINE.skill_category.world"
   }
 }
 
-TOTEM.sexes = {"male": "TOTEM.sexes.male", "female": "TOTEM.sexes.female"};
+VERMINE.sexes = {"male": "VERMINE.sexes.male", "female": "VERMINE.sexes.female"};
 
-TOTEM.totems = {"human":"TOTEMS.human.name",
+VERMINE.totems = {"human":"TOTEMS.human.name",
 "predator": "TOTEMS.predator.name" ,
 "scavenger": "TOTEMS.scavenger.name" ,
 "symbiote": "TOTEMS.symbiote.name" ,
@@ -78,7 +78,7 @@ TOTEM.totems = {"human":"TOTEMS.human.name",
 "loner": "TOTEMS.loner.name",
 "adapted": "TOTEMS.adapted.name" }
 
-TOTEM.origins = {"aon":"Aon",
+VERMINE.origins = {"aon":"Aon",
 "avhorae": "Avhorae" ,
 "babel": "Babel",
 "soleil_noir": "Empire du Soleil Noir",

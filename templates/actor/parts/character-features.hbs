@@ -2,7 +2,7 @@
 <h3>Caractéristiques</h3>
 <div class="grid grid-4col">
   {{#each config.abilityCategories as |abilityCategory ackey|}}
-    <div>
+    <div class="characteristics">
       <h4 class="align-center">{{ smarttl "ABILITY_CATEGORIES" ackey }}</h4>
       {{#each @root.system.abilities as |ability key|}}
         {{#if (eq ability.category ackey) }}
@@ -16,7 +16,7 @@
   {{/each}}
   </div>
 <h3>Compétences</h3>
-<div class="grid grid-cols-3">
+<div class="grid grid-2col">
 {{#each config.skillCategories as |skillCategory sckey|}}
     <div class="col">
       <h4>{{ smarttl "SKILLS_CATEGORIES" sckey }}</h4>

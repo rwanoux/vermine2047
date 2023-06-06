@@ -8,21 +8,21 @@
 
 
     // Actor partials.
-    "systems/totem/templates/actor/parts/actor-spells.html",
-    "systems/totem/templates/actor/parts/actor-features.html",
-    "systems/totem/templates/actor/parts/actor-spells.html",
-    "systems/totem/templates/actor/parts/actor-id.hbs",
-    "systems/totem/templates/actor/parts/actor-totem.hbs",
-    "systems/totem/templates/actor/parts/character-features.hbs",
-    "systems/totem/templates/actor/parts/character-header.hbs",
-    "systems/totem/templates/actor/parts/actor-items.html",
-    "systems/totem/templates/actor/parts/actor-weapons.hbs",
-    "systems/totem/templates/actor/parts/actor-defenses.hbs",
-    "systems/totem/templates/actor/parts/actor-stories.hbs",
-    "systems/totem/templates/actor/parts/actor-effects.html",
+    "systems/vermine2047/templates/actor/parts/actor-spells.html",
+    "systems/vermine2047/templates/actor/parts/actor-features.html",
+    "systems/vermine2047/templates/actor/parts/actor-spells.html",
+    "systems/vermine2047/templates/actor/parts/actor-id.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-totem.hbs",
+    "systems/vermine2047/templates/actor/parts/character-features.hbs",
+    "systems/vermine2047/templates/actor/parts/character-header.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-items.html",
+    "systems/vermine2047/templates/actor/parts/actor-weapons.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-defenses.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-stories.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-effects.html",
 
     // additional templates
-    "systems/totem/templates/roll.hbs",
+    "systems/vermine2047/templates/roll.hbs",
   ]);
 };
 

@@ -223,17 +223,17 @@
   text-align: center;
 }
 
-/* Styles limited to totem sheets */
-.totem {
+/* Styles limited to vermine2047 sheets */
+.vermine2047 {
   /* ----------------------------------------- */
   /*  Items Lists                              */
   /* ----------------------------------------- */
-  /* Example style for Totem (can be removed if not needed) */
+  /* Example style for Vermine 2047 (can be removed if not needed) */
 }
-.totem .item-form {
+.vermine2047 .item-form {
   font-family: "Roboto", sans-serif;
 }
-.totem .sheet-header {
+.vermine2047 .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
   flex: 0 auto;
@@ -252,50 +252,50 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.totem .sheet-header .profile-img {
+.vermine2047 .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.totem .sheet-header .header-fields {
+.vermine2047 .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-.totem .sheet-header h1.charname {
+.vermine2047 .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.totem .sheet-header h1.charname input {
+.vermine2047 .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.totem .sheet-tabs {
+.vermine2047 .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
-.totem .sheet-body,
-.totem .sheet-body .editor-wrapper,
-.totem .sheet-body .editor-wraaper,
-.totem .sheet-body .editor-wrapper .editor {
+.vermine2047 .sheet-body,
+.vermine2047 .sheet-body .editor-wrapper,
+.vermine2047 .sheet-body .editor-wraaper,
+.vermine2047 .sheet-body .editor-wrapper .editor {
   height: 100%;
 }
-.totem .tox .tox-editor-container {
+.vermine2047 .tox .tox-editor-container {
   background: #fff;
 }
-.totem .tox .tox-edit-area {
+.vermine2047 .tox .tox-edit-area {
   padding: 0 8px;
 }
-.totem .resource-label {
+.vermine2047 .resource-label {
   font-weight: bold;
 }
-.totem .items-header {
+.vermine2047 .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -306,11 +306,11 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.totem .items-header > * {
+.vermine2047 .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.totem .items-header .item-name {
+.vermine2047 .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
@@ -318,7 +318,7 @@
   display: -ms-flexbox;
   display: flex;
 }
-.totem .items-list {
+.vermine2047 .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -326,12 +326,12 @@
   scrollbar-width: thin;
   color: #444;
 }
-.totem .items-list .item-list {
+.vermine2047 .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.totem .items-list .item-name {
+.vermine2047 .items-list .item-name {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
@@ -346,12 +346,12 @@
   display: -ms-flexbox;
   display: flex;
 }
-.totem .items-list .item-name h3, .totem .items-list .item-name h4 {
+.vermine2047 .items-list .item-name h3, .vermine2047 .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.totem .items-list .item-controls {
+.vermine2047 .items-list .item-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,25 +362,25 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.totem .items-list .item-controls a {
+.vermine2047 .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.totem .items-list .item {
+.vermine2047 .items-list .item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.totem .items-list .item:last-child {
+.vermine2047 .items-list .item:last-child {
   border-bottom: none;
 }
-.totem .items-list .item .item-name {
+.vermine2047 .items-list .item .item-name {
   color: #191813;
 }
-.totem .items-list .item .item-name .item-image {
+.vermine2047 .items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -389,13 +389,13 @@
   border: none;
   margin-right: 5px;
 }
-.totem .items-list .item-prop {
+.vermine2047 .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.totem .items-list .items-header {
+.vermine2047 .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -406,29 +406,29 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.totem .items-list .items-header > * {
+.vermine2047 .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.totem .items-list .items-header .item-name {
+.vermine2047 .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.totem .item-formula {
+.vermine2047 .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.totem .effects .item .effect-source,
-.totem .effects .item .effect-duration,
-.totem .effects .item .effect-controls {
+.vermine2047 .effects .item .effect-source,
+.vermine2047 .effects .item .effect-duration,
+.vermine2047 .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.totem .effects .item .effect-controls {
+.vermine2047 .effects .item .effect-controls {
   border: none;
 }
 

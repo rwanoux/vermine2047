@@ -1,8 +1,8 @@
-import { TOTEM } from "./config.mjs";
+import { VERMINE } from "./config.mjs";
 import { getActorSkillScore,updateActorSkillScore } from "./functions.mjs";
 import { CombatResultDialog } from "./dialogs.mjs";
 
-export class TotemFight {
+export class VermineFight {
 
   async performTest(enemyAchievement, enemyConservation, skillKey, skill, params, actor) {
     const dicePool = (params.spleen != undefined || params.purpose != undefined) ? '5' : '4';
@@ -32,7 +32,7 @@ export class TotemFight {
 
     bonusText += bonus;
 
-    let targetText = game.i18n.format('TOTEM.Selected') + ' : ' + game.i18n.format(skillKey) + " " + skill + bonusText;
+    let targetText = game.i18n.format('VERMINE.Selected') + ' : ' + game.i18n.format(skillKey) + " " + skill + bonusText;
     if (params.specialization != undefined){
       targetText += " (S)"; 
     }
@@ -41,10 +41,10 @@ export class TotemFight {
         
     if (params.purpose != undefined){
       discardedRoll = r.terms[0].results.shift();
-      dicePoolHint = ' - ' + game.i18n.format('TOTEM.PurposeTrait');
+      dicePoolHint = ' - ' + game.i18n.format('VERMINE.PurposeTrait');
     } else if (params.spleen != undefined){
       discardedRoll = r.terms[0].results.pop();
-      dicePoolHint = ' - ' + game.i18n.format('TOTEM.SpleenTrait');
+      dicePoolHint = ' - ' + game.i18n.format('VERMINE.SpleenTrait');
     } 
     const discardedRollText = (discardedRoll.result != undefined) ? '<div class="discarded-roll">' + discardedRoll.result + '</div>' : "";
 
@@ -53,11 +53,11 @@ export class TotemFight {
       diceString += '<li class="roll die d6 die-'+ i +'">' + result + '</li>'; 
     }
 
-    let hintText = game.i18n.format('TOTEM.ConfrontationHint');
+    let hintText = game.i18n.format('VERMINE.ConfrontationHint');
     
     // Build a dynamic html using the variables from above.
     const html = `
-            <div class="totem roll confrontation">
+            <div class="vermine2047 roll confrontation">
                 <div class="dice-roll">
                     <div class="dice-result">
                         <div class="dice-formula">
@@ -76,8 +76,8 @@ export class TotemFight {
                         </div>` +
                         `<p class="step1-text" id="step1">` + hintText + `</p>
                           <div class="row">
-                              <a class="inline-block button add-to-achievement">` + game.i18n.format('TOTEM.Achievement') + `</a>
-                              <a class="inline-block button add-to-conservation">` + game.i18n.format('TOTEM.Conservation') + `</a>
+                              <a class="inline-block button add-to-achievement">` + game.i18n.format('VERMINE.Achievement') + `</a>
+                              <a class="inline-block button add-to-conservation">` + game.i18n.format('VERMINE.Conservation') + `</a>
                               <a class="inline-block button reset"><i class="fa-solid fa-rotate-right"></i></a>
                               <a class="inline-block button resolve"><i class="fa-solid fa-check"></i></a>
                           </div>                          
@@ -119,24 +119,24 @@ export class TotemFight {
   static instance = null;
 
   static get() {
-    if (!TotemFight.instance)
-      TotemFight.instance = new TotemFight();
-    return TotemFight.instance;
+    if (!VermineFight.instance)
+      VermineFight.instance = new VermineFight();
+    return VermineFight.instance;
   }
 
  
   // data injected to char data
   static previousValues = {
     dicePool: 4,
-    skills: TOTEM.skillsList,
-    cskills: TOTEM.cskills,
+    skills: VERMINE.skillsList,
+    cskills: VERMINE.cskills,
     cephalic: false,
-    achievementReroll: TOTEM.achievementReroll,
-    conservationReroll: TOTEM.conservationReroll
+    achievementReroll: VERMINE.achievementReroll,
+    conservationReroll: VERMINE.conservationReroll
   };
 
-  static rollerTemplate = 'systems/totem/templates/fight.html';
-  static CombatResultTemplate = 'systems/totem/templates/fight-result.html';
+  static rollerTemplate = 'systems/vermine2047/templates/fight.html';
+  static CombatResultTemplate = 'systems/vermine2047/templates/fight-result.html';
   
   static async chatMessageHandler(message, html, data) {
     // console.log("accès au fin du fin", message._id);
@@ -225,15 +225,15 @@ export class TotemFight {
     if (actor == null && externalData.speakerId != undefined && externalData.speakerId != null){
       // on récupère le speakerId, et de là l'objet actor
       actor = game.actors.get(externalData.speakerId);     
-      TotemFight.previousValues['speakerName'] = actor.name;
-      TotemFight.previousValues['speakerImg'] = actor.img;      
+      VermineFight.previousValues['speakerName'] = actor.name;
+      VermineFight.previousValues['speakerImg'] = actor.img;      
     } else {
-      TotemFight.previousValues['speakerName'] = "Anonyme";
+      VermineFight.previousValues['speakerName'] = "Anonyme";
     }
 
     // get the data
     let charData = (externalData) => {
-      let o = Object.assign({ _template: TotemFight.rollerTemplate }, {...TotemFight.previousValues, ...externalData});
+      let o = Object.assign({ _template: VermineFight.rollerTemplate }, {...VermineFight.previousValues, ...externalData});
       return o;
     };
     let data = charData(externalData);    
@@ -243,11 +243,11 @@ export class TotemFight {
     let html = await renderTemplate(data._template, data);
     
     let ui = new Dialog({
-      title: game.i18n.localize("TOTEM.FightTool"),
+      title: game.i18n.localize("VERMINE.FightTool"),
       content: html,
       buttons: {
         roll: {
-          label: game.i18n.localize('TOTEM.Roll4Fight'),
+          label: game.i18n.localize('VERMINE.Roll4Fight'),
           callback: (html) => {
             let form = html.find('#dice-pool-form');
             if (!form[0].checkValidity()) {
@@ -298,7 +298,7 @@ export class TotemFight {
                updateActorSkillScore(actor, skillKey, 'spent', newSpentScore);
             }
 
-            return TotemFight.get().performTest(enemyAchievement + enemySkill, enemyConservation + enemySkill, skillKey, skill, params, actor);
+            return VermineFight.get().performTest(enemyAchievement + enemySkill, enemyConservation + enemySkill, skillKey, skill, params, actor);
           }
         },
         cancel: {
@@ -321,7 +321,7 @@ export class TotemFight {
   }
 }
 
-export class TotemCombat extends Combat {
+export class VermineCombat extends Combat {
   _encounterCheck(){
     console.log('encounter combat object', this);
   }
@@ -365,7 +365,7 @@ export class TotemCombat extends Combat {
     });
 
     if (combatant.type != 'character'){
-      let warningDialogHTML = await renderTemplate('systems/totem/templates/dialogs/warning.html', { 
+      let warningDialogHTML = await renderTemplate('systems/vermine2047/templates/dialogs/warning.html', { 
         warningText: "Seuls les PJs peuvent initier des confrontations. Relancer l'opération au tour du PJ actif."
       });
       Dialog.prompt({   
@@ -379,7 +379,7 @@ export class TotemCombat extends Combat {
     } else {
       // étape 2 : on envoie les infos
       let fightingActor = game.actors.get(combatant.actorId);
-      TotemFight.ui({ 
+      VermineFight.ui({ 
         speakerId: combatant.actorId, 
         speakerWeapons: fightingActor.items.filter(item => item.type == 'weapon'),
         speakerExperience:fightingActor.system.attributes.experience.value,

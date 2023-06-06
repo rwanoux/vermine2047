@@ -1,9 +1,9 @@
 <!-- HEADER -->
-<header class="char-header flexrow flex-group-center items-center">
-    <section class="char-details" style="flex:50%;">
+<header class="char-header grid grid-2col">
+    <section class="char-details">
         <h1 class="char-name flexrow  flex-group-left">
             <label>{{ localize 'IDENTITY.name' }}</label>
-            <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "TOTEM.CharacterNamePlaceholder"}}" />
+            <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "VERMINE.CharacterNamePlaceholder"}}" />
         </h1>
         <div class="profile flexrow  flex-group-center">
             <label>{{ localize 'IDENTITY.profile' }}</label>
@@ -14,19 +14,19 @@
             <input type="number" name="system.identity.age" value="{{ system.identity.age }}" data-dtype="Number"/>
         </div>      
     </section>
-    <section class="char-level" style="flex:50%;">
-        <div class="flexrow  flex-group-left">
+    <section class="char-level">
+        <div class="char-vermine2047 flexrow flex-group-left">
             <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
             <select name="system.identity.totem" class="w-full">
               {{selectOptions config.totems selected=system.identity.totem localize=true}}
             </select>
         </div>
         <div class="reputation flexrow  flex-group-center">
-            <label>{{ localize 'TOTEM.reputation' }}</label>
+            <label>{{ localize 'VERMINE.reputation' }}</label>
             <input name="system.attributes.reputation.value" type="text" value="{{system.attributes.reputation.value }}" data-dtype="Number" />
         </div>
         <div class="experience flexrow  flex-group-center">
-            <label>{{ localize 'TOTEM.experience' }}</label>
+            <label>{{ localize 'VERMINE.experience' }}</label>
             <input name="system.details.xp.value" type="text" value="{{system.attributes.xp.value}}" data-dtype="Number"  />
         </div>
     </section>

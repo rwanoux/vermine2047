@@ -1,7 +1,7 @@
-import { TOTEM } from './config.mjs'
+import { VERMINE } from './config.mjs'
 /**
  * renvoie le score d'une compétence d'un actor existant
- * @param {TotemActor} 
+ * @param {VermineActor} 
  * @return {number||null}                   Data for rendering or null
  */
 export function getActorSkillScore(actor, skillLabel, property = "value") {
@@ -27,15 +27,15 @@ export function getActorSkillScore(actor, skillLabel, property = "value") {
 
 /**
  * renvoie le type d'une compétence 
- * @param {TotemActor} 
+ * @param {VermineActor} 
  * @return {string||null}                   Data for rendering or null
  */
 export function getSkillTypeFromLabel(skillLabel) {
   let returnedValue = null;
 
-  for(let i in TOTEM.skills){
-    for(let j in TOTEM.skills[i].data){
-      if (TOTEM.skills[i].data[j].label == skillLabel){
+  for(let i in VERMINE.skills){
+    for(let j in VERMINE.skills[i].data){
+      if (VERMINE.skills[i].data[j].label == skillLabel){
         returnedValue = j;  
       }
     }
@@ -46,7 +46,7 @@ export function getSkillTypeFromLabel(skillLabel) {
 
 /**
  * met à jour le score d'une compétence d'un actor existant
- * @param {TotemActor} 
+ * @param {VermineActor} 
  * @return {boolean}                   bool 
  */
 export function updateActorSkillScore(selectedActor, skillLabel, property = "value", updatedValue) {
@@ -84,7 +84,7 @@ export function updateActorSkillScore(selectedActor, skillLabel, property = "val
 
 /**
  * réinitialise toutes les dépenses d'usure
- * @param {TotemActor} 
+ * @param {VermineActor} 
  * @return {boolean}                   bool 
  */
 export function resetActorSkillUsure(selectedActor) {

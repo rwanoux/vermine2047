@@ -18,14 +18,14 @@
 }
 
 /* custom styles */
-body.system-totem img#logo {
-  content: url("/systems/totem/assets/images/ui/logo_gods_foundry.webp");
+body.system-vermine2047 img#logo {
+  content: url("/systems/vermine2047/assets/images/ui/logo_vermine_foundry.webp");
   height:auto;
 }
 
 /* Customize the chat roll area! */
 #chat-form textarea {
-  background: url(/systems/totem/assets/images/ui/box_background.webp) repeat; 
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp) repeat; 
   /*font-family: monospace; 
   font-size: 14px; 
   color: black; */
@@ -33,7 +33,7 @@ body.system-totem img#logo {
 
 /* Customize the chat history area! */
 #chat-log .message {
-  background: url(/systems/totem/assets/images/ui/box_background.webp) repeat; 
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp) repeat; 
   /*color: #191813; */
 }
 
@@ -72,14 +72,14 @@ ul.unstyled li {
 /* ----------------------------------------- */
 /* Sheet Structure                           */
 /* ----------------------------------------- */
-.system-totem .window-content {
-  background: url(/systems/totem/assets/images/ui/box_background.webp);
+.system-vermine2047 .window-content {
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp);
   padding: 0;
   overflow-y: hidden;
 }
 
-.system-totem .dialog .window-content {
-  background: url(/systems/totem/assets/images/ui/fond_chat_box.webp);
+.system-vermine2047 .dialog .window-content {
+  background: url(/systems/vermine2047/assets/images/ui/fond_chat_box.webp);
   padding: 0;
   overflow-y: hidden;
 }
@@ -98,7 +98,7 @@ ul.unstyled li {
 
 .actor.sheet .form aside {
   grid-row: span 1 / span 1;
-  background-image: url(/systems/totem/assets/images/ui/barre_lateral.webp);
+  background-image: url(/systems/vermine2047/assets/images/ui/barre_laterale.webp);
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 100%;
@@ -137,13 +137,20 @@ ul.unstyled li {
   font-family: "DistressBlack", sans-serif; 
   font-size: 2em;
   text-transform: uppercase;
+  
+}
+
+.actor.sheet .form .characteristics h4 {
+  font-size:1.25rem;
+}
+.actor.sheet .form .tab.stories h4 {
   margin-top:0.875rem;
 }
 
-.system-totem .char-header {
+.system-vermine2047 .char-header {
   font-family: "DistressBlack", sans-serif; 
 }
-.system-totem .char-header section {
+.system-vermine2047 .char-header section {
   display:flex;
   flex-direction: column;
   align-items: flex-start;
@@ -151,11 +158,15 @@ ul.unstyled li {
 
 }
 
-.system-totem .char-header h1.char-name {
-  border-bottom: none;; 
+.system-vermine2047 .char-header h1.char-name {
+  border-bottom: none;
 }
 
-.system-totem .sheet.actor .sheet-body {
+.system-vermine2047 .char-vermine2047 {
+  font-size:1.5rem;
+}
+
+.system-vermine2047 .sheet.actor .sheet-body {
   height: calc(100% - 35px);
   overflow-y: auto;
   overflow-x: hidden;
@@ -165,12 +176,12 @@ ul.unstyled li {
   max-height: 688px;
   padding-bottom:1rem;
 }
-.system-totem .sheet.actor form {
+.system-vermine2047 .sheet.actor form {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.system-totem .sheet.actor form input[type=text], .system-totem .sheet.actor form input[type=number] {
+.system-vermine2047 .sheet.actor form input[type=text], .system-vermine2047 .sheet.actor form input[type=number] {
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   background: none;
@@ -179,48 +190,48 @@ ul.unstyled li {
   color: #333;
   border: 1px solid transparent;
 }
-.system-totem .sheet.actor form input[type=text]:hover:not(:disabled), .system-totem .sheet.actor form input[type=text]:focus, .system-totem .sheet.actor form input[type=number]:hover:not(:disabled), .system-totem .sheet.actor form input[type=number]:focus {
+.system-vermine2047 .sheet.actor form input[type=text]:hover:not(:disabled), .system-vermine2047 .sheet.actor form input[type=text]:focus, .system-vermine2047 .sheet.actor form input[type=number]:hover:not(:disabled), .system-vermine2047 .sheet.actor form input[type=number]:focus {
   border: 1px solid black;
   box-shadow: 0 0 10px #00005a;
 }
-.system-totem .sheet.actor form select {
+.system-vermine2047 .sheet.actor form select {
   font-size: var(--font-size-10);
   height: 18px;
   background: rgba(255, 255, 255, 0.5);
 }
-.system-totem .sheet.actor form label {
+.system-vermine2047 .sheet.actor form label {
   display: block;
 }
-.system-totem .sheet.actor form .mce-panel span {
+.system-vermine2047 .sheet.actor form .mce-panel span {
   display: inherit;
 }
-.system-totem .sheet.actor form.editable .rollable:hover {
+.system-vermine2047 .sheet.actor form.editable .rollable:hover {
   color: #000;
   text-shadow: 0 0 10px #00005a;
   cursor: pointer;
 }
-.system-totem .sheet.actor form .sheet-tabs {
+.system-vermine2047 .sheet.actor form .sheet-tabs {
   font-weight: 500;
   height: 30px;
 }
-.system-totem .sheet.actor form .sheet-tabs > .list-row {
+.system-vermine2047 .sheet.actor form .sheet-tabs > .list-row {
   line-height: 24px;
   padding-top: 3px;
   font-size: var(--font-size-12);
   text-align: center;
 }
-.system-totem .sheet.actor form .sheet-tabs > .list-row:last-of-type {
+.system-vermine2047 .sheet.actor form .sheet-tabs > .list-row:last-of-type {
   padding-right: 4px;
 }
-.system-totem .sheet.actor form .sheet-tabs > .list-row.active {
+.system-vermine2047 .sheet.actor form .sheet-tabs > .list-row.active {
   color: #000;
   font-weight: 700;
 }
-.system-totem .sheet.actor form .tab {
+.system-vermine2047 .sheet.actor form .tab {
   flex: 1;
   overflow: hidden;
 }
-.system-totem .sheet.actor form .tag-legacy {
+.system-vermine2047 .sheet.actor form .tag-legacy {
   float: left;
   margin: 0 2px 2px 0;
   padding: 0 3px;
@@ -235,32 +246,32 @@ ul.unstyled li {
 /* ---------------------------------------- */
 /* Actor Sheet                              */
 /* ---------------------------------------- */
-.system-totem .sheet.actor {
+.system-vermine2047 .sheet.actor {
   min-width: 690px;
   min-height: 800px;
 }
-.system-totem .sheet.actor .sidebar {
+.system-vermine2047 .sheet.actor .sidebar {
   width: 230px;
   min-height:518px;
 }
 
-.system-totem .sheet.actor .floatright {
+.system-vermine2047 .sheet.actor .floatright {
   float: right;
 }
-.system-totem .sheet.actor .sheet-upper {
+.system-vermine2047 .sheet.actor .sheet-upper {
   height: 268px;
 }
-.system-totem .sheet.actor .sheet-upper .sheet-header {
+.system-vermine2047 .sheet.actor .sheet-upper .sheet-header {
   height: 48px;
 }
-.system-totem .sheet.actor .sheet-upper .sheet-profile, .system-totem .sheet.actor .sheet-upper .sheet-showcase {
+.system-vermine2047 .sheet.actor .sheet-upper .sheet-profile, .system-vermine2047 .sheet.actor .sheet-upper .sheet-showcase {
   height: 220px;
 }
 
-.system-totem .sheet.actor .sheet-content {
+.system-vermine2047 .sheet.actor .sheet-content {
   padding:4px;
 }
-.system-totem .sheet.actor .sheet-sidebar {
+.system-vermine2047 .sheet.actor .sheet-sidebar {
   height: calc(100% - 48px);
   display: flex;
   flex-direction: column;
@@ -268,32 +279,32 @@ ul.unstyled li {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.system-totem .sheet.actor .sheet-sidebar > * {
+.system-vermine2047 .sheet.actor .sheet-sidebar > * {
   flex: 1;
 }
-.system-totem .sheet.actor .sheet-sidebar .sidebar-summary {
+.system-vermine2047 .sheet.actor .sheet-sidebar .sidebar-summary {
   overflow-y: hidden;
 }
-.system-totem .sheet.actor.npc-sheet .sheet-upper {
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-upper {
   height: 220px;
 }
-.system-totem .sheet.actor.npc-sheet .sheet-upper .sheet-showcase {
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-upper .sheet-showcase {
   height: 172px;
 }
-.system-totem .sheet.actor.npc-sheet .sheet-lower {
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-lower {
   height: calc(100% - 220px - 32px);
 }
-.system-totem .sheet.actor.npc-sheet section.sheet-body {
+.system-vermine2047 .sheet.actor.npc-sheet section.sheet-body {
   height: calc(100% - 48px);
 }
-.system-totem .sheet.actor .sheet-navigation {
+.system-vermine2047 .sheet.actor .sheet-navigation {
   border-top: 1px solid var(--secondary-background);
   border-bottom: 1px solid var(--primary-background);
 }
-.system-totem .sheet.actor .sheet-navigation .sheet-tabs > .list-row {
+.system-vermine2047 .sheet.actor .sheet-navigation .sheet-tabs > .list-row {
   border-radius: 5px 5px 0 0;
 }
-.system-totem .sheet.actor .sheet-navigation .sheet-tabs > .list-row.active {
+.system-vermine2047 .sheet.actor .sheet-navigation .sheet-tabs > .list-row.active {
   border: 1px solid #666;
   border-bottom: none;
   /* box-shadow: 0 0 10px inset #ff6400;
@@ -325,6 +336,6 @@ ul.unstyled li {
   transition: all 0.1s ease-out;
 }
 
-.system-totem .sheet.actor form nav.sheet-navigation.sheet-tabs {
+.system-vermine2047 .sheet.actor form nav.sheet-navigation.sheet-tabs {
   height:54px;
 }

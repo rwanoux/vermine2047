@@ -2,21 +2,21 @@ import { registerHooks } from "./system/hooks.mjs";
 import { registerSettings } from "./system/settings.mjs";
 
 // Import document classes.
-import { TotemActor } from "./documents/actor.mjs";
+import { VermineActor } from "./documents/actor.mjs";
 
-import { TotemCharacterSheet } from "./sheets/character-sheet.mjs";
-import { TotemNpcSheet } from "./sheets/npc-sheet.mjs";
-import { TotemCreatureSheet } from "./sheets/creature-sheet.mjs";
+import { VermineCharacterSheet } from "./sheets/character-sheet.mjs";
+import { VermineNpcSheet } from "./sheets/npc-sheet.mjs";
+import { VermineCreatureSheet } from "./sheets/creature-sheet.mjs";
 
-import { TotemItem } from "./documents/item.mjs";
-import { TotemItemSheet } from "./sheets/item-sheet.mjs";
+import { VermineItem } from "./documents/item.mjs";
+import { VermineItemSheet } from "./sheets/item-sheet.mjs";
 
-import { TotemRoll } from "./system/roll.mjs";
-import { TotemCombat } from "./system/fight.mjs";
+import { VermineRoll } from "./system/roll.mjs";
+import { VermineCombat } from "./system/fight.mjs";
 
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
-import { TOTEM } from "./system/config.mjs";
+import { VERMINE } from "./system/config.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -26,15 +26,15 @@ Hooks.once('init', async function() {
 
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
-  game.totem = {
-    TotemActor,
-    TotemItem,
-    TotemRoll,
-    TotemCombat
+  game.vermine2047 = {
+    VermineActor,
+    VermineItem,
+    VermineRoll,
+    VermineCombat
   };
 
   // Add custom constants for configuration.
-  CONFIG.TOTEM = TOTEM;
+  CONFIG.VERMINE = VERMINE;
 
   /**
    * Set an initiative formula for the system
@@ -46,27 +46,27 @@ Hooks.once('init', async function() {
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = TotemActor;
-  CONFIG.Item.documentClass = TotemItem;
+  CONFIG.Actor.documentClass = VermineActor;
+  CONFIG.Item.documentClass = VermineItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet('totem', TotemCharacterSheet, {
+  Actors.registerSheet('vermine2047', VermineCharacterSheet, {
       types: ['character'],
       makeDefault: true,
     });
 
-  Actors.registerSheet('totem', TotemNpcSheet, {
+  Actors.registerSheet('vermine2047', VermineNpcSheet, {
       types: ['npc'],
       makeDefault: true,
     });
 
-  Actors.registerSheet('totem', TotemCreatureSheet, {
+  Actors.registerSheet('vermine2047', VermineCreatureSheet, {
     types: ['creature'],
     makeDefault: true,
   }); // Register vehicle Sheet
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("totem", TotemItemSheet, { makeDefault: true });
+  Items.registerSheet("vermine2047", VermineItemSheet, { makeDefault: true });
 
   registerHandlebarsHelpers(); // Register Handlebars helpers
   registerHooks(); // register Hooks

@@ -4,13 +4,13 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/eff
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class TotemActorSheet extends ActorSheet {
+export class VermineActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["totem", "sheet", "actor"],
-      template: "systems/totem/templates/actor/actor-sheet.html",
+      classes: ["vermine2047", "sheet", "actor"],
+      template: "systems/vermine2047/templates/actor/actor-sheet.html",
       height: 820,
       width: 690,
       resizable: false,
@@ -20,7 +20,7 @@ export class TotemActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/totem/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/vermine2047/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */
@@ -39,7 +39,7 @@ export class TotemActorSheet extends ActorSheet {
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = actorData.system;
     context.flags = actorData.flags;
-    context.config = CONFIG.TOTEM;
+    context.config = CONFIG.VERMINE;
     
     // Prepare character data and items.
     if (actorData.type == 'character') {
@@ -176,7 +176,7 @@ export class TotemActorSheet extends ActorSheet {
     context.traumas = traumas;
     context.backgrounds = backgrounds;
     context.rumors = rumors;
-    console.log("context", context);
+    // console.log("context", context);
   }
 
 

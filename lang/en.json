@@ -1,13 +1,13 @@
 {
-  "TOTEM.WorldSettings.GameMode.Name":"Choix du mode de jeu",
-  "TOTEM.WorldSettings.GameMode.Hint":"À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers.",
+  "VERMINE.WorldSettings.GameMode.Name":"Choix du mode de jeu",
+  "VERMINE.WorldSettings.GameMode.Hint":"À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers.",
   "GAME_MODES": {
     "heroic": { "name": "Héroique"},
     "epic": { "name": "Epique"},
     "legendary": { "name": "Légendaire"}
   },
-  "TOTEM.roll_tool": "Lanceur de dés",
-  "TOTEM.roll_dice": "Jeter les dés",
+  "VERMINE.roll_tool": "Lanceur de dés",
+  "VERMINE.roll_dice": "Jeter les dés",
   "IDENTITY": {
     "name": "Nom",
     "height": "Taille",
@@ -24,7 +24,7 @@
     "relations": "Relations",
     "notes": "Notes"
   },
-  "TOTEM": {
+  "VERMINE": {
     "stats": "Statistiques",
     "level": "Niveau",
     "experience": "Expérience",
@@ -85,18 +85,18 @@
     "empathy":{ "name": "Empathie"}  
   },
 
-  "TOTEM.effect_treate": "Create Effect",
-  "TOTEM.effect_toggle": "Toggle Effect",
-  "TOTEM.effect_edit": "Edit Effect",
-  "TOTEM.effect_delete": "Delete Effect",
+  "VERMINE.effect_treate": "Create Effect",
+  "VERMINE.effect_toggle": "Toggle Effect",
+  "VERMINE.effect_edit": "Edit Effect",
+  "VERMINE.effect_delete": "Delete Effect",
 
-  "TOTEM.Add": "Add",
+  "VERMINE.Add": "Add",
 
-  "TOTEM.skill_level.beginner": "Débutant",
-  "TOTEM.skill_level.proficient": "Confirmé",
-  "TOTEM.skill_level.expert": "Expert",
-  "TOTEM.skill_level.master": "Maître",
-  "TOTEM.skill_level.legend": "Légende",
+  "VERMINE.skill_level.beginner": "Débutant",
+  "VERMINE.skill_level.proficient": "Confirmé",
+  "VERMINE.skill_level.expert": "Expert",
+  "VERMINE.skill_level.master": "Maître",
+  "VERMINE.skill_level.legend": "Légende",
   
   "TOTEMS": {
     "human": { "name": "L'Humain", "number":1},
@@ -158,6 +158,6 @@
     "ruins": { "name": "Vestiges"}
   },
 
-  "TOTEM.sexes.male":"Masculin",
-  "TOTEM.sexes.female":"Féminin"
+  "VERMINE.sexes.male":"Masculin",
+  "VERMINE.sexes.female":"Féminin"
 }
