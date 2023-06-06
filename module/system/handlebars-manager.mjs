@@ -21,6 +21,12 @@
     "systems/vermine2047/templates/actor/parts/actor-stories.hbs",
     "systems/vermine2047/templates/actor/parts/actor-effects.html",
 
+    // Group partials
+    "systems/vermine2047/templates/actor/parts/group-vehicles.hbs",
+    "systems/vermine2047/templates/actor/parts/group-info.hbs",
+    "systems/vermine2047/templates/actor/parts/group-items.hbs",
+    "systems/vermine2047/templates/actor/parts/group-experience.hbs",
+
     // additional templates
     "systems/vermine2047/templates/roll.hbs",
   ]);

@@ -48,7 +48,17 @@ export class VermineActorSheet extends ActorSheet {
 
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
-      this._prepareItems(context);
+      this._prepareNpcItems(context);
+    }
+
+    // Prepare Group data and items.
+    if (actorData.type == 'group') {
+      this._prepareGroupItems(context);
+    }
+
+   // Prepare Creature data and items.
+    if (actorData.type == 'npc') {
+      this._prepareCreatureItems(context);
     }
 
     // Add roll data for TinyMCE editors.
@@ -180,6 +190,116 @@ export class VermineActorSheet extends ActorSheet {
   }
 
 
+  /**
+   * Organize and classify Items for Npc sheets.
+   *
+   * @param {Object} actorData The actor to prepare.
+   *
+   * @return {undefined}
+   */
+  _prepareNpcItems(context) {
+    // Initialize containers.
+    const gear = [];
+    const traits = [];
+
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to gear.
+      if (i.type === 'item') {
+        gear.push(i);
+      }
+      else if (i.type === 'trait') {
+        traits.push(i);
+      }
+
+
+    }
+
+    // Assign and return
+    context.gear = gear;
+
+  }
+
+
+  /**
+   * Organize and classify Items for Group sheets.
+   *
+   * @param {Object} actorData The actor to prepare.
+   *
+   * @return {undefined}
+   */
+  _prepareGroupItems(context) {
+    // Initialize containers.
+    const gear = [];
+    const defenses = [];
+    const abilities = [];
+    const weapons = [];
+    const vehicles = [];
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to gear.
+      if (i.type === 'item') {
+        gear.push(i);
+      }
+      else if (i.type === 'defense') {
+        defenses.push(i);
+      }
+      else if (i.type === 'weapon') {
+        weapons.push(i);
+      }
+      else if (i.type === 'ability') {
+        abilities.push(i);
+      }
+      else if (i.type === 'vehicle') {
+        vehicles.push(i);
+      }
+
+
+    }
+
+    // Assign and return
+    context.gear = gear;
+    context.weapons = weapons;
+    context.defenses = defenses;
+    context.abilities = abilities;
+    context.vehicles = vehicles;
+  }
+
+  /**
+   * Organize and classify Items for Creature sheets.
+   *
+   * @param {Object} actorData The actor to prepare.
+   *
+   * @return {undefined}
+   */
+  _prepareCreatureItems(context) {
+    // Initialize containers.
+    const gear = [];
+    const traits = [];
+
+
+    // Iterate through items, allocating to containers
+    for (let i of context.items) {
+      i.img = i.img || DEFAULT_TOKEN;
+      // Append to gear.
+      if (i.type === 'item') {
+        gear.push(i);
+      }
+      else if (i.type === 'trait') {
+        traits.push(i);
+      }
+
+
+    }
+
+    // Assign and return
+    context.gear = gear;
+
+  }
   async _onItemCreate(event) {
     event.preventDefault();
     const header = event.currentTarget;

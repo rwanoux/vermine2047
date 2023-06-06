@@ -143,6 +143,8 @@ ul.unstyled li {
 .actor.sheet .form .characteristics h4 {
   font-size:1.25rem;
 }
+
+.actor.sheet .form .tab.totem h4,
 .actor.sheet .form .tab.equipment h4,
 .actor.sheet .form .tab.stories h4 {
   margin-top:0.875rem;

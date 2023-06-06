@@ -68,7 +68,12 @@
     "traits": "Traits",
     "clew": "Indice",
     "combat": "Combat",
-    "stories": "Histoires"
+    "stories": "Histoires",
+    "gear": "Matériel",
+    "information": "Informations",
+    "boost": "boost",
+    "group_abilities": "Capacités de groupe",
+    "totem_abilities": "Capacités de totem"
   },
   "ITEMS": {
     "defense": "Protection",
@@ -83,7 +88,8 @@
     "abilities": "Capacités",
     "specialties": "Spécialités",
     "evolution": "Adaptation",
-    "evolutions": "Adaptations"
+    "evolutions": "Adaptations",
+    "vehicles": "Véhicules"
   },
   "ABILITIES": {
     "vigor": { "name": "Vigueur"},

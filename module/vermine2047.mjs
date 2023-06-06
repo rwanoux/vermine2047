@@ -6,6 +6,7 @@ import { VermineActor } from "./documents/actor.mjs";
 
 import { VermineCharacterSheet } from "./sheets/character-sheet.mjs";
 import { VermineNpcSheet } from "./sheets/npc-sheet.mjs";
+import { VermineGroupSheet } from "./sheets/npc-group.mjs";
 import { VermineCreatureSheet } from "./sheets/creature-sheet.mjs";
 
 import { VermineItem } from "./documents/item.mjs";
@@ -63,6 +64,11 @@ Hooks.once('init', async function() {
 
   Actors.registerSheet('vermine2047', VermineCreatureSheet, {
     types: ['creature'],
+    makeDefault: true,
+  }); // Register vehicle Sheet
+
+  Actors.registerSheet('vermine2047', VermineGroupSheet, {
+    types: ['group'],
     makeDefault: true,
   }); // Register vehicle Sheet
   Items.unregisterSheet("core", ItemSheet);

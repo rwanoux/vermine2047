@@ -9,12 +9,12 @@ export const registerHooks = function () {
     });
 
     // changement de la pause 
-    /*Hooks.on("renderPause", async function () {
+    Hooks.on("renderPause", async function () {
         if ($("#pause").attr("class") !== "paused") return;
         $(".paused img").attr("src", 'systems/vermine2047/assets/images/ui/vermine_pause.webp');
         $(".paused img").css({ "opacity": 1});
         $("#pause.paused figcaption").text("Communauté endormie...");
-    });*/
+    });
 
     // Hooks.on('renderChatLog', (log, html, data) => VermineFight.chatListeners(html));
     // Hooks.on('renderChatMessage', (message, html, data) => VermineFight.chatMessageHandler(message, html, data));
