@@ -249,7 +249,12 @@ ul.unstyled li {
 /* ---------------------------------------- */
 /* Actor Sheet                              */
 /* ---------------------------------------- */
-.system-vermine2047 .sheet.actor {
+.system-vermine2047 .sheet.actor .window-resizable-handle {
+  bottom:-30px;
+}
+
+.system-vermine2047 .sheet.actor,
+.system-vermine2047 .sheet.actor .window-content {
   min-width: 690px;
   min-height: 800px;
 }

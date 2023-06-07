@@ -11,7 +11,7 @@ export class VermineActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "actor"],
       template: "systems/vermine2047/templates/actor/actor-sheet.html",
-      height: 820,
+      height: 800,
       width: 690,
       resizable: false,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
