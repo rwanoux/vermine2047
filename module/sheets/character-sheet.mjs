@@ -156,6 +156,9 @@ export class VermineCharacterSheet extends VermineActorSheet {
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
+    // test print dice
+    // html.find(".skill").change(ev => this.printSkillLevels(ev, this.actor));
+
     // Rollable abilities.
     html.find('.rollable').click(this._onRoll.bind(this));
 
@@ -169,6 +172,17 @@ export class VermineCharacterSheet extends VermineActorSheet {
       });
     }
   }
+
+  /*printSkillLevels(event){
+    const newLevel = event.target.value;
+    const levelData = CONFIG.VERMINE.SkillLevels[newLevel] || null;
+    if (levelData != null){
+      console.log(/*levelData.dicePool, levelData.reroll, game.i18n.localize(levelData.label), * /$(event.target).parent().find('.die.pool').get(0), $(event.target).parent().find('.die.reroll').get(0));
+      $(event.target).parent().find('.die.pool').text(levelData.dicePool);
+      $(event.target).parent().find('.die.reroll').text(levelData.reroll);
+    }
+    
+  } */
 
   /**
    * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset

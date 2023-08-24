@@ -347,3 +347,25 @@ ul.unstyled li {
 .system-vermine2047 .sheet.actor form nav.sheet-navigation.sheet-tabs {
   height:54px;
 }
+
+.system-vermine2047 .sheet.actor .ability .die {
+  display:flex;
+  width:0.875rem;
+  height:1rem;
+  background-image:url(../../../../icons/svg/d10-grey.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size:xx-small;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.system-vermine2047 .sheet.actor .ability .die.pool {
+  filter: sepia(0.5) hue-rotate(60deg);
+}
+
+.system-vermine2047 .sheet.actor .ability .die.reroll {
+  filter: sepia(0.5) hue-rotate(-60deg);
+}

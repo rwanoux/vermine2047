@@ -24,9 +24,11 @@
     
     {{#if (eq skill.category sckey) }}                       
       <div class="ability flexrow flex-group-center">
-        <label style="flex:80%;" for="system.skills.{{skey}}.value" class="resource-label rollable flexlarge align-left" data-roll="+@skills.{{skey}}d10" data-label="{{ smarttl "SKILLS" skey }}">{{ smarttl "SKILLS" skey }} 
-          {{#if (eq skill.rarity 1)}}<sup>*</sup>{{/if}}{{#if (eq skill.rarity 2)}}<sup>**</sup>{{/if}}</label>
-        <input type="text" name="system.skills.{{skey}}.value" value="{{skill.value}}" data-dtype="Number"/>
+        <label style="flex:60%;" for="system.skills.{{skey}}.value" class="resource-label rollable flexlarge align-left" data-roll="+@skills.{{skey}}d10" data-label="{{ smarttl "SKILLS" skey }}">{{ smarttl "SKILLS" skey }} 
+          {{#if (eq skill.rarity 1)}}<sup>(I)</sup>{{/if}}{{#if (eq skill.rarity 2)}}<sup>(II)</sup>{{/if}}</label>
+            <span class="die d10 pool" title="pool">{{ skillLevel "dicePool" skill.value }}</span>
+            <span class="die d10 reroll" title="reroll">{{ skillLevel "reroll" skill.value }}</span>  
+        <input type="text" name="system.skills.{{skey}}.value" value="{{skill.value}}" class="skill" data-dtype="Number"/>
       </div>
       {{/if}}
     {{/each}}

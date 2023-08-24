@@ -45,4 +45,13 @@ export const registerHandlebarsHelpers = function () {
   Handlebars.registerHelper('smarttl', function (arrayLabel,objectLabel, options) {
     return game.i18n.localize(arrayLabel +"."+objectLabel+".name");
   });
+
+    // return skill level information
+    Handlebars.registerHelper('skillLevel', function (property, level, options) {
+      if (level < 1 || level > 5) 
+        return "";
+      let levelData = CONFIG.VERMINE.SkillLevels[level];
+      
+      return (levelData !== undefined) ? levelData[property] : "";
+    });
 }

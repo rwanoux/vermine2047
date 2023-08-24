@@ -11,8 +11,7 @@ VERMINE.SkillLevels = {
   2:{ "label":"VERMINE.skill_level.proficient", "dicePool":1, "reroll":1},
   3:{ "label":"VERMINE.skill_level.expert", "dicePool":2, "reroll":1},
   4:{ "label":"VERMINE.skill_level.master", "dicePool":2, "reroll":2},
-  5:{ "label":"VERMINE.skill_level.archmaster", "dicePool":3, "reroll":2},
-  5:{ "label":"VERMINE.skill_level.legend", "dicePool":3, "reroll":3},
+  5:{ "label":"VERMINE.skill_level.legend", "dicePool":3, "reroll":2}
 }
 
 VERMINE.Instincts = {
@@ -67,16 +66,18 @@ VERMINE.skillCategories = {
 
 VERMINE.sexes = {"male": "VERMINE.sexes.male", "female": "VERMINE.sexes.female"};
 
-VERMINE.totems = {"human":"TOTEMS.human.name",
-"predator": "TOTEMS.predator.name" ,
-"scavenger": "TOTEMS.scavenger.name" ,
-"symbiote": "TOTEMS.symbiote.name" ,
-"parasite": "TOTEMS.parasite.name" ,
-"builder": "TOTEMS.builder.name" ,
-"horde": "TOTEMS.horde.name" ,
-"hive": "TOTEMS.hive.name" ,
-"loner": "TOTEMS.loner.name",
-"adapted": "TOTEMS.adapted.name" }
+VERMINE.totems = {
+  "human":"TOTEMS.human.name",
+  "predator": "TOTEMS.predator.name" ,
+  "scavenger": "TOTEMS.scavenger.name" ,
+  "symbiote": "TOTEMS.symbiote.name" ,
+  "parasite": "TOTEMS.parasite.name" ,
+  "builder": "TOTEMS.builder.name" ,
+  "horde": "TOTEMS.horde.name" ,
+  "hive": "TOTEMS.hive.name" ,
+  "loner": "TOTEMS.loner.name",
+  "adapted": "TOTEMS.adapted.name" 
+}
 
 VERMINE.origins = {"aon":"Aon",
 "avhorae": "Avhorae" ,
