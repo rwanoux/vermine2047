@@ -18,8 +18,10 @@
     "epic": { "name": "Epique"},
     "legendary": { "name": "Légendaire"}
   },
-  "VERMINE.roll_tool": "Lanceur de dés",
-  "VERMINE.roll_dice": "Jeter les dés",
+  "ROLLS": {
+    "tool": "Lanceur de dés",
+    "roll_dice": "Jeter les dés"
+  },  
   "TOURS": {
     "ChatMessage": "<h3>Bienvenue dans Vermine!</h3><p>Si vous utilisez ce système pour la première fois, notre shaman va vous guider vers votre rite d'initiation</p> <button id=\"vermine-tour-chat-button\"> <i class=\"fas fa-person-hiking\"></i> J'y vais mais j'ai peur </button>",
     "Welcome": {
@@ -38,6 +40,13 @@
       "ToursTitle": "Prochaines étapes",
       "ToursContent": "<p>Tu t'en sors pas si mal ! Moi je vais te laisser là, mais si tu as d'autres questions, tu peux venir me trouver. Si ca concerne la mécanique, inscris-toi dans notre groupe de parole, par là <a href=\"https://discord.gg/FqGHYvXg\">Totem Foundry Discord</a>. Sinon, tu peux rejoindre la place centrale par ici <a href=\"https://discord.gg/qejqmSxr\">Vermine Discord</a></p><p>Enjoy!</p>"
     }
+  },
+  "DIFFICULTY_LEVELS": {
+    "obvious": "Evidente",
+    "easy": "Facile",
+    "hard": "Difficile",
+    "very_hard": "Très difficile",
+    "impossible": "Impossible"
   },
   "ATTITUDES": {
     "offensive": { "name": "Offensif"},

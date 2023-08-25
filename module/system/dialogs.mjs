@@ -38,11 +38,11 @@
   export const getRollBox = async function(data) {
     let html = await renderTemplate('systems/vermine2047/templates/roll.hbs', data);
     let ui = new Dialog({
-      title: game.i18n.localize("VERMINE.roll_tool"),
+      title: game.i18n.localize("ROLLS.tool"),
       content: html,
       buttons: {
         roll: {
-          label: game.i18n.localize('VERMINE.roll_dice'),
+          label: game.i18n.localize('ROLLS.roll_dice'),
           callback: (html) => {
             let form = html.find('#dice-pool-form');
             if (!form[0].checkValidity()) {

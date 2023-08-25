@@ -14,6 +14,14 @@ VERMINE.SkillLevels = {
   5:{ "label":"VERMINE.skill_level.legend", "dicePool":3, "reroll":2}
 }
 
+VERMINE.DifficultyLevels = {
+  1:{ "label":"DIFFICULTY_LEVELS.obvious", "difficulty":3},
+  2:{ "label":"DIFFICULTY_LEVELS.easy", "difficulty":5},
+  3:{ "label":"DIFFICULTY_LEVELS.hard", "difficulty":7},
+  4:{ "label":"DIFFICULTY_LEVELS.very_hard", "difficulty":9},
+  5:{ "label":"DIFFICULTY_LEVELS.impossible", "difficulty":10}
+},
+
 VERMINE.Instincts = {
   1:{ "key":"architect"},
   2:{ "key":"sword"},

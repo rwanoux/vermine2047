@@ -1,9 +1,21 @@
 <form id="dice-pool-form" class="ecryme-dv-form" data-actor-id="{{ speakerId }}">
+  
   <div class="dice-pool flexcol">
     <div class="flexrow row">
-      <label class="label" style="flex: 80%;">{{localize 'VERMINE.difficulty'}}</label>
+      <label class="label" style="flex: 60%;">{{localize 'VERMINE.difficulty'}}</label>
+      <select class="info-value" style="max-width: 40%;" name="system.skill" data-dtype="String" type="number" name="difficulty" value="7" id="difficulty" min="3" max="10">
+        {{#select difficulty }}
+          <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 1}} - {{ diffLevel 'difficulty' 1}}</option>
+          <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 2}} - {{ diffLevel 'difficulty' 2}}</option>
+          <option value="{{ diffLevel 'difficulty' 1}}" selected>{{ diffLevel 'label' 3}} - {{ diffLevel 'difficulty' 3}}</option>
+          <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 4}} - {{ diffLevel 'difficulty' 4}}</option>
+          <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 5}} - {{ diffLevel 'difficulty' 5}}</option>
+        {{/select}}
+    </select>
+    </div>
+    <!--div class="flexrow row">      
       <input style="text-align: center;" class="numeric-entry" type="number" name="difficulty" value="7" id="difficulty" min="3" max="10">
-    </div>   
+    </div-->   
     <div class="flexrow row">
       <label class="label" style="flex: 80%;">{{localize 'VERMINE.ability'}}</label>
       <input type="number" class="numeric-entry" style="text-align: center;" name="ability" id="ability" min="1" max="5" value="2">
