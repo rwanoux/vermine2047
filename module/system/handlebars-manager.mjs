@@ -46,12 +46,18 @@ export const registerHandlebarsHelpers = function () {
     return game.i18n.localize(arrayLabel +"."+objectLabel+".name");
   });
 
-    // return skill level information
-    Handlebars.registerHelper('skillLevel', function (property, level, options) {
-      if (level < 1 || level > 5) 
-        return "";
-      let levelData = CONFIG.VERMINE.SkillLevels[level];
-      
-      return (levelData !== undefined) ? levelData[property] : "";
-    });
+  // return skill level information
+  Handlebars.registerHelper('skillLevel', function (property, level, options) {
+    if (level < 1 || level > 5) 
+      return "";
+    let levelData = CONFIG.VERMINE.SkillLevels[level];
+    
+    return (levelData !== undefined) ? levelData[property] : "";
+  });
+
+  Handlebars.registerHelper('getCombatTrackerColor', function (isPlayer, isNpc) {
+      if (isPlayer) return "player";
+      if (isNpc) return "npc";
+  });
+  
 }

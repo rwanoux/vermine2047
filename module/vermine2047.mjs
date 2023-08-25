@@ -13,7 +13,7 @@ import { VermineItem } from "./documents/item.mjs";
 import { VermineItemSheet } from "./sheets/item-sheet.mjs";
 
 import { VermineRoll } from "./system/roll.mjs";
-import { VermineCombat } from "./system/fight.mjs";
+import { VermineCombat, VermineCombatTracker } from "./system/fight.mjs";
 
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
@@ -42,13 +42,14 @@ Hooks.once('init', async function() {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "1d10 + @abilities.dex.mod",
+    formula: "(@abilities.reflexes.value + @skills.alertness.value)d10cs>=7",
     decimals: 2
   };
 
   // Define custom Document classes
   CONFIG.Actor.documentClass = VermineActor;
   CONFIG.Item.documentClass = VermineItem;
+  CONFIG.ui.combat = VermineCombatTracker;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);

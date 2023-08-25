@@ -39,6 +39,11 @@
       "ToursContent": "<p>Tu t'en sors pas si mal ! Moi je vais te laisser là, mais si tu as d'autres questions, tu peux venir me trouver. Si ca concerne la mécanique, inscris-toi dans notre groupe de parole, par là <a href=\"https://discord.gg/FqGHYvXg\">Totem Foundry Discord</a>. Sinon, tu peux rejoindre la place centrale par ici <a href=\"https://discord.gg/qejqmSxr\">Vermine Discord</a></p><p>Enjoy!</p>"
     }
   },
+  "ATTITUDES": {
+    "offensive": { "name": "Offensif"},
+    "active": { "name": "Actif"},
+    "passive": { "name": "Passif"}
+  },
 
   "IDENTITY": {
     "name": "Nom",
