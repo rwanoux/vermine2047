@@ -1,4 +1,16 @@
 {
+  "SETTINGS": {
+    "world": {
+      "game_mode": {
+        "name":"Choix du mode de jeu",
+        "hint":"À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers."
+      },
+      "first_run": {
+        "name":"Affichage du tour d'accueil",
+        "hint":"Pour aider les débutantEs à bien commencer avec le système Vermine 2047."
+      }
+    }
+  },
   "VERMINE.WorldSettings.GameMode.Name":"Choix du mode de jeu",
   "VERMINE.WorldSettings.GameMode.Hint":"À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers.",
   "GAME_MODES": {
@@ -8,6 +20,26 @@
   },
   "VERMINE.roll_tool": "Lanceur de dés",
   "VERMINE.roll_dice": "Jeter les dés",
+  "TOURS": {
+    "ChatMessage": "<h3>Bienvenue dans Vermine!</h3><p>Si vous utilisez ce système pour la première fois, notre shaman va vous guider vers votre rite d'initiation</p> <button id=\"vermine-tour-chat-button\"> <i class=\"fas fa-person-hiking\"></i> J'y vais mais j'ai peur </button>",
+    "Welcome": {
+      "Title": "Bienvenue dans Vermine",
+      "Description": "Aperçu du système Vermine",
+      "WelcomeTitle": "Bienvenue",
+      "WelcomeContent": "<p>Bienvenue dans Vermine, survivantE ! Faire le tour de notre zone d'action te permettre de retrouver tes marques, même si c'est ton premier jour parmi nous.</p><p>En haut de la colonne de droite, tu as tout ce que tu as le droit de faire chez nous : parler, voir les autres tronches de ta commu, gérer ton matos et celui de tes potes, étudier les cartes, lire les journaux des clamsés, aller nous chercher de la bouffe à coups de surin. Entrons dans le vif du sujet.</p>",
+      "ActorTabTitle": "Peupler son univers",
+      "ActorTabContent": "<p>Bien installéE, survivantE ? Tournons pas au tour du pot, si tu veux rester avec nous, va falloir nous dire qui tu es, d'où tu viens, et à qui tu fais confiance. Une fois que t'es prêtE pour ca, clique donc sur le bouton \"Créer un acteur\"</p>",
+      "CharacterCreateTitle": "Créer un groupe",
+      "CharacterCreateContent": "<p>Ce bouton crée une fiche de groupe, parce que c'est par là qu'on commence, dans ce trou ! Ta tronche viendra ensuite, quand tu créeras ta fiche de personnage. Au fur et à mesure que tu progresses, tu voudras peut-être rajouter des infos sur ce que tu vois trainer autour du camp.</p>",
+      "CompendiumTitle": "Cartes",
+      "CompendiumContent": "<p>Vous aurez probablement besoin d'une carte des Terres de Fer ou d'un secteur de la Forge. Vous pouvez créer votre propre scène pour cela, ou vous pouvez utiliser l'une des nôtres. Ouvrez l'un de ces compendiums et faites glisser une carte dans votre zone de scènes (l'onglet qui ressemble à une carte pliée).</p>",
+      "OracleToolTitle": "Totem",
+      "OracleToolContent": "<p>Aucune partie d'Vermine ou Starforged ne serait complète sans oracles. Ce bouton fera apparaître une fenêtre avec tous les oracles du jeu choisi. Les oracles sont également disponibles depuis la fiche de personnage.</p>",
+      "ToursTitle": "Prochaines étapes",
+      "ToursContent": "<p>Tu t'en sors pas si mal ! Moi je vais te laisser là, mais si tu as d'autres questions, tu peux venir me trouver. Si ca concerne la mécanique, inscris-toi dans notre groupe de parole, par là <a href=\"https://discord.gg/FqGHYvXg\">Totem Foundry Discord</a>. Sinon, tu peux rejoindre la place centrale par ici <a href=\"https://discord.gg/qejqmSxr\">Vermine Discord</a></p><p>Enjoy!</p>"
+    }
+  },
+
   "IDENTITY": {
     "name": "Nom",
     "height": "Taille",
@@ -25,6 +57,7 @@
     "notes": "Notes"
   },
   "VERMINE": {
+    "name": "Vermine",
     "stats": "Statistiques",
     "level": "Niveau",
     "experience": "Expérience",
@@ -73,7 +106,11 @@
     "information": "Informations",
     "boost": "boost",
     "group_abilities": "Capacités de groupe",
-    "totem_abilities": "Capacités de totem"
+    "totem_abilities": "Capacités de totem",
+    "type_group": "Groupe",
+    "type_character": "Personnage",
+    "type_npc": "PNJ",
+    "type_creature": "Créature"
   },
   "ITEMS": {
     "defense": "Protection",

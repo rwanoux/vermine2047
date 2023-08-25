@@ -1,3 +1,4 @@
+import { registerTours } from "./tour.mjs";
 
 export const registerHooks = function () {
     /**
@@ -6,6 +7,7 @@ export const registerHooks = function () {
 
     Hooks.once("ready", async () => {
         console.info("Vermine 2047 | System Initialized.");
+        await registerTours();
     });
 
     // changement de la pause 
@@ -58,7 +60,7 @@ export const registerHooks = function () {
     
     Hooks.on("preCreateItem", function (item) {
         if (item.img == "icons/svg/item-bag.svg") {
-        item.updateSource({"img": `systems/vermine2047/icons/items/${item.type}.webp`});
+        item.updateSource({"img": `systems/vermine2047/assets/icons/items/${item.type}.webp`});
         // item.updateSource({"img": `systems/vermine2047/icons/competence.webp`});
         }
     });

@@ -1,0 +1,28 @@
+{{#*inline "createBox"}}
+<div
+  {{#if id}}id="{{id}}"{{/if}}
+  class="flexrow box clickable block ironsworn__{{type}}__create"
+  style="align-items: center; padding: 1rem;"
+  data-img="{{img}}"
+>
+  <div class="flexcol" style="align-items: center;">
+    <img src="{{img}}" width="75" height="75" alt="">
+    <h4 style="margin: 0.1rem 0;">{{localize labelkey}}</h4>
+  </div>
+</div>
+{{/inline}}
+
+<form class='{{cssClass}} flexcol' autocomplete='off'>
+  <div class="flexcol">
+    <div class="flexrow boxrow">
+      {{>createBox type="group" id="new-group" labelkey="VERMINE.type_group" img="icons/environment/settlement/wagon-black.webp"}}
+      {{>createBox type="character" labelkey="VERMINE.type_character" img="icons/creatures/eyes/human-single-blue.webp"}}
+      {{>createBox type="npc" labelkey="VERMINE.type_npc" img="icons/environment/wilderness/cave-entrance-vulcano.webp"}}
+      {{>createBox type="creature" labelkey="VERMINE.type_creature" img="icons/creatures/eyes/lizard-single-slit-pink.webp"}}
+    </div>
+  </div>
+
+  {{#if sfenabled}}
+  {{/if}}
+  </div>
+</form>
