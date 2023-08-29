@@ -53,25 +53,17 @@
               formData[item.name] = item.value;
             });
             // console.log("roll form data", formData);
-            let NoD = parseInt(formData.ability,10);
+            let NoD = parseInt(formData.abilityScore,10);
             let Reroll = 0;
             // difficulty
             data.difficulty = (formData.difficulty != undefined) ? formData.difficulty : 7; 
             // maîtrise bonus
-            // TODO : utiliser la configuration des niveaux de compétences plutôt
-            if (formData.skill > 0 && formData.skill < 3){
-              NoD += 1;
-            } else if (formData.skill > 2 && formData.skill < 5){  
-              NoD += 2;
-            } else if (formData.skill > 4){    
-              NoD += 3;
+            if (formData.rollType == 'skill'){
+              NoD += CONFIG.VERMINE.SkillLevels[formData.skillScore].dicePool || 0;
+              Reroll += CONFIG.VERMINE.SkillLevels[formData.skillScore].reroll || 0;
             }
-            // maîtrise relance
-            if (formData.skill > 1 && formData.skill < 4){
-              Reroll += 1;
-            } else if (formData.skill > 3){    
-              Reroll += 2;
-            }
+            console.log('reroll', Reroll);
+
             // réserves
             if (formData.self_control > 0){
               NoD += parseInt(formData.self_control,10);
@@ -89,7 +81,9 @@
             if (formData.helped !== undefined && formData.helped == 1){
               NoD += 1;
             }
-            return game.vermine2047.VermineRoll.roll(data.actorId, data.label, NoD, Reroll, data);
+            if (formData.abilityScore == 0){
+              alert('veuillez saisir une caractéristique');
+            } else return game.vermine2047.VermineRoll.roll(data.actorId, data.label, NoD, Reroll, data);
           }
         },
         close: {
@@ -98,6 +92,19 @@
         }
       },    
       render: function (h) {
+        if( h.find('input[name="abilityScore"]').val()== 0 && data.rollType == 'ability'){
+          h.find('input[name="abilityScore"]').val(data.abilities[data.label].value);            
+        }
+
+        h.find('select[name="ability"]').change((event) => { 
+          if (event.target.value != undefined){
+            const abilityScore = data.abilities[event.target.value].value;
+            console.log('ability', abilityScore);
+            // on enregistre la valeur de la caractéristique
+            h.find('input[name="abilityScore"]').val(abilityScore);            
+          }
+        });
+
         h.find('select[name="skill"]').change((event) => { 
           if (data.rollType == 'skill' && event.target.value != undefined){
             const skillScore = data.skills[event.target.value].value;

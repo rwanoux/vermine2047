@@ -27,6 +27,7 @@
     <div class="flexrow row mdb">
       <label class="label" style="flex: 60%;">{{localize 'VERMINE.ability'}}</label>
        <select class="info-value" style="max-width: 40%;" data-dtype="String" type="number" name="ability" id="ability" min="1" max="5">
+        {{#if (eq rollType 'skill')}}<option>-- Choisissez une caractéristique --</option>{{/if}}
         {{#each abilities as |ability key| }}
             <option value="{{ key }}" {{#if (eq key @root.label)}}selected{{/if}}> {{ smarttl "ABILITIES" key }} - {{ ability.value }}</option>
         {{/each}}

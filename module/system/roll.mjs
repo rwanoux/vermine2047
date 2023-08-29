@@ -4,7 +4,7 @@ export class VermineRoll {
         const actor = game.actors.get(actorId);
         let formula = '' + (parseInt(NoD,10) + parseInt(Reroll,10)) + "d10";
         if (Reroll > 0 && params.difficulty != undefined){
-          formula += 'kh' + (parseInt(NoD,10) -1);
+          formula += 'kh' + NoD;
         }
         formula += (params.difficulty != undefined) ? "cs>" + params.difficulty : "cs>7";
         let roll = new Roll(formula, actor.getRollData());
