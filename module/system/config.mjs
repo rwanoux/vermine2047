@@ -22,20 +22,6 @@ VERMINE.DifficultyLevels = {
   5:{ "label":"DIFFICULTY_LEVELS.impossible", "difficulty":10}
 },
 
-VERMINE.Instincts = {
-  1:{ "key":"architect"},
-  2:{ "key":"sword"},
-  3:{ "key":"flail"},
-  4:{ "key":"man"},
-  5:{ "key":"keeper"},
-  6:{ "key":"hand"},
-  7:{ "key":"mask"},
-  8:{ "key":"void"},
-  9:{ "key":"bone"},
-  0:{ "key":"traveller"}
-}
-
-
 VERMINE.abilityCategories = {
   "physical": {
     "label":"VERMINE.ability_category.physical"

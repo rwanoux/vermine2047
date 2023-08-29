@@ -58,6 +58,7 @@
             // difficulty
             data.difficulty = (formData.difficulty != undefined) ? formData.difficulty : 7; 
             // maîtrise bonus
+            // TODO : utiliser la configuration des niveaux de compétences plutôt
             if (formData.skill > 0 && formData.skill < 3){
               NoD += 1;
             } else if (formData.skill > 2 && formData.skill < 5){  
@@ -95,17 +96,25 @@
           label: game.i18n.localize('Close'),
           callback: () => { }
         }
-      },
+      },    
       render: function (h) {
-        h.find("#skills-radio input").change(function () {
-          let s = $(this).attr("data-skill");
-          h.find(".trait-list .hidden").removeClass("show");
-          let f = h.find(".trait-list ." + s);
-          f.addClass("show");
-          if (f.length == 0) {
-            h.find(".use-trait input").attr("disabled", "disabled").prop("checked", false);
-          } else
-            h.find(".use-trait input").attr("disabled", null);
+        h.find('select[name="skill"]').change((event) => { 
+          if (data.rollType == 'skill' && event.target.value != undefined){
+            const skillScore = data.skills[event.target.value].value;
+            // on enregistre la valeur de la compétence
+            h.find('input[name="skillScore"]').val(skillScore);
+            // on met à jour les infos de niveaux de compétence
+            const skillLevel = CONFIG.VERMINE.SkillLevels[skillScore];
+            if (skillLevel != undefined){
+              h.find('#skillLevel').text(game.i18n.localize(skillLevel.label));
+              h.find('#skillDicePool').text(skillLevel.dicePool);
+              h.find('#skillReroll').text(skillLevel.reroll);
+            } else {
+              h.find('#skillLevel').text('Inconnu');
+              h.find('#skillDicePool').text(0);
+              h.find('#skillReroll').text(0);
+            }
+          }
         });
       }
     });

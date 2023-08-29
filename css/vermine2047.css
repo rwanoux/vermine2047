@@ -80,8 +80,18 @@ ul.unstyled li {
 
 .system-vermine2047 .dialog .window-content {
   background: url(/systems/vermine2047/assets/images/ui/fond_chat_box.webp);
-  padding: 0;
+  padding: 0.5rem;
   overflow-y: hidden;
+}
+
+.window-content .row.smb {
+  margin-bottom:0.25rem;
+}
+.window-content .row.mdb {
+  margin-bottom:0.5rem;
+}
+.window-content .row.lgb {
+  margin-bottom:1rem;
 }
 
 .actor.sheet form .form {

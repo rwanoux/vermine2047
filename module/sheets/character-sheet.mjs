@@ -218,14 +218,26 @@ export class VermineCharacterSheet extends VermineActorSheet {
 
     // Handle rolls that supply the formula directly.
     if (dataset.label) {
+      dataset.rollType = dataset.type;
         /*const label = game.i18n.localize(dataset.label) ? `[ability] ${game.i18n.localize(dataset.label)}` : '';
         console.log($(element).attr('for'));
         const NoD = this.actor.system.skills[$(element).attr('for').split('.')[2]]?.value || 0
        return game.vermine2047.VermineRoll.roll(this.actor.id, label, NoD, 0, {});*/
        let data = { 
           actorId: this.actor.id, 
+          abilities: this.actor.system.abilities,
+          skills: this.actor.system.skills,   
+          rollType: dataset.rollType,     
+          labelKey: dataset.label,
+          abilityScore: 0,
+          skillScore: 0,
           label: game.i18n.localize(dataset.label)
         };
+        if (dataset.type == 'ability'){
+          data.abilityScore = this.actor.system.abilities[dataset.label].value;
+        } else if (dataset.type == 'skill'){
+          data.skillScore = this.actor.system.skills[dataset.label].value;
+        }  
        getRollBox(data);
        return true;
     }

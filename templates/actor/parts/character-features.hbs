@@ -7,8 +7,8 @@
       {{#each @root.system.abilities as |ability key|}}
         {{#if (eq ability.category ackey) }}
           <div class="ability flexcol flex-group-center items-center">
-            <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-label="{{ smarttl "ABILITIES" key }}">{{ smarttl "ABILITIES" key }}</label>
-            <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+            <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-type="ability" data-label="{{ key }}">{{ smarttl "ABILITIES" key }}</label>
+            <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number" min="1" max="5" />
           </div>
         {{/if}}
       {{/each}}
@@ -24,11 +24,11 @@
     
     {{#if (eq skill.category sckey) }}                       
       <div class="ability flexrow flex-group-center">
-        <label style="flex:60%;" for="system.skills.{{skey}}.value" class="resource-label rollable flexlarge align-left" data-roll="+@skills.{{skey}}d10" data-label="{{ smarttl "SKILLS" skey }}">{{ smarttl "SKILLS" skey }} 
+        <label style="flex:60%;" for="system.skills.{{skey}}.value" class="resource-label rollable flexlarge align-left" data-type="skill" data-label="{{ skey }}">{{ smarttl "SKILLS" skey }} 
           {{#if (eq skill.rarity 1)}}<sup>(I)</sup>{{/if}}{{#if (eq skill.rarity 2)}}<sup>(II)</sup>{{/if}}</label>
             <span class="die d10 pool" title="pool">{{ skillLevel "dicePool" skill.value }}</span>
             <span class="die d10 reroll" title="reroll">{{ skillLevel "reroll" skill.value }}</span>  
-        <input type="text" name="system.skills.{{skey}}.value" value="{{skill.value}}" class="skill" data-dtype="Number"/>
+        <input type="number" name="system.skills.{{skey}}.value" value="{{skill.value}}" class="skill" data-dtype="Number"  min="1" max="5" />
       </div>
       {{/if}}
     {{/each}}

@@ -50,8 +50,12 @@ export const registerHandlebarsHelpers = function () {
   Handlebars.registerHelper('skillLevel', function (property, level, options) {
     if (level < 1 || level > 5) 
       return "";
-    let levelData = CONFIG.VERMINE.SkillLevels[level];
-    return (levelData !== undefined) ? levelData[property] : "";
+    let levelData = CONFIG.VERMINE.SkillLevels[level];    
+    if (property == 'label'){
+      return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+    } else {
+      return (levelData !== undefined) ? levelData[property] : "";
+    }
   });
 
     // return diff level information
