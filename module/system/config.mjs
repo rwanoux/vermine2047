@@ -5,6 +5,11 @@ export const VERMINE = {};
  * @type {Object}
  */
 
+VERMINE.AgeTypes = {
+  1:{ "name":"AGE_TYPES.young", "beginning": 0  },
+  2:{ "name":"AGE_TYPES.adult", "beginning": 16 },
+  3:{ "name":"AGE_TYPES.old", "beginning": 45 }
+}
 
 VERMINE.SkillLevels = {
   1:{ "label":"VERMINE.skill_level.beginner", "dicePool":1, "reroll":0},

@@ -70,6 +70,20 @@ export const registerHandlebarsHelpers = function () {
       }
       
     });
+
+     // return age type information
+     Handlebars.registerHelper('ageType', function (property, level, options) {
+      if (level < 1 || level > 3) 
+        return "";
+      let ageData = CONFIG.VERMINE.AgeTypes[level];
+      if (property == 'name'){
+        return (ageData !== undefined) ? game.i18n.localize(ageData[property]) : "";
+      } else {
+        return (ageData !== undefined) ? ageData[property] : "";
+      }
+      
+    });
+  
   
   Handlebars.registerHelper('getCombatTrackerColor', function (isPlayer, isNpc) {
       if (isPlayer) return "player";

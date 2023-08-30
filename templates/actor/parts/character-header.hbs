@@ -12,14 +12,17 @@
         <div class="flexrow  flex-group-center">
             <label for="system.identity.age">{{ localize 'IDENTITY.age' }}</label>
             <input type="number" name="system.identity.age" value="{{ system.identity.age }}" data-dtype="Number"/>
+            <span id="ageType">({{ ageType "name" system.identity.ageType }})</span>
         </div>      
     </section>
     <section class="char-level">
         <div class="char-vermine2047 flexrow flex-group-left">
             <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
-            <select name="system.identity.totem" class="w-full">
-              {{selectOptions config.totems selected=system.identity.totem localize=true}}
-            </select>
+            {{#if (eq system.identity.totem "")}}
+                <a name="chooseTotem" class="chooseTotem">Choisissez votre totem</button>
+            {{ else }}    
+                <a name="chooseTotem" class="chooseTotem 2">{{ system.identity.totem }}</button>
+            {{/if}}
         </div>
         <div class="reputation flexrow  flex-group-center">
             <label>{{ localize 'VERMINE.reputation' }}</label>

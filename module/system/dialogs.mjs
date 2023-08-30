@@ -82,7 +82,7 @@
               NoD += 1;
             }
             if (formData.abilityScore == 0){
-              alert('veuillez saisir une caractéristique');
+              ui.notifications.notify(`veuillez saisir une caractéristique`);
             } else return game.vermine2047.VermineRoll.roll(data.actorId, data.label, NoD, Reroll, data);
           }
         },

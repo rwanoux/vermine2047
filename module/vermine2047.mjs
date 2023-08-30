@@ -66,18 +66,18 @@ Hooks.once('init', async function() {
   Actors.registerSheet('vermine2047', VermineCreatureSheet, {
     types: ['creature'],
     makeDefault: true,
-  }); // Register vehicle Sheet
+  }); 
 
   Actors.registerSheet('vermine2047', VermineGroupSheet, {
     types: ['group'],
     makeDefault: true,
-  }); // Register vehicle Sheet
+  }); 
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("vermine2047", VermineItemSheet, { makeDefault: true });
 
   registerHandlebarsHelpers(); // Register Handlebars helpers
   registerHooks(); // register Hooks
-  registerSettings(); // register Engrenages Settings
+  registerSettings(); // register Vermine Settings
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();

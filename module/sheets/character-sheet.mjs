@@ -159,6 +159,24 @@ export class VermineCharacterSheet extends VermineActorSheet {
     // Rollable abilities.
     html.find('.rollable').click(this._onRoll.bind(this));
 
+    // Rollable abilities.
+    html.find('input[name="system.identity.age"]').change(ev => {
+      const age = parseInt(ev.target.value,10);
+      let ageType = "2";
+
+      Object.keys(CONFIG.VERMINE.AgeTypes).forEach((type) => {
+        if(age > parseInt(CONFIG.VERMINE.AgeTypes[type].beginning,10)){
+          ageType = type; 
+        }
+      });
+
+      this.actor.update({ 'system.identity.ageType': ageType });
+
+    });
+
+    // Choose Totem 
+    html.find('.changeTotem').click(this._onTotemButton.bind(this));
+
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
@@ -241,6 +259,20 @@ export class VermineCharacterSheet extends VermineActorSheet {
        getRollBox(data);
        return true;
     }
+  }
+
+  /**
+   * Handle clickable rolls.
+   * @param {Event} event   The originating click event
+   * @private
+   */
+  _onTotemButton(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    
+    console.log('on va ouvrir une dialog box totem');
+
   }
 
 }

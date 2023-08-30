@@ -1,6 +1,5 @@
 import { VERMINE } from "./config.mjs";
 import { getActorSkillScore,updateActorSkillScore } from "./functions.mjs";
-import { CombatResultDialog } from "./dialogs.mjs";
 
 export class VermineFight {
 
