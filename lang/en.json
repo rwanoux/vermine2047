@@ -128,7 +128,8 @@
     "type_group": "Groupe",
     "type_character": "Personnage",
     "type_npc": "PNJ",
-    "type_creature": "Créature"
+    "type_creature": "Créature",
+    "totem_picker": "Sélecteur de totem"
   },
   "ITEMS": {
     "defense": "Protection",

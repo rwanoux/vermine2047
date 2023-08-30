@@ -1,6 +1,7 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
 import { getRollBox } from "../system/dialogs.mjs";
+import { TotemPicker } from "../system/applications.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -175,7 +176,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     });
 
     // Choose Totem 
-    html.find('.changeTotem').click(this._onTotemButton.bind(this));
+    html.find('.chooseTotem').click(this._onTotemButton.bind(this));
 
     // Drag events for macros.
     if (this.actor.isOwner) {
@@ -268,11 +269,11 @@ export class VermineCharacterSheet extends VermineActorSheet {
    */
   _onTotemButton(event) {
     event.preventDefault();
-    const element = event.currentTarget;
-    const dataset = element.dataset;
+    const el = event.currentTarget;
+    // const dataset = el.dataset;
     
-    console.log('on va ouvrir une dialog box totem');
-
+    const totemPicker = new TotemPicker(el);
+    totemPicker.render(true);
   }
 
 }
