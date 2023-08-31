@@ -46,6 +46,20 @@ export const registerHandlebarsHelpers = function () {
     return game.i18n.localize(arrayLabel +"."+objectLabel+".name");
   });
 
+  Handlebars.registerHelper('smarttlk', function (arrayLabel,objectLabel, key) {
+    return game.i18n.localize(arrayLabel +"."+objectLabel+"."+key);
+  });
+
+  Handlebars.registerHelper('smartcfg', function (configLabel, objectLabel) {
+    let text = "";
+    text = game.i18n.localize(CONFIG.VERMINE[configLabel][objectLabel]);
+    if (text == null){
+      text = CONFIG.VERMINE[configLabel][objectLabel];
+    }
+    return text;
+    
+  });
+
   // return skill level information
   Handlebars.registerHelper('skillLevel', function (property, level, options) {
     if (level < 1 || level > 5) 

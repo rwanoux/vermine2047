@@ -1,9 +1,11 @@
 export class TotemPicker extends Application {
 
-  constructor(element) {
+  
+  constructor(linkEl, actor) {
     super();
+    this.linkEl = linkEl;
+    this.actor = actor;
   }
-
 
   /* -------------------------------------------- */
   static get defaultOptions() {
@@ -20,8 +22,9 @@ export class TotemPicker extends Application {
 
   getData() {
     // Send data to the template
+
     return {
-      config: CONFIG.VERMINE
+      config: CONFIG.VERMINE,
       /*anarchy: this.gmAnarchy.getAnarchy(),
       convergences: this.gmConvergence.getConvergences(),
       difficultyPools: this.gmDifficulty.getDifficultyData(),
@@ -33,10 +36,16 @@ export class TotemPicker extends Application {
 
   activateListeners(html) {
     super.activateListeners(html);
-    // html.find('.app-title-bar').mousedown(event => this.handleDrag.onMouseDown(event));
+      html.find('.totem').click(event => {
+        const totem = $(event.target).parent('a').data('totem');
+        if (totem != null){
+          this.actor.update({ 'system.identity.totem': totem });
+        }
+        
+      });
   }
   
-  async _updateObject(event, formData) {
+  /*async _updateObject(event, formData) {
     // console.log(formData.exampleInput);
-  }
+  }*/
 }

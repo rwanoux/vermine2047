@@ -77,6 +77,18 @@ VERMINE.totems = {
   "loner": "TOTEMS.loner.name",
   "adapted": "TOTEMS.adapted.name" 
 }
+VERMINE.totem_opposites = {
+  "human":"TOTEMS.adapted.name",
+  "predator": "TOTEMS.scavenger.name" ,
+  "scavenger": "TOTEMS.predator.name" ,
+  "symbiote": "TOTEMS.parasite.name" ,
+  "parasite": "TOTEMS.symbiote.name" ,
+  "builder": "TOTEMS.horde.name" ,
+  "horde": "TOTEMS.builder.name" ,
+  "hive": "TOTEMS.loner.name" ,
+  "loner": "TOTEMS.hive.name",
+  "adapted": "TOTEMS.human.name" 
+}
 
 VERMINE.origins = {"aon":"Aon",
 "avhorae": "Avhorae" ,

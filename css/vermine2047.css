@@ -171,8 +171,10 @@ ul.unstyled li {
 
 }
 
-.system-vermine2047 .char-header h1.char-name {
+.system-vermine2047 .char-header h1.char-name,
+.system-vermine2047 .char-vermine2047 {
   border-bottom: none;
+  line-height: 2rem;
 }
 
 .system-vermine2047 .char-vermine2047 {

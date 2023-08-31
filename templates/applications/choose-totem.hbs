@@ -1,8 +1,17 @@
 <div class="totem choose">
-    <div class="flexrow row mdb">
-        <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
-        <select name="system.identity.totem" class="w-full">
-            {{selectOptions config.totems selected=system.identity.totem localize=true}}
-        </select>
-    </div>
+    {{#each config.totems as | totem tk|}}
+    {{#if (ne tk "human")}}
+        {{#if (ne tk "adapted")}}
+        <div class="flexrow row mdb">
+            <h4 style="flex:20%;"><a class="totem" data-totem="{{ tk }}" title="{{ smarttlk "TOTEMS" tk "description"}}"><img src="" alt="{{ localize totem }}" /></a></h4>
+            <p style="flex:80%;">
+                <strong>Instincts</strong> : {{ smarttlk "TOTEMS" tk "instincts"}}<br>
+                <strong>Interdits</strong> : {{ smarttlk "TOTEMS" tk "bans"}}<br>
+                <strong>Comportements</strong> : {{ smarttlk "TOTEMS" tk "behaviour"}}<br>
+                <strong>Totem opposé</strong> : {{ smartcfg "totem_opposites" tk }}<br>
+            </p>
+        </div>
+        {{/if}}
+    {{/if}}
+    {{/each}}
 </div>

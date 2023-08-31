@@ -272,7 +272,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     const el = event.currentTarget;
     // const dataset = el.dataset;
     
-    const totemPicker = new TotemPicker(el);
+    const totemPicker = new TotemPicker(el, this.actor);
     totemPicker.render(true);
   }
 
