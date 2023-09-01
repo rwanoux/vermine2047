@@ -72,6 +72,8 @@
     "prohibits": "Interdits",
     "objectives": "Objectifs",
     "relations": "Relations",
+    "morale":"Moral",
+    "morale_level": "Niveau de moral",
     "notes": "Notes"
   },
   "VERMINE": {

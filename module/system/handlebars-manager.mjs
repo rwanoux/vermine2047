@@ -22,6 +22,7 @@
     "systems/vermine2047/templates/actor/parts/actor-effects.html",
 
     // Group partials
+    "systems/vermine2047/templates/actor/parts/group-header.hbs",
     "systems/vermine2047/templates/actor/parts/group-vehicles.hbs",
     "systems/vermine2047/templates/actor/parts/group-info.hbs",
     "systems/vermine2047/templates/actor/parts/group-items.hbs",

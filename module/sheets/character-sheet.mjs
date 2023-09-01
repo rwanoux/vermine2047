@@ -263,7 +263,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
   }
 
   /**
-   * Handle clickable rolls.
+   * Handle totem pick
    * @param {Event} event   The originating click event
    * @private
    */

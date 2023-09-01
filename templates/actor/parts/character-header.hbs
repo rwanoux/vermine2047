@@ -21,9 +21,9 @@
         <h1 class="char-vermine2047 flexrow flex-group-left w-full">
             <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
             {{#if (eq system.identity.totem "")}}
-                <a name="chooseTotem" class="chooseTotem">Choisissez votre totem</button>
+                <a name="chooseTotem" class="chooseTotem">Choisissez votre totem</a>
             {{ else }}    
-                <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS" system.identity.totem }}</button>
+                <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS" system.identity.totem }}</a>
             {{/if}}
         </h1>
         <div class="reputation flexrow  flex-group-center">

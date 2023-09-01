@@ -1,5 +1,6 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
+import { TotemPicker } from "../system/applications.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -129,7 +130,7 @@ export class VermineGroupSheet extends VermineActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-
+    console.log('evenement de groupe');
     // Render the item sheet for viewing/editing prior to the editable check.
     html.find('.item-edit').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
@@ -151,6 +152,9 @@ export class VermineGroupSheet extends VermineActorSheet {
       item.delete();
       li.slideUp(200, () => this.render(false));
     });
+
+    // Choose Totem 
+    html.find('.chooseTotem').click(this._onTotemButton.bind(this));
 
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
@@ -227,5 +231,19 @@ export class VermineGroupSheet extends VermineActorSheet {
       return roll;
     }
   }
+
+    /**
+   * Handle totem pick
+   * @param {Event} event   The originating click event
+   * @private
+   */
+    _onTotemButton(event) {
+      event.preventDefault();
+      const el = event.currentTarget;
+      // const dataset = el.dataset;
+      
+      const totemPicker = new TotemPicker(el, this.actor);
+      totemPicker.render(true);
+    }
 
 }

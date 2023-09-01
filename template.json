@@ -364,9 +364,20 @@
         "description": ""
       },  
       "level": {
-        "value": 1,
-        "min": 1,
+        "value": 0,
+        "min": 0,
         "max": 3
+      },  
+      "reputation": {
+        "value": 10,
+        "min": 2,
+        "max": 10
+      },
+      "morale": {
+        "level": "high",
+        "value": 7,
+        "min": 1,
+        "max": 7
       },
       "members": []
     },
@@ -391,7 +402,7 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "defense", "vehicle", "ability", "specialty", "trait",  "background", "trauma", "evolution", "rumor"],
+    "types": ["item", "weapon", "defense", "vehicle", "ability", "specialty", "trait",  "background", "trauma", "evolution", "rumor", "target"],
     "templates": {
       "base": {
         "description": "",
@@ -451,6 +462,10 @@
     },
     "rumor": {
       "templates": ["list"]
+    },
+    "target": {
+      "templates": ["list"],
+      "level":"minor"
     }
   }
 }
