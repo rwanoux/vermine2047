@@ -32,7 +32,11 @@
     </ol>
     </div>
     <div>
-      <h4>{{ localize 'ITEMS.backgrounds'}}</h4>
+      <h4>
+        <span>{{ localize 'ITEMS.backgrounds'}}</span>
+         <a class="item-control item-create" title="Create item" data-type="background"><i class="fas fa-plus"></i></a>
+
+      </h4>
       <ol class="list-item">
       {{#each backgrounds as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">

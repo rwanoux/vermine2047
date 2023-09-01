@@ -53,6 +53,10 @@ export class VermineGroupSheet extends VermineActorSheet {
       this._prepareItems(context);
     }
 
+    if (actorData.type == 'group') {
+      this._prepareItems(context);
+    }
+
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
 
@@ -85,44 +89,40 @@ export class VermineGroupSheet extends VermineActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
-    const gear = [];
-    const features = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: []
-    };
+    const abilities = [];
+    const specialties = [];
+    const backgrounds = [];
+    const evolutions = [];
+    const traumas = [];
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
+      if (i.type === 'ability') {
+        abilities.push(i);
       }
-      // Append to features.
-      else if (i.type === 'feature') {
-        features.push(i);
+      else if (i.type === 'specialty') {
+        specialties.push(i);
       }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
-          spells[i.system.spellLevel].push(i);
-        }
+      else if (i.type === 'background') {
+        backgrounds.push(i);
       }
+      else if (i.type === 'evolution') {
+        evolutions.push(i);
+      }
+      else if (i.type === 'trauma') {
+        traumas.push(i);
+      }
+
     }
 
     // Assign and return
-    context.gear = gear;
-    context.features = features;
-    context.spells = spells;
+    context.abilities = abilities;
+    context.specialties = specialties;
+    context.backgrounds = backgrounds;
+    context.evolutions = evolutions;
+    context.traumas = traumas;
+    console.log(context);
   }
 
   /* -------------------------------------------- */
@@ -130,7 +130,6 @@ export class VermineGroupSheet extends VermineActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    console.log('evenement de groupe');
     // Render the item sheet for viewing/editing prior to the editable check.
     html.find('.item-edit').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
@@ -142,27 +141,12 @@ export class VermineGroupSheet extends VermineActorSheet {
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
 
-    // Add Inventory Item
-    html.find('.item-create').click(this._onItemCreate.bind(this));
-
-    // Delete Inventory Item
-    html.find('.item-delete').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.delete();
-      li.slideUp(200, () => this.render(false));
-    });
+    // Add and delete Inventory Item
+    // already configured in parents listeners
 
     // Choose Totem 
     html.find('.chooseTotem').click(this._onTotemButton.bind(this));
 
-    // Active Effect management
-    html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
-
-    // Rollable abilities.
-    html.find('.rollable').click(this._onRoll.bind(this));
-
-    // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
