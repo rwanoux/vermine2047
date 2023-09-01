@@ -95,6 +95,7 @@ export class VermineGroupSheet extends VermineActorSheet {
     const evolutions = [];
     const traumas = [];
 
+
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
@@ -122,7 +123,17 @@ export class VermineGroupSheet extends VermineActorSheet {
     context.backgrounds = backgrounds;
     context.evolutions = evolutions;
     context.traumas = traumas;
-    console.log(context);
+    context.members = [];
+    context.encounters = [];
+    
+    for(let memberId of context.actor.system.members){
+      context.members.push(game.actors.get(memberId));
+    }
+    
+    for(let encounterId of context.actor.system.encounters){
+      context.encounters.push(game.actors.get(encounterId));
+    }
+
   }
 
   /* -------------------------------------------- */
@@ -149,6 +160,25 @@ export class VermineGroupSheet extends VermineActorSheet {
 
      // Choose Members / Encounters 
      html.find('.chooseActor').click(this._onRoadButton.bind(this));
+     html.find('.member-delete').click(ev => {
+      const li = $(ev.currentTarget).parents("li.actor");
+      const actorId = li.data("actor-id");
+      const actorIdIndex = this.actor.system.members.indexOf(actorId);
+      if (actorIdIndex !== -1){
+        this.actor.system.members.splice(actorIdIndex, 1);
+      }
+      this.render(true);
+    });
+
+    html.find('.encounter-delete').click(ev => {
+      const li = $(ev.currentTarget).parents("li.actor");
+      const actorId = li.data("actor-id");
+      const actorIdIndex = this.actor.system.encounters.indexOf(actorId);
+      if (actorIdIndex !== -1){
+        this.actor.system.encounters.splice(actorIdIndex, 1);
+      }
+      this.render(true);
+    });
 
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
@@ -242,7 +272,7 @@ export class VermineGroupSheet extends VermineActorSheet {
       event.preventDefault();
       const el = event.currentTarget;
       // const dataset = el.dataset;
-      
+
       const actorPicker = new ActorPicker(el, this.actor);
       actorPicker.render(true);
     }

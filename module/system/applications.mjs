@@ -99,8 +99,8 @@ export class ActorPicker extends Application {
     super.activateListeners(html);
       html.find('.actor').click(event => {
         const actorId = $(event.target).parent('div').data('id');
-        let actorsList = [];
         const type = $(this.linkEl).data('type');
+        let actorsList = [];
 
         if (type == 'members'){
           actorsList = this.actor.system.members;
@@ -110,7 +110,7 @@ export class ActorPicker extends Application {
         if (!Array.isArray(actorsList)){
           actorsList = [];
         }
-        console.log(actorsList, type, this.actor.system.encounters, this.actor.system.members);  
+
         actorsList.push(actorId);
 
         if (type == 'members'){
@@ -119,7 +119,6 @@ export class ActorPicker extends Application {
         } else if (type == 'encounters'){
           this.actor.update({ 'system.encounters': actorsList });
         } 
-        console.log(actorsList);        
         
       });
   }
