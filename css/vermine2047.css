@@ -3,6 +3,10 @@
   src: url("../assets/fonts/dcc_sharp_distress_black_by_dccanim.otf");
 }
 
+.sans-font {
+  font-family: "DistressBlack", sans-serif; 
+}
+
 /* Change shadow colors and Foundry general font color!! */
 .app {
   box-shadow: 0 0 20px #7e4444; /* Change the color code here for a nice shadow color! */
