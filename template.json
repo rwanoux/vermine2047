@@ -449,7 +449,8 @@
       "level":0
     },
     "vehicle": {
-      "templates": ["base"]
+      "templates": ["base"],
+      "mobility":3
     },
     "background": {
       "templates": ["list"]
