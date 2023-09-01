@@ -235,6 +235,7 @@ export class VermineActorSheet extends ActorSheet {
     const gear = [];
     const defenses = [];
     const abilities = [];
+    const totem_abilities = [];
     const weapons = [];
     const vehicles = [];
 
@@ -252,7 +253,13 @@ export class VermineActorSheet extends ActorSheet {
         weapons.push(i);
       }
       else if (i.type === 'ability') {
-        abilities.push(i);
+        console.log('ability', i);
+        if (i.system.type == 'totem'){
+          totem_abilities.push(i);
+        } else {
+          abilities.push(i);
+        }
+        
       }
       else if (i.type === 'vehicle') {
         vehicles.push(i);
@@ -266,6 +273,7 @@ export class VermineActorSheet extends ActorSheet {
     context.weapons = weapons;
     context.defenses = defenses;
     context.abilities = abilities;
+    context.totem_abilities = totem_abilities;
     context.vehicles = vehicles;
   }
 

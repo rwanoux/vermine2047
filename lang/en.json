@@ -131,6 +131,9 @@
     "type_character": "Personnage",
     "type_npc": "PNJ",
     "type_creature": "Créature",
+    "group_members": "Membres",
+    "encounters": "Rencontres",
+    "road": "La Route",
     "totem_picker": "Sélecteur de totem"
   },
   "ITEMS": {
