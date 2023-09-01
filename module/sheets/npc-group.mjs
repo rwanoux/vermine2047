@@ -1,6 +1,6 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
-import { TotemPicker } from "../system/applications.mjs";
+import { TotemPicker, ActorPicker } from "../system/applications.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -147,6 +147,9 @@ export class VermineGroupSheet extends VermineActorSheet {
     // Choose Totem 
     html.find('.chooseTotem').click(this._onTotemButton.bind(this));
 
+     // Choose Members / Encounters 
+     html.find('.chooseActor').click(this._onRoadButton.bind(this));
+
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
       html.find('li.item').each((i, li) => {
@@ -228,6 +231,20 @@ export class VermineGroupSheet extends VermineActorSheet {
       
       const totemPicker = new TotemPicker(el, this.actor);
       totemPicker.render(true);
+    }
+
+     /**
+   * Handle actor pick
+   * @param {Event} event   The originating click event
+   * @private
+   */
+     _onRoadButton(event) {
+      event.preventDefault();
+      const el = event.currentTarget;
+      // const dataset = el.dataset;
+      
+      const actorPicker = new ActorPicker(el, this.actor);
+      actorPicker.render(true);
     }
 
 }

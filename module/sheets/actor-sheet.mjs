@@ -253,7 +253,6 @@ export class VermineActorSheet extends ActorSheet {
         weapons.push(i);
       }
       else if (i.type === 'ability') {
-        console.log('ability', i);
         if (i.system.type == 'totem'){
           totem_abilities.push(i);
         } else {

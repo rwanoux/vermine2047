@@ -1,6 +1,9 @@
  <div class="grid grid-2col">
     <div>
-      <h4 class="align-center">{{ localize 'VERMINE.group_members'}}</h4>
+      <h4 class="align-center">
+        <span>{{ localize 'VERMINE.group_members'}}</span>
+        <a class="item-control chooseActor" title="Add member" data-type="members"><i class="fas fa-plus"></i></a>
+      </h4>
       <ol class="list-item">
       {{#each specialties as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">
@@ -16,7 +19,10 @@
     </ol>
     </div>
     <div>
-      <h4 class="align-center">{{ localize 'VERMINE.encounters'}}</h4>
+      <h4 class="align-center">
+        <span>{{ localize 'VERMINE.encounters'}}</span>
+        <a class="item-control chooseActor" title="Add member" data-type="encounters"><i class="fas fa-plus"></i></a>
+        </h4>
       <ol class="list-item">
       {{#each backgrounds as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">
@@ -32,7 +38,10 @@
     </ol>
   </div>
   <div>
-      <h4 class="align-center">{{ localize 'VERMINE.boost'}}</h4>
+      <h4 class="align-center">
+        <span>{{ localize 'VERMINE.boost'}}</span>
+        <a class="item-control chooseActor" title="Add encounter" data-type="npc"><i class="fas fa-plus"></i></a>
+      </h4>
       <ol class="list-item">
       {{#each abilities as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">
@@ -48,7 +57,10 @@
     </ol>
   </div>
    <div>
-      <h4 class="align-center">{{ localize 'VERMINE.totem_abilities'}}</h4>
+      <h4 class="align-center">
+        <span>{{ localize 'VERMINE.totem_abilities'}}</span>
+        <a class="item-control item-create" title="Create item" data-type="ability"><i class="fas fa-plus"></i></a>
+      </h4>
       <ol class="list-item">
       {{#each totem_abilities as |item id|}}
         <li class="item flexrow" data-item-id="{{item._id}}">
