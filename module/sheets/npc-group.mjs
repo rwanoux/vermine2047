@@ -167,6 +167,7 @@ export class VermineGroupSheet extends VermineActorSheet {
       if (actorIdIndex !== -1){
         this.actor.system.members.splice(actorIdIndex, 1);
       }
+      this.actor.update({ "system.members": this.actor.system.members });
       this.render(true);
     });
 
@@ -177,6 +178,7 @@ export class VermineGroupSheet extends VermineActorSheet {
       if (actorIdIndex !== -1){
         this.actor.system.encounters.splice(actorIdIndex, 1);
       }
+      this.actor.update({ "system.encounters": this.actor.system.encounters });
       this.render(true);
     });
 
