@@ -15,8 +15,8 @@ export class TotemPicker extends Application {
       template:'systems/vermine2047/templates/applications/choose-totem.hbs',
       popOut:true,
       resizable:true,
-      height:"600",
-      width:"600"
+      height:"800",
+      width:"800"
     });
   }
 
@@ -67,7 +67,7 @@ export class ActorPicker extends Application {
       template:'systems/vermine2047/templates/applications/choose-actor.hbs',
       popOut:true,
       resizable:true,
-      height:"600",
+      height:"350",
       width:"600"
     });
   }

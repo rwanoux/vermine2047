@@ -1,8 +1,8 @@
-<div class="actor choose flexrow row">
+<div class="actor choose flexrow row" style="flex-wrap: wrap;max-height: 100px;justify-content:center;">
     {{#each actorsList as | actor akey|}}
         <div class="actor rounded-full" data-totem="{{ tk }}" data-id="{{ actor.id }}"  style="position:relative; width:100px;height:100px;">
-            <span class="flexrow w-full flex-group-center flex-align-center" style="position:absolute;z-index:10;height:100%;">{{ actor.name }}</span>
-            <img src="{{ actor.img }}" alt="{{ actor.name }}" width="100" height="100" style="position:relative;" />
+            <span class="flexrow w-full flex-group-center flex-align-center" style="position:absolute;z-index:10;width:100px;height:100px;">{{ actor.name }}</span>
+            <img src="{{ actor.img }}" alt="{{ actor.name }}" width="100" height="100" style="position:relative;min-width:100px;" />
         </div>
     {{/each}}
 </div>

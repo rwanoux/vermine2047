@@ -134,7 +134,8 @@
     "group_members": "Membres",
     "encounters": "Rencontres",
     "road": "La Route",
-    "totem_picker": "Sélecteur de totem"
+    "totem_picker": "Sélecteur de totem",
+    "actor_picker": "Sélecteur de personnage"
   },
   "ITEMS": {
     "defense": "Protection",

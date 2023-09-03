@@ -2,9 +2,13 @@
     {{#each config.totems as | totem tk|}}
     {{#if (ne tk "human")}}
         {{#if (ne tk "adapted")}}
-        <div class="flexrow row mdb">
-            <h4 style="flex:33%;"><a class="totem" data-totem="{{ tk }}" title="{{ smarttlk "TOTEMS" tk "description"}}"><img src="/systems/vermine2047/assets/images/ui/totems/{{ tk }}.webp" alt="{{ localize totem }}" width="80" height="80" /></a></h4>
-            <p style="flex:66%;">
+        <div class="flexrow row mdb flex-group-center">
+            <h4 style="flex:33%;">
+                <a class="totem" data-totem="{{ tk }}" title="{{ smarttlk "TOTEMS" tk "description"}}">
+                <img src="/systems/vermine2047/assets/images/ui/totems/{{ tk }}.webp" alt="{{ localize totem }}" width="80" height="80" />
+                </a>
+            </h4>
+            <p style="flex:66%;text-align:left;">
                 <strong>Instincts</strong> : {{ smarttlk "TOTEMS" tk "instincts"}}<br>
                 <strong>Interdits</strong> : {{ smarttlk "TOTEMS" tk "bans"}}<br>
                 <strong>Comportements</strong> : {{ smarttlk "TOTEMS" tk "behaviour"}}<br>

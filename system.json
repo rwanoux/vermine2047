@@ -2,7 +2,7 @@
   "id": "vermine2047",
   "title": "Vermine 2047",
   "description": "The Vermine 2047 system for FoundryVTT!",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "compatibility": {
     "minimum": 10,
     "verified": "10.287",
