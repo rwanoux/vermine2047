@@ -76,7 +76,7 @@ ul.unstyled li {
 /* ----------------------------------------- */
 /* Sheet Structure                           */
 /* ----------------------------------------- */
-.system-vermine2047 .window-content {
+.system-vermine2047 .sheet .window-content {
   background: url(/systems/vermine2047/assets/images/ui/box_background.webp);
   padding: 0;
   overflow-y: hidden;

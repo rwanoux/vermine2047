@@ -40,7 +40,7 @@ export class TotemPicker extends Application {
         if (totem != null){
           this.actor.update({ 'system.identity.totem': totem });
         }
-        
+        this.close();
       });
   }
   
@@ -119,7 +119,7 @@ export class ActorPicker extends Application {
         } else if (type == 'encounters'){
           this.actor.update({ 'system.encounters': actorsList });
         } 
-        
+
       });
   }
 
