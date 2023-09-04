@@ -61,6 +61,42 @@ export const registerHandlebarsHelpers = function () {
     
   });
 
+    // return threat level information
+    Handlebars.registerHelper('threatLevel', function (property, level, options) {
+      if (level < 1 || level > 5) 
+        return "";
+      let levelData = CONFIG.VERMINE.ThreatLevels[level];    
+      if (property == 'label'){
+        return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+      } else {
+        return (levelData !== undefined) ? levelData[property] : "";
+      }
+    });
+
+    // return experience level information
+    Handlebars.registerHelper('experienceLevel', function (property, level, options) {
+      if (level < 1 || level > 5) 
+        return "";
+      let levelData = CONFIG.VERMINE.ExperienceLevels[level];    
+      if (property == 'label'){
+        return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+      } else {
+        return (levelData !== undefined) ? levelData[property] : "";
+      }
+    });
+
+     // return role level information
+     Handlebars.registerHelper('roleLevel', function (property, level, options) {
+      if (level < 1 || level > 5) 
+        return "";
+      let levelData = CONFIG.VERMINE.RoleLevels[level];    
+      if (property == 'label'){
+        return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+      } else {
+        return (levelData !== undefined) ? levelData[property] : "";
+      }
+    });
+
   // return skill level information
   Handlebars.registerHelper('skillLevel', function (property, level, options) {
     if (level < 1 || level > 5) 

@@ -76,6 +76,25 @@
     "morale_level": "Niveau de moral",
     "notes": "Notes"
   },
+  "ADVERSITY": {
+    "threat": "Menace",
+    "experience": "Expérience",
+    "role": "Rôle",
+    "attack": "Attaque",
+    "damage": "Dommages",
+    "weapon": "Arme",
+    "vigor": "Vigueur",
+    "wounds": "Blessures",
+    "action": "Action",
+    "specialties": "Spécialité",
+    "rerolls": "Relances",
+    "contact": "Contact",
+    "reaction": "Réaction",
+    "pools":"Réserves",
+    "gear": "Matériel",
+    "protection": "Protection"
+  },
+
   "VERMINE": {
     "name": "Vermine",
     "stats": "Statistiques",
@@ -163,6 +182,26 @@
     "will":{ "name": "Volonté"},
     "empathy":{ "name": "Empathie"}  
   },
+  "SKILLS_LEVELS": {
+    "beginner": "Débutant",
+    "proficient": "Confirmé",
+    "expert":"Expert",
+    "master":"Maître",
+    "legend":"Légende"
+  },
+  "THREAT_LEVELS": {
+    "minor": "Mineure",
+    "serious": "Sérieuse",
+    "major":"Majeure",
+    "deadly":"Mortelle"
+  },
+  "ROLE_LEVELS": {
+    "minor": "Mineur",
+    "secondaray": "Secondaire",
+    "important":"Important",
+    "major":"Majeur"
+  },
+  
 
   "VERMINE.effect_treate": "Create Effect",
   "VERMINE.effect_toggle": "Toggle Effect",
@@ -170,12 +209,6 @@
   "VERMINE.effect_delete": "Delete Effect",
 
   "VERMINE.Add": "Ajouter",
-
-  "VERMINE.skill_level.beginner": "Débutant",
-  "VERMINE.skill_level.proficient": "Confirmé",
-  "VERMINE.skill_level.expert": "Expert",
-  "VERMINE.skill_level.master": "Maître",
-  "VERMINE.skill_level.legend": "Légende",
   
   "TOTEMS": {
     "human": { 
