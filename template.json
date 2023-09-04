@@ -331,6 +331,7 @@
     "npc": {
       "templates": ["base"],      
       "age": 15,
+      "skills": "",
       "threat": {
         "value": 1,
         "min": 1,
@@ -384,8 +385,8 @@
     },
     "creature": {
       "templates": ["base"],      
-      "age": 15,
-      "template": {
+      "skills": "",
+      "pattern": {
         "value": 1,
         "min": 1,
         "max": 4
@@ -399,6 +400,11 @@
         "value": 1,
         "min": 1,
         "max": 4
+      },
+      "pack": {
+        "value": 0,
+        "min": 0,
+        "max": 3
       }
     }
   },

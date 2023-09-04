@@ -63,7 +63,7 @@ export const registerHandlebarsHelpers = function () {
 
     // return threat level information
     Handlebars.registerHelper('threatLevel', function (property, level, options) {
-      if (level < 1 || level > 5) 
+      if (level < 1 || level > 4) 
         return "";
       let levelData = CONFIG.VERMINE.ThreatLevels[level];    
       if (property == 'label'){
@@ -75,7 +75,7 @@ export const registerHandlebarsHelpers = function () {
 
     // return experience level information
     Handlebars.registerHelper('experienceLevel', function (property, level, options) {
-      if (level < 1 || level > 5) 
+      if (level < 1 || level > 4) 
         return "";
       let levelData = CONFIG.VERMINE.ExperienceLevels[level];    
       if (property == 'label'){
@@ -87,7 +87,7 @@ export const registerHandlebarsHelpers = function () {
 
      // return role level information
      Handlebars.registerHelper('roleLevel', function (property, level, options) {
-      if (level < 1 || level > 5) 
+      if (level < 1 || level > 4) 
         return "";
       let levelData = CONFIG.VERMINE.RoleLevels[level];    
       if (property == 'label'){
@@ -96,6 +96,43 @@ export const registerHandlebarsHelpers = function () {
         return (levelData !== undefined) ? levelData[property] : "";
       }
     });
+
+    // return pattern level information
+    Handlebars.registerHelper('patternLevel', function (property, level, options) {
+      if (level < 1 || level > 4) 
+        return "";
+      let levelData = CONFIG.VERMINE.PatternLevels[level];    
+      if (property == 'label'){
+        return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+      } else {
+        return (levelData !== undefined) ? levelData[property] : "";
+      }
+    });
+
+    // return size level information
+    Handlebars.registerHelper('sizeLevel', function (property, level, options) {
+    if (level < 1 || level > 4) 
+      return "";
+    let levelData = CONFIG.VERMINE.SizeLevels[level];    
+    if (property == 'label'){
+      return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+    } else {
+      return (levelData !== undefined) ? levelData[property] : "";
+    }
+  });
+
+    // return pack level information
+    Handlebars.registerHelper('packLevel', function (property, level, options) {
+      if (level < 0 || level > 3) 
+        return "";
+      let levelData = CONFIG.VERMINE.PackLevels[level];    
+      if (property == 'label'){
+        return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
+      } else {
+        return (levelData !== undefined) ? levelData[property] : "";
+      }
+    });
+
 
   // return skill level information
   Handlebars.registerHelper('skillLevel', function (property, level, options) {

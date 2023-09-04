@@ -8,22 +8,25 @@
       <div class="resources grid grid-3col">
         <div class="resource flex-group-center">
           <label for="system.threat.value" class="resource-label">{{ localize 'ADVERSITY.threat'}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input type="number" name="system.threat.value" value="{{system.threat.value}}" data-dtype="Number" min="1" max="4" />            
+          <div class="resource-content">
+            <input type="number" name="system.threat.value" value="{{system.threat.value}}" data-dtype="Number" min="1" max="4" />      
+            <span>({{ threatLevel "label" system.threat.value }})</span>      
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.experience.value" class="resource-label">{{ localize 'ADVERSITY.experience'}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
+          <div class="resource-content">
             <input type="number" name="system.experience.value" value="{{system.experience.value}}" data-dtype="Number" min="1" max="4" />
+            <span>({{ experienceLevel "label" system.experience.value }})</span>      
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="system.cr" class="resource-label">{{ localize 'ADVERSITY.role'}}</label>
-          <div class="resource-content flexrow flex-center flex-between">
+          <div class="resource-content">
             <input type="number" name="system.role.value" value="{{system.role.value }}" data-dtype="Number" min="1" max="4"/>
+            <span>({{ roleLevel "label" system.role.value }})</span>      
           </div>
         </div>
 
@@ -34,24 +37,21 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="effects">Effects</a>
+    <a class="item" data-tab="description">{{ localize 'VERMINE.abilities'}}</a>
+    <a class="item" data-tab="items">{{ localize 'VERMINE.equipment'}}</a>
+    <a class="item" data-tab="effects">{{ localize 'VERMINE.combat'}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
 
     {{!-- Biography Tab --}}
-    <div class="tab biography" data-group="primary" data-tab="description">
+    <div class="tab stats" data-group="primary" data-tab="description">
       <section class="grid grid-3col gap-md">
         <div class="mdb">
           <h4 class="align-center">{{ localize 'ADVERSITY.threat'}}</h4>
           <ul class="unstyled">
             <li>{{ localize 'ADVERSITY.attack'}} {{ threatLevel "attack" system.threat.value }}</li>
-            <li><input type="text" name="system.identity.skills" value="{{ system.identity.skills }}" data-dtype="String"/></li>
-            <li>{{ localize 'ADVERSITY.damage'}}</li>
-            <li>{{ localize 'ADVERSITY.weapon'}}</li>
             <li>{{ localize 'ADVERSITY.vigor'}} {{ threatLevel "vigor" system.threat.value }}</li>
             <li>{{ localize 'ADVERSITY.wounds'}} {{ threatLevel "minorWound" system.threat.value }}/{{ threatLevel "majorWound" system.threat.value }}/{{ threatLevel "deadlyWound" system.threat.value }}</li>
           </ul>
@@ -60,6 +60,10 @@
         <div class="mdb">
           <h4 class="align-center">{{ localize 'ADVERSITY.experience'}}</h4>
           <ul class="unstyled">
+            <li>
+              <label for="system.skills" class="">{{ localize "ADVERSITY.skills" }}</label>
+              <input type="text" name="system.skills" value="{{ system.skills }}" data-dtype="String"/>
+            </li>
             <li>{{ localize 'ADVERSITY.action'}} {{ experienceLevel "action" system.experience.value }}</li>
             <li>{{ localize 'ADVERSITY.specialties'}}  {{ experienceLevel "specialties" system.experience.value }}</li>
             <li>{{ localize 'ADVERSITY.rerolls'}}  {{ experienceLevel "rerolls" system.experience.value }}</li>
@@ -76,7 +80,7 @@
           </ul>
         </div>
       </section>
-      <section class="grid grid-1col gap-md">
+      <section class="flexcol col gap-md">
         <h4 class="align-center">{{ localize 'IDENTITY.notes'}}</h4>        
         {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
       </section>

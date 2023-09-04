@@ -1,21 +1,6 @@
 # CHANGELOG
 
 
-## 0.0.5
-- design de la feuille de personnage
-
-## 0.0.4
-- dialog box pour lancer les dés
-
-## 0.0.3
-- ajout de la variable de setting Mode de Jeu
-- lancement des dés pour les compétences des PJ
-- affichage de la rareté
-
-## 0.0.2
-
-- Ajout du logo
-
-## 0.0.1
-
-- Création du dépôt
+## 0.1.5
+- début de mise en forme des feuilles créature et pnj
+- possibilité de changer le type de capacité (pour ajouter des capacités de totem)

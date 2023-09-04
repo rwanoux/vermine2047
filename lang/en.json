@@ -92,7 +92,11 @@
     "reaction": "Réaction",
     "pools":"Réserves",
     "gear": "Matériel",
-    "protection": "Protection"
+    "protection": "Protection",
+    "skills": "Compétences",
+    "pattern": "Gabarit",
+    "size": "Taille",
+    "pack": "Groupe"
   },
 
   "VERMINE": {
@@ -182,7 +186,7 @@
     "will":{ "name": "Volonté"},
     "empathy":{ "name": "Empathie"}  
   },
-  "SKILLS_LEVELS": {
+  "SKILL_LEVELS": {
     "beginner": "Débutant",
     "proficient": "Confirmé",
     "expert":"Expert",
@@ -197,19 +201,16 @@
   },
   "ROLE_LEVELS": {
     "minor": "Mineur",
-    "secondaray": "Secondaire",
+    "secondary": "Secondaire",
     "important":"Important",
     "major":"Majeur"
   },
-  
-
-  "VERMINE.effect_treate": "Create Effect",
-  "VERMINE.effect_toggle": "Toggle Effect",
-  "VERMINE.effect_edit": "Edit Effect",
-  "VERMINE.effect_delete": "Delete Effect",
-
-  "VERMINE.Add": "Ajouter",
-  
+  "PATTERN_LEVELS": {
+    "insect": "Insecte",
+    "rat": "Rat",
+    "dog":"Chien",
+    "bear":"Ours"
+  },
   "TOTEMS": {
     "human": { 
       "name": "L'Humain", 
@@ -347,7 +348,8 @@
     "toxics": { "name": "Toxiques"},
     "ruins": { "name": "Vestiges"}
   },
-
-  "VERMINE.sexes.male":"Masculin",
-  "VERMINE.sexes.female":"Féminin"
+  "SEXES": {
+    "male": "Masculin",
+    "female":"Féminin"
+  }
 }

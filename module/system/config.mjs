@@ -48,6 +48,25 @@ VERMINE.RoleLevels = {
   4:{ "label":"ROLE_LEVELS.major", "reaction":4, "reaction_bonus":2, "pools":4, "gear":10, "gear_hindrance":2, "protection":3},
 }
 
+VERMINE.PatternLevels = {
+  1:{ "label":"PATTERN_LEVELS.insect", "attack":2, "damage":0, "minorWound":0, "majorWound":0, "deadlyWound":1},
+  2:{ "label":"PATTERN_LEVELS.rat", "attack":3, "damage":1, "minorWound":0, "majorWound":1, "deadlyWound":1},
+  3:{ "label":"PATTERN_LEVELS.dog", "attack":4, "damage":3, "minorWound":1, "majorWound":1, "deadlyWound":1},
+  4:{ "label":"PATTERN_LEVELS.bear", "attack":6, "damage":6, "minorWound":2, "majorWound":2, "deadlyWound":2},
+}
+
+VERMINE.SizeLevels = {
+  1:{ "attack":2, "vigor":1, "minorWound":0, "majorWound":0, "deadlyWound":1},
+  2:{ "attack":3, "vigor":2, "minorWound":0, "majorWound":1, "deadlyWound":1},
+  3:{ "attack":4, "vigor":3, "minorWound":1, "majorWound":1, "deadlyWound":1}
+}
+
+VERMINE.PackLevels = {
+  1:{ "attack":1, "damage":1, "minorWound":0, "majorWound":0, "deadlyWound":1},
+  2:{ "attack":2, "damage":2, "minorWound":2, "majorWound":2, "deadlyWound":2},
+  3:{ "attack":5, "damage":5, "minorWound":3, "majorWound":3, "deadlyWound":3}
+}
+
 VERMINE.abilityCategories = {
   "physical": {
     "label":"VERMINE.ability_category.physical"
