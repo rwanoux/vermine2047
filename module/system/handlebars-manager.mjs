@@ -216,5 +216,12 @@ export const registerHandlebarsHelpers = function () {
         .map(function(num) { return options.fn(num); })
         .join('');
   });
+
+     // return age type information
+     Handlebars.registerHelper('ife', function(arg1, arg2, options) {
+      return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+    });
+  
+  
   
 }
