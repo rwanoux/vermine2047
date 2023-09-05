@@ -8,9 +8,7 @@
 
 
     // Actor partials.
-    "systems/vermine2047/templates/actor/parts/actor-spells.html",
-    "systems/vermine2047/templates/actor/parts/actor-features.html",
-    "systems/vermine2047/templates/actor/parts/actor-spells.html",
+    // "systems/vermine2047/templates/actor/parts/actor-features.html",
     "systems/vermine2047/templates/actor/parts/actor-id.hbs",
     "systems/vermine2047/templates/actor/parts/actor-totem.hbs",
     "systems/vermine2047/templates/actor/parts/character-features.hbs",
@@ -19,7 +17,7 @@
     "systems/vermine2047/templates/actor/parts/actor-weapons.hbs",
     "systems/vermine2047/templates/actor/parts/actor-defenses.hbs",
     "systems/vermine2047/templates/actor/parts/actor-stories.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-effects.html",
+    "systems/vermine2047/templates/actor/parts/actor-combat.html",
 
     // Group partials
     "systems/vermine2047/templates/actor/parts/group-header.hbs",

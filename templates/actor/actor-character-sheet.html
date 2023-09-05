@@ -1,4 +1,4 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form class="{{cssClass}} {{actor.type}} flexcol form" autocomplete="off">
   <div class="form">
     <aside>
       <img class="logo mx-auto" src="systems/vermine2047/assets/images/ui/logo.webp" width="200" alt="logo Vermine" />
@@ -56,7 +56,7 @@
           <div class="tab combat" data-group="primary" data-tab="combat">
             <h3>{{ localize 'VERMINE.combat'}}</h3>
             <!-- effects -->
-            {{> "systems/vermine2047/templates/actor/parts/actor-effects.html"}}
+            {{> "systems/vermine2047/templates/actor/parts/actor-combat.html"}}
           </div>
         
           <div class="tab stories" data-group="primary" data-tab="stories">

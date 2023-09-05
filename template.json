@@ -4,16 +4,19 @@
     "templates": {
       "base": {
         "minorWound": {
+          "threshold":1,
           "value": 0,
           "min": 0,
           "max": 4
         },
         "majorWound": {
+          "threshold":4,
           "value": 0,
           "min": 0,
           "max": 2
         }        ,
         "deadlyWound": {
+          "threshold":8,
           "value": 0,
           "min": 0,
           "max": 2
@@ -29,7 +32,6 @@
         "age": 15,
         "ageType": 2,
         "profile": "", 
-        "origin": "",
         "theme": "",
         "instincts": "",
         "prohibits": "",
@@ -56,11 +58,6 @@
         },
         "effort": {
           "value": 0, 
-          "min": 0,
-          "max": 5
-        },
-        "group": {
-          "value": 0,
           "min": 0,
           "max": 5
         }

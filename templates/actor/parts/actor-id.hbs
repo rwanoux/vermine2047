@@ -2,17 +2,16 @@
   <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
 </div>
 <ul class="padding-with-frieze unstyled paper">     
-      <li>
-        <div class="flexcol flex-group-center items-center  w-full">
-            <label for="system.identity.origin" class="resource-label flexlarge align-left">{{ localize "IDENTITY.origin"}}</label>
-             <select name="system.identity.origin" class="w-full">
-              {{selectOptions config.origins selected=system.identity.origin localize=true}}
-            </select>
-          </div>
-      </li>   
+      {{#if system.identity.totem }}
+      <li class="row lgb">
+        <div class="flexcol flex-group-center items-center w-full">
+            <img src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp" alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80" height="80" />
+        </div>
+      </li>  
+      {{/if}}
       {{#if system.identity.theme}}
       <li>
-        <div class="flexcol flex-group-center items-center  w-full">
+        <div class="flexcol flex-group-center items-center w-full">
             <label for="system.identity.theme" class="resource-label flexlarge align-left">{{ localize "IDENTITY.theme"}}</label>
             <p>{{{ system.identity.theme }}}</p>
           </div>

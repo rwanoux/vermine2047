@@ -138,6 +138,16 @@
     "rarity_sm": "Rar.",
     "reliability": "Fiabilité",
     "reliability_sm": "Fiab.",
+    "wounds":{
+      "name":"Blessure",
+      "threshold": "Seuil",
+      "light":"Légère",
+      "heavy": "Grave",
+      "deadly": "Mortelle",
+      "light_wounds":"Blessure légère",
+      "heavy_wounds":"Blessure grave",
+      "deadly_wounds":"Blessure mortelle"
+    },
     "ammo": "Munitions",
     "ammo_sm": "Mun",
     "trait": "Trait",
@@ -160,21 +170,46 @@
     "totem_picker": "Sélecteur de totem",
     "actor_picker": "Sélecteur de personnage"
   },
+  "UI": {
+    "add": "Ajouter",
+    "source":"Source",
+    "duration":"Durée",
+    "effect_toggle":"Basculer un effet",
+    "effect_edit":"Modifier un effet",
+    "effect_delete":"Détruire un effet",
+    "effect_create":"Créer un effet",
+    "effects": {
+      "name": "Effets",
+      "temporary": "Effets temporaires",
+      "passive": "Effets passifs",
+      "inactive": "Effets inactifs"
+    }
+  },
   "ITEMS": {
     "defense": "Protection",
     "defenses": "Protections",
+    "new_defense": "Nouvelle protection",
     "weapon": "Arme",
+    "new_weapon": "Nouvelle arme",
     "weapons": "Armes",    
+    "new_background": "Nouvel historique",
     "backgrounds": "Historiques",
+    "new_trauma": "Nouveau traumatisme",
     "traumas": "Traumatismes",
     "rumor": "Rumeur",
+    "new_rumor": "Nouvelle rumeur",
     "rumors": "Rumeurs",
     "ability": "Capacité",
+    "new_ability": "Nouvelle capacité",
     "abilities": "Capacités",
     "specialties": "Spécialités",
+    "new_specialty": "Nouvelle spécialité",
     "evolution": "Adaptation",
+    "new_evolution": "Nouvelle adaptation",
     "evolutions": "Adaptations",
-    "vehicles": "Véhicules"
+    "new_vehicle": "Nouveau véhicule",
+    "vehicles": "Véhicules",
+    "new_objective": "Nouvel objectif"    
   },
   "ABILITIES": {
     "vigor": { "name": "Vigueur"},
@@ -318,8 +353,8 @@
   "SKILLS": {
     "arts": { "name": "Arts"},
     "civilization": { "name": "Civilisations"},
-    "psychology": { "name": "Relationnel"},
-    "rumors": { "name": "Cité"},
+    "psychology": { "name": "Psychologie"},
+    "rumors": { "name": "Rumeurs"},
     "healing": { "name": "Soins"},
     "animalism": { "name": "Animalisme"},
     "dissection": { "name": "Dissection"},
