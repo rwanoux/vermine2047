@@ -7,8 +7,8 @@ export const VERMINE = {};
 
 VERMINE.AgeTypes = {
   1:{ "name":"AGE_TYPES.young", "beginning": 0  },
-  2:{ "name":"AGE_TYPES.adult", "beginning": 16 },
-  3:{ "name":"AGE_TYPES.old", "beginning": 45 }
+  2:{ "name":"AGE_TYPES.adult", "beginning": 18 },
+  3:{ "name":"AGE_TYPES.old", "beginning": 47 }
 }
 
 VERMINE.SkillLevels = {

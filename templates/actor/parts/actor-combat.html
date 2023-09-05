@@ -2,21 +2,33 @@
   <div>
     <h4 class="align-center">{{ localize "VERMINE.self_control"}}</h4>
     <p class="align-center">
-      <input type="number" name="system.attributes.self_control.value" value="{{ system.attributes.self_control.value }}" data-dtype="Number" min="{{ system.attributes.self_control.min }}" max="{{ system.attributes.self_control.max }}" />
+      <input type="number" name="system.attributes.self_control.value" value="{{ system.attributes.self_control.value }}" data-dtype="Number" min="{{ system.attributes.self_control.min }}" max="{{ system.attributes.self_control.max }}" /> / {{ system.attributes.self_control.max }}
     </p>
   </div> 
   <div>
     <h4 class="align-center">{{ localize "VERMINE.effort"}}</h4>
     <p class="align-center">
-      <input type="number" name="system.attributes.effort.value" value="{{ system.attributes.effort.value }}" data-dtype="Number" min="{{ system.attributes.effort.min }}" max="{{ system.attributes.effort.max }}" />
+      <input type="number" name="system.attributes.effort.value" value="{{ system.attributes.effort.value }}" data-dtype="Number" min="{{ system.attributes.effort.min }}" max="{{ system.attributes.effort.max }}" /> / {{ system.attributes.effort.max }}
     </p>
   </div> 
 </div>
 <h4 class="item-name effect-name flexrow">{{ localize "VERMINE.wounds.name"}}</h4>
 <ul class="unstyled">
-  <li>{{ localize 'VERMINE.wounds.light'}}</li>
-  <li>{{ localize 'VERMINE.wounds.heavy'}}</li>
-  <li>{{ localize 'VERMINE.wounds.deadly'}}</li>
+  <li class="row mdb">{{ localize 'VERMINE.wounds.light'}} ({{ system.minorWound.threshold }}) 
+    {{#range  system.minorWound.max }}
+      <input type="radio" name="system.minorWound.value" value="{{this}}" {{#if (eq @root.system.minorWound.value this) }}checked="checked"{{/if}} />
+    {{/range}}</li>
+  <li class="row mdb">{{ localize 'VERMINE.wounds.heavy'}}  ({{ system.majorWound.threshold }})
+    {{#range  system.majorWound.max }}
+      <input type="radio" name="system.majorWound.value" value="{{this}}" {{#if (eq @root.system.majorWound.value this) }}checked{{/if}} />
+    {{/range}}
+  </li>
+  <li class="row mdb">{{ localize 'VERMINE.wounds.deadly'}}  ({{ system.deadlyWound.threshold }})
+    {{#range  system.deadlyWound.max }}
+    <input type="radio" name="system.deadlyWound.value" value="{{this}}" {{#if (eq @root.system.deadlyWound.value this) }}checked{{/if}} />
+  {{/range}}
+  </li>
+  
 </l>
 <h4 class="item-name effect-name flexrow">{{ localize "UI.effects.name"}}</h4>
 <ol class="items-list effects-list">

@@ -5,20 +5,20 @@
       "base": {
         "minorWound": {
           "threshold":1,
-          "value": 0,
-          "min": 0,
-          "max": 4
+          "value": 4,
+          "min": 1,
+          "max": 5
         },
         "majorWound": {
           "threshold":4,
-          "value": 0,
-          "min": 0,
-          "max": 2
-        }        ,
+          "value": 3,
+          "min": 1,
+          "max": 4
+        },
         "deadlyWound": {
           "threshold":8,
-          "value": 0,
-          "min": 0,
+          "value": 2,
+          "min": 1,
           "max": 2
         }
       }
