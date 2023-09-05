@@ -2,7 +2,6 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/eff
 import { VermineActorSheet } from "./actor-sheet.mjs";
 import { getRollBox } from "../system/dialogs.mjs";
 import { TotemPicker } from "../system/applications.mjs";
-import { setCharacterEffort, setCharacterSelfControl, setCharacterThresholds } from "../system/functions.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -72,15 +71,10 @@ export class VermineCharacterSheet extends VermineActorSheet {
    * @return {undefined}
    */
   _prepareCharacterData(context) {
-    const actor = game.actors.get(context.data._id);
     // Handle ability scores.
     for (let [k, v] of Object.entries(context.system.abilities)) {
       v.label = game.i18n.localize(context.system.abilities[k].label) ?? k;
     }
-
-    setCharacterEffort(actor);
-    setCharacterSelfControl(actor);
-    setCharacterThresholds(actor);
   }
 
   /**

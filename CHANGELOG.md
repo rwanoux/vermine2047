@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.7
+- sang-froid, effort, et santé
+
 ## 0.1.6
 - finition de l'onglet totem
 - ajout du logo de totem dans la sidebar
