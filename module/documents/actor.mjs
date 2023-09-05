@@ -21,6 +21,7 @@ export class VermineActor extends Actor {
     // documents or derived data.
     
     if (this.type == 'character'){
+      this._setAgeType();
       this._setCharacterEffort();
       this._setCharacterSelfControl();
       this._setCharacterThresholds();
@@ -119,7 +120,7 @@ export class VermineActor extends Actor {
   _setCharacterSelfControl() {
     let self_control = 0;
 
-    for(let i in actor.system.abilities){
+    for(let i in this.system.abilities){
       if (this.system.abilities[i].category == 'mental' || this.system.abilities[i].category == 'social'){
         self_control += this.system.abilities[i].value;  
       }
@@ -174,6 +175,14 @@ export class VermineActor extends Actor {
     this.system.minorWound.max = lightWounds;
     this.system.majorWound.max = heavyWounds;
     this.system.deadlyWound.max = deadlyWounds;
+  }
+
+  _setAgeType(){
+    Object.keys(CONFIG.VERMINE.AgeTypes).forEach((type) => {
+      if(this.system.identity.age >= parseInt(CONFIG.VERMINE.AgeTypes[type].beginning,10)){
+        this.system.identity.ageType = type; 
+      }
+    });
   }
 
 }
