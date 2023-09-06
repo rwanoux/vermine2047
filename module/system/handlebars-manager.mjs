@@ -8,15 +8,10 @@
 
 
     // Actor partials.
-    "systems/vermine2047/templates/actor/parts/actor-id.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-totem.hbs",
-    "systems/vermine2047/templates/actor/parts/character-features.hbs",
-    "systems/vermine2047/templates/actor/parts/character-header.hbs",
+    "systems/vermine2047/templates/actor/parts/actor-features.hbs",
     "systems/vermine2047/templates/actor/parts/actor-items.hbs",
     "systems/vermine2047/templates/actor/parts/actor-weapons.hbs",
     "systems/vermine2047/templates/actor/parts/actor-defenses.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-stories.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-combat.hbs",
 
     // Character partials.
     "systems/vermine2047/templates/actor/character/character-id.hbs",

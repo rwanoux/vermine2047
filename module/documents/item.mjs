@@ -11,6 +11,24 @@ export class VermineItem extends Item {
     // preparation methods overridden (such as prepareBaseData()).
     super.prepareData();
   }
+  prepareBaseData(){
+    const actorType = (this.actor !== null) ? this.actor.type : 'character';
+
+    switch (this.type){
+      case 'ability':        
+        if (this.system.type == "") {
+          // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
+          this.system.type = actorType;
+        }
+        if (this.system.totem == "" && this.actor !== null && this.actor.system.identity.totem != "") {
+          // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
+          this.system.totem = this.actor.system.identity.totem;
+        }
+        break;
+      default:
+        break;
+    }
+  }
 
   /**
    * Prepare a data object which is passed to any Roll formulas which are created related to this Item

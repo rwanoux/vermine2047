@@ -11,10 +11,10 @@ export class VermineGroupSheet extends VermineActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["vermine2047", "sheet", "actor"],
+      classes: ["vermine2047", "sheet", "actor", "group"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
-      width: 600,
-      height: 600,
+      width: 500,
+      height: 500,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
     });
   }
@@ -88,41 +88,19 @@ export class VermineGroupSheet extends VermineActorSheet {
    * @return {undefined}
    */
   _prepareItems(context) {
-    // Initialize containers.
-    const abilities = [];
-    const specialties = [];
-    const backgrounds = [];
-    const evolutions = [];
-    const traumas = [];
+    context.specialties = this.actor.itemTypes['specialty'];
+    context.backgrounds = this.actor.itemTypes['background'];
+    context.evolutions = this.actor.itemTypes['evolution'];
+    context.traumas = this.actor.itemTypes['trauma'];
+    
+    context.gear = this.actor.itemTypes['item'];
+    context.weapons = this.actor.itemTypes['weapon'];
+    context.defenses = this.actor.itemTypes['defense'];  
+    context.vehicles = this.actor.itemTypes['vehicle'];
 
+    context.totem_abilities = this.actor.itemTypes['ability'].filter(i=>i.system.type === 'totem');
+    context.abilities = this.actor.itemTypes['ability'].filter(i=>i.system.type !== 'totem');
 
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      if (i.type === 'ability') {
-        abilities.push(i);
-      }
-      else if (i.type === 'specialty') {
-        specialties.push(i);
-      }
-      else if (i.type === 'background') {
-        backgrounds.push(i);
-      }
-      else if (i.type === 'evolution') {
-        evolutions.push(i);
-      }
-      else if (i.type === 'trauma') {
-        traumas.push(i);
-      }
-
-    }
-
-    // Assign and return
-    context.abilities = abilities;
-    context.specialties = specialties;
-    context.backgrounds = backgrounds;
-    context.evolutions = evolutions;
-    context.traumas = traumas;
     context.members = [];
     context.encounters = [];
     
@@ -134,13 +112,6 @@ export class VermineGroupSheet extends VermineActorSheet {
       context.encounters.push(game.actors.get(encounterId));
     }
 
-    context.gear = this.actor.itemTypes['item'];
-    context.weapons = this.actor.itemTypes['weapon'];
-    context.defenses = this.actor.itemTypes['defense'];  
-    context.vehicles = this.actor.itemTypes['vehicle'];
-
-    context.totem_abilities = this.actor.itemTypes['ability'].filter(i=>i.type !== 'totem');
-    context.abilities = this.actor.itemTypes['ability'].filter(i=>i.type === 'totem');
 
   }
 

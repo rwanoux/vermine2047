@@ -10,10 +10,10 @@ export class VermineCreatureSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["vermine2047", "sheet", "actor"],
+      classes: ["vermine2047", "sheet", "actor", "creature"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
-      width: 600,
-      height: 600,
+      width: 300,
+      height: 300,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
     });
   }
@@ -92,6 +92,33 @@ export class VermineCreatureSheet extends ActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
+
+    html.find('.item-create').click(this._onItemCreate.bind(this));
   } 
+
+  async _onItemCreate(event) {
+    event.preventDefault();
+    const header = event.currentTarget;
+    // Get the type of item to create.
+    const type = header.dataset.type;
+    // Grab any data associated with this control.
+    const data = duplicate(header.dataset);
+    // Initialize a default name.
+    // const name = `New ${type.capitalize()}`;
+    const name = game.i18n.localize('ITEMS.new_' + type);
+
+    console.log('onItemCreate child', data.type, this.actor.type);
+    // Prepare the item object.
+    const itemData = {
+      name: name,
+      type: type,
+      system: data
+    };
+    // Remove the type from the dataset since it's in the itemData.type prop.
+    delete itemData.system["type"];
+
+    // Finally, create the item!
+    return await Item.create(itemData, {parent: this.actor});
+  }
 
 }

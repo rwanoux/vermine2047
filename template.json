@@ -383,6 +383,11 @@
     "creature": {
       "templates": ["base"],      
       "skills": "",
+      "modes": {
+        "survival": true,
+        "nightmare": true,
+        "apocalypse": false
+      },
       "pattern": {
         "value": 1,
         "min": 1,
@@ -437,7 +442,12 @@
     },
     "ability": {
       "templates": ["list"],
-      "type": "character",
+      "type": "",
+      "totem": "",
+      "learn": {
+        "threshold":5,
+        "hindrance":0
+      },
       "level": {
         "value": 1,
         "min": 1,

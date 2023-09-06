@@ -45,6 +45,7 @@ export class VermineItemSheet extends ItemSheet {
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = itemData.system;
     context.flags = itemData.flags;
+    context.config = CONFIG.VERMINE;
 
     return context;
   }

@@ -164,6 +164,7 @@
     "type_character": "Personnage",
     "type_npc": "PNJ",
     "type_creature": "Créature",
+    "type": "Type",
     "group_members": "Membres",
     "encounters": "Rencontres",
     "road": "La Route",
@@ -209,7 +210,8 @@
     "evolutions": "Adaptations",
     "new_vehicle": "Nouveau véhicule",
     "vehicles": "Véhicules",
-    "new_objective": "Nouvel objectif"    
+    "new_objective": "Nouvel objectif",
+    "learning": "Apprentissage"    
   },
   "ABILITIES": {
     "vigor": { "name": "Vigueur"},

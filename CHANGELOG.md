@@ -4,6 +4,8 @@
 - versions condensées des méthodes (@kristov)
 - renommage des templates
 - image actors par défaut
+- image des créatures
+- ajout du totem et de l'apprentissage dans les capacités
 
 ## 0.1.8
 - refactoring sheet vers actor
