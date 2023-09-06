@@ -1,7 +1,7 @@
 <form class="{{cssClass}} {{actor.type}} flexcol form" autocomplete="off">
 
   {{!-- Sheet Header --}}
-  {{> "systems/vermine2047/templates/actor/parts/group-header.hbs"}}
+  {{> "systems/vermine2047/templates/actor/group/group-header.hbs"}}
   
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
@@ -17,19 +17,19 @@
     {{!-- Biography Tab --}}
     <div class="tab biography" data-group="primary" data-tab="description">
       <h3>{{ localize 'VERMINE.information'}}</h3>
-      {{> "systems/vermine2047/templates/actor/parts/group-info.hbs"}}
+      {{> "systems/vermine2047/templates/actor/group/group-info.hbs"}}
     </div>
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="gear">
         <h3>{{ localize 'VERMINE.gear'}}</h3>
-       {{> "systems/vermine2047/templates/actor/parts/group-items.hbs"}}
+       {{> "systems/vermine2047/templates/actor/group/group-items.hbs"}}
     </div>
 
     {{!-- Road Tab --}}
     <div class="tab effects" data-group="primary" data-tab="totem">
       <h3>{{ localize 'VERMINE.road'}}</h3>
-      {{> "systems/vermine2047/templates/actor/parts/group-experience.hbs"}}
+      {{> "systems/vermine2047/templates/actor/group/group-experience.hbs"}}
     </div>
 
   </section>

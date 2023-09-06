@@ -1,0 +1,76 @@
+<div class="grid grid-2col">
+  <div>
+    <h4 class="align-center">{{ localize "VERMINE.self_control"}}</h4>
+    <p class="align-center">
+      <input type="number" name="system.attributes.self_control.value" value="{{ system.attributes.self_control.value }}" data-dtype="Number" min="{{ system.attributes.self_control.min }}" max="{{ system.attributes.self_control.max }}" /> / {{ system.attributes.self_control.max }}
+    </p>
+  </div> 
+  <div>
+    <h4 class="align-center">{{ localize "VERMINE.effort"}}</h4>
+    <p class="align-center">
+      <input type="number" name="system.attributes.effort.value" value="{{ system.attributes.effort.value }}" data-dtype="Number" min="{{ system.attributes.effort.min }}" max="{{ system.attributes.effort.max }}" /> / {{ system.attributes.effort.max }}
+    </p>
+  </div> 
+</div>
+<h4 class="item-name effect-name flexrow">{{ localize "VERMINE.wounds.name"}}</h4>
+<ul class="unstyled">
+  <li class="row mdb">{{ localize 'VERMINE.wounds.light'}} ({{ system.minorWound.threshold }}) 
+    {{#range system.minorWound.max }}
+      <input type="radio" data-dtype="Number" name="system.minorWound.value" value="{{this}}" {{#ife @root.system.minorWound.value this }}checked="checked"{{/ife}} />
+    {{/range}}</li>
+  <li class="row mdb">{{ localize 'VERMINE.wounds.heavy'}}  ({{ system.majorWound.threshold }})
+    {{#range system.majorWound.max }}
+      <input type="radio" name="system.majorWound.value" value="{{this}}"  {{#ife @root.system.majorWound.value this }}checked="checked"{{/ife}} />
+    {{/range}}
+  </li>
+  <li class="row mdb">{{ localize 'VERMINE.wounds.deadly'}}  ({{ system.deadlyWound.threshold }})
+    {{#range system.deadlyWound.max }}
+    <input type="radio" name="system.deadlyWound.value" value="{{this}}"  {{#ife @root.system.deadlyWound.value this }}checked="checked"{{/ife}} />
+  {{/range}}
+  </li>
+</ul>
+<h4 class="item-name effect-name flexrow">{{ localize "UI.effects.name"}}</h4>
+<ol class="items-list effects-list">
+  {{#each effects as |section sid|}}
+    <li class="items-header flexrow" data-effect-type="{{section.type}}">
+      <p class="item-name effect-name flexrow">{{#if (eq section.type 'temporary')}}
+          {{localize "UI.effects.temporary" }}
+        {{else if (eq section.type 'passive')}}
+          {{localize "UI.effects.passive" }}
+        {{else if (eq section.type 'inactive')}}
+        {{localize "UI.effects.inactive" }}
+        {{/if}}
+      </p>
+      <div class="effect-source">{{localize 'UI.source'}}</div>
+      <div class="effect-source">{{localize 'UI.duration'}}</div>
+      <div class="item-controls effect-controls flexrow">
+        <a class="effect-control" data-action="create" title="{{localize 'UI.effect_create'}}">
+          <i class="fas fa-plus"></i> {{localize "UI.add"}}
+        </a>
+      </div>
+    </li>
+
+    <ol class="item-list">
+    {{#each section.effects as |effect|}}
+      <li class="item effect flexrow" data-effect-id="{{effect.id}}">
+        <div class="item-name effect-name">
+          <a class="effect-control flexrow flex-group-center items-center" data-action="edit" title="{{localize 'UI.effect_edit'}}">
+          <img class="item-image" src="{{effect.icon}}"/>
+          <span>{{effect.label}}</span>
+          </a>
+        </div>
+        <div class="effect-source">{{effect.sourceName}}</div>
+        <div class="effect-duration">{{effect.duration.label}}</div>
+        <div class="item-controls effect-controls flexrow">
+          <a class="effect-control" data-action="toggle" title="{{localize 'UI.effect_toggle'}}">
+            <i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
+          </a>          
+          <a class="effect-control" data-action="delete" title="{{localize 'UI.effect_delete'}}">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+      </li>
+    {{/each}}
+    </ol>
+  {{/each}}
+</ol>

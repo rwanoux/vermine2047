@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.1.9
+- versions condensées des méthodes (@kristov)
+- renommage des templates
+- image actors par défaut
+
+## 0.1.8
+- refactoring sheet vers actor
+
 ## 0.1.7
 - sang-froid, effort, et santé
 

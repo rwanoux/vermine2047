@@ -51,10 +51,9 @@ export const registerHooks = function () {
     /* -------------------------------------------- */
 
     Hooks.on("preCreateActor", function (actor) {
-        // console.log('pre create actor', actor);
+        console.log('pre create actor', actor.img);
         if (actor.img == "icons/svg/mystery-man.svg") {
-        // actor.updateSource({"img": `systems/vermine2047/icons/actors/${actor.type}.webp`});
-        // item.updateSource({"img": `systems/vermine2047/icons/competence.webp`});
+            actor.updateSource({"img": `systems/vermine2047/assets/icons/actors/${actor.type}.webp`});
         }
     });
     

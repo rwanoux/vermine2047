@@ -4,12 +4,12 @@
       <img class="logo mx-auto" src="systems/vermine2047/assets/images/ui/logo.webp" width="200" alt="logo Vermine" />
       <div class="sidebar" data-group="dashboard" data-tab="sidebar">
           <!--ID -->
-          {{> "systems/vermine2047/templates/actor/parts/actor-id.hbs"}}
+          {{> "systems/vermine2047/templates/actor/character/character-id.hbs"}}
       </div>
   </aside>
   <main>
     <!-- HEADER -->
-    {{> "systems/vermine2047/templates/actor/parts/character-header.hbs"}}
+    {{> "systems/vermine2047/templates/actor/character/character-header.hbs"}}
 
     <!-- SHEET NAVIGATION -->
     <nav class="sheet-navigation sheet-tabs tabs flex-group-end" data-group="primary">
@@ -42,26 +42,26 @@
         <section class="sheet-content">
           <div class="tab character character-pane active" data-group="primary" data-tab="character">
               <!-- Character -->
-            {{> "systems/vermine2047/templates/actor/parts/character-features.hbs"}}
+            {{> "systems/vermine2047/templates/actor/character/character-features.hbs"}}
           </div>
           <div class="tab totem" data-group="primary" data-tab="totem">
             <h3>{{ localize 'IDENTITY.totem'}}</h3>
-            {{> "systems/vermine2047/templates/actor/parts/actor-totem.hbs"}}
+            {{> "systems/vermine2047/templates/actor/character/character-totem.hbs"}}
           </div>
           <div class="tab equipment" data-group="primary" data-tab="equipment">
             <h3>{{ localize 'VERMINE.equipment'}}</h3>
             <!-- Rituals -->
-            {{> "systems/vermine2047/templates/actor/parts/actor-items.html"}}
+            {{> "systems/vermine2047/templates/actor/parts/actor-items.hbs"}}
           </div>
           <div class="tab combat" data-group="primary" data-tab="combat">
             <h3>{{ localize 'VERMINE.combat'}}</h3>
             <!-- effects -->
-            {{> "systems/vermine2047/templates/actor/parts/actor-combat.html"}}
+            {{> "systems/vermine2047/templates/actor/character/character-combat.hbs"}}
           </div>
         
           <div class="tab stories" data-group="primary" data-tab="stories">
               <h3>{{ localize 'VERMINE.stories'}}</h3>
-              {{> "systems/vermine2047/templates/actor/parts/actor-stories.hbs"}}
+              {{> "systems/vermine2047/templates/actor/character/character-stories.hbs"}}
         </div>
         
         </section>

@@ -10,7 +10,7 @@ export class VermineActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "actor"],
-      template: "systems/vermine2047/templates/actor/actor-sheet.html",
+      template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
       height: 800,
       width: 690,
       resizable: false,
@@ -20,7 +20,7 @@ export class VermineActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/vermine2047/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/vermine2047/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */

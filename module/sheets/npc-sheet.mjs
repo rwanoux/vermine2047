@@ -11,7 +11,7 @@ export class VermineNpcSheet extends VermineActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "actor"],
-      template: "systems/vermine2047/templates/actor/actor-sheet.html",
+      template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
@@ -20,7 +20,7 @@ export class VermineNpcSheet extends VermineActorSheet {
 
   /** @override */
   get template() {
-    return `systems/vermine2047/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/vermine2047/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */

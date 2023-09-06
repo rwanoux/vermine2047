@@ -12,18 +12,33 @@
     "systems/vermine2047/templates/actor/parts/actor-totem.hbs",
     "systems/vermine2047/templates/actor/parts/character-features.hbs",
     "systems/vermine2047/templates/actor/parts/character-header.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-items.html",
+    "systems/vermine2047/templates/actor/parts/actor-items.hbs",
     "systems/vermine2047/templates/actor/parts/actor-weapons.hbs",
     "systems/vermine2047/templates/actor/parts/actor-defenses.hbs",
     "systems/vermine2047/templates/actor/parts/actor-stories.hbs",
-    "systems/vermine2047/templates/actor/parts/actor-combat.html",
+    "systems/vermine2047/templates/actor/parts/actor-combat.hbs",
+
+    // Character partials.
+    "systems/vermine2047/templates/actor/character/character-id.hbs",
+    "systems/vermine2047/templates/actor/character/character-totem.hbs",
+    "systems/vermine2047/templates/actor/character/character-features.hbs",
+    "systems/vermine2047/templates/actor/character/character-header.hbs",
+    "systems/vermine2047/templates/actor/character/character-stories.hbs",
+    "systems/vermine2047/templates/actor/character/character-combat.hbs",
+
 
     // Group partials
-    "systems/vermine2047/templates/actor/parts/group-header.hbs",
-    "systems/vermine2047/templates/actor/parts/group-vehicles.hbs",
-    "systems/vermine2047/templates/actor/parts/group-info.hbs",
-    "systems/vermine2047/templates/actor/parts/group-items.hbs",
-    "systems/vermine2047/templates/actor/parts/group-experience.hbs",
+    "systems/vermine2047/templates/actor/group/group-header.hbs",
+    "systems/vermine2047/templates/actor/group/group-vehicles.hbs",
+    "systems/vermine2047/templates/actor/group/group-info.hbs",
+    "systems/vermine2047/templates/actor/group/group-items.hbs",
+    "systems/vermine2047/templates/actor/group/group-experience.hbs",
+
+    // npc partials
+    "systems/vermine2047/templates/actor/npc/npc-combat.hbs",
+
+    // creature partials
+    "systems/vermine2047/templates/actor/creature/creature-combat.hbs",
 
     // additional templates
     "systems/vermine2047/templates/roll.hbs",
