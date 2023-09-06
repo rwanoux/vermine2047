@@ -41,26 +41,6 @@ export class VermineActorSheet extends ActorSheet {
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
     
-    // Prepare character data and items.
-    if (actorData.type == 'character') {
-      this._prepareCharacterItems(context);
-    }
-
-    // Prepare NPC data and items.
-    if (actorData.type == 'npc') {
-      this._prepareNpcItems(context);
-    }
-
-    // Prepare Group data and items.
-    if (actorData.type == 'group') {
-      this._prepareGroupItems(context);
-    }
-
-   // Prepare Creature data and items.
-    if (actorData.type == 'npc') {
-      this._prepareCreatureItems(context);
-    }
-
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
 
@@ -111,73 +91,7 @@ export class VermineActorSheet extends ActorSheet {
     }
 
   }
-
-
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCharacterItems(context) {
-    context.gear = this.actor.itemTypes['item'];
-    context.weapons = this.actor.itemTypes['weapon'];
-    context.defenses = this.actor.itemTypes['defense'];
-    context.traits = this.actor.itemTypes['trait'];
-    context.specialties = this.actor.itemTypes['specialty'];
-    context.abilities = this.actor.itemTypes['ability'];
-    context.evolutions = this.actor.itemTypes['evolution'];
-    context.traumas = this.actor.itemTypes['trauma'];
-    context.backgrounds = this.actor.itemTypes['background'];
-    context.rumors = this.actor.itemTypes['rumor'];
-    }
-
-  /**
-   * Organize and classify Items for Npc sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareNpcItems(context) {
-    context.gear = this.actor.itemTypes['item'];
-    context.traits = this.actor.itemTypes['trait'];
-
-  }
-
-
-  /**
-   * Organize and classify Items for Group sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareGroupItems(context) {
-    context.gear = this.actor.itemTypes['item'];
-    context.weapons = this.actor.itemTypes['weapon'];
-    context.defenses = this.actor.itemTypes['defense'];  
-    context.vehicles = this.actor.itemTypes['vehicle'];
-
-    context.totem_abilities = this.actor.itemTypes['ability'].filter(i=>i.type !== 'totem');
-    context.abilities = this.actor.itemTypes['ability'].filter(i=>i.type === 'totem');
-
-  }
-
-  /**
-   * Organize and classify Items for Creature sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCreatureItems(context) {
-    context.gear = this.actor.itemTypes['item'];
-    context.traits = this.actor.itemTypes['trait'];
-  }
-
-  
+ 
   async _onItemCreate(event) {
     event.preventDefault();
     const header = event.currentTarget;
