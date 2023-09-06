@@ -118,39 +118,11 @@ export class VermineActor extends Actor {
   }
 
   _setCharacterSelfControl() {
-    let self_control = 0;
-
-    for(let i in this.system.abilities){
-      if (this.system.abilities[i].category == 'mental' || this.system.abilities[i].category == 'social'){
-        self_control += this.system.abilities[i].value;  
-      }
-    }
-    /// gestion de l'age
-    if (this.system.identity.ageType == 1){
-      self_control--;
-    }
-    
-    this.system.attributes.self_control.max = self_control;
+    this.system.attributes.self_control.max = 0 + Object.values(this.system.abilities).filter(i => i.category === "mental" || i.category === "social").map((i) => i.value).reduce((acc, curr) => acc + curr, 0) + this.modFromAgeSelfControl;
   }
 
   _setCharacterEffort() {
-    let effort = 0;
-
-    // calcul de l'effort
-    for(let i in this.system.abilities){
-      if (this.system.abilities[i].category == 'physical' || this.system.abilities[i].category == 'manual'){
-        effort += this.system.abilities[i].value;  
-      }
-    }
-  
-    /// gestion de l'age
-    if (this.system.identity.ageType == 1){
-      effort--;
-    } else if (this.system.identity.ageType == 3){
-      effort -= 2;
-    }
-  
-    this.system.attributes.effort.max = effort;
+    this.system.attributes.effort.max = 0 + Object.values(this.system.abilities).filter(i => i.category === "physical" || i.category === "manual").map((i) => i.value).reduce((acc, curr) => acc + curr, 0) + this.modFromAgeEffort;
   }
   
   _setCharacterThresholds() {
@@ -160,22 +132,11 @@ export class VermineActor extends Actor {
     this.system.majorWound.threshold = health + 3;
     this.system.deadlyWound.threshold = (health + 7 < 11) ? health + 7 : 10;
 
-    let lightWounds = 4;
-    let heavyWounds = 3;
-    let deadlyWounds = 2;
-
-    if (this.system.identity.ageType == 3){
-      lightWounds--;
-      heavyWounds--;
-      deadlyWounds--;
-    } else if (this.system.identity.ageType == 1){
-      deadlyWounds--;
-    }
-
-    this.system.minorWound.max = lightWounds;
-    this.system.majorWound.max = heavyWounds;
-    this.system.deadlyWound.max = deadlyWounds;
+    this.system.minorWound.max = 4 + this.modFromAgeWounds.l;
+    this.system.majorWound.max =  3 + this.modFromAgeWounds.h;
+    this.system.deadlyWound.max = 2 + this.modFromAgeWounds.d;
   }
+  
 
   _setAgeType(){
     Object.keys(CONFIG.VERMINE.AgeTypes).forEach((type) => {
@@ -183,6 +144,26 @@ export class VermineActor extends Actor {
         this.system.identity.ageType = type; 
       }
     });
+  }
+
+  get ageType() {
+    return this.system.identity.ageType;
+  }
+
+  get modFromAgeSelfControl() {
+    return this.ageType == 1 ? -1 : 0;
+  }
+
+  get modFromAgeEffort() {
+    if (this.ageType == 1) return -1;
+    if (this.ageType == 3) return -2;
+    return 0;
+  }
+
+  get modFromAgeWounds() {
+    if (this.ageType == 1) return {l : 0, h : 0, d: -1};
+    if (this.ageType == 3) return {l : -1, h : -1, d: -1};    
+    return {l : 0, h : 0, d: 0};
   }
 
 }

@@ -121,74 +121,17 @@ export class VermineActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareCharacterItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const traits = [];
-    const defenses = [];
-    const specialties = [];
-    const abilities = [];
-    const weapons = [];
-    const evolutions = [];
-    const traumas = [];
-    const backgrounds = [];
-    const rumors = [];
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
-      else if (i.type === 'trait') {
-        traits.push(i);
-      }
-      else if (i.type === 'defense') {
-        defenses.push(i);
-      }
-      else if (i.type === 'weapon') {
-        weapons.push(i);
-      }
-      else if (i.type === 'specialty') {
-        specialties.push(i);
-      }
-      else if (i.type === 'ability') {
-        abilities.push(i);
-      }
-      else if (i.type === 'evolution') {
-        evolutions.push(i);
-      }
-      else if (i.type === 'trauma') {
-        traumas.push(i);
-      }
-      else if (i.type === 'background') {
-        backgrounds.push(i);
-      }
-      else if (i.type === 'rumor') {
-        rumors.push(i);
-      }
-     /* // Append to cephalie.
-      else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
-          cephalie[i.system.spellLevel].push(i);
-        }
-      }*/
+    context.gear = this.actor.itemTypes['item'];
+    context.weapons = this.actor.itemTypes['weapon'];
+    context.defenses = this.actor.itemTypes['defense'];
+    context.traits = this.actor.itemTypes['trait'];
+    context.specialties = this.actor.itemTypes['specialty'];
+    context.abilities = this.actor.itemTypes['ability'];
+    context.evolutions = this.actor.itemTypes['evolution'];
+    context.traumas = this.actor.itemTypes['trauma'];
+    context.backgrounds = this.actor.itemTypes['background'];
+    context.rumors = this.actor.itemTypes['rumor'];
     }
-
-    // Assign and return
-    context.gear = gear;
-    context.weapons = weapons;
-    context.defenses = defenses;
-    context.traits = traits;
-    context.specialties = specialties;
-    context.abilities = abilities;
-    context.evolutions = evolutions;
-    context.traumas = traumas;
-    context.backgrounds = backgrounds;
-    context.rumors = rumors;
-    // console.log("context", context);
-  }
-
 
   /**
    * Organize and classify Items for Npc sheets.
@@ -198,27 +141,8 @@ export class VermineActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareNpcItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const traits = [];
-
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
-      else if (i.type === 'trait') {
-        traits.push(i);
-      }
-
-
-    }
-
-    // Assign and return
-    context.gear = gear;
+    context.gear = this.actor.itemTypes['item'];
+    context.traits = this.actor.itemTypes['trait'];
 
   }
 
@@ -231,49 +155,14 @@ export class VermineActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareGroupItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const defenses = [];
-    const abilities = [];
-    const totem_abilities = [];
-    const weapons = [];
-    const vehicles = [];
+    context.gear = this.actor.itemTypes['item'];
+    context.weapons = this.actor.itemTypes['weapon'];
+    context.defenses = this.actor.itemTypes['defense'];  
+    context.vehicles = this.actor.itemTypes['vehicle'];
 
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
-      else if (i.type === 'defense') {
-        defenses.push(i);
-      }
-      else if (i.type === 'weapon') {
-        weapons.push(i);
-      }
-      else if (i.type === 'ability') {
-        if (i.system.type == 'totem'){
-          totem_abilities.push(i);
-        } else {
-          abilities.push(i);
-        }
-        
-      }
-      else if (i.type === 'vehicle') {
-        vehicles.push(i);
-      }
+    context.totem_abilities = this.actor.itemTypes['ability'].filter(i=>i.type !== 'totem');
+    context.abilities = this.actor.itemTypes['ability'].filter(i=>i.type === 'totem');
 
-
-    }
-
-    // Assign and return
-    context.gear = gear;
-    context.weapons = weapons;
-    context.defenses = defenses;
-    context.abilities = abilities;
-    context.totem_abilities = totem_abilities;
-    context.vehicles = vehicles;
   }
 
   /**
@@ -284,29 +173,11 @@ export class VermineActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareCreatureItems(context) {
-    // Initialize containers.
-    const gear = [];
-    const traits = [];
-
-
-    // Iterate through items, allocating to containers
-    for (let i of context.items) {
-      i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
-      }
-      else if (i.type === 'trait') {
-        traits.push(i);
-      }
-
-
-    }
-
-    // Assign and return
-    context.gear = gear;
-
+    context.gear = this.actor.itemTypes['item'];
+    context.traits = this.actor.itemTypes['trait'];
   }
+
+  
   async _onItemCreate(event) {
     event.preventDefault();
     const header = event.currentTarget;
