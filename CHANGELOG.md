@@ -2,6 +2,7 @@
 
 ## 0.1.13
 - ajout des historiques
+- ajout des rites
 
 ## 0.1.12
 - passage des packs en LevelDB

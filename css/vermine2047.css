@@ -147,7 +147,8 @@ ul.unstyled li {
   font-size: 1.25em;
   border-bottom: none;
 }
-.actor.sheet .form h4 {
+.actor.sheet .form h4,
+.item.sheet .form h4 {
   font-family: "DistressBlack", sans-serif; 
   font-size: 2em;
   text-transform: uppercase;

@@ -2,7 +2,7 @@
   "id": "vermine2047",
   "title": "Vermine 2047",
   "description": "The Vermine 2047 system for FoundryVTT!",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "compatibility": {
     "minimum": "11",
     "verified": "11.308",
@@ -51,6 +51,14 @@
       "label": "Historiques",
       "system": "vermine2047",
       "path": "packs/historiques",
+      "type": "Item",
+      "private": false
+    },
+    {
+      "name": "rites",
+      "label": "Rites",
+      "system": "vermine2047",
+      "path": "packs/rites",
       "type": "Item",
       "private": false
     },

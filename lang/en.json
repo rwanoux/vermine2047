@@ -212,14 +212,18 @@
     "vehicles": "Véhicules",
     "new_objective": "Nouvel objectif",
     "learning": "Apprentissage",
-    "cost": "Coût"    
+    "cost": "Coût",
+    "rituel": "Rituel",
+    "transe": "Transe",
+    "effects": "Effets",
+    "details": "Détails"
   },
   "ABILITIES": {
     "vigor": { "name": "Vigueur"},
     "health": { "name": "Santé"},
     "precision":{ "name": "Précision"},
     "reflexes":{ "name": "Réflexes"},
-    "knowledge":{ "name": "Connaissance"},
+    "knowledge":{ "name": "Savoir"},
     "perception":{ "name": "Perception"},
     "will":{ "name": "Volonté"},
     "empathy":{ "name": "Empathie"}  

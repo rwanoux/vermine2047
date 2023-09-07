@@ -82,6 +82,17 @@ VERMINE.abilityCategories = {
   }
 }
 
+VERMINE.abilities = {
+  "vigor": "ABILITIES.vigor.name",
+  "health": "ABILITIES.health.name",
+  "precision": "ABILITIES.precision.name",
+  "reflexes": "ABILITIES.reflexes.name",
+  "knowledge": "ABILITIES.knowledge.name",
+  "perception": "ABILITIES.perception.name",
+  "will": "ABILITIES.will.name",
+  "empathy": "ABILITIES.empathy.name"
+}
+
 VERMINE.skillCategories = {
   "man": {
     "label":"VERMINE.skill_category.man"

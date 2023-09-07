@@ -411,7 +411,7 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "defense", "vehicle", "ability", "specialty", "trait",  "background", "trauma", "evolution", "rumor", "target", "rite"],
+    "types": ["item", "weapon", "defense", "vehicle", "ability", "specialty", "background", "trauma", "evolution", "rumor", "target", "rite"],
     "templates": {
       "base": {
         "description": "",
@@ -458,16 +458,16 @@
     "specialty": {
       "templates": ["list"]
     },
-    "trait": {
-      "templates": ["list"],
-      "level":0
-    },
     "vehicle": {
       "templates": ["base"],
       "mobility":3
     },
     "rite": {
-      "templates": ["base"]      
+      "templates": ["base"],
+      "rituel": "",
+      "transe": "",
+      "ability": "",      
+      "effect": ""
     },
     "background": {
       "templates": ["list"],
