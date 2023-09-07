@@ -2,7 +2,7 @@
   "id": "vermine2047",
   "title": "Vermine 2047",
   "description": "The Vermine 2047 system for FoundryVTT!",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "compatibility": {
     "minimum": "11",
     "verified": "11.308",
@@ -31,18 +31,34 @@
   ],
   "packs": [
     {
-      "name": "kit-de-depart",
-      "label": "Kit de départ",
+      "name": "adaptationsmutations",
+      "label": "Adaptations / Mutations",
       "system": "vermine2047",
-      "path": "packs/kit-de-depart.db",
-      "type": "Adventure",
+      "path": "packs/adaptationsmutations",
+      "type": "Item",
+      "private": false
+    },
+    {
+      "name": "traumatismes",
+      "label": "Traumatismes",
+      "system": "vermine2047",
+      "path": "packs/traumatismes",
+      "type": "Item",
       "private": false
     },
     {
       "name": "pretires",
       "label": "Prétirés",
       "system": "vermine2047",
-      "path": "packs/pretires.db",
+      "path": "packs/pretires",
+      "type": "Actor",
+      "private": false
+    },
+    {
+      "name": "deck-creatures",
+      "label": "Deck créatures",
+      "system": "vermine2047",
+      "path": "packs/deck-creatures",
       "type": "Actor",
       "private": false
     }

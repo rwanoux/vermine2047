@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.12
+- passage des packs en LevelDB
+
 ## 0.1.11
 - passage à une compatibilité v11
 
