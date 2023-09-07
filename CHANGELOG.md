@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.13
+- ajout des historiques
+
 ## 0.1.12
 - passage des packs en LevelDB
 

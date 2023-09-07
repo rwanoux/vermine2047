@@ -47,6 +47,22 @@
       "private": false
     },
     {
+      "name": "historiques",
+      "label": "Historiques",
+      "system": "vermine2047",
+      "path": "packs/historiques",
+      "type": "Item",
+      "private": false
+    },
+    {
+      "name": "table",
+      "label": "Tables Aléatoires",
+      "system": "vermine2047",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "private": false
+    },
+    {
       "name": "pretires",
       "label": "Prétirés",
       "system": "vermine2047",
