@@ -470,7 +470,8 @@
       "templates": ["base"]      
     },
     "background": {
-      "templates": ["list"]
+      "templates": ["list"],
+      "cost":1
     },
     "trauma": {
       "templates": ["list"],

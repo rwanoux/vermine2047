@@ -211,7 +211,8 @@
     "new_vehicle": "Nouveau véhicule",
     "vehicles": "Véhicules",
     "new_objective": "Nouvel objectif",
-    "learning": "Apprentissage"    
+    "learning": "Apprentissage",
+    "cost": "Coût"    
   },
   "ABILITIES": {
     "vigor": { "name": "Vigueur"},
