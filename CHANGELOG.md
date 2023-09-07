@@ -1,7 +1,10 @@
 # CHANGELOG
 
 ## 0.1.10
-
+- révision du template évolution
+- révision du template traumatisme
+- ajout du type rite
+- test import de pack
 
 ## 0.1.9
 - versions condensées des méthodes (@kristov)
