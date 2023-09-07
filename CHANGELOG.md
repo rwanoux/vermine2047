@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.11
+- passage à une compatibilité v11
+
 ## 0.1.10
 - révision du template évolution
 - révision du template traumatisme
