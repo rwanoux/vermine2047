@@ -470,10 +470,12 @@
       "templates": ["list"]
     },
     "trauma": {
-      "templates": ["list"]
+      "templates": ["list"],
+      "type": ""
     },
     "evolution": {
-      "templates": ["list"]
+      "templates": ["list"],
+      "level":1
     },
     "rumor": {
       "templates": ["list"]

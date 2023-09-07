@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.1.10
+
+
 ## 0.1.9
 - versions condensées des méthodes (@kristov)
 - renommage des templates
