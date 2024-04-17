@@ -1,21 +1,32 @@
 <div class="totem choose grid grid-2col" style="padding:5px;">
     {{#each config.totems as | totem tk|}}
     {{#if (ne tk "human")}}
-        {{#if (ne tk "adapted")}}
-        <div class="flexrow row mdb flex-group-center">
-            <h4 style="flex:33%;">
-                <a class="totem" data-totem="{{ tk }}" title="{{ smarttlk "TOTEMS" tk "description"}}">
-                <img src="/systems/vermine2047/assets/images/ui/totems/{{ tk }}.webp" alt="{{ localize totem }}" width="80" height="80" />
-                </a>
-            </h4>
-            <p style="flex:66%;text-align:left;">
-                <strong>Instincts</strong> : {{ smarttlk "TOTEMS" tk "instincts"}}<br>
-                <strong>Interdits</strong> : {{ smarttlk "TOTEMS" tk "bans"}}<br>
-                <strong>Comportements</strong> : {{ smarttlk "TOTEMS" tk "behaviour"}}<br>
-                <strong>Totem opposé</strong> : {{ smartcfg "totem_opposites" tk }}<br>
-            </p>
-        </div>
-        {{/if}}
+    {{#if (ne tk "adapted")}}
+
+    <div class="flexrow row mdb flex-group-center">
+        <h4 style="flex:33%;">
+            <a class="totem" data-totem="{{ tk }}"
+                title="{{ smarttlk "TOTEMS"
+                tk "description"}}">
+                <img
+                    src="/systems/vermine2047/assets/images/ui/totems/{{ tk }}.webp"
+                    alt="{{ localize totem }}" width="80" height="80" />
+                <h2>{{ smarttlk "TOTEMS"
+                    tk "name"}}</h2>
+            </a>
+        </h4>
+        <p style="flex:66%;text-align:left;">
+            <strong>Instincts</strong> : {{ smarttlk "TOTEMS" tk
+            "instincts"}}<br>
+            <strong>Interdits</strong> : {{ smarttlk "TOTEMS" tk
+            "bans"}}<br>
+            <strong>Comportements</strong> : {{ smarttlk "TOTEMS" tk
+            "behaviour"}}<br>
+            <strong>Totem opposé</strong> : {{ smartcfg "totem_opposites" tk
+            }}<br>
+        </p>
+    </div>
+    {{/if}}
     {{/if}}
     {{/each}}
 </div>

@@ -1,4 +1,4 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
 import { getRollBox } from "../system/dialogs.mjs";
 import { TotemPicker } from "../system/applications.mjs";
@@ -42,7 +42,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
-    
+
     // Prepare character data and items.
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -102,8 +102,9 @@ export class VermineCharacterSheet extends VermineActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-       // Choose Totem 
+    // Choose Totem 
     html.find('.chooseTotem').click(this._onTotemButton.bind(this));
+    html.find('.ability .rollable').click(this._onRoll.bind(this));
 
   }
 
@@ -130,27 +131,27 @@ export class VermineCharacterSheet extends VermineActorSheet {
     // Handle rolls that supply the formula directly.
     if (dataset.label) {
       dataset.rollType = dataset.type;
-        /*const label = game.i18n.localize(dataset.label) ? `[ability] ${game.i18n.localize(dataset.label)}` : '';
-        console.log($(element).attr('for'));
-        const NoD = this.actor.system.skills[$(element).attr('for').split('.')[2]]?.value || 0
-       return game.vermine2047.VermineRoll.roll(this.actor.id, label, NoD, 0, {});*/
-       let data = { 
-          actorId: this.actor.id, 
-          abilities: this.actor.system.abilities,
-          skills: this.actor.system.skills,   
-          rollType: dataset.rollType,     
-          labelKey: dataset.label,
-          abilityScore: 0,
-          skillScore: 0,
-          label: game.i18n.localize(dataset.label)
-        };
-        if (dataset.type == 'ability'){
-          data.abilityScore = this.actor.system.abilities[dataset.label].value;
-        } else if (dataset.type == 'skill'){
-          data.skillScore = this.actor.system.skills[dataset.label].value;
-        }  
-       getRollBox(data);
-       return true;
+      /*const label = game.i18n.localize(dataset.label) ? `[ability] ${game.i18n.localize(dataset.label)}` : '';
+      console.log($(element).attr('for'));
+      const NoD = this.actor.system.skills[$(element).attr('for').split('.')[2]]?.value || 0
+     return game.vermine2047.VermineRoll.roll(this.actor.id, label, NoD, 0, {});*/
+      let data = {
+        actorId: this.actor.id,
+        abilities: this.actor.system.abilities,
+        skills: this.actor.system.skills,
+        rollType: dataset.rollType,
+        labelKey: dataset.label,
+        abilityScore: 0,
+        skillScore: 0,
+        label: game.i18n.localize(dataset.label)
+      };
+      if (dataset.type == 'ability') {
+        data.abilityScore = this.actor.system.abilities[dataset.label].value;
+      } else if (dataset.type == 'skill') {
+        data.skillScore = this.actor.system.skills[dataset.label].value;
+      }
+      getRollBox(data);
+      return true;
     }
   }
 
@@ -163,7 +164,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     event.preventDefault();
     const el = event.currentTarget;
     // const dataset = el.dataset;
-    
+
     const totemPicker = new TotemPicker(el, this.actor);
     totemPicker.render(true);
   }
