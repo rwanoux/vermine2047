@@ -1,0 +1,514 @@
+{
+  "SETTINGS": {
+    "world": {
+      "game_mode": {
+        "name": "Choix du mode de jeu",
+        "hint": "À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers."
+      },
+      "first_run": {
+        "name": "Affichage du tour d'accueil",
+        "hint": "Pour aider les débutantEs à bien commencer avec le système Vermine 2047."
+      }
+    }
+  },
+  "VERMINE.WorldSettings.GameMode.Name": "Choix du mode de jeu",
+  "VERMINE.WorldSettings.GameMode.Hint": "À l’image de certains jeux vidéo proposant différents, Vermine 2047 permet aux joueurs de choisir leur Mode de jeu et de fixer eux-mêmes le degré de réalisme, de surnaturel et de dangerosité de l’univers.",
+  "GAME_MODES": {
+    "heroic": {
+      "name": "Héroique"
+    },
+    "epic": {
+      "name": "Epique"
+    },
+    "legendary": {
+      "name": "Légendaire"
+    }
+  },
+  "ROLLS": {
+    "tool": "Lanceur de dés",
+    "roll_dice": "Jeter les dés"
+  },
+  "TOURS": {
+    "ChatMessage": "<h3>Bienvenue dans Vermine!</h3><p>Si vous utilisez ce système pour la première fois, notre shaman va vous guider vers votre rite d'initiation</p> <button id=\"vermine-tour-chat-button\"> <i class=\"fas fa-person-hiking\"></i> J'y vais mais j'ai peur </button>",
+    "Welcome": {
+      "Title": "Bienvenue dans Vermine",
+      "Description": "Aperçu du système Vermine",
+      "WelcomeTitle": "Bienvenue",
+      "WelcomeContent": "<p>Bienvenue dans Vermine, survivantE ! Faire le tour de notre zone d'action te permettre de retrouver tes marques, même si c'est ton premier jour parmi nous.</p><p>En haut de la colonne de droite, tu as tout ce que tu as le droit de faire chez nous : parler, voir les autres tronches de ta commu, gérer ton matos et celui de tes potes, étudier les cartes, lire les journaux des clamsés, aller nous chercher de la bouffe à coups de surin. Entrons dans le vif du sujet.</p>",
+      "ActorTabTitle": "Peupler son univers",
+      "ActorTabContent": "<p>Bien installéE, survivantE ? Tournons pas au tour du pot, si tu veux rester avec nous, va falloir nous dire qui tu es, d'où tu viens, et à qui tu fais confiance. Une fois que t'es prêtE pour ca, clique donc sur le bouton \"Créer un acteur\"</p>",
+      "CharacterCreateTitle": "Créer un groupe",
+      "CharacterCreateContent": "<p>Ce bouton crée une fiche de groupe, parce que c'est par là qu'on commence, dans ce trou ! Ta tronche viendra ensuite, quand tu créeras ta fiche de personnage. Au fur et à mesure que tu progresses, tu voudras peut-être rajouter des infos sur ce que tu vois trainer autour du camp.</p>",
+      "CompendiumTitle": "Cartes",
+      "CompendiumContent": "<p>Vous aurez probablement besoin d'une carte des Terres de Fer ou d'un secteur de la Forge. Vous pouvez créer votre propre scène pour cela, ou vous pouvez utiliser l'une des nôtres. Ouvrez l'un de ces compendiums et faites glisser une carte dans votre zone de scènes (l'onglet qui ressemble à une carte pliée).</p>",
+      "OracleToolTitle": "Totem",
+      "OracleToolContent": "<p>Aucune partie d'Vermine ou Starforged ne serait complète sans oracles. Ce bouton fera apparaître une fenêtre avec tous les oracles du jeu choisi. Les oracles sont également disponibles depuis la fiche de personnage.</p>",
+      "ToursTitle": "Prochaines étapes",
+      "ToursContent": "<p>Tu t'en sors pas si mal ! Moi je vais te laisser là, mais si tu as d'autres questions, tu peux venir me trouver. Si ca concerne la mécanique, inscris-toi dans notre groupe de parole, par là <a href=\"https://discord.gg/FqGHYvXg\">Totem Foundry Discord</a>. Sinon, tu peux rejoindre la place centrale par ici <a href=\"https://discord.gg/qejqmSxr\">Vermine Discord</a></p><p>Enjoy!</p>"
+    }
+  },
+  "DIFFICULTY_LEVELS": {
+    "obvious": "Evidente",
+    "easy": "Facile",
+    "hard": "Difficile",
+    "very_hard": "Très difficile",
+    "impossible": "Impossible"
+  },
+  "ATTITUDES": {
+    "offensive": {
+      "name": "Offensif"
+    },
+    "active": {
+      "name": "Actif"
+    },
+    "passive": {
+      "name": "Passif"
+    }
+  },
+  "AGE_TYPES": {
+    "young": "Jeune",
+    "adult": "Adulte",
+    "old": "Vieux"
+  },
+  "IDENTITY": {
+    "name": "Nom",
+    "height": "Taille",
+    "weight": "Poids",
+    "totem": "Totem",
+    "age": "Age",
+    "gender": "Sexe",
+    "profile": "Profil",
+    "origin": "Origine",
+    "theme": "Concept",
+    "instincts": "Instincts",
+    "prohibits": "Interdits",
+    "objectives": "Objectifs",
+    "relations": "Relations",
+    "morale": "Moral",
+    "morale_level": "Niveau de moral",
+    "notes": "Notes"
+  },
+  "ADVERSITY": {
+    "threat": "Menace",
+    "experience": "Expérience",
+    "role": "Rôle",
+    "attack": "Attaque",
+    "damage": "Dommages",
+    "weapon": "Arme",
+    "vigor": "Vigueur",
+    "wounds": "Blessures",
+    "action": "Action",
+    "specialties": "Spécialité",
+    "rerolls": "Relances",
+    "contact": "Contact",
+    "reaction": "Réaction",
+    "pools": "Réserves",
+    "gear": "Matériel",
+    "protection": "Protection",
+    "skills": "Compétences",
+    "pattern": "Gabarit",
+    "size": "Taille",
+    "pack": "Groupe"
+  },
+  "VERMINE": {
+    "name": "Vermine",
+    "stats": "Statistiques",
+    "level": "Niveau",
+    "experience": "Expérience",
+    "reputation": "Réputation",
+    "pool": "Réserve",
+    "pools": "Réserves",
+    "self_control": "Sang-Froid",
+    "effort": "Effort",
+    "group": "Groupe",
+    "abilities": "Caractéristiques",
+    "ability": "Caractéristique",
+    "skills_title": "Compétences",
+    "skill_title": "Compétence",
+    "skill_mastery": "Maîtrise",
+    "bonus": "Bonus",
+    "penalty": "Malus",
+    "reroll": "Relance",
+    "equipment": "Equipement",
+    "specialty": "Spécialité",
+    "technique": "Technique",
+    "techniques": "Techniques",
+    "difficulty": "Difficulté",
+    "help": "Entraide",
+    "tooling": "Equipement",
+    "quantity": "Quantité",
+    "qty": "Qté",
+    "weight": "Poids",
+    "dmg": "Dmg",
+    "damage": "Dommage",
+    "damages": "Dommages",
+    "range": "Portée",
+    "ranges": "Portées",
+    "mobility": "Mobilité",
+    "rarity": "Rareté",
+    "rarity_sm": "Rar.",
+    "reliability": "Fiabilité",
+    "reliability_sm": "Fiab.",
+    "wounds": {
+      "name": "Blessures",
+      "threshold": "Seuil",
+      "light": "Légère",
+      "heavy": "Grave",
+      "deadly": "Mortelle",
+      "light_wounds": "Blessure légère",
+      "heavy_wounds": "Blessure grave",
+      "deadly_wounds": "Blessure mortelle"
+    },
+    "tabs": {
+      "abilities": "Caractéristiques et compétences",
+      "totem": "Totem et ajustements",
+      "combat": "Combat et reserves",
+      "equipment": "Matériel",
+      "stories": "Histoire"
+    },
+    "ammo": "Munitions",
+    "ammo_sm": "Mun",
+    "trait": "Trait",
+    "traits": "Traits",
+    "clew": "Indice",
+    "combat": "Combat",
+    "stories": "Histoires",
+    "gear": "Matériel",
+    "information": "Informations",
+    "boost": "boost",
+    "group_abilities": "Capacités de groupe",
+    "totem_abilities": "Capacités de totem",
+    "type_group": "Groupe",
+    "type_character": "Personnage",
+    "type_npc": "PNJ",
+    "type_creature": "Créature",
+    "type": "Type",
+    "group_members": "Membres",
+    "encounters": "Rencontres",
+    "road": "La Route",
+    "totem_picker": "Sélecteur de totem",
+    "actor_picker": "Sélecteur de personnage"
+  },
+  "UI": {
+    "add": "Ajouter",
+    "source": "Source",
+    "duration": "Durée",
+    "effect_toggle": "Basculer un effet",
+    "effect_edit": "Modifier un effet",
+    "effect_delete": "Détruire un effet",
+    "effect_create": "Créer un effet",
+    "effects": {
+      "name": "Effets",
+      "temporary": "Effets temporaires",
+      "passive": "Effets passifs",
+      "inactive": "Effets inactifs"
+    }
+  },
+  "ITEMS": {
+    "defense": "Protection",
+    "defenses": "Protections",
+    "new_defense": "Nouvelle protection",
+    "weapon": "Arme",
+    "new_weapon": "Nouvelle arme",
+    "weapons": "Armes",
+    "new_background": "Nouvel historique",
+    "backgrounds": "Historiques",
+    "new_trauma": "Nouveau traumatisme",
+    "traumas": "Traumatismes",
+    "rumor": "Rumeur",
+    "new_rumor": "Nouvelle rumeur",
+    "rumors": "Rumeurs",
+    "ability": "Capacité",
+    "new_ability": "Nouvelle capacité",
+    "abilities": "Capacités",
+    "specialties": "Spécialités",
+    "new_specialty": "Nouvelle spécialité",
+    "evolution": "Adaptation",
+    "new_evolution": "Nouvelle adaptation",
+    "evolutions": "Adaptations",
+    "new_vehicle": "Nouveau véhicule",
+    "vehicles": "Véhicules",
+    "new_objective": "Nouvel objectif",
+    "learning": "Apprentissage",
+    "cost": "Coût",
+    "rituel": "Rituel",
+    "transe": "Transe",
+    "effects": "Effets",
+    "details": "Détails"
+  },
+  "ABILITIES": {
+    "vigor": {
+      "name": "Vigueur"
+    },
+    "health": {
+      "name": "Santé"
+    },
+    "precision": {
+      "name": "Précision"
+    },
+    "reflexes": {
+      "name": "Réflexes"
+    },
+    "knowledge": {
+      "name": "Savoir"
+    },
+    "perception": {
+      "name": "Perception"
+    },
+    "will": {
+      "name": "Volonté"
+    },
+    "empathy": {
+      "name": "Empathie"
+    }
+  },
+  "SKILL_LEVELS": {
+    "incompetent": "Incompétent",
+    "beginner": "Débutant",
+    "proficient": "Confirmé",
+    "expert": "Expert",
+    "master": "Maître",
+    "legend": "Légende"
+  },
+  "THREAT_LEVELS": {
+    "minor": "Mineure",
+    "serious": "Sérieuse",
+    "major": "Majeure",
+    "deadly": "Mortelle"
+  },
+  "ROLE_LEVELS": {
+    "minor": "Mineur",
+    "secondary": "Secondaire",
+    "important": "Important",
+    "major": "Majeur"
+  },
+  "PATTERN_LEVELS": {
+    "insect": "Insecte",
+    "rat": "Rat",
+    "dog": "Chien",
+    "bear": "Ours"
+  },
+  "TOTEMS": {
+    "human": {
+      "name": "L'Humain",
+      "number": 1,
+      "description": "",
+      "instincts": "",
+      "bans": "",
+      "opposite": "adapted"
+    },
+    "predator": {
+      "name": "Le prédateur",
+      "number": 2,
+      "description": "Totem emblématique, le Prédateur a toujours été l’un des plus répandus dans le règne animal, et il reste de loin celui qui influence le plus grand nombre d’espèces aujourd’hui. On l’observe aussi bien chez les mammifères que chez de minuscules insectes, en meute comme en solitaire. Il inspire les comportements de traque, de chasse et d’affrontement essentiels à l’alimentation, mais il ne prône qu’une violence justifiée, nécessaire et vitale. Selon les peuples et les cultures, il a longtemps été symbolisé par le lion, l’aigle ou le chasseur, et ses valeurs guerrières ont toujours revêtu une certaine forme de noblesse. Un prédateur ne tue pas : il triomphe. Un prédateur ne fuit pas : il perd, ou il meurt",
+      "instincts": "Triompher, relever un défi, prendre l’initiative, atteindre un objectif.",
+      "bans": "Fuir, abandonner, renoncer,faire preuve de lâcheté.",
+      "behaviour": "Déterminé, implacable,courageux, dominant.",
+      "opposite": "scavenger"
+    },
+    "scavenger": {
+      "name": "Le Charognard",
+      "number": 3,
+      "description": "Dans un écosystème dominé par la loi du plus fort, certains ont pris le parti d’attendre que la mort fasse son œuvre, quitte à se contenter des restes. Poissons de fond, plantes carnivores, pillards, insectes nécrophages, vautours ou meutes de loups trop faibles pour s’attaquer seuls aux proies de grande taille : le Charognard inspire toutes les espèces qui ont fait de la patience une de leurs rares vertus, et misent sur la faiblesse, la blessure, la fatigue ou l’opportunité pour se nourrir. Il règne sur les régions hostiles où le soleil, la chaleur ou le froid font son jeu, et se développe souvent dans l’ombre du Prédateur, avec qui il entretient une relation quasi symbiotique",
+      "instincts": "Achever, saboter, affaiblir, s’en prendre au plus faible.",
+      "bans": "Affronter, s’exposer, agir de façon compulsive, s’apitoyer.",
+      "behaviour": "Sournois, calculateur, impitoyable",
+      "opposite": "predator"
+    },
+    "symbiote": {
+      "name": "Le Symbiote",
+      "number": 4,
+      "description": "Symbole d’entraide, d’équilibre et d’harmonie, le Symbiote se définit par la relation d’échange et de réciprocité où chaque partie profite de ce que l’autre apporte, quels que soient ses besoins ou ses motivations. Très courante dans le règne végétal, où de nombreuses fleurs et plantes l’ont instaurée avec les pollinisateurs, cette relation de symbiose s’observe également chez les insectes, les mammifères et les êtres humains. Elle peut être ponctuelle, issue des liens du sang, liée à un territoire ou un projet commun, et rien ne l’empêche d’être motivée par le profit ou l’intérêt, tant qu’elle est réciproque – ce qui distingue le Symbiote du Parasite.",
+      "instincts": "Partager, transmettre, équilibrer, trouver un compromis",
+      "bans": "Exploiter, abuser, profiter de la faiblesse, mettre en danger",
+      "behaviour": "Bienveillant, responsable, diplomate, modéré.",
+      "opposite": "parasite"
+    },
+    "parasite": {
+      "name": "Le Parasite",
+      "number": 5,
+      "description": "Totem des infections, des basses œuvres et des épidémies, le Parasite a toujours joué un rôle funeste dans le destin de l’humanité, jusqu’à en devenir le fléau. Symbolisé par les moustiques, il s’observe également chez de nombreux champignons, végétaux et insectes incapables de survivre, de se nourrir ou de se reproduire sans un hôte, et toujours à ses dépens. Le Parasite exploite, profite, abuse sans états d’âme, mu par la seule démarche de prendre ce qu’un autre possède et dont il a besoin. Avec le Prédateur, c’est l’un des Totems les plus présents et les plus redoutés, tant les comportements qu’il inspire peuvent ruiner tout espoir de survie.",
+      "instincts": "Profiter, manipuler, voler, exploiter.",
+      "bans": "Partager, contribuer, tenir une promesse, prendre par la force",
+      "behaviour": "Manipulateur, menteur, égoïste, profiteur",
+      "opposite": "symbiote"
+    },
+    "builder": {
+      "name": "Le Bâtisseur",
+      "number": 6,
+      "description": "Souvent confondu avec la Ruche en raison des constructions géantes typiques de certaines espèces sociales, le Bâtisseur n’est pas le Totem de la communauté, mais celui de la fondation. À l’image des termites, des castors, de la plupart des oiseaux ou de certaines espèces d’araignées, il se caractérise par l’acte de construction, de création ou de modification, et s’observe aussi bien chez des groupes que chez des individus. Avec la Ruche, le Symbiote et la Horde, c’est l’un des Totems les plus courants chez les communautés humaines, dont il inspire les édifices, les inventions et les réparations.",
+      "instincts": "Fonder, créer, s’installer durablement, nouer des liens.",
+      "bans": "Détruire, saboter, quitter une communauté, provoquer le chaos",
+      "behaviour": "Réfléchi, organisé, pragmatique, constant.",
+      "opposite": "horde"
+    },
+    "horde": {
+      "name": "La Horde",
+      "number": 7,
+      "description": "Fléau des cultures depuis la nuit des temps, la Horde est à l’image des nuées de criquets, des meutes de carnivores  ou des tribus de nomades qui la représentent : imprévisible, impitoyable et sans visage. Au-delà de ses aspects collectifs, ce Totem redoutable se caractérise surtout par sa violence et sa méthode d’action. Là où le Prédateur tue, la Horde brûle, pille, dévaste pour parvenir à ses fins sans le moindre état d’âme. Elle inspire ceux qui prennent par la force, qui détruisent, qui ravagent et qui refusent toute forme de compromis, quelles que soient leur démarche ou leurs motivations.",
+      "instincts": "Piller, détruire, prendre par la force, miser sur le nombre",
+      "bans": "Négocier, épargner, faire des réserves, planifier à long terme.",
+      "behaviour": "Violent, imprévisible, destructeur, radical.",
+      "opposite": "builder"
+    },
+    "hive": {
+      "name": "La Ruche",
+      "number": 8,
+      "description": "Fourmis, abeilles, termites, factions aux règles strictes : la Ruche est le Totem des créatures sociales et des communautés humaines par excellence. Des cellules familiales aux multinationales, des meutes organisées aux super-colonies de plusieurs milliards d’individus, la Ruche est caractérisée par l’organisation, la hiérarchie, le dévouement et la conscience aigüe du rôle que chacun doit jouer dans l’intérêt commun, plus que par la notion de communauté elle-même. Elle s’appuie bien souvent sur un ensemble de règles, des tâches attribuées, des rôles identifiés – une philosophie qui proscrit tout individualisme et condamne toute désobéissance.",
+      "instincts": "Organiser, œuvrer pour la communauté, respecter la hiérarchie, privilégier l’intérêt collectif",
+      "bans": "trahir, désobéir, mettre sa communauté en danger, faire preuve d’individualisme.",
+      "behaviour": "Méthodique, autoritaire, consciencieux, rigide",
+      "opposite": "loner"
+    },
+    "loner": {
+      "name": "Le solitaire",
+      "number": 9,
+      "description": "Survivre, quoi qu’il en coûte. Sans cruauté, sans états d’âme, mais à tout prix. À l’inverse de la Ruche qui loue le sacrifice s’il est accompli dans l’intérêt du groupe, le Solitaire incarne le plus fondamental des réflexes : celui de la survie. Ni individualiste, ni franchement égoïste, il fait seulement passer ses propres intérêts, ses urgences et ses nécessités avant tout, quitte à trahir, à décevoir, à quitter ou à tuer. Rien n’empêche un Solitaire de trouver une place durable dans un groupe, d’y jouer un rôle précis ou même de suivre des règles établies, tant qu’elles ne heurtent pas ses propres convictions et qu’elles ne mettent pas en péril son bien le plus précieux : sa vie.",
+      "instincts": "Survivre, anticiper, s’adapter, faire passer sa vie avant tout",
+      "bans": "Se sacrifier, risquer sa vie, dépendre de quelqu’un, se résigner.",
+      "behaviour": "Indépendant, lucide, autonome, réactif.",
+      "opposite": "hive"
+    },
+    "adapted": {
+      "name": "L'adapté",
+      "number": 10,
+      "description": "Évoluer ou mourir. Changer ou disparaître. L’Adapté est le Totem de la nécessité, de la survie et de l’évolution. Ni positif, ni négatif, il est présent partout. Il est cette dynamique, ce principe fondamental qui rythme les mutations des espèces et qui rappelle que l’Homme est la seule forme de vie à tenter de contrôler sa propre évolution. L’Adapté ne possède ni Interdit, ni Instinct spécifique. Aucun comportement n’est inapproprié, s’il permet de faire face et de survivre, et les Instincts de tous les autres Totems le renforcent. Seul l’Humain lutte contre son influence…",
+      "instincts": "Tous ceux des huit Totems majeurs",
+      "bans": "Aucun…",
+      "opposite": "human"
+    }
+  },
+  "ABILITY_CATEGORIES": {
+    "physical": {
+      "name": "Physique"
+    },
+    "manual": {
+      "name": "Manuel"
+    },
+    "mental": {
+      "name": "Mental"
+    },
+    "social": {
+      "name": "Social"
+    }
+  },
+  "SKILLS_CATEGORIES": {
+    "man": {
+      "name": "L'Homme"
+    },
+    "animal": {
+      "name": "L'Animal"
+    },
+    "tool": {
+      "name": "L'Outil"
+    },
+    "weapon": {
+      "name": "L'Arme"
+    },
+    "survival": {
+      "name": "La Survie"
+    },
+    "world": {
+      "name": "La Terre"
+    }
+  },
+  "SKILLS": {
+    "arts": {
+      "name": "Arts"
+    },
+    "civilization": {
+      "name": "Civilisations"
+    },
+    "psychology": {
+      "name": "Psychologie"
+    },
+    "rumors": {
+      "name": "Rumeurs"
+    },
+    "healing": {
+      "name": "Soins"
+    },
+    "animalism": {
+      "name": "Animalisme"
+    },
+    "dissection": {
+      "name": "Dissection"
+    },
+    "wildlife": {
+      "name": "Faune"
+    },
+    "repulsion": {
+      "name": "Répulsion"
+    },
+    "tracks": {
+      "name": "Traces"
+    },
+    "crafting": {
+      "name": "Artisanat"
+    },
+    "diy": {
+      "name": "Bricolage"
+    },
+    "mecanical": {
+      "name": "Mécanique"
+    },
+    "piloting": {
+      "name": "Pilotage"
+    },
+    "technology": {
+      "name": "Technologie"
+    },
+    "firearms": {
+      "name": "Armes à feu"
+    },
+    "armory": {
+      "name": "Armurerie"
+    },
+    "shield": {
+      "name": "Bouclier"
+    },
+    "close": {
+      "name": "Corps-à-corps"
+    },
+    "archery": {
+      "name": "Armes de tir"
+    },
+    "throwing": {
+      "name": "Lancer"
+    },
+    "melee": {
+      "name": "Mêlée"
+    },
+    "atletics": {
+      "name": "Atlétisme"
+    },
+    "stealth": {
+      "name": "Discrétion"
+    },
+    "alertness": {
+      "name": "Vigilance"
+    },
+    "flora": {
+      "name": "Flore"
+    },
+    "food": {
+      "name": "Alimentation"
+    },
+    "environment": {
+      "name": "Environnement"
+    },
+    "road": {
+      "name": "Route"
+    },
+    "toxics": {
+      "name": "Toxiques"
+    },
+    "ruins": {
+      "name": "Vestiges"
+    }
+  },
+  "SEXES": {
+    "male": "Masculin",
+    "female": "Féminin"
+  }
+}

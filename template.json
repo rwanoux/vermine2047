@@ -1,37 +1,44 @@
 {
   "Actor": {
-    "types": ["character", "npc", "group", "creature"],
+    "types": [
+      "character",
+      "npc",
+      "group",
+      "creature"
+    ],
     "templates": {
       "base": {
         "minorWound": {
-          "threshold":1,
-          "value": 4,
-          "min": 1,
+          "threshold": 1,
+          "value": 0,
+          "min": 0,
           "max": 5
         },
         "majorWound": {
-          "threshold":4,
-          "value": 3,
-          "min": 1,
+          "threshold": 4,
+          "value": 0,
+          "min": 0,
           "max": 4
         },
         "deadlyWound": {
-          "threshold":8,
-          "value": 2,
-          "min": 1,
+          "threshold": 8,
+          "value": 0,
+          "min": 0,
           "max": 2
         }
       }
     },
     "character": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "identity": {
         "height": 0,
         "weight": 0,
         "totem": "",
         "age": 15,
         "ageType": 2,
-        "profile": "", 
+        "profile": "",
         "theme": "",
         "instincts": "",
         "prohibits": "",
@@ -41,15 +48,15 @@
       },
       "equipment": {
         "description": ""
-      },  
+      },
       "attributes": {
         "xp": {
           "value": 0,
-          "max":10
+          "max": 10
         },
         "reputation": {
           "value": 0,
-          "max":10
+          "max": 10
         },
         "self_control": {
           "value": 0,
@@ -57,56 +64,56 @@
           "max": 5
         },
         "effort": {
-          "value": 0, 
+          "value": 0,
           "min": 0,
           "max": 5
         }
-      },      
+      },
       "abilities": {
         "vigor": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "physical"
         },
         "health": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "physical"
         },
         "precision": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "manual"
         },
         "reflexes": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "manual"
         },
         "knowledge": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "mental"
         },
         "perception": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "mental"
         },
         "will": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "social"
         },
         "empathy": {
-          "value": 0,
+          "value": 1,
           "min": 0,
           "max": 5,
           "category": "social"
@@ -118,215 +125,217 @@
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity": 1
         },
         "civilization": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":2
+          "rarity": 2
         },
         "psychology": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity": 1
         },
         "rumors": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":0
+          "rarity": 0
         },
         "healing": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "man",
-          "rarity":1
+          "rarity": 1
         },
         "animalism": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":1
+          "rarity": 1
         },
         "dissection": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":2
+          "rarity": 2
         },
         "wildlife": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":1
+          "rarity": 1
         },
         "repulsion": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":0
+          "rarity": 0
         },
         "tracks": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "animal",
-          "rarity":0
+          "rarity": 0
         },
         "crafting": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":2
+          "rarity": 2
         },
         "diy": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":0
+          "rarity": 0
         },
         "mecanical": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":2
+          "rarity": 2
         },
         "piloting": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":1
+          "rarity": 1
         },
         "technology": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "tool",
-          "rarity":2
+          "rarity": 2
         },
         "firearms": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":2
+          "rarity": 2
         },
         "archery": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":0
+          "rarity": 0
         },
         "armory": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":2
+          "rarity": 2
         },
         "throwing": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":0
+          "rarity": 0
         },
         "melee": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "weapon",
-          "rarity":0
+          "rarity": 0
         },
         "alertness": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
+          "rarity": 0
         },
         "atletics": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
+          "rarity": 0
         },
         "food": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
+          "rarity": 0
         },
         "stealth": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
+          "rarity": 0
         },
         "close": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "survival",
-          "rarity":0
+          "rarity": 0
         },
         "environment": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":1
+          "rarity": 1
         },
         "flora": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":1
+          "rarity": 1
         },
         "road": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":0
+          "rarity": 0
         },
         "toxics": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":2
+          "rarity": 2
         },
         "ruins": {
           "value": 0,
           "min": 0,
           "max": 5,
           "category": "world",
-          "rarity":1
-        }      
+          "rarity": 1
+        }
       }
     },
     "npc": {
-      "templates": ["base"],      
+      "templates": [
+        "base"
+      ],
       "age": 15,
       "skills": "",
       "threat": {
@@ -346,10 +355,12 @@
       }
     },
     "group": {
-      "templates": ["base"],      
+      "templates": [
+        "base"
+      ],
       "identity": {
         "totem": "",
-        "profile": "", 
+        "profile": "",
         "origin": "",
         "theme": "",
         "instincts": "",
@@ -360,12 +371,12 @@
       },
       "equipment": {
         "description": ""
-      },  
+      },
       "level": {
         "value": 0,
         "min": 0,
         "max": 3
-      },  
+      },
       "reputation": {
         "value": 10,
         "min": 2,
@@ -381,7 +392,9 @@
       "encounters": []
     },
     "creature": {
-      "templates": ["base"],      
+      "templates": [
+        "base"
+      ],
       "skills": "",
       "modes": {
         "survival": true,
@@ -411,74 +424,106 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "defense", "vehicle", "ability", "specialty", "background", "trauma", "evolution", "rumor", "target", "rite"],
+    "types": [
+      "item",
+      "weapon",
+      "defense",
+      "vehicle",
+      "ability",
+      "specialty",
+      "background",
+      "trauma",
+      "evolution",
+      "rumor",
+      "target",
+      "rite"
+    ],
     "templates": {
       "base": {
         "description": "",
-        "rarity":3,
-        "reliability":3,
+        "rarity": 3,
+        "reliability": 3,
         "quantity": 1,
         "weight": 0,
         "traits": []
-        },
+      },
       "list": {
         "description": ""
       }
     },
     "item": {
-      "templates": ["base"]
+      "templates": [
+        "base"
+      ]
     },
     "weapon": {
-      "templates": ["base"],
-      "min_range":0,
-      "max_range":0,
-      "damage":0,
-      "ammo":0
+      "templates": [
+        "base"
+      ],
+      "min_range": 0,
+      "max_range": 0,
+      "damage": 0,
+      "ammo": 0
     },
     "defense": {
-      "templates": ["base"],
-      "level":0,
-      "mobility":3
+      "templates": [
+        "base"
+      ],
+      "level": 0,
+      "mobility": 3
     },
     "ability": {
-      "templates": ["list"],
+      "templates": [
+        "list"
+      ],
       "type": "",
       "totem": "",
       "learn": {
-        "threshold":5,
-        "hindrance":0
+        "threshold": 5,
+        "hindrance": 0
       },
       "level": {
         "value": 1,
         "min": 1,
         "max": 3
-      }, 
+      },
       "effects": []
     },
     "specialty": {
-      "templates": ["list"]
+      "name": "",
+      "skill": ""
     },
     "vehicle": {
-      "templates": ["base"],
-      "mobility":3
+      "templates": [
+        "base"
+      ],
+      "mobility": 3
     },
     "rite": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "rituel": "",
       "transe": "",
-      "ability": "",      
+      "ability": "",
       "effect": ""
     },
     "background": {
-      "templates": ["list"],
-      "cost":1
+      "templates": [
+        "list"
+      ],
+      "cost": 1
     },
     "trauma": {
-      "templates": ["list"],
+      "templates": [
+        "list"
+      ],
       "type": ""
     },
     "evolution": {
-      "templates": ["list"],
+      "templates": [
+        "list"
+      ],
       "level": {
         "value": 1,
         "min": 1,
@@ -486,11 +531,15 @@
       }
     },
     "rumor": {
-      "templates": ["list"]
+      "templates": [
+        "list"
+      ]
     },
     "target": {
-      "templates": ["list"],
-      "level":"minor"
+      "templates": [
+        "list"
+      ],
+      "level": "minor"
     }
   }
 }

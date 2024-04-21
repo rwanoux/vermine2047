@@ -1,11 +1,11 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class VermineCreatureSheet extends ActorSheet {
+export class VermineCreatureSheet extends VermineActorSheet {
 
   /** @override */
   static get defaultOptions() {
@@ -40,7 +40,7 @@ export class VermineCreatureSheet extends ActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
-    
+
     // Prepare character data and items.
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -94,7 +94,7 @@ export class VermineCreatureSheet extends ActorSheet {
     super.activateListeners(html);
 
     html.find('.item-create').click(this._onItemCreate.bind(this));
-  } 
+  }
 
   async _onItemCreate(event) {
     event.preventDefault();
@@ -118,7 +118,7 @@ export class VermineCreatureSheet extends ActorSheet {
     delete itemData.system["type"];
 
     // Finally, create the item!
-    return await Item.create(itemData, {parent: this.actor});
+    return await Item.create(itemData, { parent: this.actor });
   }
 
 }

@@ -1,0 +1,544 @@
+@font-face {
+  font-family: "DistressBlack";
+  src: url("../assets/fonts/dcc_sharp_distress_black_by_dccanim.otf");
+}
+
+.sans-font {
+  font-family: "DistressBlack", sans-serif;
+}
+
+/* Change shadow colors and Foundry general font color!! */
+.app {
+  box-shadow: 0 0 20px #7e4444;
+  /* Change the color code here for a nice shadow color! */
+  color: #dfdfdf;
+  /* Text color for window titles and menu all across Foundry */
+}
+
+/* Character and Item Name Titles Text style! */
+.sheet .charname input {
+  color: #191813;
+  font-family: "DistressBlack", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+}
+
+/* custom styles */
+body.system-vermine2047 img#logo {
+  content: url("/systems/vermine2047/assets/images/ui/logo_vermine_foundry.webp");
+  height: auto;
+}
+
+/* Customize the chat roll area! */
+#chat-form textarea {
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp) repeat;
+  /*font-family: monospace; 
+  font-size: 14px; 
+  color: black; */
+}
+
+/* Customize the chat history area! */
+#chat-log .message {
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp) repeat;
+  /*color: #191813; */
+}
+
+img {
+  border: none;
+}
+
+ul.unstyled {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.unstyled li {
+  padding: 0;
+  margin: 0;
+}
+
+.padding-with-frieze {
+  margin-left: 18% !important;
+  margin-right: 10% !important;
+}
+
+.padding-with-frieze li {
+  max-width: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------------------------------------- */
+/* Sheet Structure                           */
+/* ----------------------------------------- */
+.system-vermine2047 .sheet .window-content {
+  background: url(/systems/vermine2047/assets/images/ui/box_background.webp);
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.system-vermine2047 .dialog .window-content {
+  background: url(/systems/vermine2047/assets/images/ui/fond_chat_box.webp);
+  padding: 0.5rem;
+  overflow-y: hidden;
+}
+
+.window-content .row.smb {
+  margin-bottom: 0.25rem;
+}
+
+.window-content .row.mdb {
+  margin-bottom: 0.5rem;
+}
+
+.window-content .row.lgb {
+  margin-bottom: 1rem;
+}
+
+.actor.sheet form .form {
+  display: grid;
+  /*grid:
+      "sidebar header" 75px
+      "sidebar nav" minmax(min-content, max-content)
+      "sidebar content" 1fr/230px 1fr;*/
+  grid-template-columns: minmax(230px, 1fr) 3fr;
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+  height: 100%;
+  overflow: auto;
+}
+
+.actor.sheet .form aside {
+  grid-row: span 1 / span 1;
+  background-image: url(/systems/vermine2047/assets/images/ui/barre_laterale.webp);
+  background-repeat: no-repeat;
+  background-position: 12% 50%;
+  background-size: 400%;
+  height: 100%;
+  box-shadow: -20px 0px 100px #000000b5 inset
+}
+
+.actor.sheet .form main {
+  box-shadow: 10px 0px 100px #000000b5 inset;
+  padding-left: 1rem;
+  grid-row: span 1 / span 1;
+  height: 100%;
+}
+
+.actor.sheet .form aside .image-wrapper {
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+
+.actor.sheet .form aside .image-wrapper img {
+  width: 170px;
+  height: 145px;
+}
+
+.actor.sheet .form aside .paper {
+  margin-top: 1rem;
+  height: 350px;
+}
+
+.actor.sheet .form aside .second-paper {
+  margin-top: 4rem;
+  height: 150px;
+}
+
+.actor.sheet .form h3 {
+  font-family: "DistressBlack", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4e564c;
+  font-size: 1.7rem;
+  border-bottom: none;
+  margin: 0;
+
+}
+
+.actor.sheet .form h4,
+.item.sheet .form h4 {
+  font-family: "DistressBlack", sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin: 0 0 0.2rem;
+}
+
+.actor.sheet .form .characteristics h4 {
+  font-size: 1.25rem;
+  margin-top: 0 0.1rem;
+}
+
+.actor.sheet .form .tab.totem h4,
+.actor.sheet .form .tab.equipment h4,
+.actor.sheet .form .tab.stories h4 {
+  margin-top: 0.875rem;
+}
+
+.system-vermine2047 .char-header {
+  font-family: "DistressBlack", sans-serif;
+}
+
+.system-vermine2047 .char-header section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.system-vermine2047 .char-header h1.char-name,
+.system-vermine2047 .char-vermine2047 {
+  border-bottom: none;
+  line-height: 2rem;
+}
+
+.system-vermine2047 .char-vermine2047 {
+  font-size: 1.5rem;
+}
+
+.system-vermine2047 .sheet.actor form {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.system-vermine2047 .sheet.actor form input[type=text],
+.system-vermine2047 .sheet.actor form input[type=number] {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: none;
+  padding: 0;
+  margin: 1px 0;
+  color: #333;
+  border: 1px solid transparent;
+
+  &.hexa {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+    height: unset;
+    max-width: 1.5rem;
+    aspect-ratio: 1/1;
+    color: black
+  }
+
+}
+
+.system-vermine2047 .sheet.actor form input[type=text]:hover:not(:disabled),
+.system-vermine2047 .sheet.actor form input[type=text]:focus,
+.system-vermine2047 .sheet.actor form select:hover:not(:disabled),
+.system-vermine2047 .sheet.actor form select:focus,
+.system-vermine2047 .sheet.actor form input[type=number]:hover:not(:disabled),
+.system-vermine2047 .sheet.actor form input[type=number]:focus,
+.system-vermine2047 .sheet.actor form textarea:hover:not(:disabled),
+.system-vermine2047 .sheet.actor form textarea:focus {
+  box-shadow: 0 0 10px #005a3c inset;
+}
+
+.system-vermine2047 .sheet.actor form select {
+  font-size: 0.6rem;
+  border: none;
+  appearance: none;
+  min-width: fit-content;
+  max-width: fit-content;
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+  cursor: help;
+
+}
+
+.system-vermine2047 .sheet.actor form label {
+  display: block;
+}
+
+.system-vermine2047 .sheet.actor form .mce-panel span {
+  display: inherit;
+}
+
+.system-vermine2047 .sheet.actor form.editable .rollable:hover,
+.system-vermine2047 .sheet.actor form.editable a:hover {
+  color: #000;
+  text-shadow: 0 5px 5px #1fa832;
+  cursor: pointer;
+}
+
+.system-vermine2047 .sheet.actor form .sheet-tabs {
+  font-weight: 500;
+  height: 30px;
+}
+
+.system-vermine2047 .sheet.actor form .sheet-tabs>.list-row {
+  line-height: 24px;
+  padding-top: 3px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.system-vermine2047 .sheet.actor form .sheet-tabs>.list-row:last-of-type {
+  padding-right: 4px;
+}
+
+.system-vermine2047 .sheet.actor form .sheet-tabs>.list-row.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.system-vermine2047 .sheet.actor form .tab {
+  flex: 1;
+  overflow: hidden;
+}
+
+.system-vermine2047 .sheet.actor form .tag-legacy {
+  float: left;
+  margin: 0 2px 2px 0;
+  padding: 0 3px;
+  font-size: var(--font-size-10);
+  line-height: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  white-space: normal;
+  font-weight: 500;
+}
+
+/* ---------------------------------------- */
+/* Actor Sheet                              */
+/* ---------------------------------------- */
+
+
+.system-vermine2047 .sheet.actor,
+.system-vermine2047 .sheet.actor .window-content {
+  min-width: 690px;
+
+
+}
+
+.system-vermine2047 .sheet.actor .sidebar {
+  width: 230px;
+  min-height: 518px;
+}
+
+.system-vermine2047 .sheet.actor .floatright {
+  float: right;
+}
+
+.system-vermine2047 .sheet.actor .sheet-upper {
+  height: 268px;
+}
+
+.system-vermine2047 .sheet.actor .sheet-upper .sheet-header {
+  height: 48px;
+}
+
+.system-vermine2047 .sheet.actor .sheet-upper .sheet-profile,
+.system-vermine2047 .sheet.actor .sheet-upper .sheet-showcase {
+  height: 220px;
+}
+
+.system-vermine2047 .sheet.actor .sheet-content {
+  padding: 4px;
+}
+
+.system-vermine2047 .sheet.actor .sheet-sidebar {
+  height: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.system-vermine2047 .sheet.actor .sheet-sidebar>* {
+  flex: 1;
+}
+
+.system-vermine2047 .sheet.actor .sheet-sidebar .sidebar-summary {
+  overflow-y: hidden;
+}
+
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-upper {
+  height: 220px;
+}
+
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-upper .sheet-showcase {
+  height: 172px;
+}
+
+.system-vermine2047 .sheet.actor.npc-sheet .sheet-lower {
+  height: calc(100% - 220px - 32px);
+}
+
+.system-vermine2047 .sheet.actor .sheet-navigation {
+  border-top: 1px solid var(--secondary-background);
+  border-bottom: 1px solid var(--primary-background);
+}
+
+.system-vermine2047 .sheet.actor .sheet-navigation .sheet-tabs>.list-row {
+  border-radius: 5px 5px 0 0;
+}
+
+.system-vermine2047 .sheet.actor .sheet-navigation .sheet-tabs>.list-row.active {
+  border: 1px solid #666;
+  border-bottom: none;
+  /* box-shadow: 0 0 10px inset #ff6400;
+   */
+  background: var(--primary-background);
+  color: #fff;
+  text-shadow: none;
+
+  color: #000;
+  text-shadow: 0 0 10px #00005a;
+  cursor: pointer;
+
+}
+
+
+.actor.sheet nav.sheet-navigation {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 54px;
+  background: url(../assets/images/ui/barre_haut.webp) no-repeat right top;
+  background-size: 100% 100%;
+  width: 100%;
+  position: relative;
+  padding-right: 4rem;
+  font-size: 1.4rem;
+}
+
+.actor.sheet nav.sheet-navigation.tabs .item {
+  height: 2.4rem;
+  display: inline-block;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+  color: #606060;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.404);
+}
+
+.actor.sheet nav.sheet-navigation.tabs .item:hover,
+.actor.sheet nav.sheet-navigation.tabs .item.active {
+  color: #000;
+  text-shadow: 0 5px 5px #1fa832;
+  cursor: pointer;
+
+}
+
+.actor.sheet nav.sheet-navigation.tabs .item:hover {
+  text-shadow: 0 5px 5px #1e52259a;
+
+}
+
+
+.system-vermine2047 .sheet.actor form nav.sheet-navigation.sheet-tabs {
+  height: 54px;
+}
+
+.system-vermine2047 .sheet.actor .ability {
+  padding-right: 0.6rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(170, 170, 152, 0.664);
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0) inset;
+  transition: 0.2s;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0px 0px 15px gray inset;
+  }
+
+  label {
+    min-width: fit-content;
+
+  }
+
+  span {
+    max-width: fit-content;
+    margin: 0 1rem;
+
+    flex: 0.5;
+
+    &.hexa {
+      text-align: center;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+      max-height: 1.2rem;
+      max-width: 1.2rem;
+      aspect-ratio: 1/1;
+      color: black;
+      vertical-align: bottom;
+    }
+  }
+
+  div.specialties {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.7rem;
+  }
+
+
+
+  .skill-dots {
+    height: 100%;
+    align-self: center;
+    flex: 1.5;
+
+    &>div {
+
+      max-width: 0.7rem;
+      height: 0.7rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 0.2rem;
+      font-style: oblique;
+      align-self: flex-start;
+
+
+      &.dice-pool-dot {
+        background: radial-gradient(circle, rgba(94, 90, 77, 1) 25%, rgba(0, 0, 0, 1) 100%);
+        max-width: 0.7rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+
+      &.dice-reroll-dot {
+        background: radial-gradient(circle, rgb(187, 182, 165) 25%, rgba(0, 0, 0, 1) 100%);
+
+      }
+    }
+  }
+}
+
+.vermine2047.sheet.actor input[type="radio"] {
+  &::after {
+    content: " ";
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: radial-gradient(circle, rgba(217, 214, 204, 1) 0%, rgba(217, 214, 204, 1) 40%, rgb(85, 85, 85) 60%);
+    border-radius: 50%;
+    ;
+
+  }
+
+  &.checked {
+    &::after {
+      content: " ";
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      background: radial-gradient(circle, rgb(75, 74, 74) 0%, rgb(27, 39, 28) 60%);
+      border-radius: 50%;
+      ;
+
+    }
+
+  }
+}

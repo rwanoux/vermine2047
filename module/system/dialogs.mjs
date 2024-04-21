@@ -1,4 +1,4 @@
-
+import { VermineUtils } from "./roll.mjs";
 export class CombatResultDialog extends Dialog {
 
   constructor(dialogData, options) {
@@ -34,8 +34,48 @@ export class CombatResultDialog extends Dialog {
 
 
 }
+export class RollDialog extends Dialog {
+  static async create(rollData) {
 
+    let options = { classes: ["vermine-roll"], width: 420, height: 'fit-content', 'z-index': 99999 };
+    let html = await renderTemplate('systems/vermine2047/templates/roll.hbs', rollData);
+
+    return new RollDialog(actor, rollData, html, options);
+  }
+
+  /* -------------------------------------------- */
+  constructor(data, html, options, close = undefined) {
+    let conf = {
+      title: "",
+      content: html,
+      buttons: {
+        roll: {
+          icon: '<i class="fas fa-check"></i>',
+          label: "Lancer !",
+          callback: () => { this.roll(data.actorId, data.label, data.NoD, data.Reroll) }
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Annuler",
+          callback: () => { this.close() }
+        }
+      },
+      close: close
+    }
+
+    super(conf, options);
+
+    this.data = data;
+
+  }
+  roll() {
+    VermineUtils.roll(actorId, label, NoD, Reroll = 0, params = {})
+  }
+
+}
 export const getRollBox = async function (data) {
+  console.log(data)
+  let actor = await game.actors.get(data.actorId)
   let html = await renderTemplate('systems/vermine2047/templates/roll.hbs', data);
   let dial = new Dialog({
     title: game.i18n.localize("ROLLS.tool"),
@@ -43,7 +83,7 @@ export const getRollBox = async function (data) {
     buttons: {
       roll: {
         label: game.i18n.localize('ROLLS.roll_dice'),
-        callback: (html) => {
+        callback: async (html) => {
           let form = html.find('#dice-pool-form');
           if (!form[0].checkValidity()) {
             throw "Invalid Data";
@@ -67,6 +107,18 @@ export const getRollBox = async function (data) {
           // réserves
           if (formData.self_control > 0) {
             NoD += parseInt(formData.self_control, 10);
+            let newSelfControl = actor.system.attributes.self_control.value - parseInt(formData.self_control);
+            if (newSelfControl < 0) {
+              return async () => {
+                await ui.notifications.notify(`vous ne disposez pas d'assez de sang-froid`);
+                dial.render(true);
+              }
+
+
+            }
+            await actor.update({
+              "system.attributes.self_control.value": newSelfControl
+            })
           }
           if (formData.group > 0) {
             NoD += parseInt(formData.group, 10);
@@ -83,7 +135,9 @@ export const getRollBox = async function (data) {
           }
           if (formData.abilityScore == 0 || !formData.abilityScore) {
             ui.notifications.notify(`veuillez saisir une caractéristique`);
-          } else return game.vermine2047.VermineRoll.roll(data.actorId, data.label, NoD, Reroll, data);
+            dial.render(true);
+          } else
+            return VermineUtils.roll(data.actorId, data.label, NoD, Reroll, data);
         }
       },
       close: {

@@ -14,8 +14,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "character", "actor"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
-      width: 600,
-      height: 600,
+
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
     });
   }
@@ -53,7 +52,6 @@ export class VermineCharacterSheet extends VermineActorSheet {
     if (actorData.type == 'npc') {
       this._prepareItems(context);
     }
-
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
 

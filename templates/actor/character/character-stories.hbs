@@ -1,24 +1,30 @@
 <section class="flexrow flex-group-left flex-align-left gap-md">
   <div>
     <h4>{{ localize 'IDENTITY.theme'}}</h4>
-    <textarea name="system.identity.theme">{{ system.identity.theme }}</textarea>
+    <textarea
+      name="system.identity.theme">{{ system.identity.theme }}</textarea>
     <h4>{{ localize 'IDENTITY.objectives'}}</h4>
-    <textarea name="system.identity.objectives">{{ system.identity.objectives }}</textarea>
+    <textarea
+      name="system.identity.objectives">{{ system.identity.objectives }}</textarea>
   </div>
   <div>
     <h4>{{ localize 'IDENTITY.instincts'}}</h4>
-    <textarea name="system.identity.instincts">{{ system.identity.instincts }}</textarea>
+    <textarea
+      name="system.identity.instincts">{{ system.identity.instincts }}</textarea>
     <h4>{{ localize 'IDENTITY.prohibits'}}</h4>
-    <textarea name="system.identity.prohibits">{{ system.identity.prohibits }}</textarea>
+    <textarea
+      name="system.identity.prohibits">{{ system.identity.prohibits }}</textarea>
   </div>
 </section>
-<section class="flexcol flex-group-left flex-align-left">
+<section class="flexcol ">
   <div>
     <h4>{{ localize 'IDENTITY.notes'}}</h4>
-    {{editor system.identity.biography target="system.identity.biography" button=true owner=owner editable=editable}}
+    {{editor system.identity.biography target="system.identity.biography"
+    button=true owner=owner editable=editable}}
   </div>
-    <div>
+  <div>
     <h4>{{ localize 'IDENTITY.relations'}}</h4>
-    {{editor system.identity.relations target="system.identity.relations" button=true owner=owner editable=editable}}
+    {{editor system.identity.relations target="system.identity.relations"
+    button=true owner=owner editable=editable}}
   </div>
 </section>

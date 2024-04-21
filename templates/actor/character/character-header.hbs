@@ -3,36 +3,45 @@
     <section class="char-details">
         <h1 class="char-name flexrow  flex-group-left w-full">
             <label>{{ localize 'IDENTITY.name' }}</label>
-            <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "VERMINE.CharacterNamePlaceholder"}}" />
+            <input name="name" type="text" value="{{actor.name}}"
+                placeholder="{{localize "VERMINE.CharacterNamePlaceholder"}}" />
         </h1>
         <div class="profile flexrow  flex-group-center">
             <label>{{ localize 'IDENTITY.profile' }}</label>
-            <input name="system.identity.profile" type="text" value="{{system.identity.profile }}" data-dtype="String" />
+            <input name="system.identity.profile" type="text"
+                value="{{system.identity.profile }}" data-dtype="String" />
         </div>
         <div class="flexrow  flex-group-center">
-            <label for="system.identity.age">{{ localize 'IDENTITY.age' }}</label>
+            <label for="system.identity.age">{{ localize 'IDENTITY.age'
+                }}</label>
             <div class="flexrow row">
-            <input type="number" name="system.identity.age" value="{{ system.identity.age }}" data-dtype="Number"/>
-            <span id="ageType">({{ ageType "name" system.identity.ageType }})</span>
+                <input type="number" name="system.identity.age"
+                    value="{{ system.identity.age }}" data-dtype="Number" />
+                <span id="ageType">({{ ageType "name" system.identity.ageType
+                    }})</span>
             </div>
-        </div>      
+        </div>
     </section>
     <section class="char-level">
         <h1 class="char-vermine2047 flexrow flex-group-left w-full">
-            <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
+            <label for="system.identity.totem">{{ localize 'IDENTITY.totem'
+                }}</label>
             {{#if (eq system.identity.totem "")}}
-                <a name="chooseTotem" class="chooseTotem">Choisissez votre totem</a>
-            {{ else }}    
-                <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS" system.identity.totem }}</a>
+            <a name="chooseTotem" class="chooseTotem">Choisissez votre totem</a>
+            {{ else }}
+            <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS"
+                system.identity.totem }}</a>
             {{/if}}
         </h1>
         <div class="reputation flexrow  flex-group-center">
             <label>{{ localize 'VERMINE.reputation' }}</label>
-            <input name="system.attributes.reputation.value" type="text" value="{{system.attributes.reputation.value }}" data-dtype="Number" />
-        </div>
-        <div class="experience flexrow  flex-group-center">
+            <input name="system.attributes.reputation.value" type="text"
+                value="{{system.attributes.reputation.value }}"
+                data-dtype="Number" />
+
             <label>{{ localize 'VERMINE.experience' }}</label>
-            <input name="system.details.xp.value" type="text" value="{{system.attributes.xp.value}}" data-dtype="Number"  />
+            <input name="system.details.xp.value" type="text"
+                value="{{system.attributes.xp.value}}" data-dtype="Number" />
         </div>
     </section>
 </header>

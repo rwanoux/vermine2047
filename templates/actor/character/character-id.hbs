@@ -1,54 +1,67 @@
 <div class="image-wrapper">
-  <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+  <img class="profile-img" src="{{actor.img}}" data-edit="img"
+    title="{{actor.name}}" height="100" width="100" />
 </div>
-<ul class="padding-with-frieze unstyled paper">     
-      {{#if system.identity.totem }}
-      <li class="row lgb">
-        <div class="flexcol flex-group-center items-center w-full">
-            <img src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp" alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80" height="80" />
-        </div>
-      </li>  
-      {{/if}}
-      {{#if system.identity.theme}}
-      <li>
-        <div class="flexcol flex-group-center items-center w-full">
-            <label for="system.identity.theme" class="resource-label flexlarge align-left">{{ localize "IDENTITY.theme"}}</label>
-            <p>{{{ system.identity.theme }}}</p>
-          </div>
-      </li>  
-      {{/if}}
-      {{#if system.identity.instincts}}
-      <li>
-        <div class="flexcol flex-group-center items-center  w-full">
-            <label for="system.identity.instincts" class="resource-label flexlarge align-left">{{ localize "IDENTITY.instincts"}}</label>
-            <p>{{{ system.identity.instincts }}}</p>
-          </div>
-      </li>   
-      {{/if}}
-      {{#if system.identity.prohibits}}
-      <li>
-        <div class="flexcol flex-group-center items-center  w-full">
-            <label for="system.identity.prohibits" class="resource-label flexlarge align-left">{{ localize "IDENTITY.prohibits"}}</label>
-            <p>{{{ system.identity.prohibits }}}</p>
-          </div>
-      </li>   
-      {{/if}}
-      {{#if system.identity.objectives}}
-      <li>
-        <div class="flexcol flex-group-center items-center  w-full">
-            <label for="system.identity.objectives" class="resource-label flexlarge align-left">{{ localize "IDENTITY.objectives"}}</label>
-            <p>{{{ system.identity.objectives }}}</p>
-          </div>
-      </li>   
-      {{/if}}     
-  </ul>
- {{#if system.identity.relations}}
-  <ul class="padding-with-frieze unstyled second-paper">     
-       <li>
-        <div class="flexcol flex-group-center items-center  w-full">
-            <label for="system.identity.relations" class="resource-label flexlarge align-left">{{ localize "IDENTITY.relations"}}</label>
-            {{{ system.identity.relations }}}
-          </div>
-      </li> 
-  </ul>
+<ul class="padding-with-frieze unstyled paper">
+  {{#if system.identity.totem }}
+  <li class="row lgb">
+    <div class="flexcol flex-group-center items-center w-full">
+      <img
+        src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp"
+        alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80"
+        height="80"
+        data-tooltip="{{localize system.identity.totem}}" />
+    </div>
+  </li>
   {{/if}}
+  {{#if system.identity.theme}}
+  <li>
+    <div class="flexcol flex-group-center items-center w-full">
+      <label for="system.identity.theme"
+        class="resource-label flexlarge align-left"><h4>{{ localize
+          "IDENTITY.theme"}}</h4></label>
+      <p>{{{ system.identity.theme }}}</p>
+    </div>
+  </li>
+  {{/if}}
+  {{#if system.identity.instincts}}
+  <li>
+    <div class="flexcol flex-group-center items-center  w-full">
+      <label for="system.identity.instincts"
+        class="resource-label flexlarge align-left"><h4>{{ localize
+          "IDENTITY.instincts"}}</h4></label>
+      <p>{{{ system.identity.instincts }}}</p>
+    </div>
+  </li>
+  {{/if}}
+  {{#if system.identity.prohibits}}
+  <li>
+    <div class="flexcol flex-group-center items-center  w-full">
+      <label for="system.identity.prohibits"
+        class="resource-label flexlarge align-left"><h4>{{ localize
+          "IDENTITY.prohibits"}}</h4></label>
+      <p>{{{ system.identity.prohibits }}}</p>
+    </div>
+  </li>
+  {{/if}}
+  {{#if system.identity.objectives}}
+  <li>
+    <div class="flexcol flex-group-center items-center  w-full">
+      <label for="system.identity.objectives"
+        class="resource-label flexlarge align-left"><h4>{{ localize
+          "IDENTITY.objectives"}}</h4></label>
+      <p>{{{ system.identity.objectives }}}</p>
+    </div>
+  </li>
+  {{/if}}
+  {{#if system.identity.relations}}
+  <li>
+    <div class="flexcol flex-group-center items-center  w-full">
+      <label for="system.identity.relations"
+        class="resource-label flexlarge align-left"><h4>{{ localize
+          "IDENTITY.relations"}}</h4></label>
+      {{{ system.identity.relations }}}
+    </div>
+  </li>
+</ul>
+{{/if}}

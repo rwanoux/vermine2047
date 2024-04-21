@@ -2,36 +2,71 @@
 <h3>Caractéristiques</h3>
 <div class="grid grid-4col">
   {{#each config.abilityCategories as |abilityCategory ackey|}}
-    <div class="characteristics">
-      <h4 class="align-center">{{ smarttl "ABILITY_CATEGORIES" ackey }}</h4>
-      {{#each @root.system.abilities as |ability key|}}
-        {{#if (eq ability.category ackey) }}
-          <div class="ability flexcol flex-group-center items-center">
-            <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-type="ability" data-label="{{ key }}">{{ smarttl "ABILITIES" key }}</label>
-            <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number" min="1" max="5" />
-          </div>
-        {{/if}}
-      {{/each}}
+  <div class="characteristics">
+    <h4 class="align-center">{{ smarttl "ABILITY_CATEGORIES" ackey }}</h4>
+    {{#each @root.system.abilities as |ability key|}}
+    {{#if (eq ability.category ackey) }}
+    <div class="ability flexrow flex-group-center items-center">
+      <label for="system.abilities.{{key}}.value"
+        class="resource-label rollable flexlarge align-left" data-type="ability"
+        data-label="{{ key }}">{{ smarttl "ABILITIES" key }}</label>
+      <input type="number" class="hexa" name="system.abilities.{{key}}.value"
+        value="{{ability.value}}" data-dtype="Number" min="1" max="5" />
     </div>
-  {{/each}}
+    {{/if}}
+    {{/each}}
   </div>
+  {{/each}}
+</div>
 <h3>Compétences</h3>
 <div class="grid grid-2col">
-{{#each config.skillCategories as |skillCategory sckey|}}
-    <div class="col">
-      <h4>{{ smarttl "SKILLS_CATEGORIES" sckey }}</h4>
+  {{#each config.skillCategories as |skillCategory sckey|}}
+  <div class="col">
+    <h4>{{ smarttl "SKILLS_CATEGORIES" sckey }}</h4>
     {{#each @root.system.skills as |skill skey|}}
-    
-    {{#if (eq skill.category sckey) }}                       
-      <div class="ability flexrow flex-group-center">
-        <label style="flex:60%;" for="system.skills.{{skey}}.value" class="resource-label rollable flexlarge align-left" data-type="skill" data-label="{{ skey }}">{{ smarttl "SKILLS" skey }} 
-          {{#if (eq skill.rarity 1)}}<sup>(I)</sup>{{/if}}{{#if (eq skill.rarity 2)}}<sup>(II)</sup>{{/if}}</label>
-            <span class="die d10 pool" title="pool">{{ skillLevel "dicePool" skill.value }}</span>
-            <span class="die d10 reroll" title="reroll">{{ skillLevel "reroll" skill.value }}</span>  
-        <input type="number" name="system.skills.{{skey}}.value" value="{{skill.value}}" class="skill" data-dtype="Number"  min="0" max="5" />
+
+    {{#if (eq skill.category sckey) }}
+    <div class="ability flexrow ">
+      <label for="system.skills.{{skey}}.value"
+        class="resource-label rollable flexlarge align-left" data-type="skill"
+        data-label="{{ skey }}">
+        {{ smarttl "SKILLS" skey }}
+        {{#if (eq skill.rarity 1)}}<sup>(I)</sup>{{/if}}
+        {{#if (eq skill.rarity 2)}}<sup>(II)</sup>{{/if}}
+
+      </label>
+      <div class="specialties">
+        {{#each @root.specialties as |spe ind|}}
+        {{#ife spe.system.skill skey}}
+        <i class="specialty"
+          data-tooltip="spécialité utilisable">{{spe.name}}</i>
+        {{/ife}}
+        {{/each}}
       </div>
-      {{/if}}
-    {{/each}}
+      <select name="system.skills.{{skey}}.value" class="skill-select">
+        {{#select skill.value}}
+        {{#each @root.config.SkillLevels as |level ind|}}
+        <option value="{{ind}}" title="{{localize level.label}}">
+          {{localize level.label}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+      <span class="hexa">{{skill.value}}</span>
+      <div class="skill-dots flexrow">
+        {{#repeat (skillLevel "dicePool" skill.value) 0}}
+        <div class="dice-pool-dot"
+          data-tooltip="{{localize "VERMINE.pool"}}"></div>
+        {{/repeat}}
+        {{#repeat (skillLevel "reroll" skill.value) 0}}
+        <div class="dice-reroll-dot"
+          data-tooltip="{{localize "VERMINE.reroll"}}">X</div>
+        {{/repeat}}
+      </div>
+
     </div>
-{{/each}}
+
+    {{/if}}
+    {{/each}}
+  </div>
+  {{/each}}
 </div>
