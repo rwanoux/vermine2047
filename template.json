@@ -462,7 +462,33 @@
         "reliability": 3,
         "quantity": 1,
         "weight": 0,
-        "traits": []
+        "traits": [],
+        "damages": {
+          "value": 0,
+          "min": 0,
+          "max": 5,
+          "pannes": [
+            "mineure",
+            "mineure",
+            "grave",
+            "grave",
+            "critique"
+          ],
+          "state": [
+            "endommagé",
+            "endommagé",
+            "défectueux",
+            "défectueux",
+            "hors d'usage"
+          ],
+          "effect": [
+            "bonus annulé",
+            "bonus annulé",
+            "malus 1D",
+            "malus 1D",
+            "inutilisable"
+          ]
+        }
       },
       "list": {
         "description": ""
