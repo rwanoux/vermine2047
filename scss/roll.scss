@@ -1,0 +1,178 @@
+ol#chat-log {
+    header.message-header {
+        background-color: black;
+        padding: 0 1rem;
+    }
+
+    .vermine-roll-message {
+        overflow: hidden;
+        box-shadow: 0px 0px 30px white inset;
+        padding: 0;
+        position: relative;
+
+
+        .flexrow {
+            align-items: center;
+            box-shadow: 0px 5px 10px 0px black;
+        }
+
+        h3,
+        h4 {
+            text-transform: uppercase;
+            font-family: "DistressBlack";
+            margin-top: 1rem;
+            border-bottom: none;
+            font-weight: 900;
+            font-weight: 900;
+            background: 50% 0%/cover no-repeat url(/systems/vermine2047/assets/images/ui/scotch.webp);
+
+            &+span {
+                font-family: "DistressBlack";
+                font-size: large;
+                text-transform: unset;
+
+                padding-left: 2rem;
+                background: -100% 0%/cover no-repeat url(/systems/vermine2047/assets/images/ui/scotch.webp);
+
+                &#allowed_reroll {
+                    font-size: large;
+
+                }
+            }
+        }
+
+        h3 {
+            background: url(/systems/vermine2047/assets/images/ui/scotch.webp);
+            background-position: center;
+            background-size: 200%;
+        }
+
+        h4 {
+            text-align: end;
+        }
+
+        div.roll-total {
+            transform: rotate(-3deg) scale(1.3) translateX(2rem) translateY(0.5rem);
+            background: url(/systems/vermine2047/assets/images/ui/scotch.webp);
+            background-position: center;
+            background-size: 200%;
+            margin-bottom: 2rem;
+            padding: 0;
+            z-index: +1;
+        }
+
+        div.reroll {
+            button {
+                text-transform: uppercase;
+                font-family: "DistressBlack";
+                margin-top: 1rem;
+                box-shadow: 0px 0px 3px black;
+                background: 50% 0%/cover no-repeat url(/systems/vermine2047/assets/images/ui/scotch.webp);
+
+            }
+
+            padding: 0 2rem;
+            padding-bottom: 2rem;
+            justify-content: end;
+            text-align: center;
+
+
+
+
+        }
+
+        ul.roll-results {
+            list-style: none;
+
+            li.die {
+                position: relative;
+                max-width: 3rem;
+                line-height: 3rem;
+                float: left;
+                margin: 0.2rem;
+                background-image: url(/icons/dice/d10black.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                font-weight: 800;
+                font-size: 1rem;
+                color: #ffffff;
+                text-align: center;
+                transition: 0.3s;
+                border-bottom: 5px solid rgb(255, 0, 0);
+                border-radius: 2rem;
+
+
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -1rem;
+                    text-wrap: nowrap;
+                    color: black;
+                    font-weight: 100;
+                    font-size: smaller;
+                    text-align: center;
+                    opacity: 0;
+
+
+
+                }
+
+                &:hover::after {
+                    opacity: 1
+                }
+
+
+                &.human,
+                &.adapted {
+                    border-top: 5px solid rgb(255, 217, 0);
+                }
+
+                &.rerollable {
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: translateY(0.5rem)
+                    }
+                }
+
+                &.success {
+                    border-bottom: 5px solid rgb(0, 143, 7);
+                }
+
+                &.adapted {
+
+                    &::after {
+                        content: "adapté"
+                    }
+
+
+
+                }
+
+                &.human {
+                    &::after {
+
+                        content: "humain"
+                    }
+                }
+
+                &.rerolled {
+                    transform: translateY(-0rem);
+                }
+
+                span {
+                    text-align: center;
+                    font-size: larger;
+                    text-shadow: 0px 0px 8px black;
+                }
+
+
+
+            }
+        }
+    }
+
+}

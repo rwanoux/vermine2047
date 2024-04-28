@@ -12,31 +12,32 @@ import { VermineCreatureSheet } from "./sheets/creature-sheet.mjs";
 import { VermineItem } from "./documents/item.mjs";
 import { VermineItemSheet } from "./sheets/item-sheet.mjs";
 
-import { VermineRoll } from "./system/roll.mjs";
+import { VermineUtils } from "./system/roll.mjs";
 import { VermineCombat, VermineCombatTracker } from "./system/fight.mjs";
 
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
 import { VERMINE } from "./system/config.mjs";
+import { initUserDice } from "./system/dice3d.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 
-Hooks.once('init', async function() {
+Hooks.once('init', async function () {
 
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.vermine2047 = {
     VermineActor,
     VermineItem,
-    VermineRoll,
+    VermineUtils,
     VermineCombat
   };
 
   // Add custom constants for configuration.
   CONFIG.VERMINE = VERMINE;
-
+  CONFIG.VERMINE.model = game.system.model
   /**
    * Set an initiative formula for the system
    * @type {String}
@@ -54,24 +55,24 @@ Hooks.once('init', async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet('vermine2047', VermineCharacterSheet, {
-      types: ['character'],
-      makeDefault: true,
-    });
+    types: ['character'],
+    makeDefault: true,
+  });
 
   Actors.registerSheet('vermine2047', VermineNpcSheet, {
-      types: ['npc'],
-      makeDefault: true,
-    });
+    types: ['npc'],
+    makeDefault: true,
+  });
 
   Actors.registerSheet('vermine2047', VermineCreatureSheet, {
     types: ['creature'],
     makeDefault: true,
-  }); 
+  });
 
   Actors.registerSheet('vermine2047', VermineGroupSheet, {
     types: ['group'],
     makeDefault: true,
-  }); 
+  });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("vermine2047", VermineItemSheet, { makeDefault: true });
 
@@ -79,6 +80,27 @@ Hooks.once('init', async function() {
   registerHooks(); // register Hooks
   registerSettings(); // register Vermine Settings
 
+  //afficher le mode de jeu
+  let mode = game.settings.get('vermine2047', 'game-mode');
+  let el = document.createElement('SPAN');
+  switch (mode) {
+    case '1':
+      el.innerText = 'mode survie';
+      break;
+    case '2':
+      el.innerText = 'mode cauchemard';
+      break;
+    case '3':
+      el.innerText = 'mode apocalypse';
+      break;
+  }
+  el.classList.add('game-mode');
+  el.id = 'game-mode-' + mode;
+  document.querySelector('#ui-left').prepend(el);
+
+
+
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
+
 });

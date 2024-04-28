@@ -1,106 +1,136 @@
+{{#if system.identity.totem}}
+
 <h4 class="align-center">
   {{ smarttl 'TOTEMS' system.identity.totem 'name' }}
 </h4>
-<p style="font-size:80%;">{{ smarttlk "TOTEMS" system.identity.totem "description"}}</p>
-  <div class="grid grid-2col">
-      <div class="">
-        <div class="item-name"><strong>Principes</strong><br />{{ smarttlk "TOTEMS"  system.identity.totem "instincts"}}</div>
-      </div>
-      <div class="">
-        <div class="item-name"><strong>Interdits</strong><br />{{ smarttlk "TOTEMS"  system.identity.totem "bans"}}</div>
-      </div>
+<p style="font-size:80%;">{{ smarttlk "TOTEMS" system.identity.totem
+  "description"}}</p>
+<div class="grid grid-2col">
+  <div class>
+    <div class="item-name"><strong>Principes</strong><br />{{ smarttlk "TOTEMS"
+      system.identity.totem "instincts"}}</div>
   </div>
-  <hr>
-  <div class="grid grid-2col">
-     <div>
-      <h4>
-        <span>{{ localize 'ITEMS.abilities'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="ability"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
+  <div class>
+    <div class="item-name"><strong>Interdits</strong><br />{{ smarttlk "TOTEMS"
+      system.identity.totem "bans"}}</div>
+  </div>
+</div>
+<hr>
+<div class="grid grid-2col">
+  <div>
+    <h4>
+      <span>{{ localize 'ITEMS.abilities'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="ability"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
       {{#each abilities as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+
+        </div>
+        <div class="item-controls flexrow">
+          <i class="fas fa-circle-question"
+            data-tooltip="{{item.system.description}}"></i>
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
       {{/each}}
     </ol>
-    </div>
-    <div>
-      <h4>
-        <span>{{ localize 'ITEMS.specialties'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="specialty"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
-      {{#each specialties as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    </div>
-    <div>
-      <h4>
-        <span>{{ localize 'ITEMS.backgrounds'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="background"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
-      {{#each backgrounds as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    </div>
-    <div>
-      <h4>
-        <span>{{ localize 'ITEMS.traumas'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="trauma"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
-      {{#each traumas as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    </div>
-    <div>
-      <h4>
-        <span>{{ localize 'ITEMS.evolutions'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="evolution"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
-      {{#each evolutions as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    </div>
   </div>
-  
+  <div>
+    <h4>
+      <span>{{ localize 'ITEMS.specialties'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="specialty"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
+      {{#each specialties as |item id|}}
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <i class="fas fa-circle-question"
+            data-tooltip="{{item.system.description}}"></i>
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+  <div>
+    <h4>
+      <span>{{ localize 'ITEMS.backgrounds'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="background"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
+      {{#each backgrounds as |item id|}}
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <i class="fas fa-circle-question"
+            data-tooltip="{{item.system.description}}"></i>
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+  <div>
+    <h4>
+      <span>{{ localize 'ITEMS.traumas'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="trauma"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
+      {{#each traumas as |item id|}}
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <i class="fas fa-circle-question"
+            data-tooltip="{{item.system.description}}"></i>
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+  <div>
+    <h4>
+      <span>{{ localize 'ITEMS.evolutions'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="evolution"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
+      {{#each evolutions as |item id|}}
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <i class="fas fa-circle-question"
+            data-tooltip="{{item.system.description}}"></i>
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+</div>
+{{else}}
+
+<h3>choisissez un totem</h3>
+
+{{/if}}

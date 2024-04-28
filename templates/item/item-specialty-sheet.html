@@ -1,29 +1,40 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form
+  class="{{cssClass}}"
+  autocomplete="off"
+>
   <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <img
+      class="profile-img"
+      src="{{item.img}}"
+      data-edit="img"
+      title="{{item.name}}"
+    />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <h1 class="charname"><input
+          name="name"
+          type="text"
+          value="{{item.name}}"
+          placeholder="Name"
+        /></h1>
+      <select
+        name="system.skill"
+        class="skill-select"
+      >
+        {{#select system.skill}}
+          {{#each @root.config.skillCategories as |skillCategory sckey|}}
+
+            <optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' sckey 'name' }}">
+              {{#each @root.config.model.Actor.character.skills as |skill key|}}
+                {{#ife skill.category sckey}}
+                  <option value="{{key}}">{{ smarttlk 'SKILLS' key 'name' }}</option>
+                {{/ife}}
+            </optgroup>
+          {{/each}}
+          {{/each}}
+        {{/select}}
+      </select>
+
     </div>
   </header>
-
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
-  </nav>
-
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
-
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-    </div>
-
-    {{!-- Attributes Tab --}}
-    <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
-    </div>
-  </section>
 
 </form>

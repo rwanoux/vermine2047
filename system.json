@@ -18,7 +18,6 @@
     "module/vermine2047.mjs"
   ],
   "styles": [
-    "css/style.css",
     "css/vermine2047.css"
   ],
   "languages": [
@@ -26,6 +25,12 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json",
       "flags": {}
     }
   ],

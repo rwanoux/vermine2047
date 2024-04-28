@@ -6,13 +6,26 @@ export const registerSettings = function () {
         config: true,
         type: String,
         choices: {
-        "1": "Survie",
-        "2": "Cauchemar",
-        "3": "Apocalypse"
+            "1": "Survie",
+            "2": "Cauchemar",
+            "3": "Apocalypse"
         },
         default: 'e',
         onChange: value => {
-        // console.log(value);
+            let el = document.querySelector('.game-mode');
+            el.id = 'game-mode-' + game.settings.get('vermine2047', 'game-mode')
+            switch (game.settings.get('vermine2047', 'game-mode')) {
+                case '1':
+                    el.innerText = 'mode survie';
+
+                    break;
+                case '2':
+                    el.innerText = 'mode cauchemard'
+                    break;
+                case '3':
+                    el.innerText = 'mode apocalypse'
+                    break;
+            }
         }
     });
 

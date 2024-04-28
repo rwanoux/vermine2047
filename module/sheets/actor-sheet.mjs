@@ -1,4 +1,4 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -40,7 +40,7 @@ export class VermineActorSheet extends ActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
-    
+
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
 
@@ -56,7 +56,7 @@ export class VermineActorSheet extends ActorSheet {
 
     // Render the item sheet for viewing/editing prior to the editable check.
     html.find('.item-edit').click(ev => {
-      const li = $(ev.currentTarget).parents(".item");     
+      const li = $(ev.currentTarget).parents(".item");
       const item = this.actor.items.get(li.data("itemId"));
       item.sheet.render(true);
     });
@@ -79,7 +79,7 @@ export class VermineActorSheet extends ActorSheet {
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
-   
+
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = ev => this._onDragStart(ev);
@@ -90,8 +90,21 @@ export class VermineActorSheet extends ActorSheet {
       });
     }
 
+    //click on wound radio
+    html.find('.hexa [type="radio"]').click(ev => {
+      this._onClickRadioHexa(ev)
+    })
+
   }
- 
+  _onClickRadioHexa(ev) {
+    if (!ev.currentTarget.checked) { return }
+    let prop = ev.currentTarget.name;
+    let update = {};
+    update[prop] = ev.currentTarget.value - 1
+
+    this.actor.update(update)
+
+  }
   async _onItemCreate(event) {
     event.preventDefault();
     const header = event.currentTarget;
@@ -113,6 +126,6 @@ export class VermineActorSheet extends ActorSheet {
     delete itemData.system["type"];
 
     // Finally, create the item!
-    return await Item.create(itemData, {parent: this.actor});
+    return await Item.create(itemData, { parent: this.actor });
   }
 }
