@@ -1,41 +1,86 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form
+  class="{{cssClass}}"
+  autocomplete="off"
+>
   <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <img
+      class="profile-img"
+      src="{{item.img}}"
+      data-edit="img"
+      title="{{item.name}}"
+    />
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <h1 class="charname"><input
+          name="name"
+          type="text"
+          value="{{item.name}}"
+          placeholder="Name"
+        /></h1>
     </div>
   </header>
   <section class="sheet-body">
-    <div class="flexrow" data-group="primary" data-tab="description">
-      {{ log system }}
-      <aside style="flex:1">
+    <div
+      class="flexcol"
+      data-group="primary"
+      data-tab="description"
+    >
+      <div class="flexrow">
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.ranges"}}</label>
           <div class="flexrow">
-            <input type="number" name="system.min_range" value="{{system.min_range}}" data-dtype="Number"/> /
-            <input type="number" name="system.max_range" value="{{system.max_range}}" data-dtype="Number"/>
+            <input
+              type="number"
+              name="system.min_range"
+              value="{{system.min_range}}"
+              data-dtype="Number"
+            /> /
+            <input
+              type="number"
+              name="system.max_range"
+              value="{{system.max_range}}"
+              data-dtype="Number"
+            />
           </div>
-        </div> 
+        </div>
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.damages"}}</label>
-          <input type="number" name="system.damage" value="{{system.damage}}" data-dtype="Number"/>
-        </div> 
+          <input
+            type="number"
+            name="system.damage"
+            value="{{system.damage}}"
+            data-dtype="Number"
+          />
+        </div>
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
-          <input type="number" name="system.ammo" value="{{system.ammo}}" data-dtype="Number"/>
-        </div> 
+          <input
+            type="number"
+            name="system.ammo"
+            value="{{system.ammo}}"
+            data-dtype="Number"
+          />
+        </div>
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.rarity"}}</label>
-          <input type="number" name="system.rarity" value="{{system.rarity}}" data-dtype="Number"/>
-        </div> 
+          <input
+            type="number"
+            name="system.rarity"
+            value="{{system.rarity}}"
+            data-dtype="Number"
+          />
+        </div>
         <div class="resource">
           <label class="resource-label">{{ localize "VERMINE.reliability"}}</label>
-          <input type="number" name="system.reliability" value="{{system.reliability}}" data-dtype="Number"/>
-        </div> 
-      </aside>    
-      <main class="editor-wrapper"  style="flex:5">
-        {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-      </main>
+          <input
+            type="number"
+            name="system.reliability"
+            value="{{system.reliability}}"
+            data-dtype="Number"
+          />
+        </div>
+      </div>
+      <h2>description</h2>
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
     </div>
   </section>
 </form>
