@@ -44,7 +44,7 @@
       <select class="info-value" data-roll="true" style="max-width: 40%;"
         data-dtype="String"
         type="number" name="ability" id="ability" min="1" max="5">
-        <option>-- Choisissez une caractéristique
+        <option value="0">-- Choisissez une caractéristique
           --</option>
         {{#each config.abilityCategories as |abilCategory catkey|}}
 
@@ -138,18 +138,22 @@
     <div class="flexrow">
       <h4 class="label">utiliser des dés totems ?
       </h4>
+      {{#ifgt @root.actor.system.adaptation.totems.human.value 0}}
       <div class="totem-human">
         <label for="human-totem">totem humain </label>
         <input type="checkbox" data-roll="true" name="human-totem"
           id="human-totem"
           value="1">
       </div>
+      {{/ifgt}}
+      {{#ifgt @root.actor.system.adaptation.totems.adapted.value 0}}
       <div class="totem-adapted">
         <label for="human-totem">totem adapté </label>
         <input type="checkbox" data-roll="true" name="adapted-totem"
           id="adapted-totem"
           value="1">
       </div>
+      {{/ifgt}}
     </div>
     <div class="flexrow row mdb">
       <label class="label" style="flex: 80%;">{{localize
