@@ -5,10 +5,10 @@
 
 
 export async function initUserDice(dice3d, user) {
-    let baseColor = game.user.color;
+    let baseColor = user.color;
     dice3d.addColorset({
-        name: 'regular_' + game.user.name,
-        description: "regular dice for " + game.user.name,
+        name: 'regular_' + user.name,
+        description: "regular dice for " + user.name,
         category: "vermine 2047",
         foreground: '#9F8003',
         background: baseColor,
@@ -18,27 +18,27 @@ export async function initUserDice(dice3d, user) {
         visibility: 'visible'
     });
     dice3d.addColorset({
-        name: 'human_' + game.user.name,
-        description: "human totem dice for " + game.user.name,
+        name: 'human_' + user.name,
+        description: "human totem dice for " + user.name,
         category: "vermine 2047",
         foreground: '#9F8003',
-        background: lightenColor(baseColor, 40),
+        background: lightenColor(baseColor, 60),
         outline: 'black',
         material: 'plastic',
         visibility: 'visible'
     });
     dice3d.addColorset({
-        name: 'adapted_' + game.user.name,
-        description: "adapted totem dice for " + game.user.name,
+        name: 'adapted_' + user.name,
+        description: "adapted totem dice for " + user.name,
         category: "vermine 2047",
         foreground: '#9F8003',
-        background: darkenColor(baseColor, 40),
+        background: darkenColor(baseColor, 60),
         outline: 'black',
         material: 'plastic',
         visibility: 'visible'
     });
 
-    await game.user.setFlag("world", "diceInit", true);
+    await user.setFlag("world", "diceInit", true);
 }
 
 export function darkenColor(color, percent) {

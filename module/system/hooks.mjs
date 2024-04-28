@@ -30,7 +30,9 @@ export const registerHooks = function () {
         });
 
 
-        game.users.forEach(user => initUserDice(dice3d, user));
+        game.users.forEach(user => {
+            initUserDice(dice3d, user)
+        });
 
     });
 
@@ -44,9 +46,9 @@ export const registerHooks = function () {
     })
 
 
-    Hooks.on('updateUser', async () => {
+    Hooks.on('updateUser', async (user, updateData, options, id) => {
         if (game.dice3d) {
-            initUserDice(game.dice3d)
+            initUserDice(game.dice3d, user)
 
         }
     })
@@ -63,9 +65,6 @@ export const registerHooks = function () {
         $(".paused img").css({ "opacity": 1 });
         $("#pause.paused figcaption").text("Communauté endormie...");
     });
-
-    // Hooks.on('renderChatLog', (log, html, data) => VermineFight.chatListeners(html));
-    // Hooks.on('renderChatMessage', (message, html, data) => VermineFight.chatMessageHandler(message, html, data));
 
     /**
      * Create a macro when dropping an entity on the hotbar
