@@ -2,15 +2,55 @@
   <img class="profile-img" src="{{actor.img}}" data-edit="img"
     title="{{actor.name}}" height="100" width="100" />
 </div>
+<div class="minor-totems ">
+
+  <h3>{{localize "ITEMS.evolution"}}</h3>
+  <h5 class="human
+    {{#ifgt system.adaptation.totems.human.value system.adaptation.totems.adapted.value}}
+    major
+    {{/ifgt}}
+    ">{{localize "TOTEMS.human.name"}}
+    <img src="/systems/vermine2047/assets/images/ui/totems/human.webp" />
+  </h5>
+
+  <h5 class="adapted
+  {{#ifgt system.adaptation.totems.human.value system.adaptation.totems.adapted.value}}
+    major
+    {{/ifgt}}">{{localize "TOTEMS.adapted.name"}}
+    <img src="/systems/vermine2047/assets/images/ui/totems/adapted.webp" />
+  </h5>
+
+  <div class="totem-dice flexrow flex-group-center">
+    <div class="human-dice flexrow">
+      {{#repeat system.adaptation.totems.human.max 1}}
+      <div class="hexa" data-totem-name="human" data-totem-value="{{@index}}">
+        {{#ifgteq system.adaptation.totems.human.value @index}}
+        <div class="human-die"><i class="fas fa-dice-d10"></i></div>
+        {{/ifgteq}}
+      </div>
+      {{/repeat}}
+    </div>
+
+    <div class="adapted-dice flexrow">
+      {{#repeat system.adaptation.totems.adapted.max 1}}
+      <div class="hexa" data-totem-name="adapted" data-totem-value="{{@index}}">
+        {{#ifgteq system.adaptation.totems.adapted.value @index}}
+        <div class="adapted-die"><i class="fas fa-dice-d10"></i></div>
+        {{/ifgteq}}</div>
+      {{/repeat}}
+    </div>
+  </div>
+
+</div>
 <ul class="padding-with-frieze unstyled paper">
   {{#if system.identity.totem }}
-  <li class="row lgb">
+  <li class="row lgb major-totem">
     <div class="flexcol flex-group-center items-center w-full">
+      <h4>{{ smarttl 'TOTEMS' system.identity.totem 'name' }}</h4>
       <img
         src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp"
         alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80"
-        height="80"
-        data-tooltip="{{localize system.identity.totem}}" />
+        height="80" />
     </div>
   </li>
   {{/if}}

@@ -36,7 +36,7 @@ export const preloadHandlebarsTemplates = async function () {
     "systems/vermine2047/templates/actor/creature/creature-combat.hbs",
 
     // additional templates
-    "systems/vermine2047/templates/roll.hbs",
+    "systems/vermine2047/templates/roll-dialog.hbs",
   ]);
 };
 
@@ -176,6 +176,7 @@ export const registerHandlebarsHelpers = function () {
   Handlebars.registerHelper('skillLevel', function (property, level, options) {
     if (level < 1 || level > 5)
       return "";
+    level = parseInt(level);
     let levelData = CONFIG.VERMINE.SkillLevels[level];
     if (property == 'label') {
       return (levelData !== undefined) ? game.i18n.localize(levelData[property]) : "";
@@ -246,6 +247,9 @@ export const registerHandlebarsHelpers = function () {
   Handlebars.registerHelper('iflteq', function (a, b, options) {
     if (a <= b) { return options.fn(this); }
     return options.inverse(this);
+  });
+  Handlebars.registerHelper('ifincludes', function (arg1, arg2, options) {
+    return (arg1.includes(arg2)) ? options.fn(this) : options.inverse(this);
   });
 
   Handlebars.registerHelper('repeat', function (times, start, block) {

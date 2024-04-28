@@ -18,6 +18,7 @@ import { VermineCombat, VermineCombatTracker } from "./system/fight.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
 import { VERMINE } from "./system/config.mjs";
+import { initUserDice } from "./system/dice3d.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -37,7 +38,6 @@ Hooks.once('init', async function () {
   // Add custom constants for configuration.
   CONFIG.VERMINE = VERMINE;
   CONFIG.VERMINE.model = game.system.model
-  console.log('__________________', CONFIG.VERMINE)
   /**
    * Set an initiative formula for the system
    * @type {String}
@@ -97,6 +97,9 @@ Hooks.once('init', async function () {
   el.classList.add('game-mode');
   el.id = 'game-mode-' + mode;
   document.querySelector('#ui-left').prepend(el);
+
+
+
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
 

@@ -1,26 +1,75 @@
-<div class="ecryme-dv roll attribute">
-    <div class="dice-roll">
-        <div class="dice-result">
-            <div class="dice-formula">
-                {{ ` + dicePool + `d6 }}
-            </div>
-            <div class="dice-tooltip expanded">
-                <section class="tooltip-part flexrow">
-                  <div class="" style="flex:60%;">
-                    <div class="parameters">
-                      {{ targetText }}
-                    </div>
-                    <div class="dice">
-                        <ol class="dice-rolls">{{ diceString }}</ol>
-                    </div>
-                  </div>  
-                  <div class="align-center">
-                    Résultat
-                    <p style="font-weight:bold; font-size:2em;">{{ (total + skill + _trait + _usingSpecialization + _used).toString() }}</p>
-                  </div>
-                </section>
-            </div>` +
-            `<h4 class="dice-total">{{ successText }}</h4>
-        </div>
+<div class="vermine-roll-message">
+  {{log this}}
+  <h3>{{param.actor.name}} : test de {{param.rollLabel}}</h3>
+  <div class="flexrow">
+    <h4>difficulté</h4>
+    <span id="difficulty">{{param.difficulty}}</span>
+  </div>
+  <ul class="flexrow roll-results initial-roll"
+    data-difficulty="{{param.difficulty}}">
+    {{#each roll.dice as |dieType index|}}
+    {{#each dieType.results as |die index|}}
+    <li class="roll die flexcol 
+    {{#if die.success}}
+      success
+    {{/if}}
+    {{#ifincludes dieType.options.flavor "adapted"}}
+      adapted
+      {{/ifincludes}}
+      {{#ifincludes dieType.options.flavor "regular"}}
+      regular
+      {{/ifincludes}}
+      {{#ifincludes dieType.options.flavor "human"}}
+      human
+      {{/ifincludes}}
+      {{#ifgt @root.param.Reroll 0}}
+      rerollable
+      {{/ifgt}}
+      "
+      data-dice-type="
+      {{#ifincludes dieType.options.flavor "adapted"}}
+      adapted
+      {{/ifincludes}}
+      {{#ifincludes dieType.options.flavor "regular"}}
+      regular
+      {{/ifincludes}}
+      {{#ifincludes dieType.options.flavor "human"}}
+      human
+      {{/ifincludes}}">
+
+      <span>{{die.result}}</span>
+
+    </li>
+    {{/each}}
+    {{/each}}
+  </ul>
+  <div class="roll-total flexrow">
+    <h4>nombre de succès :</h4>
+    <span id="total">{{roll._total}}</span>
+  </div>
+  <div class="reroll flexrow">
+    <div class="reroll-from-effort ">
+      <div class="flexcol">
+        <h4 class="flexcol">
+          <span>effort</span>
+        </h4>
+        <input type="range" min="0" 
+        {{#iflt param.max_effort param.actor.system.attributes.effort.value}}
+        max="{{param.max_effort}}"
+        {{/iflt}}
+        {{#iflteq param.actor.system.attributes.effort.value param.max_effort }}
+        max="{{param.actor.system.attributes.effort.value}}"
+        {{/iflteq}}
+        value="0"
+         id="effort-reroll">
+         </input>
+
+      </div>
+      <button class="grant-reroll" data-tooltip="s'accorder des relances"> <span id="granted-reroll">0</span> </button>
+    </div> 
+    <div class="reroll-fromroll">
+      <h4>relances possibles : </h4>
+      <span id="allowed_reroll">{{param.Reroll}}</span>
     </div>
+  </div>
 </div>

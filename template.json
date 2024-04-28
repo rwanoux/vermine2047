@@ -32,6 +32,23 @@
       "templates": [
         "base"
       ],
+      "adaptation": {
+        "value": 1,
+        "min": 0,
+        "max": 5,
+        "totems": {
+          "human": {
+            "value": 1,
+            "min": 0,
+            "max": 3
+          },
+          "adapted": {
+            "value": 1,
+            "min": 0,
+            "max": 3
+          }
+        }
+      },
       "identity": {
         "height": 0,
         "weight": 0,

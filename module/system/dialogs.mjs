@@ -35,24 +35,40 @@ export class CombatResultDialog extends Dialog {
 
 }
 export class RollDialog extends Dialog {
-  static async create(rollData) {
 
-    let options = { classes: ["vermine-roll"], width: 420, height: 'fit-content', 'z-index': 99999 };
-    let html = await renderTemplate('systems/vermine2047/templates/roll.hbs', rollData);
+  static async create(data = {
+    label: null,
+    rolltype: null,
+    NoD: 1,
+    Reroll: false,
+    actorId: game.user.character.id
+  }) {
+    data.actor = await game.actors.get(data.actorId);
+    data.config = CONFIG.VERMINE;
+    let options = { classes: ["nocDialog"], width: 420, height: 'fit-content', 'z-index': 99999 };
+    let html = await renderTemplate('systems/vermine2047/templates/roll-dialog.hbs', data);
 
-    return new RollDialog(actor, rollData, html, options);
+    return new RollDialog(data, html, options);
   }
+  static get defaultOptions() {
+    return foundry.utils.mergeObject(super.defaultOptions, {
+      focus: true,
+      classes: ["dialog vermine-roll"],
 
+    });
+  }
   /* -------------------------------------------- */
   constructor(data, html, options, close = undefined) {
     let conf = {
-      title: "",
+      title: "jet de dés",
       content: html,
       buttons: {
         roll: {
           icon: '<i class="fas fa-check"></i>',
           label: "Lancer !",
-          callback: () => { this.roll(data.actorId, data.label, data.NoD, data.Reroll) }
+          callback: () => {
+            this.roll()
+          }
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
@@ -60,124 +76,117 @@ export class RollDialog extends Dialog {
           callback: () => { this.close() }
         }
       },
-      close: close
+      close: close,
     }
 
-    super(conf, options);
+    return super({ ...conf, ...data }, options);
 
-    this.data = data;
+
+
+  };
+  getData() {
+    let context = super.getData();
+    context.data = this.data;
+    context.config = CONFIG.VERMINE;
+    return context;
+  }
+  async activateListeners(html) {
+    super.activateListeners(html);
+    this.getRollData();
+    let rollInputs = html.find('[data-roll');
+    for (let inp of rollInputs) {
+      inp.addEventListener('change', await this.getRollData.bind(this))
+    };
+    let selectAbil = html.find('#ability')[0];
+    html.find("#self_control")[0].max = selectAbil.value;
+    selectAbil.addEventListener('change', this._onChangeAbility.bind(this));
+    let selfControl = html.find('#self_control')[0]
+    selfControl.addEventListener('change', this._onChangeSelfControl.bind(this));
+  };
+  async getRollData(ev) {
+    console.log(this)
+    this.rollData = {
+      actor: this.data.actor,
+      NoD: this.getDicePool(),
+      Reroll: this.getReroll(),
+      difficulty: this.getDifficulty(),
+      rollLabel: this.data.labelKey,
+      totems: this.getTotems(),
+      self_control: this.getSelfControl(),
+      max_effort: this.getMaxEffort()
+    }
+    console.log('____________________________________calculating roll', this.rollData);
+
+  };
+  _onChangeSelfControl(ev) {
+    let html = this.element[0];
+    html.querySelector('#self_control_value').innerText = ev.currentTarget.value;
+
+
+  };
+  getSelfControl() {
+    let html = this.element[0];
+    let selfControl = parseInt(html.querySelector('#self_control').value)
+    return selfControl
+  }
+  getMaxEffort() {
+    let html = this.element[0];
+    return parseInt(html.querySelector('#ability').value);
+  }
+  getTotems() {
+    let html = this.element[0];
+    let totems = {
+      human: html.querySelector('#human-totem').checked,
+      adapted: html.querySelector('#adapted-totem').checked,
+    }
+    return totems
+  }
+  _onChangeAbility(ev) {
+    let html = this.element[0];
+    let score = html.querySelector('#ability').options[html.querySelector('#ability').selectedIndex].value;
+
+    if (!typeof score == "number") {
+      score = 0
+    }
+    html.querySelector('#abilityScore').value = score;
+    html.querySelector('#self_control').max = score;
+
 
   }
+  getDicePool() {
+    let html = this.element[0];
+    let abilValue = html.querySelector('#ability').options[html.querySelector('#ability').selectedIndex].value || 0;
+    let skillValue = html.querySelector('#skill').options[html.querySelector('#skill').selectedIndex].dataset.pool || 0;
+    let selfControl = html.querySelector('#self_control').value;
+    let bonuses =
+      (html.querySelector('#usingSpecialization').checked ? 1 : 0) +
+      (html.querySelector('#helped').checked ? 1 : 0) +
+      (html.querySelector('#usingTools').checked ? 1 : 0);
+    let total = parseInt(abilValue) + parseInt(selfControl) + parseInt(skillValue) + bonuses;
+
+    return total || 0;
+
+  }
+  getReroll() {
+    let html = this.element[0];
+    let selected = html.querySelector('#skill').selectedIndex;
+    let reroll = html.querySelector('#skill').options[selected].dataset.reroll || 0;
+    return parseInt(reroll) || 0;
+
+  }
+  getDifficulty() {
+    let html = this.element[0];
+    let selected = html.querySelector('#difficulty').selectedIndex;
+    let diff = html.querySelector('#difficulty').options[selected].value || 0;
+    return parseInt(diff) || 0;
+  }
   roll() {
-    VermineUtils.roll(actorId, label, NoD, Reroll = 0, params = {})
+    if (this.rollData.self_control > 0) {
+      if (this.rollData.actor.system.attributes.self_control.value < this.rollData.self_control) {
+        return ui.notifications.warn('vous navez pas assez de sang-froid')
+      }
+    }
+    return VermineUtils.roll({ ...this.rollData })
   }
 
 }
-export const getRollBox = async function (data) {
-  console.log(data)
-  let actor = await game.actors.get(data.actorId)
-  let html = await renderTemplate('systems/vermine2047/templates/roll.hbs', data);
-  let dial = new Dialog({
-    title: game.i18n.localize("ROLLS.tool"),
-    content: html,
-    buttons: {
-      roll: {
-        label: game.i18n.localize('ROLLS.roll_dice'),
-        callback: async (html) => {
-          let form = html.find('#dice-pool-form');
-          if (!form[0].checkValidity()) {
-            throw "Invalid Data";
-          }
-          let formData = {};
-          form.serializeArray().map(item => {
-            formData[item.name] = item.value;
-          });
-          // console.log("roll form data", formData);
-          let NoD = parseInt(formData.abilityScore, 10);
-          let Reroll = 0;
-          // difficulty
-          data.difficulty = (formData.difficulty != undefined) ? formData.difficulty : 7;
-          // maîtrise bonus
-          if (formData.rollType == 'skill') {
-            NoD += CONFIG.VERMINE.SkillLevels[formData.skillScore].dicePool || 0;
-            Reroll += CONFIG.VERMINE.SkillLevels[formData.skillScore].reroll || 0;
-          }
-          console.log('reroll', Reroll);
-
-          // réserves
-          if (formData.self_control > 0) {
-            NoD += parseInt(formData.self_control, 10);
-            let newSelfControl = actor.system.attributes.self_control.value - parseInt(formData.self_control);
-            if (newSelfControl < 0) {
-              return async () => {
-                await ui.notifications.notify(`vous ne disposez pas d'assez de sang-froid`);
-                dial.render(true);
-              }
-
-
-            }
-            await actor.update({
-              "system.attributes.self_control.value": newSelfControl
-            })
-          }
-          if (formData.group > 0) {
-            NoD += parseInt(formData.group, 10);
-          }
-          // checks
-          if (formData.usingSpecialization !== undefined && formData.usingSpecialization == 1) {
-            NoD += 1;
-          }
-          if (formData.usingTools !== undefined && formData.usingTools == 1) {
-            NoD += 1;
-          }
-          if (formData.helped !== undefined && formData.helped == 1) {
-            NoD += 1;
-          }
-          if (formData.abilityScore == 0 || !formData.abilityScore) {
-            ui.notifications.notify(`veuillez saisir une caractéristique`);
-            dial.render(true);
-          } else
-            return VermineUtils.roll(data.actorId, data.label, NoD, Reroll, data);
-        }
-      },
-      close: {
-        label: game.i18n.localize('Close'),
-        callback: () => { }
-      }
-    },
-    render: function (h) {
-      if (h.find('input[name="abilityScore"]').val() == 0 && data.rollType == 'ability') {
-        h.find('input[name="abilityScore"]').val(data.abilities[data.label].value);
-      }
-
-      h.find('select[name="ability"]').change((event) => {
-        if (event.target.value != undefined) {
-          const abilityScore = data.abilities[event.target.value].value;
-          console.log('ability', abilityScore);
-          // on enregistre la valeur de la caractéristique
-          h.find('input[name="abilityScore"]').val(abilityScore);
-        }
-      });
-
-      h.find('select[name="skill"]').change((event) => {
-        if (data.rollType == 'skill' && event.target.value != undefined) {
-          const skillScore = data.skills[event.target.value].value;
-          // on enregistre la valeur de la compétence
-          h.find('input[name="skillScore"]').val(skillScore);
-          // on met à jour les infos de niveaux de compétence
-          const skillLevel = CONFIG.VERMINE.SkillLevels[skillScore];
-          if (skillLevel != undefined) {
-            h.find('#skillLevel').text(game.i18n.localize(skillLevel.label));
-            h.find('#skillDicePool').text(skillLevel.dicePool);
-            h.find('#skillReroll').text(skillLevel.reroll);
-          } else {
-            h.find('#skillLevel').text('Inconnu');
-            h.find('#skillDicePool').text(0);
-            h.find('#skillReroll').text(0);
-          }
-        }
-      });
-    }
-  });
-  dial.render(true);
-}  

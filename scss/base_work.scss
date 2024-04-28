@@ -105,10 +105,7 @@ ul.unstyled li {
 
 .actor.sheet form .form {
   display: grid;
-  /*grid:
-      "sidebar header" 75px
-      "sidebar nav" minmax(min-content, max-content)
-      "sidebar content" 1fr/230px 1fr;*/
+
   grid-template-columns: minmax(230px, 1fr) 3fr;
   grid-template-rows: 1fr;
   align-items: flex-start;
@@ -120,10 +117,28 @@ ul.unstyled li {
   grid-row: span 1 / span 1;
   background-image: url(/systems/vermine2047/assets/images/ui/barre_laterale.webp);
   background-repeat: no-repeat;
-  background-position: 12% 50%;
-  background-size: 400%;
+  background-size: cover;
   height: 100%;
-  box-shadow: -20px 0px 100px #000000b5 inset
+  width: 240px;
+  padding: 0 0.3rem;
+  box-shadow: -20px 0px 100px #000000b5 inset;
+
+
+  .major-totem {
+    position: relative;
+
+    h4 {
+      position: absolute;
+      transform: rotate(-8deg);
+      opacity: 0.7;
+      transition: 0.2s;
+
+    }
+
+    &:hover h4 {
+      opacity: 1;
+    }
+  }
 }
 
 .actor.sheet .form main {
@@ -134,7 +149,6 @@ ul.unstyled li {
 }
 
 .actor.sheet .form aside .image-wrapper {
-  margin: 1rem auto 3rem;
   text-align: center;
 }
 
@@ -209,6 +223,111 @@ ul.unstyled li {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.system-vermine2047 .sheet.actor form div.hexa {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+  height: unset;
+  max-width: 1.5rem;
+  aspect-ratio: 1/1;
+  color: black;
+  transform: rotate(90deg);
+  transition: 0.2s;
+  margin: 0.2rem;
+
+  &:hover {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+
+  }
+
+  input {
+    opacity: 1;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0
+  }
+
+  &.checked {
+    &:hover {
+      background: radial-gradient(circle, rgb(43, 43, 43) 0%, rgba(0, 0, 0, 0.288) 100%);
+
+    }
+
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.288) 100%);
+  }
+
+  &.unavailable {
+    background: radial-gradient(circle, rgba(66, 15, 15, 0.664) 0%, rgba(131, 70, 70, 0.432) 100%);
+
+  }
+}
+
+.system-vermine2047 .sheet.actor div.minor-totems {
+  position: relative;
+  background-color: #929c6f85;
+
+  h5 {
+    position: absolute;
+    top: 0;
+
+    img {
+      max-width: 2rem;
+      position: absolute;
+      bottom: -2rem;
+
+    }
+  }
+
+  .totem-dice {
+
+    .human-dice,
+    .adapted-dice {
+      display: flex;
+      flex-direction: row;
+      margin-left: 2rem;
+
+
+      i {
+        padding-top: 0.5rem;
+        color: #064930;
+      }
+    }
+
+
+
+
+
+    .adapted-dice {
+      justify-content: flex-end;
+      margin-left: 0;
+      margin-right: 2rem;
+      transform: rotate(180deg);
+
+      i {
+        transform: rotate(180deg);
+        padding-top: 0.5rem;
+        color: rgb(85, 52, 2);
+      }
+    }
+  }
+
+  .human {
+    left: 0;
+
+    img {
+      left: 0;
+
+    }
+  }
+
+  .adapted {
+    right: 0;
+
+    img {
+      right: 0
+    }
+  }
 }
 
 .system-vermine2047 .sheet.actor form input[type=text],
@@ -462,17 +581,22 @@ ul.unstyled li {
     margin: 0 1rem;
 
     flex: 0.5;
+  }
 
-    &.hexa {
-      text-align: center;
-      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
-      max-height: 1.2rem;
-      max-width: 1.2rem;
-      aspect-ratio: 1/1;
-      color: black;
-      vertical-align: bottom;
+  .hexa {
+    text-align: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+    max-height: 1.2rem;
+    max-width: 1.2rem;
+    aspect-ratio: 1/1;
+    color: black;
+    vertical-align: center;
+
+    &.checked {
+      background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.288) 100%);
     }
+
   }
 
   div.specialties {
