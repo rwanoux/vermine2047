@@ -43,8 +43,11 @@ export class VermineUtils {
 
     // Création du jet de dés
     let roll = new Roll(formula, actor.getRollData());
+    //effectuer le lancé
     await roll.evaluate();
+    //afficher le lancer 3d
     await VermineUtils.showDiceSoNice(roll);
+    // afficher le résultat dans le chat
     VermineUtils.diplayChatRoll(roll, ...arguments);
     return roll;
   }
@@ -54,9 +57,9 @@ export class VermineUtils {
    * @param {Object} message - Le message contenant l'événement de relance
    * @param {Object} ev - L'événement de relance
    */
-  static async _onRerollSelect(message, ev) {
+  static async onReroll(message, ev) {
     // Vérification de l'utilisateur
-    if (game.user._id != message.user._id) {
+    if (game.user._id != message.user._id || !game.user.isGM) {
       ui.notifications.warn('vous ne pouvez pas relancer un dés sur ce jet')
       return false
     }
@@ -110,6 +113,8 @@ export class VermineUtils {
     // Création et évaluation du jet de dés de relance
     let reroll = await new Roll(formula);
     await reroll.evaluate();
+
+    //afficher les dés 3d
     await VermineUtils.showDiceSoNice(reroll);
     // mise à jour de l'affichage du dés 
     console.log(reroll)
@@ -132,42 +137,56 @@ export class VermineUtils {
     })
   }
 
-  /**
-   * Méthode pour gérer les événements de chat
-   * @param {HTMLElement} html - L'élément HTML contenant les événements de chat
+  /** 
+   * Méthode pour gérer les événements de chat 
+   * @param {HTMLElement} html - L'élément HTML contenant les événements de chat 
    */
   static async chatListenners(html) {
+    // Récupérer le nombre de relances autorisées 
     let reroll = html.find('#allowed_reroll')[0]?.innerText;
+    // Vérifier s'il n'y a pas de relances ou si le nombre est inférieur à 1 
     if (!reroll || parseInt(reroll) < 1) {
+      // Désactiver les relances pour chaque dé 
       for (let die of html.find('.die')) {
         die.classList.remove("rerollable")
       };
     } else {
+      // Activer les relances pour chaque dé 
       for (let die of html.find('.die')) {
         die.classList.add("rerollable")
       };
     }
+
+    // Ajouter un événement de clic pour les dés pouvant être relancés 
     html.find('.rerollable').click(async (ev) => {
       ev.preventDefault();
+      // Récupérer l'ID du message 
       let msgId = ev.currentTarget.closest("li.message").dataset.messageId;
+      // Récupérer le message correspondant à l'ID 
       let message = await game.messages.get(msgId);
-      await VermineUtils._onRerollSelect(message, ev);
+      // Appeler la fonction onReroll de VermineUtils 
+      await VermineUtils.onReroll(message, ev);
     });
 
+    // Mettre à jour l'étiquette en fonction de la valeur sélectionnée 
     html.find("#effort-reroll").change(ev => {
       let label = html.find("#granted-reroll")[0]
       label.innerText = ev.currentTarget.value
     });
+
+    // Ajouter un événement de clic pour accorder une relance 
     html.find("button.grant-reroll").click(async (ev) => {
+      // Mettre à jour le nombre de relances autorisées 
       html.find("#allowed_reroll")[0].innerText = html.find('#granted-reroll')[0].innerText
       let mesEl = ev.currentTarget.closest('[data-message-id]')
       let messageId = mesEl.dataset.messageId;
-      ev.currentTarget.closest('.reroll-from-effort').style.display="none"
+      // Quand relance accorder masquer la zone pour accorder les relances
+      ev.currentTarget.closest('.reroll-from-effort').style.display = "none"
       let content = ev.currentTarget.closest(".vermine-roll-message").outerHTML;
+      // Mettre à jour le contenu du message avec la relance accordée 
       let message = await game.messages.get(messageId);
       await message.update({ content: content });
     });
-
   }
 
   /**
@@ -176,38 +195,27 @@ export class VermineUtils {
    * @param {string} rollMode - Le mode d'affichage du jet de dés
    */
   static async showDiceSoNice(roll, rollMode) {
-    if (game.modules.get("dice-so-nice")?.active) {
-      if (game.dice3d) {
-        let whisper = null;
-        let blind = false;
-        rollMode = rollMode ?? game.settings.get("core", "rollMode");
-        switch (rollMode) {
-          case "blindroll": //GM only
-            blind = true;
-          case "gmroll": //GM + rolling player
-            whisper = this.getUsers(user => user.isGM);
-            break;
-          case "roll": //everybody
-            whisper = this.getUsers(user => user.active);
-            break;
-          case "selfroll":
-            whisper = [game.user.id];
-            break;
-        }
-        await game.dice3d.showForRoll(roll, game.user, true, whisper, blind);
+    if (game.dice3d) {
+      let whisper = null;
+      let blind = false;
+      rollMode = rollMode ?? game.settings.get("core", "rollMode");
+      switch (rollMode) {
+        case "blindroll": //GM only
+          blind = true;
+        case "gmroll": //GM + rolling player
+          whisper = this.getUsers(user => user.isGM);
+          break;
+        case "roll": //everybody
+          whisper = this.getUsers(user => user.active);
+          break;
+        case "selfroll":
+          whisper = [game.user.id];
+          break;
       }
+      await game.dice3d.showForRoll(roll, game.user, true, whisper, blind);
     }
+    else { return false }
   }
-
-  /**
- * Méthode pour récupérer un jet de dés à partir d'un message
- * @param {string} messageId - L'identifiant du message contenant le jet de dés
- */
-  static async getRollFromMessage(messageId) {
-    let message = await game.messages.get(messageId);
-
-  }
-
 
   /**
    * Méthode pour afficher un jet de dés dans le chat

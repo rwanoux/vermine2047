@@ -30,12 +30,16 @@ export const registerHooks = function () {
         });
 
 
-        await initUserDice(dice3d);
+        game.users.forEach(user => initUserDice(dice3d, user));
 
     });
 
     Hooks.on('renderChatMessage', async (message, html, data) => {
-        if (message.user._id != game.user._id) { return }
+        if (message.user._id != game.user._id || !game.user.isGM) {
+            html[0].querySelectorAll("input").forEach(inp => inp.disabled = true);
+            html[0].querySelectorAll("div.reroll-from-effort").forEach(el => el.style.display = "none")
+            return
+        }
         await VermineUtils.chatListenners(html)
     })
 
@@ -115,7 +119,7 @@ export const registerHooks = function () {
     Hooks.on("createCombatant", function (combatant) {
     if (game.user.isGM) {
         let actor = combatant.actor;
-
+    
         console.log('create combatant', actor);
     }
     });*/
