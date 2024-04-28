@@ -1,4 +1,10 @@
-export async function initUserDice(dice3d) {
+
+// Ce fichier contient des fonctions pour initialiser des dés personnalisés pour chaque utilisateur du jeu.
+// Les fonctions permettent de définir des couleurs de dés réguliers, de totem humain et adaptés en fonction de la couleur de l'utilisateur.
+// De plus, il y a des fonctions pour assombrir et éclaircir une couleur donnée.
+
+
+export async function initUserDice(dice3d, user) {
     let baseColor = game.user.color;
     dice3d.addColorset({
         name: 'regular_' + game.user.name,

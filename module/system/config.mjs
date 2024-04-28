@@ -158,4 +158,21 @@ VERMINE.origins = {
   "vaelor": "Vaelor",
   "valdheim": "Valdheim"
 }
-
+VERMINE.traits = {
+  "bien_conçu": {
+    name: "bien conçu",
+    description: "+1 Réussite automatique sur les jets de réparation. + 1 point de Fiabilité sur les jets de réparation de fortune.+ 1 Réussite automatique sur les jets de sabotage.",
+    value: 0
+  },
+  "cassant": {
+    name: "cassant",
+    description: "Toutes les pertes de Fiabilité subies sont majorées de 1 point.",
+    value: 0 // = la valeur "n" dans le tableau page 51 livre règles. 0 si pas de valeur
+  },
+  "coque": {
+    name: "coque",
+    description: "Ignore les (n) premiers Dommages. Quand (n) est atteint, l’objet perd ce Trait.",
+    value: 1 // = la valeur "n" dans le tableau page 51 livre règles, indiquer 1 si valeur "n" présente
+  },
+  // etc...etc...
+}
