@@ -9,7 +9,7 @@ export class VermineItemSheet extends ItemSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "item"],
       width: 520,
-      height: 480,
+      height: "auto",
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
     });
   }
@@ -34,7 +34,7 @@ export class VermineItemSheet extends ItemSheet {
 
     // Use a safe clone of the item data for further operations.
     const itemData = context.item;
-    
+
     // Retrieve the roll data for TinyMCE editors.
     context.rollData = {};
     let actor = this.object?.parent ?? null;
@@ -58,7 +58,19 @@ export class VermineItemSheet extends ItemSheet {
 
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
+    //click on wound radio
+    html.find('.damages-row [type="radio"]').click(ev => {
+      this._onClickDamage(ev)
+    })
 
     // Roll handlers, click handlers, etc. would go here.
+  }
+  async _onClickDamage(ev) {
+    if (!ev.currentTarget.checked) { return }
+    let prop = ev.currentTarget.name;
+    let update = {};
+    update[prop] = ev.currentTarget.value - 1
+
+    this.item.update(update)
   }
 }

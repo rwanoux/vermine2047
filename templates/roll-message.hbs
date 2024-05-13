@@ -5,6 +5,30 @@
     <h4>difficulté</h4>
     <span id="difficulty">{{param.difficulty}}</span>
   </div>
+  <div class="reroll-fromroll">
+      <h4>relances possibles : <span id="allowed_reroll">{{param.Reroll}}</span></h4>
+      <div class="reroll flexrow">
+    <div class="reroll-from-effort flexrow">
+        <h4 class="flexcol">
+          <span>effort</span>
+        </h4>
+        <input type="range" min="0" 
+        {{#iflt param.max_effort param.actor.system.attributes.effort.value}}
+        max="{{param.max_effort}}"
+        {{/iflt}}
+        {{#iflteq param.actor.system.attributes.effort.value param.max_effort }}
+        max="{{param.actor.system.attributes.effort.value}}"
+        {{/iflteq}}
+        value="0"
+         id="effort-reroll">
+         </input>
+      <button class="grant-reroll" data-tooltip="s'accorder des relances"> <span id="granted-reroll">0</span> </button>
+
+    </div> 
+    
+  </div>
+      
+  </div>
   <ul class="flexrow roll-results initial-roll"
     data-difficulty="{{param.difficulty}}">
     {{#each roll.dice as |dieType index|}}
@@ -41,32 +65,14 @@
     {{/each}}
   </ul>
   <div class="roll-total flexrow">
-    <h4>nombre de succès :</h4>
-    <span id="total">{{roll._total}}</span>
-  </div>
-  <div class="reroll flexrow">
-    <div class="reroll-from-effort ">
-      <div class="flexcol">
-        <h4 class="flexcol">
-          <span>effort</span>
-        </h4>
-        <input type="range" min="0" 
-        {{#iflt param.max_effort param.actor.system.attributes.effort.value}}
-        max="{{param.max_effort}}"
-        {{/iflt}}
-        {{#iflteq param.actor.system.attributes.effort.value param.max_effort }}
-        max="{{param.actor.system.attributes.effort.value}}"
-        {{/iflteq}}
-        value="0"
-         id="effort-reroll">
-         </input>
-
-      </div>
-      <button class="grant-reroll" data-tooltip="s'accorder des relances"> <span id="granted-reroll">0</span> </button>
-    </div> 
-    <div class="reroll-fromroll">
-      <h4>relances possibles : </h4>
-      <span id="allowed_reroll">{{param.Reroll}}</span>
+    <div class="flexcol">
+      <h4>nombre de succès :</h4>
+      <span id="total">{{roll._total}}</span>
+    </div>
+    <div class="flexcol">
+      <h4>succès <br> requis :</h4>
+      <span id="total">{{param.handicap}}</span>
     </div>
   </div>
+  
 </div>

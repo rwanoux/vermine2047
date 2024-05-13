@@ -23,6 +23,10 @@
   font-style: normal;
 }
 
+img.profile-img {
+  filter: drop-shadow(0px 0px 20px rgb(110, 133, 27))
+}
+
 /* custom styles */
 body.system-vermine2047 img#logo {
   content: url("/systems/vermine2047/assets/images/ui/logo_vermine_foundry.webp");
@@ -46,6 +50,8 @@ body.system-vermine2047 img#logo {
 img {
   border: none;
 }
+
+
 
 ul.unstyled {
   list-style-type: none;
@@ -130,14 +136,11 @@ ul.unstyled li {
     h4 {
       position: absolute;
       transform: rotate(-8deg);
-      opacity: 0.7;
+      opacity: 1;
       transition: 0.2s;
 
     }
 
-    &:hover h4 {
-      opacity: 1;
-    }
   }
 }
 
@@ -263,6 +266,22 @@ ul.unstyled li {
   }
 }
 
+.system-vermine2047 .sheet.actor .totem-details {
+  position: relative;
+
+  img.img-totem {
+    transform-origin: 50% 50%;
+    filter: grayscale(1);
+    opacity: 0.15;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    pointer-events: none;
+    aspect-ratio: 1/1;
+    left: 35%;
+  }
+}
+
 .system-vermine2047 .sheet.actor div.minor-totems {
   position: relative;
   background-color: #929c6f85;
@@ -279,7 +298,28 @@ ul.unstyled li {
     }
   }
 
+
+
+  h5.human,
+  h5.adapted {
+    transition: 0.3s;
+
+    img.img-totem {
+      filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+    }
+
+    &.major {
+      transform: scale(1.1);
+
+      & img {
+        filter: drop-shadow(0px 0px 10px red)
+      }
+    }
+  }
+
   .totem-dice {
+
+
 
     .human-dice,
     .adapted-dice {
@@ -559,6 +599,18 @@ ul.unstyled li {
   height: 54px;
 }
 
+
+//Query pour les lignes de caract
+@container ability-row (max-width: 240px) {
+
+  .skill-dots,
+  span.hexa {
+    display: none
+  }
+
+
+}
+
 .system-vermine2047 .sheet.actor .ability {
   padding-right: 0.6rem;
   font-size: 0.8rem;
@@ -566,13 +618,23 @@ ul.unstyled li {
   box-shadow: 0px 0px 15px rgba(128, 128, 128, 0) inset;
   transition: 0.2s;
   position: relative;
+  flex-wrap: nowrap;
+  min-width: min-content;
+  container-type: inline-size;
+  container-name: ability-row;
+
+
 
   &:hover {
     box-shadow: 0px 0px 15px gray inset;
   }
 
+
+
+
   label {
-    min-width: fit-content;
+    min-width: 40%;
+    flex: 1.3;
 
   }
 
@@ -583,21 +645,6 @@ ul.unstyled li {
     flex: 0.5;
   }
 
-  .hexa {
-    text-align: center;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
-    max-height: 1.2rem;
-    max-width: 1.2rem;
-    aspect-ratio: 1/1;
-    color: black;
-    vertical-align: center;
-
-    &.checked {
-      background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.288) 100%);
-    }
-
-  }
 
   div.specialties {
     position: absolute;
@@ -611,6 +658,7 @@ ul.unstyled li {
     height: 100%;
     align-self: center;
     flex: 1.5;
+    min-width: fit-content;
 
     &>div {
 
@@ -640,29 +688,68 @@ ul.unstyled li {
   }
 }
 
-.vermine2047.sheet.actor input[type="radio"] {
-  &::after {
-    content: " ";
-    display: block;
-    width: 0.8rem;
-    height: 0.8rem;
-    background: radial-gradient(circle, rgba(217, 214, 204, 1) 0%, rgba(217, 214, 204, 1) 40%, rgb(85, 85, 85) 60%);
-    border-radius: 50%;
-    ;
+.system-vermine2047 .sheet.actor .preferred {
 
+  h4,
+  label {
+    text-shadow: 0px 0px 5px rgba(0, 128, 0, 0.411)
+  }
+}
+
+.system-vermine2047 .sheet.actor #edit {
+  background-color: black;
+  color: white
+}
+
+.system-vermine2047 .sheet.actor .reserve-grid {
+  line-height: 0.5rem;
+  transform-origin: 0% 50%;
+  max-width: fit-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  div.flexrow,
+  input,
+  .hexa {
+    margin: 0;
+    padding: 0;
+    min-width: 1rem;
+    min-height: 1rem;
   }
 
+  &>.flexrow {
+    position: relative;
+    max-width: fit-content;
+    justify-content: center;
+
+
+  }
+}
+
+.hexa {
+  text-align: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
+  max-height: 1.2rem;
+  max-width: 1.2rem;
+  aspect-ratio: 1/1;
+  color: black;
+  vertical-align: center;
+
   &.checked {
-    &::after {
-      content: " ";
-      display: block;
-      width: 0.8rem;
-      height: 0.8rem;
-      background: radial-gradient(circle, rgb(75, 74, 74) 0%, rgb(27, 39, 28) 60%);
-      border-radius: 50%;
-      ;
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.288) 100%);
+  }
 
+  ;
+
+  input[type="radio"] {
+    opacity: 0;
+
+
+    &::after,
+    &::before {
+      display: none
     }
-
   }
 }

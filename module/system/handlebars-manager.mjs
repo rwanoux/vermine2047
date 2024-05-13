@@ -35,8 +35,12 @@ export const preloadHandlebarsTemplates = async function () {
     // creature partials
     "systems/vermine2047/templates/actor/creature/creature-combat.hbs",
 
-    // additional templates
-    "systems/vermine2047/templates/roll-dialog.hbs",
+    // dialog templates
+    "systems/vermine2047/templates/dialogs/roll-dialog.hbs",
+
+    //items damages
+    "systems/vermine2047/templates/item/partials/damages.html",
+
   ]);
 };
 
@@ -98,7 +102,12 @@ export const registerHandlebarsHelpers = function () {
     return text;
 
   });
-
+  //return damge data 
+  Handlebars.registerHelper('getDamagesData', function (damageObject, prop) {
+    let propObject = damageObject[prop]
+    let propValue = propObject[damageObject.value - 1]
+    return propValue
+  });
   // return threat level information
   Handlebars.registerHelper('threatLevel', function (property, level, options) {
     if (level < 1 || level > 4)
@@ -218,17 +227,8 @@ export const registerHandlebarsHelpers = function () {
   });
 
 
-  Handlebars.registerHelper('range', function () {
-    var args = Array.prototype.slice.call(arguments),
-      rangeArgs = args.slice(0, -1),
-      options = args[args.length - 1];
 
-    return range.apply(null, rangeArgs)
-      .map(function (num) { return options.fn(num); })
-      .join('');
-  });
-
-  // return age type information
+  // booleans if if equal if greater etc...
   Handlebars.registerHelper('ife', function (arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
   });
@@ -252,11 +252,34 @@ export const registerHandlebarsHelpers = function () {
     return (arg1.includes(arg2)) ? options.fn(this) : options.inverse(this);
   });
 
-  Handlebars.registerHelper('repeat', function (times, start, block) {
+
+  //math operations
+
+  Handlebars.registerHelper('math_add', function (a, b, options) {
+    return (parseInt(a) + parseInt(b))
+  });
+
+  Handlebars.registerHelper('math_subs', function (a, b, options) {
+    return (parseInt(a) - parseInt(b))
+  });
+
+  Handlebars.registerHelper('math_mult', function (a, b, options) {
+    return (parseInt(a) * parseInt(b))
+  });
+
+  Handlebars.registerHelper('math_div', function (a, b, options) {
+    return (parseInt(a) / parseInt(b))
+  });
+
+
+
+  // loop with named index
+  Handlebars.registerHelper('repeat', function (times, start, indexLabel, block) {
     var accum = '';
+    if (!indexLabel) { indexLabel = "index" }
     if (!start) { start = 0; }
     for (var i = start; i < times + start; ++i) {
-      block.data.index = i;
+      block.data[indexLabel] = i;
       block.data.first = i === start;
       block.data.last = i === (times + start - 1);
       accum += block.fn(this);
@@ -264,4 +287,7 @@ export const registerHandlebarsHelpers = function () {
     return accum;
   });
 
+  Handlebars.registerHelper("setVar", function (varName, varValue, options) {
+    options.data.root[varName] = varValue;
+  });
 }

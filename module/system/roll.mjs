@@ -13,9 +13,7 @@ export class VermineUtils {
     if (totems.human) {
       NoD--;
       modFormula = "(1D10cs>=" + difficulty + `[human_${game.user.name}]*2)`;
-      await actor.update({
-        "system.adaptation.totems.human.value": actor.system.adaptation.totems.human.value - 1
-      })
+
     }
     // Vérification des totems adaptés
     if (totems.adapted) {
@@ -26,9 +24,7 @@ export class VermineUtils {
       } else {
         modFormula = "(1D10cs>=" + difficulty + `[adapted_${game.user.name}]*2)`;
       }
-      await actor.update({
-        "system.adaptation.totems.adapted.value": actor.system.adaptation.totems.adapted.value - 1
-      })
+
     };
 
     // Construction de la formule de base
@@ -45,6 +41,7 @@ export class VermineUtils {
     let roll = new Roll(formula, actor.getRollData());
     //effectuer le lancé
     await roll.evaluate();
+    roll.dice.forEach(die => die.options.appearance = { system: "vermine2047" })
     //afficher le lancer 3d
     await VermineUtils.showDiceSoNice(roll);
     // afficher le résultat dans le chat

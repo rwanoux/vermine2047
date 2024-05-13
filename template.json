@@ -136,6 +136,33 @@
           "category": "social"
         }
       },
+      "skill_categories": {
+        "preferred": "",
+        "man": {
+          "label": "VERMINE.skill_category.man",
+          "preferred": false
+        },
+        "animal": {
+          "label": "VERMINE.skill_category.animal",
+          "preferred": false
+        },
+        "tool": {
+          "label": "VERMINE.skill_category.tool",
+          "preferred": false
+        },
+        "weapon": {
+          "label": "VERMINE.skill_category.weapon",
+          "preferred": false
+        },
+        "survival": {
+          "label": "VERMINE.skill_category.survival",
+          "preferred": false
+        },
+        "world": {
+          "label": "VERMINE.skill_category.world",
+          "preferred": false
+        }
+      },
       "skills": {
         "arts": {
           "value": 0,

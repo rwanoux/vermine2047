@@ -1,4 +1,4 @@
-import { RollDialog } from "./dialogs.mjs";
+import RollDialog from "./dialogs/rollDialog.mjs";
 import { initUserDice } from "./dice3d.mjs";
 import { VermineUtils } from "./roll.mjs";
 import { registerTours } from "./tour.mjs";
@@ -10,6 +10,11 @@ export const registerHooks = function () {
     CONFIG.debug.hooks = true;
     Hooks.once('diceSoNiceReady', async (dice3d) => {
         dice3d.addSystem({ id: "Vermine2047", name: "Vermine 2047" }, "preferred");
+
+
+        game.users.forEach(user => {
+            initUserDice(dice3d, user)
+        });
 
         dice3d.addDicePreset({
             type: "d10",
@@ -26,17 +31,17 @@ export const registerHooks = function () {
                 "systems/vermine2047/assets/images/die/d10-0.webp",
             ],
 
-            system: "Vermine2047"
-        });
+            system: "Vermine2047",
 
-
-        game.users.forEach(user => {
-            initUserDice(dice3d, user)
-        });
+        },);
 
     });
 
     Hooks.on('renderChatMessage', async (message, html, data) => {
+        let rerollTitle = html[0].querySelector(".reroll-fromroll h4");
+        if (rerollTitle) {
+            rerollTitle.addEventListener("click", () => { html[0].querySelector(".reroll").classList.toggle('visible') })
+        }
         if (message.user._id != game.user._id || !game.user.isGM) {
             html[0].querySelectorAll("input").forEach(inp => inp.disabled = true);
             html[0].querySelectorAll("div.reroll-from-effort").forEach(el => el.style.display = "none")
@@ -101,6 +106,7 @@ export const registerHooks = function () {
         if (actor.img == "icons/svg/mystery-man.svg") {
             actor.updateSource({ "img": `systems/vermine2047/assets/icons/actors/${actor.type}.webp` });
         }
+
     });
 
     Hooks.on("preCreateItem", function (item) {
@@ -136,18 +142,7 @@ export const registerHooks = function () {
             }*/
         }
     });
-
-    /* Hooks.on("chatCommandsReady", function (chatCommands) {
-         chatCommands.registerCommand(chatCommands.createCommandFromData({
-           commandKey: "/dr",
-           invokeOnCommand: (chatlog, messageText, chatdata) => {
-             Roll.get().parse(messageText);
-           },
-           shouldDisplayToChat: false,
-           iconClass: "fa-dice-d6",
-           description: "Roll Vermine 2047 check"
-         }));
-       });*/
-
-
+    Hooks.on("createActor", function (actor, options, id) {
+        actor.setFlag("world", "editMode", true)
+    })
 }

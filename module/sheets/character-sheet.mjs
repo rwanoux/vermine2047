@@ -1,6 +1,6 @@
 import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
-import { RollDialog } from "../system/dialogs.mjs";
+import RollDialog from "../system/dialogs/rollDialog.mjs";
 import { TotemPicker } from "../system/applications.mjs";
 
 /**
@@ -14,7 +14,8 @@ export class VermineCharacterSheet extends VermineActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "character", "actor"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
-
+      width: "fit-content",
+      height: "fit-content",
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
     });
   }
@@ -73,6 +74,14 @@ export class VermineCharacterSheet extends VermineActorSheet {
     for (let [k, v] of Object.entries(context.system.abilities)) {
       v.label = game.i18n.localize(context.system.abilities[k].label) ?? k;
     }
+    for (let [k, v] of Object.entries(context.system.skills)) {
+      if (v.value >= 2) {
+        let spe = this.actor.items.filter(it => it.type == "specialty").filter(spec => spec.system.skill == k);
+        v.specialties = spe
+      }
+
+    }
+
   }
 
   /**
@@ -103,10 +112,23 @@ export class VermineCharacterSheet extends VermineActorSheet {
     // Choose Totem 
     html.find('.chooseTotem').click(this._onTotemButton.bind(this));
     html.find('.ability .rollable').click(this._onRoll.bind(this));
-    html.find('[data-totem-name]').click(this._onClickTotemDice.bind(this))
+    html.find('[data-totem-name]').click(this._onClickTotemDice.bind(this));
+    if (!this.actor.flags.world?.editMode) {
+      this.disableInputs(html)
+    }
 
   }
+  disableInputs(html) {
+    for (let input of html.find('input')) {
+      if (input.name != "flags.world.editMode") {
+        input.setAttribute('disabled', true)
+      }
 
+    }
+    for (let select of html.find('select')) {
+      select.setAttribute('disabled', true)
+    }
+  }
   async _onClickTotemDice(ev) {
     let el = ev.currentTarget;
     let totem = el.dataset.totemName;
@@ -116,14 +138,17 @@ export class VermineCharacterSheet extends VermineActorSheet {
     if (value === oldValue) { value-- };
     let updates = {};
     updates[`system.adaptation.totems.${totem}.value`] = value;
-    let totems = this.actor.system.adaptation.totems;
-    let sumTotems = Object.keys(totems).reduce(function (previous, key) {
-      return previous + totems[key].value;
-    }, 0);
-    if (sumTotems >5) {
-      ui.notifications.warn('vous ne pouvez pas avoir plus de 5 dés totems')
+    //verifier le max des dés totems
+    let sum = value;
+    switch (totem) {
+      case "human":
+        sum += this.actor.system.adaptation.totems.adapted.value;
+        break;
+      case "adapted":
+        sum += this.actor.system.adaptation.totems.human.value;
+        break;
     }
-    console.log(sumTotems, updates)
+    if (sum > 5) { return ui.notifications.warn("pas plus de 5 dés totems") }
     await this.actor.update(updates);
   }
   /**

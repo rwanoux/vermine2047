@@ -18,7 +18,6 @@ import { VermineCombat, VermineCombatTracker } from "./system/fight.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
 import { VERMINE } from "./system/config.mjs";
-import { initUserDice } from "./system/dice3d.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */

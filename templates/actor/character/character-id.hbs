@@ -10,19 +10,21 @@
     major
     {{/ifgt}}
     ">{{localize "TOTEMS.human.name"}}
-    <img src="/systems/vermine2047/assets/images/ui/totems/human.webp" />
+    <img class="img-totem"
+      src="/systems/vermine2047/assets/images/ui/totems/human.webp" />
   </h5>
 
   <h5 class="adapted
-  {{#ifgt system.adaptation.totems.human.value system.adaptation.totems.adapted.value}}
+  {{#ifgt system.adaptation.totems.adapted.value system.adaptation.totems.human.value}}
     major
     {{/ifgt}}">{{localize "TOTEMS.adapted.name"}}
-    <img src="/systems/vermine2047/assets/images/ui/totems/adapted.webp" />
+    <img class="img-totem"
+      src="/systems/vermine2047/assets/images/ui/totems/adapted.webp" />
   </h5>
 
   <div class="totem-dice flexrow flex-group-center">
     <div class="human-dice flexrow">
-      {{#repeat system.adaptation.totems.human.max 1}}
+      {{#repeat system.adaptation.totems.human.max 1 "humantotem"}}
       <div class="hexa" data-totem-name="human" data-totem-value="{{@index}}">
         {{#ifgteq system.adaptation.totems.human.value @index}}
         <div class="human-die"><i class="fas fa-dice-d10"></i></div>
@@ -32,7 +34,7 @@
     </div>
 
     <div class="adapted-dice flexrow">
-      {{#repeat system.adaptation.totems.adapted.max 1}}
+      {{#repeat system.adaptation.totems.adapted.max 1 "adaptedtotem"}}
       <div class="hexa" data-totem-name="adapted" data-totem-value="{{@index}}">
         {{#ifgteq system.adaptation.totems.adapted.value @index}}
         <div class="adapted-die"><i class="fas fa-dice-d10"></i></div>
@@ -48,6 +50,7 @@
     <div class="flexcol flex-group-center items-center w-full">
       <h4>{{ smarttl 'TOTEMS' system.identity.totem 'name' }}</h4>
       <img
+        class="img-totem"
         src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp"
         alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80"
         height="80" />

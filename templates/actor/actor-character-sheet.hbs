@@ -1,10 +1,21 @@
 <form class="{{cssClass}} {{actor.type}} flexcol form" autocomplete="off">
 
   <div class="form">
+    {{log this}}
     <aside>
+      <div class="flexrow" id="edit">
+        <span>mode jeu</span>
+        <input type="checkbox" name="flags.world.editMode"
+          {{#if actor.flags.world.editMode}}
+          checked
+          {{/if}} />
+        <span>mode edit</span>
+
+      </div>
       <img class="logo mx-auto"
         src="systems/vermine2047/assets/images/ui/logo.webp" width="200"
         alt="logo Vermine" />
+
       <div class="sidebar" data-group="dashboard" data-tab="sidebar">
         <!--ID -->
         {{> "systems/vermine2047/templates/actor/character/character-id.hbs"}}

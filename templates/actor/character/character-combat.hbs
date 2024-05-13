@@ -1,71 +1,93 @@
 <div class="grid grid-2col">
-  <div>
-    <h4 class="align-center">{{ localize "VERMINE.self_control"}} :
+  <div class="self-control-container">
+    <h4 class="align-center">
+      <a class="min-max-edit" data-prop="system.attributes.effort">
+        <i class="fas fa-cogs"> </i>
+      </a>
+
+      {{ localize "VERMINE.self_control"}} :
       {{@root.system.attributes.self_control.value}}/
       {{@root.system.attributes.self_control.max}}
     </h4>
+    {{setVar "SCIndex" 1}}
+    <div class="reserve-grid">
+      {{#repeat 4 1 "row"}}
 
-    <div class="flexrow">
-      {{#repeat 10 1}}
-      <div class="hexa
-       {{#iflteq @index @root.system.attributes.self_control.value }}
+      <div class="flexrow">
+        {{#repeat @row @root.SCIndex "case"}}
+        {{log @root.SCIndex}}
+        <div class="hexa
+       {{#iflteq @case @root.system.attributes.self_control.value }}
             checked
-          {{/iflteq}}
-          {{#ifgt @index @root.system.attributes.self_control.max }}
+        {{/iflteq}}
+        {{#ifgt @case @root.system.attributes.self_control.max }}
             unavailable
-          {{/ifgt}}">
-        {{#iflteq @index @root.system.attributes.self_control.max }}
-        <input type="radio" data-dtype="Number"
-          name="system.attributes.self_control.value"
-          value="{{@index}}" {{#ife @root.system.attributes.self_control.value
-          @index
-          }}checked="checked"{{/ife}}
-          class="
-          {{#iflteq @index @root.system.attributes.self_control.max }}
+        {{/ifgt}}">
+          {{#iflteq @row @root.system.attributes.self_control.max }}
+          <input type="radio" data-dtype="Number"
+            name="system.attributes.self_control.value"
+            value="{{@case}}" {{#ife
+            @root.system.attributes.self_control.value
+            @root.selfControlIndex
+            }}checked="checked"{{/ife}}
+            class="
+        {{#iflteq @case @root.system.attributes.self_control.max }}
             checked
-          {{/iflteq}}
-
-        " />
         {{/iflteq}}
 
+        " />
+          {{/iflteq}}
+
+        </div>
+        {{setVar "SCIndex" (math_add @root.SCIndex 1)}}
+        {{/repeat}}
       </div>
       {{/repeat}}
     </div>
   </div>
-  <div>
-    <h4 class="align-center">{{ localize "VERMINE.effort"}} :
+  <div class="effort-container">
+    <h4 class="align-center">
+      <a class="min-max-edit" data-prop="system.attributes.effort">
+        <i class="fas fa-cogs"></i>
+      </a>
+      {{ localize "VERMINE.effort"}} :
       {{@root.system.attributes.effort.value}}/
       {{@root.system.attributes.effort.max}}
     </h4>
+    {{setVar "EffIndex" 1}}
 
-    <div class="flexrow">
-      {{#repeat 10 1}}
-      <div
-        class="hexa 
-        {{#iflteq @index @root.system.attributes.effort.value }}
+    <div class="reserve-grid">
+      {{#repeat 4 1 "row"}}
+
+      <div class="flexrow">
+        {{#repeat @row @root.EffIndex "case"}}
+        {{log @root.EffIndex}}
+        <div class="hexa
+       {{#iflteq @case @root.system.attributes.effort.value }}
             checked
-          {{/iflteq}}
-          {{#ifgt @index @root.system.attributes.effort.max }}
+        {{/iflteq}}
+        {{#ifgt @case @root.system.attributes.effort.max }}
             unavailable
-          {{/ifgt}}">
-        {{#iflteq @index @root.system.attributes.effort.max }}
-        <input type="radio" data-dtype="Number"
-          name="system.attributes.effort.value"
-          value="{{@index}}" {{#ife @root.system.attributes.effort.value
-          @index
-          }}checked="checked"{{/ife}}
-          class="
-          {{#iflteq @index @root.system.attributes.effort.value }}
+        {{/ifgt}}">
+          {{#iflteq @row @root.system.attributes.effort.max }}
+          <input type="radio" data-dtype="Number"
+            name="system.attributes.effort.value"
+            value="{{@case}}" {{#ife
+            @root.system.attributes.effort.value
+            @root.selfControlIndex
+            }}checked="checked"{{/ife}}
+            class="
+        {{#iflteq @case @root.system.attributes.effort.max }}
             checked
-          {{/iflteq}}
-
-        " />
         {{/iflteq}}
 
+        " />
+          {{/iflteq}}
+
+        </div>
+        {{setVar "EffIndex" (math_add @root.EffIndex 1)}}
+        {{/repeat}}
       </div>
-      {{#ife @index 1}}
-      <br />
-      {{/ife}}
       {{/repeat}}
     </div>
   </div>
@@ -77,7 +99,7 @@
       data-tooltip="seuil">({{
       system.minorWound.threshold }})</span>
     <div class="flexrow">
-      {{#repeat system.minorWound.max 1}}
+      {{#repeat system.minorWound.max 1 "minorwoundmax"}}
       <div class="hexa ability{{#iflteq @index @root.system.minorWound.value }}
             checked
           {{/iflteq}}">
@@ -98,7 +120,7 @@
     <span>({{
       system.majorWound.threshold }})</span>
     <div class="flexrow">
-      {{#repeat system.majorWound.max 1}}
+      {{#repeat system.majorWound.max 1 majourwoundmax}}
       <div class="hexa ability{{#iflteq @index @root.system.majorWound.value }}
             checked
           {{/iflteq}}">
@@ -119,7 +141,7 @@
   <li class="row mdb">{{ localize 'VERMINE.wounds.deadly'}}
     <span>({{system.deadlyWound.threshold }})</span>
     <div class="flexrow">
-      {{#repeat system.deadlyWound.max 1}}
+      {{#repeat system.deadlyWound.max 1 "deadlywoundmax"}}
       <div class="hexa ability{{#iflteq @index @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}">

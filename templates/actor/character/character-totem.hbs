@@ -1,21 +1,35 @@
 {{#if system.identity.totem}}
-
-<h4 class="align-center">
-  {{ smarttl 'TOTEMS' system.identity.totem 'name' }}
-</h4>
-<p style="font-size:80%;">{{ smarttlk "TOTEMS" system.identity.totem
-  "description"}}</p>
-<div class="grid grid-2col">
-  <div class>
-    <div class="item-name"><strong>Principes</strong><br />{{ smarttlk "TOTEMS"
-      system.identity.totem "instincts"}}</div>
-  </div>
-  <div class>
-    <div class="item-name"><strong>Interdits</strong><br />{{ smarttlk "TOTEMS"
-      system.identity.totem "bans"}}</div>
+<div class="totem-details">
+  <img
+    class="img-totem"
+    src="/systems/vermine2047/assets/images/ui/totems/{{ system.identity.totem }}.webp"
+    alt="{{ smarttl 'TOTEMS' system.identity.totem 'name' }}" width="80"
+    height="80" />
+  <h4 class="align-center">
+    {{ smarttl 'TOTEMS' system.identity.totem 'name' }}
+  </h4>
+  <p style="font-size:80%;">{{ smarttlk "TOTEMS" system.identity.totem
+    "description"}}</p>
+  <div class="grid grid-2col">
+    <div class>
+      <div class="item-name"><strong>Principes</strong><br />{{ smarttlk
+        "TOTEMS"
+        system.identity.totem "instincts"}}</div>
+    </div>
+    <div class>
+      <div class="item-name"><strong>Interdits</strong><br />{{ smarttlk
+        "TOTEMS"
+        system.identity.totem "bans"}}</div>
+    </div>
   </div>
 </div>
 <hr>
+
+{{else}}
+
+<h3>choisissez un totem</h3>
+
+{{/if}}
 <div class="grid grid-2col">
   <div>
     <h4>
@@ -129,8 +143,3 @@
     </ol>
   </div>
 </div>
-{{else}}
-
-<h3>choisissez un totem</h3>
-
-{{/if}}

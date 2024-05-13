@@ -1,3 +1,113 @@
 @import "./base_work.scss";
 @import "./style.scss";
-@import "./roll.scss"
+@import "./roll.scss";
+@import "item-sheet.scss";
+@import "dialog.scss";
+@import "special-inputs.scss";
+
+
+// overwrites variables
+:root {
+    --color-text-light-highlight: #b0d9b0;
+    --color-text-light-heading: #9fc7d8;
+    --color-text-light-primary: #a4b5b3;
+    --color-text-dark-primary: #131919;
+    --color-text-dark-secondary: #444b4a;
+    --color-text-dark-header: #1d2223;
+    --color-text-dark-inactive: #71797a;
+    --color-text-hyperlink: #0064ff;
+    --color-text-light-0: #fff;
+    --color-text-light-1: #e0f0f0;
+    --color-text-light-2: #c0e0e0;
+    --color-text-light-3: #a0d0d0;
+    --color-text-light-4: #80c0c0;
+    --color-text-light-5: #60b0b0;
+    --color-text-light-6: #40a0a0;
+    --color-text-light-7: #208080;
+    --color-text-dark-1: #111;
+    --color-text-dark-2: #222;
+    --color-text-dark-3: #444;
+    --color-text-dark-4: #555;
+    --color-text-dark-5: #666;
+    --color-text-dark-6: #777;
+    --color-border-light-1: #b0d9b0;
+    --color-border-light-2: #80c0c0;
+    --color-border-dark-1: #131919;
+    --color-border-dark-2: #1d2223;
+    --color-border-dark-3: #2d3333;
+    --color-border-dark-4: #3d4444;
+    --color-border-dark-5: #668888;
+    --color-shadow-primary: #0000ff;
+    --color-shadow-highlight: #0064ff;
+    --color-shadow-dark: #000;
+    --color-underline-inactive: #71797a;
+    --color-underline-active: #1a1944;
+    --color-underline-header: #222782;
+    --color-border-light-highlight: #b0d9b0;
+    --color-border-light-primary: #a4b5b3;
+    --color-border-light-secondary: #9fc7d8;
+    --color-border-light-tertiary: #71797a;
+    --color-border-dark: #000;
+    --color-border-dark-primary: #131919;
+    --color-border-dark-secondary: #1d2223;
+    --color-border-dark-tertiary: #444b4a;
+    --color-border-highlight: #0064ff;
+    --color-border-highlight-alt: #0000ff;
+    --color-bg-btn-minor-inactive: #9fc7d8;
+    --color-bg-btn-minor-active: #a4b5b3;
+    --color-bg-option: #ccdada;
+    --color-checkbox-checked: #666;
+    --color-ownership-none: #00ff55;
+    --color-ownership-observer: #71797a;
+    --color-ownership-owner: #a4b5b3;
+    --z-index-canvas: 0;
+    --z-index-app: 30;
+    --z-index-ui: 60;
+    --z-index-window: 100;
+    --z-index-tooltip: 9999;
+    --sidebar-width: 300px;
+    --sidebar-header-height: 32px;
+    --sidebar-item-height: 48px;
+    --hotbar-height: 52px;
+    --hotbar-width: 578px;
+    --macro-size: 50px;
+    --players-width: 200px;
+    --form-field-height: 26px;
+    --font-primary: "Signika", sans-serif;
+    --font-mono: monospace;
+    --font-awesome: "Font Awesome 6 Pro";
+    --font-size-11: 0.6875rem;
+    --font-size-12: 0.75rem;
+    --font-size-13: 0.8125rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 2rem;
+    --font-size-48: 3rem;
+    --line-height-12: 0.75rem;
+    --line-height-16: 1rem;
+    --line-height-20: 1.25rem;
+    --line-height-30: 1.875rem;
+    --color-level-info: #b95c87;
+    --color-level-warning: #04b184;
+    --color-level-error: #03750;
+    --color-level-success: #3c266c;
+}
+
+/* ----------------------------------------- */
+/* Scrollbar
+/* ----------------------------------------- */
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: #577822;
+    border: 1px solid var(--color-border-highlight);
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}

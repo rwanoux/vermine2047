@@ -15,14 +15,25 @@
     </div>
     {{/if}}
     {{/each}}
+
   </div>
   {{/each}}
 </div>
 <h3>Compétences</h3>
 <div class="grid grid-2col">
-  {{#each config.skillCategories as |skillCategory sckey|}}
-  <div class="col">
-    <h4>{{ smarttl "SKILLS_CATEGORIES" sckey }}</h4>
+  {{#each system.skill_categories as |skillCategory sckey|}}
+  {{#if skillCategory.label}}
+  <div class="col
+  {{#ife sckey @root.system.skill_categories.preferred}}
+  preferred
+  {{/ife}}">
+    <h4>{{ smarttl "SKILLS_CATEGORIES" sckey }}
+      <input type="radio" data-tooltip="domaine de prédilection ?"
+        name="system.skill_categories.preferred" value="{{sckey}}"
+        {{#ife sckey @root.system.skill_categories.preferred}}
+        checked
+        {{/ife}}>
+    </h4>
     {{#each @root.system.skills as |skill skey|}}
 
     {{#if (eq skill.category sckey) }}
@@ -36,7 +47,11 @@
 
       </label>
       <div class="specialties">
-        {{#each @root.specialties as |spe ind|}}
+        {{#ifgt skill.value 1}}
+        <i class="fas fa-add add-specialty"
+          data-tooltip="ajout de spécialité"></i>
+        {{/ifgt}}
+        {{#each skill.specialties as |spe ind|}}
         {{#ife spe.system.skill skey}}
         <i class="specialty"
           data-tooltip="spécialité utilisable">{{spe.name}}</i>
@@ -53,11 +68,11 @@
       </select>
       <span class="hexa">{{skill.value}}</span>
       <div class="skill-dots flexrow">
-        {{#repeat (skillLevel "dicePool" skill.value) 0}}
+        {{#repeat (skillLevel "dicePool" skill.value) 0 "dicepool"}}
         <div class="dice-pool-dot"
           data-tooltip="{{localize "VERMINE.pool"}}"></div>
         {{/repeat}}
-        {{#repeat (skillLevel "reroll" skill.value) 0}}
+        {{#repeat (skillLevel "reroll" skill.value) 0 "dicereroll"}}
         <div class="dice-reroll-dot"
           data-tooltip="{{localize "VERMINE.reroll"}}">X</div>
         {{/repeat}}
@@ -68,5 +83,6 @@
     {{/if}}
     {{/each}}
   </div>
+  {{/if}}
   {{/each}}
 </div>

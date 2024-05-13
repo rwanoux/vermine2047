@@ -10,32 +10,31 @@ export async function initUserDice(dice3d, user) {
         name: 'regular_' + user.name,
         description: "regular dice for " + user.name,
         category: "vermine 2047",
-        foreground: '#9F8003',
+        foreground: oppositeColor(baseColor),
         background: baseColor,
         outline: 'black',
-        texture: 'none',
-        material: 'plastic',
-        visibility: 'visible'
-    });
+        visibility: 'visible',
+
+    }, "preferred");
     dice3d.addColorset({
         name: 'human_' + user.name,
         description: "human totem dice for " + user.name,
         category: "vermine 2047",
-        foreground: '#9F8003',
+        foreground: oppositeColor(lightenColor(baseColor, 60)),
         background: lightenColor(baseColor, 60),
         outline: 'black',
-        material: 'plastic',
-        visibility: 'visible'
+        visibility: 'visible',
+
     });
     dice3d.addColorset({
         name: 'adapted_' + user.name,
         description: "adapted totem dice for " + user.name,
         category: "vermine 2047",
-        foreground: '#9F8003',
+        foreground: oppositeColor(darkenColor(baseColor, 60)),
         background: darkenColor(baseColor, 60),
         outline: 'black',
-        material: 'plastic',
-        visibility: 'visible'
+        visibility: 'visible',
+
     });
 
     await user.setFlag("world", "diceInit", true);
@@ -57,4 +56,11 @@ export function lightenColor(color, percent) {
     const G = ((num >> 8) & 0x00FF) - amt;
     const B = (num & 0x0000FF) - amt;
     return '#' + (0x1000000 + (R < 0 ? 0 : R > 255 ? 255 : R) * 0x10000 + (G < 0 ? 0 : G > 255 ? 255 : G) * 0x100 + (B < 0 ? 0 : B > 255 ? 255 : B)).toString(16).slice(1);
+}
+export function oppositeColor(color) {
+    const num = parseInt(color.replace('#', ''), 16);
+    const R = 255 - (num >> 16);
+    const G = 255 - ((num >> 8) & 0x00FF);
+    const B = 255 - (num & 0x0000FF);
+    return '#' + (0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1);
 }

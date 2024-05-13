@@ -1,0 +1,33 @@
+<h3>dommages</h3>
+<div class="damages-row flexrow">
+    <div class="radios flexrow">
+        {{#repeat system.damages.max 1 index}}
+            <div class="hexa 
+                {{#ifgteq system.damages.value @index }}
+                checked
+                {{/ifgteq }}">
+                <input
+                    type="radio"
+                    name="system.damages.value"
+                    value="{{@index}}"
+                    {{#ife system.damages.value @index }}
+                    checked="true"
+                    {{/ife }}
+                >
+            </div>
+        {{/repeat}}
+    </div>
+    <div class="damage-pannes">
+        <h4>pannes :</h4>
+        {{getDamagesData system.damages "pannes"}}
+    </div>
+    <div class="damage-state">
+        <h4>état :</h4>
+        {{getDamagesData system.damages "state"}}
+    </div>
+    <div class="damage-effect">
+        <h4> effets : </h4>
+        {{getDamagesData system.damages "effect"}}
+    </div>
+
+</div>
