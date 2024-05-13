@@ -21,7 +21,7 @@ export default class RollDialog extends Dialog {
                     icon: '<i class="fas fa-check"></i>',
                     label: "Lancer !",
                     callback: () => {
-                        this.roll()
+                        this._onRoll()
                     }
                 },
                 cancel: {
@@ -291,7 +291,7 @@ export default class RollDialog extends Dialog {
    * Performs a dice roll based on the roll data and handles self control checks.
    * @returns {Promise} A promise that resolves with the result of the dice roll.
    */
-    async roll() {
+    async _onRoll() {
         // Check if self control is required for the roll
         if (this.rollData.self_control > 0) {
             // Check if the actor has enough self control
@@ -302,8 +302,16 @@ export default class RollDialog extends Dialog {
                 this.render(true);
                 return false; // Exit the function if self control is insufficient
             }
-        }
 
+        }
+        let caracName = this.element[0].querySelector('[name="ability"]')?.value
+        if (caracName == "0") {
+            // Display a warning message if no ability selected
+            ui.notifications.warn('selectionnez une caractéristique.');
+            // Re-render the dialog
+            this.render(true);
+            return false; // Exit the function if no ability
+        }
         // Deduct self control points if necessary
         if (this.rollData.self_control > 0) {
             // Update the actor's self control value
