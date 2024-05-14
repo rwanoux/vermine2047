@@ -6,6 +6,9 @@
 node_modules/
 npm-debug.log
 
+# les bdd de packs
+packs/
+
 # Foundry
 *.lock
 jsconfig.json
