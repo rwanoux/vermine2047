@@ -19,70 +19,66 @@
     </div>
   </header>
   <section class="sheet-body">
-    <div
-      class="flexcol"
-      data-group="primary"
-      data-tab="description"
-    >
-      <div class="flexrow">
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.ranges"}}</label>
-          <div class="flexrow">
+
+    <h4 class="flexrow">
+      <div class="resource">
+        <label class="resource-label">{{ localize "VERMINE.ranges"}}</label>
+        <div>
+          <span class="hexa">
             <input
               type="number"
               name="system.min_range"
               value="{{system.min_range}}"
               data-dtype="Number"
-            /> /
+            /> </span>/
+          <span class="hexa">
             <input
               type="number"
               name="system.max_range"
               value="{{system.max_range}}"
               data-dtype="Number"
-            />
-          </div>
+            /></span>
         </div>
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.damages"}}</label>
-          <input
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{ localize "VERMINE.damages"}}</label>
+        <div class="hexa"><input
             type="number"
             name="system.damage"
             value="{{system.damage}}"
             data-dtype="Number"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
-          <input
+          /></div>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
+        <div class="hexa"><input
             type="number"
             name="system.ammo"
             value="{{system.ammo}}"
             data-dtype="Number"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.rarity"}}</label>
-          <input
+          /></div>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{ localize "VERMINE.rarity"}}</label>
+        <div class="hexa"><input
             type="number"
             name="system.rarity"
             value="{{system.rarity}}"
             data-dtype="Number"
-          />
-        </div>
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.reliability"}}</label>
-          <input
+          /></div>
+      </div>
+      <div class="resource">
+        <label class="resource-label">{{ localize "VERMINE.reliability"}}</label>
+        <div class="hexa"><input
             type="number"
             name="system.reliability"
             value="{{system.reliability}}"
             data-dtype="Number"
-          />
-        </div>
+          /></div>
       </div>
-      <h2>description</h2>
-      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-    </div>
+    </h4>
+    <h2>description</h2>
+    {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
     {{> "systems/vermine2047/templates/item/partials/damages.html"}}
 
-  </section>
 </form>

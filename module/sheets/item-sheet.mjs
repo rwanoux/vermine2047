@@ -8,7 +8,7 @@ export class VermineItemSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "item"],
-      width: 520,
+      width: "fit-content",
       height: "auto",
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
     });
