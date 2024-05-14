@@ -25,8 +25,9 @@
   <div class="totem-dice flexrow flex-group-center">
     <div class="human-dice flexrow">
       {{#repeat system.adaptation.totems.human.max 1 "humantotem"}}
-      <div class="hexa" data-totem-name="human" data-totem-value="{{@index}}">
-        {{#ifgteq system.adaptation.totems.human.value @index}}
+      <div class="hexa" data-totem-name="human"
+        data-totem-value="{{@humantotem}}">
+        {{#ifgteq system.adaptation.totems.human.value @humantotem}}
         <div class="human-die"><i class="fas fa-dice-d10"></i></div>
         {{/ifgteq}}
       </div>
@@ -35,8 +36,9 @@
 
     <div class="adapted-dice flexrow">
       {{#repeat system.adaptation.totems.adapted.max 1 "adaptedtotem"}}
-      <div class="hexa" data-totem-name="adapted" data-totem-value="{{@index}}">
-        {{#ifgteq system.adaptation.totems.adapted.value @index}}
+      <div class="hexa" data-totem-name="adapted"
+        data-totem-value="{{@adaptedtotem}}">
+        {{#ifgteq system.adaptation.totems.adapted.value @adaptedtotem}}
         <div class="adapted-die"><i class="fas fa-dice-d10"></i></div>
         {{/ifgteq}}</div>
       {{/repeat}}

@@ -15,7 +15,6 @@
 
       <div class="flexrow">
         {{#repeat @row @root.SCIndex "case"}}
-        {{log @root.SCIndex}}
         <div class="hexa
        {{#iflteq @case @root.system.attributes.self_control.value }}
             checked
@@ -26,10 +25,7 @@
           {{#iflteq @row @root.system.attributes.self_control.max }}
           <input type="radio" data-dtype="Number"
             name="system.attributes.self_control.value"
-            value="{{@case}}" {{#ife
-            @root.system.attributes.self_control.value
-            @root.selfControlIndex
-            }}checked="checked"{{/ife}}
+            value="{{@case}}"
             class="
         {{#iflteq @case @root.system.attributes.self_control.max }}
             checked
@@ -61,7 +57,6 @@
 
       <div class="flexrow">
         {{#repeat @row @root.EffIndex "case"}}
-        {{log @root.EffIndex}}
         <div class="hexa
        {{#iflteq @case @root.system.attributes.effort.value }}
             checked
@@ -72,10 +67,7 @@
           {{#iflteq @row @root.system.attributes.effort.max }}
           <input type="radio" data-dtype="Number"
             name="system.attributes.effort.value"
-            value="{{@case}}" {{#ife
-            @root.system.attributes.effort.value
-            @root.selfControlIndex
-            }}checked="checked"{{/ife}}
+            value="{{@case}}"
             class="
         {{#iflteq @case @root.system.attributes.effort.max }}
             checked
@@ -100,14 +92,14 @@
       system.minorWound.threshold }})</span>
     <div class="flexrow">
       {{#repeat system.minorWound.max 1 "minorwoundmax"}}
-      <div class="hexa ability{{#iflteq @index @root.system.minorWound.value }}
+      <div
+        class="hexa ability{{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}">
         <input type="radio" data-dtype="Number" name="system.minorWound.value"
-          value="{{@index}}" {{#ife @root.system.minorWound.value @index
-          }}checked="checked"{{/ife}} data-wound="minorWound"
+          value="{{@minorwoundmax}}" data-wound="minorWound"
           class="
-          {{#iflteq @index @root.system.minorWound.value }}
+          {{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}
 
@@ -120,15 +112,15 @@
     <span>({{
       system.majorWound.threshold }})</span>
     <div class="flexrow">
-      {{#repeat system.majorWound.max 1 majourwoundmax}}
-      <div class="hexa ability{{#iflteq @index @root.system.majorWound.value }}
+      {{#repeat system.majorWound.max 1 "majourwoundmax"}}
+      <div
+        class="hexa ability{{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}">
         <input type="radio" data-dtype="Number" name="system.majorWound.value"
-          value="{{@index}}" {{#ife @root.system.majorWound.value @index
-          }}checked="checked"{{/ife}} data-wound="majorWound"
+          value="{{@majourwoundmax}}" data-wound="majorWound"
           class="
-          {{#iflteq @index @root.system.majorWound.value }}
+          {{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}
 
@@ -139,23 +131,25 @@
     </div>
   </li>
   <li class="row mdb">{{ localize 'VERMINE.wounds.deadly'}}
-    <span>({{system.deadlyWound.threshold }})</span>
+    <span>({{
+      system.deadlyWound.threshold }})</span>
     <div class="flexrow">
       {{#repeat system.deadlyWound.max 1 "deadlywoundmax"}}
-      <div class="hexa ability{{#iflteq @index @root.system.deadlyWound.value }}
+      <div
+        class="hexa ability{{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}">
         <input type="radio" data-dtype="Number" name="system.deadlyWound.value"
-          value="{{@index}}" {{#ife @root.system.deadlyWound.value @index
-          }}checked="checked"{{/ife}} data-wound="deadlyWound"
+          value="{{@deadlywoundmax}}" data-wound="deadlyWound"
           class="
-          {{#iflteq @index @root.system.deadlyWound.value }}
+          {{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}
 
         " />
       </div>
       {{/repeat}}
+
     </div>
   </li>
 </ul>

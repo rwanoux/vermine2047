@@ -132,7 +132,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
   async _onClickTotemDice(ev) {
     let el = ev.currentTarget;
     let totem = el.dataset.totemName;
-    let value = parseInt(el.dataset.totemValue)||0;
+    let value = parseInt(el.dataset.totemValue) || 0;
 
     let oldValue = this.actor.system.adaptation.totems[totem].value;
     if (value === oldValue) { value-- };
