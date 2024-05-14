@@ -84,9 +84,9 @@
           <option>-- Choisissez une caractéristique
             --</option>
           {{#each config.skillCategories as |skillCategory catkey|}}
-
           <optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' catkey 'name' }}">
             {{#each @root.actor.system.skills as |skill key|}}
+            {{#ifgt skill.value 0}}
             {{#ife skill.category catkey}}
             <option value="{{skill.value}}" data-pool="{{skillLevel "dicePool"
               skill.value}}"
@@ -102,6 +102,7 @@
                 relances:{{skillLevel "reroll" skill.value}}</i>
             </option>
             {{/ife}}
+            {{/ifgt}}
             {{/each}}
           </optgroup>
           {{/each}}
