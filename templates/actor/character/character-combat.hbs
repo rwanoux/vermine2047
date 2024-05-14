@@ -102,8 +102,10 @@
           {{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}
-
-        " />
+          "
+          {{#iflteq @minorwoundmax @root.system.minorWound.value }}
+          checked="true"
+          {{/iflteq}} />
       </div>
       {{/repeat}}
     </div>
@@ -124,7 +126,11 @@
             checked
           {{/iflteq}}
 
-        " />
+        "
+          {{#iflteq @minorwoundmax @root.system.majorWound.value }}
+          checked="true"
+          {{/iflteq}} />
+
       </div>
       {{/repeat}}
 
@@ -146,7 +152,10 @@
             checked
           {{/iflteq}}
 
-        " />
+        "
+          {{#iflteq @minorwoundmax @root.system.deadlyWound.value }}
+          checked="true"
+          {{/iflteq}} />
       </div>
       {{/repeat}}
 

@@ -109,17 +109,26 @@ export class VermineCharacterSheet extends VermineActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    // Choose Totem 
-    html.find('.chooseTotem').click(this._onTotemButton.bind(this));
-    html.find('.ability .rollable').click(this._onRoll.bind(this));
-    html.find('[data-totem-name]').click(this._onClickTotemDice.bind(this));
+    //desactiver les inputs si mode jeu
     if (!this.actor.flags.world?.editMode) {
       this.disableInputs(html)
     }
+    // Choose Totem 
+    html.find('.chooseTotem').click(this._onTotemButton.bind(this));
+    //activer lest jets
+    html.find('.ability .rollable').click(this._onRoll.bind(this));
+    //gérer les dés totems
+    html.find('[data-totem-name]').click(this._onClickTotemDice.bind(this));
+    //creation de specialités
+    html.find('i.add-specialty').click(this.addSpecialty.bind(this))
+
 
   }
+
+  //mode jeu/edit en mode jeu on bloque les selects et input
   disableInputs(html) {
     for (let input of html.find('input')) {
+      //préserver le toggle mode jeu/ mode edit
       if (input.name != "flags.world.editMode") {
         input.setAttribute('disabled', true)
       }
@@ -128,6 +137,18 @@ export class VermineCharacterSheet extends VermineActorSheet {
     for (let select of html.find('select')) {
       select.setAttribute('disabled', true)
     }
+  }
+  async addSpecialty(ev) {
+    let skillName = ev.target.closest('.ability').querySelector('label').dataset.label;
+    let itemData = {
+      name: `spécialité, ${skillName}`,
+      type: 'specialty',
+      system: {
+        skill: skillName
+      }
+    }
+    let spec = await this.actor.createEmbeddedDocuments("Item", [itemData]);
+    spec[0].sheet.render(true)
   }
   async _onClickTotemDice(ev) {
     let el = ev.currentTarget;

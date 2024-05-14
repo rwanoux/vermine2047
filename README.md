@@ -5,7 +5,7 @@
 
 ### fiche de perso 
 
--[ ] création de spécialitées depuis le (+) des compétences
+-[X] création de spécialitées depuis le (+) des compétences
 -[ ] fixer les cases hexas , comprtement chelou , piste = un click à l'air d'envoyer 2 update, verifier le onChange
 -[ ] dialog d'edition des min-max
 
