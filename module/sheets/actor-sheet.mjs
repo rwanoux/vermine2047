@@ -92,18 +92,22 @@ export class VermineActorSheet extends ActorSheet {
     }
 
     //click on wound radio
-    html.find('.hexa [type="radio"]').click(ev => {
-      this._onClickRadioHexa(ev)
+    html.find('.hexa [type="radio"]').change(ev => {
+      ev.preventDefault()
+      console.log(ev.target.checked , "CHECK______________________")
+      return this._onClickRadioHexa(ev)
     })
 
   }
   _onClickRadioHexa(ev) {
-    if (!ev.currentTarget.checked) { return }
+    console.log("________________iiiiiii")
+    if (!ev.currentTarget.checked) { return false};
+    ev.preventDefault();
     let prop = ev.currentTarget.name;
     let update = {};
-    update[prop] = ev.currentTarget.value - 1
+    update[prop] = ev.currentTarget.value-1
 
-    this.actor.update(update)
+    return this.actor.update(update)
 
   }
   async _onMinMaxEdit(event) {
