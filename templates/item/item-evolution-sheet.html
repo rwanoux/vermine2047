@@ -22,31 +22,21 @@
 
 
   <section class="sheet-body">
-    <div
-      class=" flexrow "
-      data-group="primary"
-      data-tab="description"
-    >
-      <aside style="flex:20%;">
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.level"}}</label>
-          <input
-            type="number"
-            name="system.level.value"
-            value="{{system.level.value }}"
-            data-dtype="Number"
-            min="{{system.level.min }}"
-            max="{{system.level.max }}"
-          />
-        </div>
-      </aside>
-      <main
-        class="editor-wrapper"
-        style="flex:10"
-      >
-        {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-      </main>
-    </div>
+
+    <h4 class="resource flexrow">
+      <label class="resource-label ">{{ localize "VERMINE.level"}}</label>
+      <span class="hexa"><input
+          type="number"
+          name="system.level.value"
+          value="{{system.level.value }}"
+          data-dtype="Number"
+          min="{{system.level.min }}"
+          max="{{system.level.max }}"
+        /></span>
+    </h4>
+    <h4>description</h4>
+
+    {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
   </section>
 
 </form>
