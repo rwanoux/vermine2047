@@ -9,6 +9,13 @@
 -[ ] fixer les cases hexas , comprtement chelou , piste = un click à l'air d'envoyer 2 update, verifier le onChange
 -[ ] dialog d'edition des min-max
 
+### fiche de groupe
+-[ ] pas encore penché dessus
+
+### fiche de pnj créature
+-[ ]à faire
+
+
 ### les jets de dés
 
 - [ ] envoyer les spécialités utilisables au rollDialog

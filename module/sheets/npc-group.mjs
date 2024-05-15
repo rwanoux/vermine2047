@@ -1,4 +1,4 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
 import { TotemPicker, ActorPicker } from "../system/applications.mjs";
 
@@ -41,7 +41,7 @@ export class VermineGroupSheet extends VermineActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
-    
+
     // Prepare character data and items.
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -58,7 +58,7 @@ export class VermineGroupSheet extends VermineActorSheet {
     }
 
     // Add roll data for TinyMCE editors.
-    context.rollData = context.actor.getRollData();
+    context.rollData = this.actor.getRollData();
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
@@ -92,23 +92,23 @@ export class VermineGroupSheet extends VermineActorSheet {
     context.backgrounds = this.actor.itemTypes['background'];
     context.evolutions = this.actor.itemTypes['evolution'];
     context.traumas = this.actor.itemTypes['trauma'];
-    
+
     context.gear = this.actor.itemTypes['item'];
     context.weapons = this.actor.itemTypes['weapon'];
-    context.defenses = this.actor.itemTypes['defense'];  
+    context.defenses = this.actor.itemTypes['defense'];
     context.vehicles = this.actor.itemTypes['vehicle'];
 
-    context.totem_abilities = this.actor.itemTypes['ability'].filter(i=>i.system.type === 'totem');
-    context.abilities = this.actor.itemTypes['ability'].filter(i=>i.system.type !== 'totem');
+    context.totem_abilities = this.actor.itemTypes['ability'].filter(i => i.system.type === 'totem');
+    context.abilities = this.actor.itemTypes['ability'].filter(i => i.system.type !== 'totem');
 
     context.members = [];
     context.encounters = [];
-    
-    for(let memberId of context.actor.system.members){
+
+    for (let memberId of context.actor.system.members) {
       context.members.push(game.actors.get(memberId));
     }
-    
-    for(let encounterId of context.actor.system.encounters){
+
+    for (let encounterId of context.actor.system.encounters) {
       context.encounters.push(game.actors.get(encounterId));
     }
 
@@ -120,17 +120,17 @@ export class VermineGroupSheet extends VermineActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    
+
     // Choose Totem 
     html.find('.chooseTotem').click(this._onTotemButton.bind(this));
 
-     // Choose Members / Encounters 
-     html.find('.chooseActor').click(this._onRoadButton.bind(this));
-     html.find('.member-delete').click(ev => {
+    // Choose Members / Encounters 
+    html.find('.chooseActor').click(this._onRoadButton.bind(this));
+    html.find('.member-delete').click(ev => {
       const li = $(ev.currentTarget).parents("li.actor");
       const actorId = li.data("actor-id");
       const actorIdIndex = this.actor.system.members.indexOf(actorId);
-      if (actorIdIndex !== -1){
+      if (actorIdIndex !== -1) {
         this.actor.system.members.splice(actorIdIndex, 1);
       }
       this.actor.update({ "system.members": this.actor.system.members });
@@ -141,42 +141,42 @@ export class VermineGroupSheet extends VermineActorSheet {
       const li = $(ev.currentTarget).parents("li.actor");
       const actorId = li.data("actor-id");
       const actorIdIndex = this.actor.system.encounters.indexOf(actorId);
-      if (actorIdIndex !== -1){
+      if (actorIdIndex !== -1) {
         this.actor.system.encounters.splice(actorIdIndex, 1);
       }
       this.actor.update({ "system.encounters": this.actor.system.encounters });
       this.render(true);
     });
-    
+
   }
 
 
-    /**
-   * Handle totem pick
-   * @param {Event} event   The originating click event
-   * @private
-   */
-    _onTotemButton(event) {
-      event.preventDefault();
-      const el = event.currentTarget;
-      // const dataset = el.dataset;
-      
-      const totemPicker = new TotemPicker(el, this.actor);
-      totemPicker.render(true);
-    }
+  /**
+ * Handle totem pick
+ * @param {Event} event   The originating click event
+ * @private
+ */
+  _onTotemButton(event) {
+    event.preventDefault();
+    const el = event.currentTarget;
+    // const dataset = el.dataset;
 
-     /**
-   * Handle actor pick
-   * @param {Event} event   The originating click event
-   * @private
-   */
-     _onRoadButton(event) {
-      event.preventDefault();
-      const el = event.currentTarget;
-      // const dataset = el.dataset;
+    const totemPicker = new TotemPicker(el, this.actor);
+    totemPicker.render(true);
+  }
 
-      const actorPicker = new ActorPicker(el, this.actor);
-      actorPicker.render(true);
-    }
+  /**
+* Handle actor pick
+* @param {Event} event   The originating click event
+* @private
+*/
+  _onRoadButton(event) {
+    event.preventDefault();
+    const el = event.currentTarget;
+    // const dataset = el.dataset;
+
+    const actorPicker = new ActorPicker(el, this.actor);
+    actorPicker.render(true);
+  }
 
 }
