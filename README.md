@@ -5,21 +5,21 @@
 
 ### fiche de perso 
 
--[X] création de spécialitées depuis le (+) des compétences
--[X] fixer les cases hexas , comprtement chelou , piste = un click à l'air d'envoyer 2 update, verifier le onChange
--[ ] dialog d'edition des min-max
+- [X] création de spécialitées depuis le (+) des compétences
+- [X] fixer les cases hexas , comprtement chelou , piste = un click à l'air d'envoyer 2 update, verifier le onChange
+- [ ] dialog d'edition des min-max
 
 ### fiche de groupe
--[ ] pas encore penché dessus
+- [ ] pas encore penché dessus
 
 ### Members et encounters
 
--[ ]faire une classe GroupLink pour avoir les actors en objets dans les array group.members[], group.encounters[], et character.encounters[],
--[ ]faire une fonction sur le Hook.onUpdateActor => update des groupes dans characters, update des encounters et members dans groups
+- [ ] faire une classe GroupLink pour avoir les actors en objets dans les array group.members[], group.encounters[], et character.encounters[],
+- [ ] faire une fonction sur le Hook.onUpdateActor => update des groupes dans characters, update des encounters et members dans groups
 
 ### fiche de pnj créature
--[ ]à faire,
--[ ]lister les gabarit/taille/roles(creatures) et menace/experience/role(pnj)... stocker les modifs dans CONFIG.VERMINE, 
+- [ ] à faire,
+- [ ] lister les gabarit/taille/roles(creatures) et menace/experience/role(pnj)... stocker les modifs dans CONFIG.VERMINE, 
 
 
 ### les jets de dés
