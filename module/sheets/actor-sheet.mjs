@@ -40,6 +40,8 @@ export class VermineActorSheet extends ActorSheet {
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = actorData.system;
     context.flags = actorData.flags;
+
+    //add system config for convenience use
     context.config = CONFIG.VERMINE;
 
     // Add roll data for TinyMCE editors.
@@ -47,6 +49,7 @@ export class VermineActorSheet extends ActorSheet {
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);
+
 
     return context;
   }
@@ -92,22 +95,33 @@ export class VermineActorSheet extends ActorSheet {
     }
 
     //click on wound radio
-    html.find('.hexa [type="radio"]').change(ev => {
-      ev.preventDefault()
-      console.log(ev.target.checked, "CHECK______________________")
+    html.find('.hexa [type="radio"]').click(ev => {
+      ev.preventDefault();
+      ev.stopPropagation();
+
       return this._onClickRadioHexa(ev)
     })
 
   }
   _onClickRadioHexa(ev) {
-    console.log("________________iiiiiii")
-    if (!ev.currentTarget.checked) { return false };
-    ev.preventDefault();
-    let prop = ev.currentTarget.name;
+    let input = ev.currentTarget;
+    console.log(input.value, input.name);
     let update = {};
-    update[prop] = ev.currentTarget.value - 1
+    update[input.name] = 0
+    let propTree = input.name.split('.')
+    let current = this.actor;
+    for (let prop of propTree) {
+      current = current[prop]
+    }
+    if (current != input.value) {
+      update[input.name] = parseInt(input.value)
 
-    return this.actor.update(update)
+    } else {
+      update[input.name] = parseInt(input.value) - 1;
+    }
+    this.actor.update(update)
+
+
 
   }
   async _onMinMaxEdit(event) {
@@ -161,5 +175,8 @@ export class VermineActorSheet extends ActorSheet {
 
     // Finally, create the item!
     return await Item.create(itemData, { parent: this.actor });
+  }
+  async getGroup() {
+    return await game.actors.find(group => { group == group - 1 })
   }
 }
