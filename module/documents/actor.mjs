@@ -19,8 +19,8 @@ export class VermineActor extends Actor {
   prepareBaseData() {
     // Data modifications in this step occur before processing embedded
     // documents or derived data.
-    
-    if (this.type == 'character'){
+
+    if (this.type == 'character') {
       this._setAgeType();
       this._setCharacterEffort();
       this._setCharacterSelfControl();
@@ -62,6 +62,7 @@ export class VermineActor extends Actor {
       // Calculate the modifier using d20 rules.
       ability.mod = Math.floor((ability.value - 10) / 2);
     }
+
   }
 
   /**
@@ -124,7 +125,7 @@ export class VermineActor extends Actor {
   _setCharacterEffort() {
     this.system.attributes.effort.max = 0 + Object.values(this.system.abilities).filter(i => i.category === "physical" || i.category === "manual").map((i) => i.value).reduce((acc, curr) => acc + curr, 0) + this.modFromAgeEffort;
   }
-  
+
   _setCharacterThresholds() {
     const health = this.system.abilities.health.value;
 
@@ -133,15 +134,15 @@ export class VermineActor extends Actor {
     this.system.deadlyWound.threshold = (health + 7 < 11) ? health + 7 : 10;
 
     this.system.minorWound.max = 4 + this.modFromAgeWounds.l;
-    this.system.majorWound.max =  3 + this.modFromAgeWounds.h;
+    this.system.majorWound.max = 3 + this.modFromAgeWounds.h;
     this.system.deadlyWound.max = 2 + this.modFromAgeWounds.d;
   }
-  
 
-  _setAgeType(){
+
+  _setAgeType() {
     Object.keys(CONFIG.VERMINE.AgeTypes).forEach((type) => {
-      if(this.system.identity.age >= parseInt(CONFIG.VERMINE.AgeTypes[type].beginning,10)){
-        this.system.identity.ageType = type; 
+      if (this.system.identity.age >= parseInt(CONFIG.VERMINE.AgeTypes[type].beginning, 10)) {
+        this.system.identity.ageType = type;
       }
     });
   }
@@ -161,9 +162,9 @@ export class VermineActor extends Actor {
   }
 
   get modFromAgeWounds() {
-    if (this.ageType == 1) return {l : 0, h : 0, d: -1};
-    if (this.ageType == 3) return {l : -1, h : -1, d: -1};    
-    return {l : 0, h : 0, d: 0};
+    if (this.ageType == 1) return { l: 0, h: 0, d: -1 };
+    if (this.ageType == 3) return { l: -1, h: -1, d: -1 };
+    return { l: 0, h: 0, d: 0 };
   }
 
 }

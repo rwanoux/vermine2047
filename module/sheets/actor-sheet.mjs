@@ -176,7 +176,4 @@ export class VermineActorSheet extends ActorSheet {
     // Finally, create the item!
     return await Item.create(itemData, { parent: this.actor });
   }
-  async getGroup() {
-    return await game.actors.find(group => { group == group - 1 })
-  }
 }
