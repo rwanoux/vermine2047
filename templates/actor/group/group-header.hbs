@@ -1,41 +1,54 @@
 <!-- HEADER -->
 <header class="char-header grid grid-12col w-full" style="max-height: 110px;">
     <div class="grid-span-2">
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" width="100" height="100" title="{{actor.name}}" />
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" width="100"
+            height="100" title="{{actor.name}}" />
     </div>
     <section class="char-details grid-span-5">
         <h1 class="char-name flexrow  flex-group-left w-full">
             <label>{{ localize 'IDENTITY.name' }}</label>
-            <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "VERMINE.GroupNamePlaceholder"}}" />
+            <input name="name" type="text" value="{{actor.name}}"
+                placeholder="{{localize "VERMINE.GroupNamePlaceholder"}}" />
         </h1>
         <div class="profile flexrow  flex-group-center">
             <label>{{ localize 'IDENTITY.profile' }}</label>
-            <input name="system.identity.profile" type="text" value="{{system.identity.profile }}" data-dtype="String" />
+            <input name="system.identity.profile" type="text"
+                value="{{system.identity.profile }}" data-dtype="String" />
         </div>
         <div class="flexrow  flex-group-center w-full">
-            <label for="system.identity.age">{{ localize 'IDENTITY.morale' }}</label>
+            <label for="system.identity.age">{{ localize 'IDENTITY.morale'
+                }}</label>
             <div class="flexrow row">
-            <input type="number" name="system.identity.age" value="{{ system.morale.value }}" data-dtype="Number" max="7" min="1" />
-            <span id="moraleLevel">({{ system.morale.level }})</span>
+                <input type="number" name="system.identity.age"
+                    value="{{ system.morale.value }}" data-dtype="Number"
+                    max="7" min="1" />
+                <span id="moraleLevel">({{ system.morale.level }})</span>
             </div>
-        </div>      
+        </div>
     </section>
     <section class="char-level grid-span-5">
         <h1 class="char-vermine2047 flexrow flex-group-left w-full">
-            <label for="system.identity.totem">{{ localize 'IDENTITY.totem' }}</label>
+            <label for="system.identity.totem">{{ localize 'IDENTITY.totem'
+                }}</label>
             {{#if (eq system.identity.totem "")}}
-                <a name="chooseTotem" class="chooseTotem">Choisissez&hellip;</a>
-            {{ else }}    
-                <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS" system.identity.totem }}</a>
+            <a name="chooseTotem" class="chooseTotem">Choisissez&hellip;</a>
+            {{ else }}
+            <a name="chooseTotem" class="chooseTotem">{{ smarttl "TOTEMS"
+                system.identity.totem }}</a>
             {{/if}}
         </h1>
         <div class="reputation flexrow  flex-group-center">
             <label>{{ localize 'VERMINE.reputation' }}</label>
-            <input name="system.reputation.value" type="number" value="{{system.reputation.value }}" data-dtype="Number" min="2" max="10" />
+            <input name="system.reputation.value" type="number"
+                value="{{system.reputation.value }}" data-dtype="Number" min="2"
+                max="10" />
+            <img src="{{totem}}" alt>
         </div>
         <div class="experience flexrow  flex-group-center">
             <label>{{ localize 'VERMINE.level' }}</label>
-            <input name="system.level.value" type="number" value="{{system.level.value }}" data-dtype="Number"  min="0" max="3" />
+            <input name="system.level.value" type="number"
+                value="{{system.level.value }}" data-dtype="Number" min="0"
+                max="3" />
         </div>
     </section>
 </header>

@@ -1,4 +1,4 @@
-import {onManageActiveEffect, prepareActiveEffectCategories} from "../system/effects.mjs";
+import { onManageActiveEffect, prepareActiveEffectCategories } from "../system/effects.mjs";
 import { VermineActorSheet } from "./actor-sheet.mjs";
 
 /**
@@ -9,7 +9,7 @@ export class VermineNpcSheet extends VermineActorSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "actor", "npc"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
       width: 400,
@@ -40,7 +40,7 @@ export class VermineNpcSheet extends VermineActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
     context.config = CONFIG.VERMINE;
-    
+
     // Prepare character data and items.
     if (actorData.type == 'character') {
       this._prepareItems(context);
@@ -69,7 +69,7 @@ export class VermineNpcSheet extends VermineActorSheet {
    * @return {undefined}
    */
   _prepareCharacterData(context) {
-    
+
   }
 
   /**

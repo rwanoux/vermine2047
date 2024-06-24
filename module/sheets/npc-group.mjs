@@ -10,7 +10,7 @@ export class VermineGroupSheet extends VermineActorSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "actor", "group"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
       width: 500,
@@ -101,16 +101,9 @@ export class VermineGroupSheet extends VermineActorSheet {
     context.totem_abilities = this.actor.itemTypes['ability'].filter(i => i.system.type === 'totem');
     context.abilities = this.actor.itemTypes['ability'].filter(i => i.system.type !== 'totem');
 
-    context.members = [];
-    context.encounters = [];
+    context.members = this.actor.system.members;
+    context.encounters = this.actor.system.encounters;
 
-    for (let memberId of context.actor.system.members) {
-      context.members.push(game.actors.get(memberId));
-    }
-
-    for (let encounterId of context.actor.system.encounters) {
-      context.encounters.push(game.actors.get(encounterId));
-    }
 
 
   }

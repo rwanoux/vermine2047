@@ -1,73 +1,82 @@
  <div class="grid grid-2col">
-    <div>
-      <h4 class="align-center">
-        <span>{{ localize 'VERMINE.group_members'}}</span>
-        <a class="item-control chooseActor" title="Add member" data-type="members"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
+  <div>
+    <h4 class="align-center">
+      <span>{{ localize 'VERMINE.group_members'}}</span>
+      <a class="item-control chooseActor" title="Add member"
+        data-type="members"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="actor-list">
       {{#each members as |actor id|}}
-        <li class="actor flexrow" data-actor-id="{{actor._id}}">
-          <div class="actor-name" style="flex:4;">
-            <a class="item-control">{{actor.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control member-delete" title="Delete Member"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-      {{/each}}
-    </ol>
-    </div>
-    <div>
-      <h4 class="align-center">
-        <span>{{ localize 'VERMINE.encounters'}}</span>
-        <a class="item-control chooseActor" title="Add member" data-type="encounters"><i class="fas fa-plus"></i></a>
-        </h4>
-      <ol class="list-item">
-      {{#each encounters as |actor id|}}
-        <li class="actor flexrow" data-actor-id="{{actor._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control">{{actor.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control encounter-delete" title="Delete Encounter"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
+      {{log actor}}
+      <li class="actor flexrow" data-actor-id="{{actor._id}}">
+        <div class="actor-name" style="flex:4;">
+          <a class="item-control">{{actor.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <a class="item-control member-delete" title="Delete Member"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
       {{/each}}
     </ol>
   </div>
   <div>
-      <h4 class="align-center">
-        <span>{{ localize 'VERMINE.boost'}}</span>
-        <a class="item-control chooseActor" title="Add encounter" data-type="npc"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
-      {{#each abilities as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
+    <h4 class="align-center">
+      <span>{{ localize 'VERMINE.encounters'}}</span>
+      <a class="item-control chooseActor" title="Add member"
+        data-type="encounters"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="actor-list">
+      {{#each encounters as |actor id|}}
+      <li class="actor flexrow" data-actor-id="{{actor._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control">{{actor.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <a class="item-control encounter-delete" title="Delete Encounter"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
       {{/each}}
     </ol>
   </div>
-   <div>
-      <h4 class="align-center">
-        <span>{{ localize 'VERMINE.totem_abilities'}}</span>
-        <a class="item-control item-create" title="Create item" data-type="ability"><i class="fas fa-plus"></i></a>
-      </h4>
-      <ol class="list-item">
+  <div>
+    <h4 class="align-center">
+      <span>{{ localize 'VERMINE.boost'}}</span>
+      <a class="item-control chooseActor" title="Add encounter"
+        data-type="npc"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
+      {{#each abilities as |item id|}}
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+  <div>
+    <h4 class="align-center">
+      <span>{{ localize 'VERMINE.totem_abilities'}}</span>
+      <a class="item-control item-create" title="Create item"
+        data-type="ability"><i class="fas fa-plus"></i></a>
+    </h4>
+    <ol class="list-item">
       {{#each totem_abilities as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-          <div class="item-name" style="flex:4;">
-            <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
-          </div>
-          <div class="item-controls flexrow">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
+      <li class="item flexrow" data-item-id="{{item._id}}">
+        <div class="item-name" style="flex:4;">
+          <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+        </div>
+        <div class="item-controls flexrow">
+          <a class="item-control item-delete" title="Delete Item"><i
+              class="fas fa-trash"></i></a>
+        </div>
+      </li>
       {{/each}}
     </ol>
   </div>

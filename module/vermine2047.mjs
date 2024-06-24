@@ -36,7 +36,7 @@ Hooks.once('init', async function () {
 
   // Add custom constants for configuration.
   CONFIG.VERMINE = VERMINE;
-  CONFIG.VERMINE.model = game.system.model
+  CONFIG.VERMINE.model = game.system.template
   /**
    * Set an initiative formula for the system
    * @type {String}

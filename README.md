@@ -23,7 +23,7 @@
 
 
 ### les jets de dés
-- [ ] redesign de rollDialog => <details>+<sumary>=> rendre moins dense
+- [ ] redesign de rollDialog => `<details>+<sumary>`=> rendre moins dense
 - [ ] envoyer les spécialités utilisables au rollDialog
 - [ ] envoyer les items utilisables au rollDialog
 - [ ] gérer le fait de choisir quel totem garder : recalcul des réussites

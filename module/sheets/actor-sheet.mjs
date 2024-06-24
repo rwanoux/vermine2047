@@ -9,7 +9,7 @@ export class VermineActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       /*classes: ["vermine2047", "sheet", "actor"],
       template: "systems/vermine2047/templates/actor/actor-sheet.hbs",
       height: 800,

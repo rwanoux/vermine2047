@@ -5,7 +5,7 @@
 
 
 export async function initUserDice(dice3d, user) {
-    let baseColor = user.color;
+    let baseColor = user.color.css;
     dice3d.addColorset({
         name: 'regular_' + user.name,
         description: "regular dice for " + user.name,

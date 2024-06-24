@@ -27,7 +27,7 @@ exports.watch = function () {
         {
             server: false,
             proxy: {
-                target: "https://localhost:443/",
+                target: "https://localhost:30000/",
                 ws: true,
             }
 

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "launch window Foundry11": "cd C:/Program Files/Foundry Virtual Tabletop_V11/resources/app && node main.js",
+    "launch Foundry12": "cd C:/Program Files/Foundry Virtual Tabletop_V12/resources/app && node main.js",
     "watch": "gulp watch",
     "buildStyle": "gulp buildStyles"
   },

@@ -59,12 +59,9 @@
         {{/each}}
       </div>
       <select name="system.skills.{{skey}}.value" class="skill-select">
-        {{#select skill.value}}
-        {{#each @root.config.SkillLevels as |level ind|}}
-        <option value="{{ind}}" title="{{localize level.label}}">
-          {{localize level.label}}</option>
-        {{/each}}
-        {{/select}}
+        {{selectOptions @root.config.SkillLevels selected=value
+        localize=true}}
+
       </select>
       <span class="hexa">{{skill.value}}</span>
       <div class="skill-dots flexrow">

@@ -42,7 +42,7 @@ export const registerHooks = function () {
         if (rerollTitle) {
             rerollTitle.addEventListener("click", () => { html[0].querySelector(".reroll").classList.toggle('visible') })
         }
-        if (message.user._id != game.user._id || !game.user.isGM) {
+        if (message.author._id != game.user._id || !game.user.isGM) {
             html[0].querySelectorAll("input").forEach(inp => inp.disabled = true);
             html[0].querySelectorAll("div.reroll-from-effort").forEach(el => el.style.display = "none")
             return

@@ -6,7 +6,7 @@ export class VermineItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "item"],
       width: "fit-content",
       height: "auto",

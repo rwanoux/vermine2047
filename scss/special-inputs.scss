@@ -105,6 +105,14 @@ input[type="radio"] {
     }
 }
 
+iframe {
+    min-height: 500px;
+
+    .tabs.moods-headings {
+        max-width: 1px
+    }
+}
+
 input[type="radio"] {
 
     width: 1rem;
