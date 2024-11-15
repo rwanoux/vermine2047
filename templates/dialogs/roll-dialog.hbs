@@ -81,7 +81,7 @@
         <select class="info-value" data-roll="true"
           data-dtype="String"
           type="number" name="skill" id="skill" min="1" max="5">
-          <option>-- Choisissez une caractéristique
+          <option>-- Choisissez une compétence
             --</option>
           {{#each config.skillCategories as |skillCategory catkey|}}
           <optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' catkey 'name' }}">
@@ -104,6 +104,8 @@
           </optgroup>
           {{/each}}
         </select>
+        {{log availableSpecialties.length}}
+        {{#if availableSpecialties.length}}
         <label class="label">{{localize 'VERMINE.specialty'}} (+1D)</label>
         <div class="flexrow">
           {{#each availableSpecialties as |spec ind|}}
@@ -116,7 +118,7 @@
           {{/each}}
 
         </div>
-
+        {{/if}}
       </h3>
     </div>
 

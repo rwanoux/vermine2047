@@ -1,0 +1,22 @@
+
+<div class="trait choose grid grid-2col"
+    style="padding:5px;">
+    {{#each traits as | trait ind|}}
+    {{log @root.item}}
+    {{log trait}}
+    {{log ind}}
+    <div class="form-group" data-trait="{{ind}}">
+        <label>
+            <input type="checkbox" class="trait-selector" data-trait="{{ind}}">
+
+            {{trait.name}}
+            {{#if trait.value}}
+            <input type="number" class="hexa trait-value" name="{{ind}}.value">
+            {{/if}}
+        </label>
+
+        <p class="hint">{{trait.description}}</p>
+    </div>
+    {{/each}}
+
+</div>

@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "../noc"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../modules/rolenplay-starterkit"
+		},
+		{
+			"path": "../../modules/rolenplay-core"
+		},
+		{
+			"path": "../../modules/SRD-Heros-et-Dragons"
+		},
+		{
+			"path": "../../../../../../../../Program Files/Foundry Virtual Tabletop_V12/resources"
+		},
+		{
+			"path": "../../modules/dnd5e_fr-FR"
+		},
+		{
+			"path": "../cthack"
+		},
+		{
+			"path": "../torgeternity"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "noc"
+	}
+}

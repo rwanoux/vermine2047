@@ -24,7 +24,9 @@
 }
 
 img.profile-img {
-  filter: drop-shadow(0px 0px 20px rgb(110, 133, 27))
+  filter: drop-shadow(0px 0px 20px rgb(110, 133, 27));
+  height: auto;
+  width: 100%;
 }
 
 /* custom styles */
@@ -156,8 +158,8 @@ ul.unstyled li {
 }
 
 .actor.sheet .form aside .image-wrapper img {
-  width: 170px;
-  height: 145px;
+  width: 80%;
+  height: auto;
 }
 
 .actor.sheet .form aside .paper {

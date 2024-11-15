@@ -1,3 +1,5 @@
+import { TraitSelector } from "../system/applications.mjs";
+
 /**
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
@@ -55,7 +57,6 @@ export class VermineItemSheet extends ItemSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-
     // Everything below here is only needed if the sheet is editable
     if (!this.isEditable) return;
     //click on wound radio
@@ -63,7 +64,9 @@ export class VermineItemSheet extends ItemSheet {
       this._onClickDamage(ev)
     })
 
-    // Roll handlers, click handlers, etc. would go here.
+    html.find('.traits-selector').click(ev => {
+      this.openTraitSelector(ev)
+    })
   }
   async _onClickDamage(ev) {
     if (!ev.currentTarget.checked) { return }
@@ -72,5 +75,10 @@ export class VermineItemSheet extends ItemSheet {
     update[prop] = ev.currentTarget.value - 1
 
     this.item.update(update)
+  }
+
+  async openTraitSelector(ev) {
+    let selector = new TraitSelector(this.item);
+    selector.render(true)
   }
 }

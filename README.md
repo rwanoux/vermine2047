@@ -12,10 +12,10 @@
 ### fiche de groupe
 - [ ] pas encore penché dessus
 
-### Members et encounters
-
-- [ ] faire une classe GroupLink pour avoir les actors en objets dans les array group.members[], group.encounters[], et character.encounters[],
-- [ ] faire une fonction sur le Hook.onUpdateActor => update des groupes dans characters, update des encounters et members dans groups
+    #### Members et encounters
+    
+    - [ ] faire une classe GroupLink pour avoir les actors en objets dans les array group.members[], group.encounters[], et character.encounters[],
+    - [ ] faire une fonction sur le Hook.onUpdateActor => update des groupes dans characters, update des encounters et members dans groups
 
 ### fiche de pnj créature
 - [ ] à faire,
@@ -43,7 +43,7 @@ faut s'y pencher
 ### les items
 - [ ] gérer les rolls d'items dans le chat
 - [-] repasser sur les différents itemTypes et sheets
-- [ ] construire une selecteur de traits, traits= CONFIG.VEERMINE.traits
+- [ ] construire une selecteur de traits, traits= CONFIG.VERMINE.traits
         traits:[
             key:{
                 name:string,

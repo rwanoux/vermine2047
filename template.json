@@ -489,7 +489,7 @@
         "reliability": 3,
         "quantity": 1,
         "weight": 0,
-        "traits": [],
+        "traits": {},
         "damages": {
           "value": 0,
           "min": 0,
@@ -532,7 +532,10 @@
       ],
       "min_range": 0,
       "max_range": 0,
-      "damage": 0,
+      "damage": {
+        "value": 0,
+        "type": ""
+      },
       "ammo": 0
     },
     "defense": {

@@ -38,8 +38,9 @@ export const preloadHandlebarsTemplates = async function () {
     // dialog templates
     "systems/vermine2047/templates/dialogs/roll-dialog.hbs",
 
-    //items damages
+    //items partials
     "systems/vermine2047/templates/item/partials/damages.html",
+    "systems/vermine2047/templates/item/partials/traits.html",
 
   ]);
 };

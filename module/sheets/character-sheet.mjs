@@ -57,9 +57,6 @@ export class VermineCharacterSheet extends VermineActorSheet {
     context.rollData = context.actor.getRollData();
 
 
-    //get the group actor 
-    context.group = this.getGroup()
-
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(this.actor.effects);

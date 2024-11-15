@@ -118,3 +118,68 @@ export class ActorPicker extends Application {
   }
 
 }
+
+
+export class TraitSelector extends Application {
+
+  constructor(targetItem) {
+    super();
+    this.targetItem = targetItem;
+    this.traits = CONFIG.VERMINE.traits
+  }
+
+  /* -------------------------------------------- */
+  static get defaultOptions() {
+    return foundry.utils.mergeObject(super.defaultOptions, {
+      id: "TRAITS_SELECTOR",
+      title: game.i18n.localize("VERMINE.traits_selector"),
+      template: 'systems/vermine2047/templates/applications/choose-traits.hbs',
+      popOut: true,
+      resizable: true,
+      height: "500",
+      width: "500"
+    });
+  }
+  getData() {
+    return {
+      traits: this.traits,
+      item: this.targetItem
+    }
+  }
+  async activateListeners(html) {
+    super.activateListeners(html);
+    this.validateTraits(html);
+    html.find('input').click(ev => {
+      this.onChangeInput(ev)
+    })
+
+  }
+  async validateTraits(html) {
+    let checks = html.find("input.trait-selector");
+    for (let ch of checks) {
+      if (this.targetItem.system.traits[ch.dataset.trait]) {
+        ch.checked = true
+      }
+
+    }
+  }
+
+  async onChangeInput(ev) {
+    let el = ev.currentTarget;
+    if (el.classList.contains('trait-selector')) {
+      let traitKey = el.dataset.trait; // Récupère la clé du trait à partir de l'attribut data-trait
+      let traits = this.targetItem.system.traits || {}; // Récupère les traits actuels, ou un objet vide si aucun trait n'est défini
+
+      if (!traits[traitKey]) {
+        // Si la case est cochée, ajoute le trait
+        await this.targetItem.update({ [`system.traits.${traitKey}`]: this.traits[traitKey] });
+      } else {
+        // Si la case est décochée, retire le trait
+        await this.targetItem.update({ [`system.traits.${traitKey}`]: null });
+      }
+    }
+    else if (el.classList.contains('trait-value')) {
+      // Logique pour les valeurs des traits si nécessaire
+    }
+  }
+}

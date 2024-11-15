@@ -1,0 +1,15 @@
+<div class="traits">
+	<h3>traits
+		<span class="traits-selector" data-tooltip="ajouter un trait">
+			<i class="fas fa-plus"></i>
+
+		</span>
+	</h3>
+	{{#each item.system.traits as | trait index|}}
+		<span data-tooltip="{{trait.description}}">{{trait.name}}
+			{{#if trait.value}}
+				<input type="number" class="hexa" value="{{trait.value}}" name="system.traits.{{index}}.value">
+			{{/if}}
+		</span>
+	{{/each}}
+</div>
