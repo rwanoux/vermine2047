@@ -1,0 +1,91 @@
+folder: null
+name: Rite de communication animale
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite permet au chaman de communiquer avec un animal. Les informations
+    qu&rsquo;il est possible d&rsquo;&eacute;changer d&eacute;pendent du lien
+    tiss&eacute; avec l&rsquo;animal, de son esp&egrave;ce et du Mode de
+    jeu.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: Le chaman entre en contact physique avec l’animal.
+  transe: 'Survie : 1 minute, Cauchemar : 10 secondes, Apocalypse : instantané'
+  ability: empathy
+  effect: ''
+  effects: >-
+    <p>La Difficult&eacute; du jet de Rite est de 3 avec le compagnon animal du
+    personnage, 5 avec les animaux de la m&ecirc;me esp&egrave;ce que le
+    compagnon animal, 7 avec les mammif&egrave;res et 9 avec les insectes et les
+    arachnides. Chaque R&eacute;ussite obtenue permet de transmettre une
+    information.</p>
+
+    <ul>
+
+    <li>En Mode <strong>Survie</strong>, le chaman ne peut communiquer
+    qu&rsquo;avec son compagnon animal. Les informations transmises de
+    mani&egrave;re empathique ne concernent&nbsp;<br>que des &eacute;motions et
+    des sensations diffuses comme danger, faim, terreur, d&eacute;go&ucirc;t,
+    confiance ou tristesse.</li>
+
+    <li>En Mode <strong>Cauchemar,</strong> le chaman peut communiquer avec
+    d&rsquo;autres animaux. La communication se limite toujours aux
+    &eacute;motions, mais le chaman peut tenter de demander quelque chose de
+    simple &agrave; l&rsquo;animal comme lui d&eacute;signer un endroit.
+    S&rsquo;il y est d&eacute;j&agrave; all&eacute;, l&rsquo;animal communiquera
+    les &eacute;motions qu&rsquo;il y a ressenties.</li>
+
+    <li>En Mode&nbsp;<strong>Apocalypse</strong>, l&rsquo;animal peut
+    transmettre des &eacute;motions plus fines (et ainsi diff&eacute;rencier
+    appr&eacute;hension, peur et terreur par exemple) et des informations un peu
+    plus pr&eacute;cises comme nourriture, <em>humains</em> ou <em>vermine</em>.
+    Le chaman pourra demander un service &agrave; l&rsquo;animal, comme se
+    rendre &agrave; un endroit proche et lui rapporter ce qu&rsquo;il y a vu
+    (toujours avec ses moyens limit&eacute;s).</li>
+
+    </ul>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099662952
+  modifiedTime: 1694101787045
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: NZoCM1x5OR5SHS25
+sort: 900000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!NZoCM1x5OR5SHS25'
+

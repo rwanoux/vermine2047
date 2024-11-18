@@ -1,0 +1,80 @@
+folder: null
+name: Rite d'intercession
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Gr&acirc;ce &agrave; ce Rite, le chaman demande les faveurs d&rsquo;un
+    Totem en particulier. L&rsquo;esprit de ce Totem influence alors la zone
+    o&ugrave; est r&eacute;alis&eacute; le Rite, ce qui change
+    l&rsquo;atmosph&egrave;re des lieux et l&rsquo;humeur des individus qui
+    s&rsquo;y trouvent.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: |-
+    Le chaman verse de son sang aux frontières
+    de la zone couverte par le Rite, s’infligeant ainsi une
+    Blessure Légère.
+  transe: 'Survie : 12 heures, Cauchemar : 3 heures, Apocalypse : 1 heure'
+  ability: will
+  effect: ''
+  effects: >-
+    <p>Le Rite couvre une zone d&rsquo;un rayon d&rsquo;une cinquantaine de
+    m&egrave;tres, ce qui est suffisant pour couvrir un b&acirc;timent ou
+    l&rsquo;habitat d&rsquo;une petite com- munaut&eacute;. L&rsquo;effet obtenu
+    d&eacute;pend du Totem choisi par le chaman. Si le chaman choisit son propre
+    Totem, le nombre de R&eacute;ussites obtenu est doubl&eacute;. &Agrave;
+    l&rsquo;inverse, il ne peut s&eacute;lectionner le Totem oppos&eacute; au
+    sien. D&egrave;s la fin de la transe, les humains et les animaux dans la
+    zone obtiennent 1D de Bonus sur les Actions respectant les Instincts du
+    Totem. Ils subissent a contrario 1D de Malus pour les Actions brisant les
+    Interdits du Totem.</p>
+
+    <p>L&rsquo;effet est le m&ecirc;me quel que soit le Mode de jeu, mais
+    l&rsquo;esth&eacute;tique est diff&eacute;rente. S&rsquo;il s&rsquo;agit
+    d&rsquo;une simple aura en Mode Survie, on pourra voir des esprits
+    fantasmatiques intervenir en Mode Apocalypse.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100462288
+  modifiedTime: 1694101537677
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: rQdPyXrwVKMYl1Qr
+sort: 1000000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!rQdPyXrwVKMYl1Qr'
+

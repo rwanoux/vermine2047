@@ -1,0 +1,76 @@
+folder: null
+name: Rite de purification
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>En utilisant ce Rite, le chaman r&eacute;tablit l&rsquo;&eacute;quilibre
+    spirituel et purifie le corps d&rsquo;un humain ou d&rsquo;un animal en le
+    purgeant d&rsquo;une infection, d&rsquo;une maladie, d&rsquo;une toxine,
+    d&rsquo;un poison ou d&rsquo;un venin. Si le b&eacute;n&eacute;ficiaire est
+    victime d&rsquo;une maladie contagieuse, le Rite emp&ecirc;che toute
+    possibilit&eacute; de contagion.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman utilise des encens et des plantes médicinales. Avant son entrée en
+    transe, il doit libérer un animal (un mammifère ou un oiseau de Gabarit rat
+    ou supérieur) emprisonné. À la fin de la transe, l’animal mourra de
+    l’infection ou de la toxine soignée. Le bé- néficiaire du Rite doit partager
+    la transe du chaman pendant toute sa durée.
+  transe: >-
+    Survie : 1 heure par point de Virulence, Cauchemar : 10 minutes / Virulence,
+    Apocalypse :
+
+    1 minute / Virulence
+  ability: health
+  effect: ''
+  effects: >-
+    <p>La Virulence de l&rsquo;infection ou de la toxine diminue de 1 par
+    R&eacute;ussite obtenue. Si elle est r&eacute;duite &agrave; 0, le
+    personnage est d&eacute;finitivement gu&eacute;ri. Une seule R&eacute;ussite
+    suffit pour enlever tout pouvoir contagieux &agrave; une infection.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100662083
+  modifiedTime: 1694101448104
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: NktQ1bzxMNfsU6CV
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!NktQ1bzxMNfsU6CV'
+

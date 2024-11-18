@@ -1,0 +1,99 @@
+folder: null
+name: Rite de transfert
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Gr&acirc;ce &agrave; ce Rite, le chaman transf&egrave;re son esprit dans
+    celui d&rsquo;un animal non hostile. Pendant toute la dur&eacute;e de
+    l&rsquo;effet, le corps du chaman est cataleptique, ses fonctions vitales au
+    ralenti. Le chaman conserve ses scores dans les Caract&eacute;ristiques
+    mentales et sociales mais utilise les Caract&eacute;ristiques physiques et
+    manuelles de l&rsquo;animal, ainsi que ses Comp&eacute;tences, ses
+    Capacit&eacute;s et ses modes de d&eacute;placement. L&rsquo;effet du Rite
+    est diff&eacute;rent selon le Mode de jeu, notamment le contr&ocirc;le du
+    corps de l&rsquo;animal.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman utilise une substance psychotrope puissante. Même si sa transe est
+    interrompue, il sera
+
+    impossible de le sortir de l’état second dans lequel il
+
+    aura plongé.
+  transe: 'Survie : 1 heure, Cauchemar : 10 minutes, Apocalypse : instantané'
+  ability: will
+  effect: ''
+  effects: >-
+    <p>Le transfert d&rsquo;esprit dure une minute, dix minutes ou une heure par
+    R&eacute;ussite, selon le Mode de jeu.</p>
+
+    <ul>
+
+    <li>En Mode <strong>Survie</strong>, le chaman ne contr&ocirc;le pas le
+    corps de l&rsquo;animal. Il voit et entend par ses sens, mais l&rsquo;animal
+    se d&eacute;place o&ugrave; il veut. S&rsquo;il s&rsquo;&eacute;loigne de
+    plus d&rsquo;un kilom&egrave;tre, le Rite prend fin. Le chaman a
+    &eacute;galement conscience de l&rsquo;&eacute;motion principale qui anime
+    son h&ocirc;te.</li>
+
+    <li>En Mode <strong>Cauchemar</strong>, le chaman d&eacute;cide des
+    mouvements de l&rsquo;animal, mais ne peut s&rsquo;&eacute;loigner que
+    d&rsquo;un kilom&egrave;tre par R&eacute;ussite.</li>
+
+    <li>En Mode <strong>Apocalypse</strong>, le chaman peut
+    &eacute;galement&nbsp;articuler des sons par la gueule de son
+    h&ocirc;te.</li>
+
+    </ul>
+
+    <p>Quel que soit le Mode de jeu, lorsque l&rsquo;animal est
+    bless&eacute;,&nbsp;les pertes de R&eacute;serves se r&eacute;percutent
+    imm&eacute;diatement sur le chaman. Si l&rsquo;animal est tu&eacute;, le
+    Rite prend fin<br>imm&eacute;diatement et les deux R&eacute;serves du chaman
+    sont imm&eacute;diatement vid&eacute;es.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100916043
+  modifiedTime: 1694101489813
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: nWvXnmpZjF2rPsDN
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!nWvXnmpZjF2rPsDN'
+

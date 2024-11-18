@@ -1,0 +1,78 @@
+folder: null
+name: Rite de fertilité
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite ancestral permet de favoriser la fertilit&eacute; au sein
+    d&rsquo;un &eacute;cosyst&egrave;me, d&rsquo;un troupeau ou d&rsquo;une
+    communaut&eacute;. Utilis&eacute; en pleine for&ecirc;t, cette
+    derni&egrave;re deviendra extr&ecirc;mement dense. Utilis&eacute; sur un
+    troupeau de mammif&egrave;res ou sur une communaut&eacute; humaine, le Rite
+    en augmentera consid&eacute;rablement la population et la sant&eacute; des
+    petits et des enfants. Peu de chamans font le choix d&rsquo;utiliser ce
+    Rite, pr&eacute;f&eacute;rant laisser la nature jouer son r&ocirc;le
+    r&eacute;gulateur. Cependant, pour des &eacute;cosyst&egrave;mes meurtris ou
+    des communaut&eacute;s d&eacute;cim&eacute;es, un chaman peut s&rsquo;y
+    r&eacute;soudre pour ramener l&rsquo;&eacute;quilibre entre les Totems. Un
+    chaman du Solitaire ne peut tout simplement pas utiliser ce Rite. Le meneur
+    pourra demander &agrave; un chaman suivant d&rsquo;autres Totems en quoi ce
+    sursaut de vitalit&eacute; ne brise pas un de ses Interdits.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman sacrifie deux animaux de Gabarit rat
+
+    ou supérieur liés au Bâtisseur ou à la Ruche. Au terme du Rite, la Réserve
+    d’Effort du personnage est vide.
+  transe: 'Survie : 3 jours, Cauchemar : 12 heures, Apocalypse : 3 heures'
+  ability: health
+  effect: ''
+  effects: >-
+    <p>Chaque R&eacute;ussite obtenue augmente la fertilit&eacute; de 10% pour
+    la population ou l&rsquo;&eacute;cosyst&egrave;me choisi. La
+    mortalit&eacute; infantile est r&eacute;duite d&rsquo;autant.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100095442
+  modifiedTime: 1694101569242
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: iFpurSdUrwI3dnWZ
+sort: 200000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!iFpurSdUrwI3dnWZ'
+

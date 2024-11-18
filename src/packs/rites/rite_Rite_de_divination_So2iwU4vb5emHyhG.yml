@@ -1,0 +1,82 @@
+folder: null
+name: Rite de divination
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite permet au chaman d&rsquo;entrer en contact avec les Totems.
+    Ceux-ci lui enverront des visions qui pourront apporter un nouvel
+    &eacute;clairage sur une situation.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman utilise des substances hallucinogènes puissantes. Même si sa
+    transe est interrompue, il sera impossible de le sortir de l’état second
+    dans lequel il aura plongé. À la fin de la transe, le chaman perd des Dés de
+    Réserve, qu’il répartit comme bon lui semble entre Effort et Sang-froid : 8D
+    en Mode Survie, 6D en Mode Cauchemar, 4D en Mode Apocalypse.
+  transe: 'Survie : 12 heures, Cauchemar : 3 heures, Apocalypse : 1 heure'
+  ability: empathy
+  effect: ''
+  effects: >-
+    <p>Le chaman peut poser une question ferm&eacute;e au meneur sur une
+    situation ou un sujet pr&eacute;cis. Le meneur devra d&eacute;crire une
+    vision cryptique qui pourra aiguiller le chaman. C&rsquo;est au chaman
+    d&rsquo;interpr&eacute;ter la vision, mais le meneur veillera &agrave;
+    donner un indice par R&eacute;ussite obtenue.</p>
+
+    <p><em>Si le chaman questionne les Totems sur les chances de victoire du
+    Groupe lors d&rsquo;une prochaine bataille, le meneur, qui sait que les
+    ennemis du Groupe sont plus nombreux que pr&eacute;vu et bien
+    &eacute;quip&eacute;s, peut envoyer la vision d&rsquo;une rivi&egrave;re de
+    sang, ce que le chaman interpr&egrave;te comme le signe que la bataille sera
+    un carnage. Comme le chaman a obtenu deux R&eacute;ussites, le meneur ajoute
+    deux indices : le sang qui coule dans la rivi&egrave;re est celui des
+    compagnons du chaman et un cadavre, &agrave; l&rsquo;&eacute;cart, est
+    d&eacute;vor&eacute; par des esprits corbeaux. C&rsquo;est clair pour le
+    chaman : s&rsquo;ils vont &agrave; la bataille, le Groupe sera vaincu et
+    lui-m&ecirc;me mourra certainement.</em></p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099970105
+  modifiedTime: 1694101778543
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: So2iwU4vb5emHyhG
+sort: 600000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!So2iwU4vb5emHyhG'
+

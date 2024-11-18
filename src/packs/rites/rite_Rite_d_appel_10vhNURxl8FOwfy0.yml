@@ -1,0 +1,91 @@
+folder: null
+name: Rite d'appel
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite permet au chaman d&rsquo;appeler &agrave; lui des individus
+    d&rsquo;une esp&egrave;ce animale pr&eacute;sente dans la r&eacute;gion. En
+    quelques minutes, plusieurs animaux se pr&eacute;sentent au chaman,
+    confiants et amicaux. Les animaux peuvent se battre pour le chaman, mais
+    leurs blessures peuvent se r&eacute;percuter sur le chaman, et leur mort
+    sera forc&eacute;ment traumatisante. Les animaux appel&eacute;s ont un
+    comportement typique de leur esp&egrave;ce, mais ne nuisent pas au chaman.
+    Les animaux appel&eacute;s par le chaman doivent vivre dans la r&eacute;gion
+    : &agrave; moins d&rsquo;un coup de chance (une b&ecirc;te
+    &eacute;chapp&eacute;e d&rsquo;un zoo par exemple), il sera impossible
+    d&rsquo;appeler un ours polaire ou un tigre.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman s’entoure d’une nourriture typique de l’espèce qu’il souhaite
+    appeler et y verse quelques gouttes de son sang.
+  transe: 'Survie : 1 heure, Cauchemar : 10 minutes, Apocalypse : 1 minute'
+  ability: will
+  effect: ''
+  effects: |-
+    La Difficulté du jet de Rite est de 3 avec les
+    animaux de Gabarit Insecte, 5 avec ceux du Gabarit
+    Rat, 7 avec ceux du Gabarit Chien, 9 avec ceux du
+    Gabarit Ours. Au terme de la transe, un animal par
+    Réussite obtenue se présente au chaman. Ils resteront
+    en compagnie du chaman pendant une heure par
+    Réussite. S’il souhaite communiquer avec eux, le
+    chaman doit utiliser un autre Rite pour ce faire. Si un
+    animal appelé est blessé, le chaman subit également
+    une Blessure dont les Dommages sont réduits de son
+    score de Santé.
+    ·
+    Un animal appelé par le chaman subit 7 points
+    de Dommages, ce qui lui inf lige une Blessure
+    Mortelle. Le chaman, avec sa Santé de 2D, subit une
+    Blessure comme s’il avait subi 5 points de Dommages,
+    soit probablement une Blessure Grave.
+    Si un animal appelé meurt, outre la Blessure, le chaman
+    perd 5D de Réserves, qu’il répartit au choix entre Effort
+    et Sang-Froid. Le chaman peut mettre un terme au
+    Rite quand bon lui semble.
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694089660577
+  modifiedTime: 1694101833918
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: 10vhNURxl8FOwfy0
+sort: 1100000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!10vhNURxl8FOwfy0'
+

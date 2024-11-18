@@ -1,0 +1,75 @@
+folder: null
+name: Rite de contrition
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite connu de tous les chamans lui permet de faire amende honorable et
+    de r&eacute;g&eacute;n&eacute;rer son lien avec la nature apr&egrave;s avoir
+    bris&eacute; un Interdit de son Totem. Le chaman offre son propre sang en
+    r&eacute;mission de ses erreurs. Pendant la transe, il fait
+    l&rsquo;exp&eacute;rience traumatisante des cons&eacute;quences de ses
+    actes.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman doit faire couler son propre sang. Il doit s’infliger de
+    véritables Blessures dont la somme des seuils atteint le nombre de Dés de
+    Réserves perdus.
+  transe: 'Survie : 12 heures, Cauchemar : 3 heures, Apocalypse : 1 heure'
+  ability: vigor
+  effect: ''
+  effects: >-
+    <p>S&rsquo;il souhaite r&eacute;cup&eacute;rer 6D de R&eacute;serve et que
+    son Seuil de Blessure L&eacute;g&egrave;re est de 2, il devra
+    s&rsquo;infliger trois Blessures L&eacute;g&egrave;res pour r&eacute;aliser
+    le rituel. Il pourrait aussi s&rsquo;infliger une Blessure Grave (Seuil 5)
+    et une Blessure L&eacute;g&egrave;re pour le m&ecirc;me r&eacute;sultat.</p>
+
+    <p>Effet : 1D lib&eacute;r&eacute; et r&eacute;cup&eacute;r&eacute; dans une
+    R&eacute;serve au choix par R&eacute;ussite obtenue. Voir page 64 pour les
+    r&egrave;gles sur les Interdits de Totem du chaman.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099862306
+  modifiedTime: 1694101579550
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: iavr8GPqdPbyUVZk
+sort: 500000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!iavr8GPqdPbyUVZk'
+

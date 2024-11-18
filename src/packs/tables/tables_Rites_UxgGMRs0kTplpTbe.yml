@@ -1,0 +1,234 @@
+name: Rites
+description: <p>A random table created from the contents of the Rites Folder.</p>
+results:
+  - text: Rite d'appel
+    type: document
+    documentCollection: Item
+    documentId: TjuTZna1fIlCp0if
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: GUl4kwldB4cyBdsG
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.GUl4kwldB4cyBdsG'
+  - text: Rite d'apprentissage
+    type: document
+    documentCollection: Item
+    documentId: VGfA0KuGgR4LzLao
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: cVn5QgYT4Dhx7rzh
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.cVn5QgYT4Dhx7rzh'
+  - text: Rite de l'aspect totémique
+    type: document
+    documentCollection: Item
+    documentId: WuF1G1BezQnIkOFK
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: GCMoqkpXyYLDcusg
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.GCMoqkpXyYLDcusg'
+  - text: Rite de bénédiction
+    type: document
+    documentCollection: Item
+    documentId: mODT3qKB60b5EVVE
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: DmqGaM62XHoRBnbk
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.DmqGaM62XHoRBnbk'
+  - text: Rite de communion
+    type: document
+    documentCollection: Item
+    documentId: U177fYWuUSa5FZJA
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: aFBSGLzfXBnpYxVy
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.aFBSGLzfXBnpYxVy'
+  - text: Rite de communication animale
+    type: document
+    documentCollection: Item
+    documentId: 0o4XyCA3Is4Ghenx
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: wPeUa8gIUL8P9Mjv
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.wPeUa8gIUL8P9Mjv'
+  - text: Rite de contrition
+    type: document
+    documentCollection: Item
+    documentId: SNiKqSHiulE6ht8r
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: RZ0mKWjr9TjlMVhv
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.RZ0mKWjr9TjlMVhv'
+  - text: Rite de divination
+    type: document
+    documentCollection: Item
+    documentId: cXfBQQ4bAOTJgvvc
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: SJHFe9ZCRGTScvuo
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.SJHFe9ZCRGTScvuo'
+  - text: Rite de fertilité
+    type: document
+    documentCollection: Item
+    documentId: O4yoHo6LaGWW6PTj
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: LIZ4PDDF0c1hPW15
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.LIZ4PDDF0c1hPW15'
+  - text: Rite de guérison
+    type: document
+    documentCollection: Item
+    documentId: 3dQGJBDr3DuhS4H1
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 5ThyJS3gphj6NWRN
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.5ThyJS3gphj6NWRN'
+  - text: Rite du guerrier
+    type: document
+    documentCollection: Item
+    documentId: utbIqnFB50QX57Yx
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: fAp2lyrGg5DHBjyK
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.fAp2lyrGg5DHBjyK'
+  - text: Rite d'intercession
+    type: document
+    documentCollection: Item
+    documentId: pV6bbQ1wEBHQBUVY
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: PnINsDL2bPvghegz
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.PnINsDL2bPvghegz'
+  - text: Rite de perception totémique
+    type: document
+    documentCollection: Item
+    documentId: 763xCwQOF50a81Qu
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _id: 3zu4fgE7ewjPpA0Y
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.3zu4fgE7ewjPpA0Y'
+  - text: Rite de purification
+    type: document
+    documentCollection: Item
+    documentId: LMbvoz2st2Do2y8n
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _id: UYqNF31D6uCk9hNA
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.UYqNF31D6uCk9hNA'
+  - text: Rite du rêve lucide
+    type: document
+    documentCollection: Item
+    documentId: dgUA5RzBIwi8n4bO
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _id: CKjzNlMugYZIFNsz
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.CKjzNlMugYZIFNsz'
+  - text: Rite de transfert
+    type: document
+    documentCollection: Item
+    documentId: 0tXM95rGO1yiMtlN
+    img: systems/vermine2047/assets/icons/items/rite.webp
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _id: FCNWyyjuoNqpR665
+    flags: {}
+    _key: '!tables.results!UxgGMRs0kTplpTbe.FCNWyyjuoNqpR665'
+formula: 1d16
+img: icons/svg/d20-grey.svg
+replacement: true
+displayRoll: true
+folder: null
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694101140418
+  modifiedTime: 1694101184191
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: UxgGMRs0kTplpTbe
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!tables!UxgGMRs0kTplpTbe'
+

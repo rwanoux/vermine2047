@@ -1,0 +1,111 @@
+folder: null
+name: Rite de communion
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Gr&acirc;ce &agrave; ce Rite, le chaman communie avec un lieu et peut
+    percevoir les &eacute;v&eacute;nements marquants qui s&rsquo;y sont
+    d&eacute;roul&eacute;s. Le lieu cibl&eacute; doit &ecirc;tre clairement
+    d&eacute;limit&eacute;, comme une clairi&egrave;re ou un b&acirc;timent de
+    taille moyenne. Pour un endroit plus grand, le chaman percevra
+    l&rsquo;environnement imm&eacute;diat, comme une zone de cent m&egrave;tres
+    de rayon en for&ecirc;t ou un &eacute;tage d&rsquo;un b&acirc;timent.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le personnage doit être seul dans l’endroit. Il use de substances
+    hallucinogènes et entre en connexion avec le monde des esprits. La
+    concentration nécessaire
+
+    exige de dépenser 2D de sa Réserve de Sang-Froid.
+  transe: 'Survie : 10 minutes, Cauchemar : 1 minute, Apocalypse : quelques secondes'
+  ability: empathy
+  effect: ''
+  effects: >-
+    <p>Chaque R&eacute;ussite au jet de Rite permet au chaman d&rsquo;obtenir
+    une information sur les &eacute;v&eacute;nements r&eacute;cents qui ont
+    marqu&eacute; le lieu.</p>
+
+    <ul>
+
+    <li><strong>En Mode Survie</strong>, le chaman per&ccedil;oit des
+    impressions diffuses et des &eacute;motions datant de maximum une
+    semaine.<br><span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);"><em>Il percevra du d&eacute;go&ucirc;t, de la terreur,
+    de la faim, de la douleur dans un endroit o&ugrave; des cannibales ont
+    d&eacute;vor&eacute; des victimes.</em></span></li>
+
+    <li><strong>En Mode Cauchemar,</strong> la perception
+    s&rsquo;&eacute;tend&nbsp;<span style="font-family: var(--font-primary);
+    font-size: var(--font-size-14);">sur un mois. Les sensations sont plus
+    pr&eacute;cises </span><span style="font-family: var(--font-primary);
+    font-size: var(--font-size-14);">et peuvent inclure des flashs visuels ou
+    auditifs. </span>Au m&ecirc;me endroit, le chaman recevra des visions
+    fugitives&nbsp;<span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);">de morsures ou les cris de douleur des victimes et les
+    </span><span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);">bruits de mastication.<br><em>Au m&ecirc;me endroit,
+    le chaman recevra des visions fugitives de morsures ou les cris de douleur
+    des victimes et les bruits de mastication.</em><br></span></li>
+
+    <li><strong>En Mode Apocalypse</strong>, la perception s&rsquo;&eacute;tend
+    sur&nbsp;<span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);">une ann&eacute;e enti&egrave;re. Les sensations font
+    place &agrave; une </span><span style="font-family: var(--font-primary);
+    font-size: var(--font-size-14);">vision sans &eacute;quivoque des
+    &eacute;v&eacute;nements du lieu.<br></span><em>Dans ce sinistre lieu, le
+    chaman pourra se voir dans la&nbsp;<span style="font-family:
+    var(--font-primary); font-size: var(--font-size-14);">peau d&rsquo;un des
+    bourreaux ou pire, en tant que victime </span><span style="font-family:
+    var(--font-primary); font-size: var(--font-size-14);">d&eacute;vor&eacute;e
+    encore vivante. Il pourra reconna&icirc;tre un visage </span>parmi les
+    protagonistes du massacre.</em></li>
+
+    </ul>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099366918
+  modifiedTime: 1694101794144
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: Syk9xqkiON3UntxX
+sort: 700000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!Syk9xqkiON3UntxX'
+

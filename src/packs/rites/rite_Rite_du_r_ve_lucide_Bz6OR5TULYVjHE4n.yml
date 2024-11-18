@@ -1,0 +1,93 @@
+folder: null
+name: Rite du rêve lucide
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Gr&acirc;ce &agrave; ce Rite, le chaman exp&eacute;rimente un voyage hors
+    du corps. Alors qu&rsquo;il est plong&eacute; dans un r&ecirc;ve, il
+    d&eacute;cide de la destination de son esprit et peut ainsi observer le
+    monde r&eacute;el de la mani&egrave;re la plus discr&egrave;te qui soit. Il
+    pourra en outre contacter l&rsquo;esprit d&rsquo;un autre personnage endormi
+    pour lui transmettre un message.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman utilise des plantes somnifères qui le plongent dans un sommeil
+    très profond. Même si sa transe est interrompue, il sera impossible de le
+    sortir du sommeil dans lequel il aura plongé. Ce sommeil ne lui procure
+    aucun repos, il ne peut donc récupérer aucun Dé de Réserve ni soigner de
+    Blessures au moment du réveil.
+  transe: |-
+    6 heures dans tous les Modes. Le Rite ne
+    prend pas effet au terme de la Transe mais au début
+    de celle-ci.
+  ability: will
+  effect: ''
+  effects: >-
+    <p>Ce Rite a des effets diff&eacute;rents selon le Mode de jeu.</p>
+
+    <ul>
+
+    <li>En Mode <strong>Survie</strong>, l&rsquo;esprit du chaman ne peut
+    s&rsquo;&eacute;loigner que d&rsquo;une centaine de m&egrave;tres de son
+    corps. Il peut observer toute la zone o&ugrave; son corps est endormi mais
+    gu&egrave;re plus. Il peut envoyer un message d&rsquo;un mot par
+    R&eacute;ussite &agrave; un autre&nbsp;personnage endormi ou le
+    r&eacute;veiller brutalement.</li>
+
+    <li>En Mode <strong>Cauchemar</strong>, le chaman peut voyager d&rsquo;une
+    dizaine de kilom&egrave;tres. Il peut transmettre une courte phrase par
+    R&eacute;ussite.</li>
+
+    <li>En Mode <strong>Apocalypse</strong>, l&rsquo;esprit du chaman peut
+    tr&egrave;s bien traverser tout le pays. Il peut parler et envoyer des
+    visions pendant une minute par R&eacute;ussite. La cible peut
+    r&eacute;pondre une courte phrase par point dans sa Caract&eacute;ristique
+    Volont&eacute;.</li>
+
+    </ul>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100758414
+  modifiedTime: 1694101498041
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: Bz6OR5TULYVjHE4n
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!Bz6OR5TULYVjHE4n'
+

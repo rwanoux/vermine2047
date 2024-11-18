@@ -1,0 +1,73 @@
+folder: null
+name: Rite de perception totémique
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Gr&acirc;ce &agrave; ce Rite, le chaman peut percevoir l&rsquo;influence
+    des Totems dans la r&eacute;gion o&ugrave; il se trouve. Il aura ainsi une
+    meilleure id&eacute;e des dangers et des opportunit&eacute;s qui
+    l&rsquo;attendent. Une r&eacute;gion plac&eacute;e sous l&rsquo;influence de
+    la Horde sera certainement un endroit bien plus dangereux qu&rsquo;une autre
+    sous l&rsquo;influence du Symbiote</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman use de substances psychotropes légères. L’état de béatitude qu’il
+    atteint pendant sa
+
+    transe lui permet une meilleure connexion aux Totems.
+  transe: 'Survie : 2 heures, Cauchemar : 10 minutes, Apocalypse : 1 minute'
+  ability: empathy
+  effect: ''
+  effects: >-
+    <p>Une seule R&eacute;ussite permet au chaman de percevoir le Totem le plus
+    influent dans la r&eacute;gion. Le meneur est encourag&eacute; &agrave;
+    donner des informations suppl&eacute;mentaires &agrave; la mesure des
+    R&eacute;ussites obtenues (pr&eacute;sence de pr&eacute;dateurs dangereux,
+    de plantes m&eacute;dicinales, d&rsquo;esp&egrave;ces animales
+    particuli&egrave;res, etc.).</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100558971
+  modifiedTime: 1694101507419
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: CwbK47sv5adSeCbO
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!CwbK47sv5adSeCbO'
+

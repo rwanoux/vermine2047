@@ -1,0 +1,87 @@
+folder: null
+name: Rite de guérison
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Le chaman soigne avec ce Rite essentiel les blessures de plusieurs
+    personnes simultan&eacute;ment, y compris les siennes. Le chaman
+    s&rsquo;entoure des individus qui souhaitent &ecirc;tre soign&eacute;s dans
+    un endroit calme et s&eacute;curis&eacute;.</p>
+
+    <p>Rituel : Le chaman dispose des d&eacute;coctions m&eacute;dicinales sur
+    les blessures et fait couler quelques gouttes du sang de quiconque souhaite
+    &ecirc;tre soign&eacute;. Chaque b&eacute;n&eacute;ficiaire perd 1D de sa
+    R&eacute;serve d&rsquo;Effort par Blessure qu&rsquo;il souhaite soigner,
+    quel que soit le niveau de Blessure. Si la R&eacute;serve d&rsquo;Effort ne
+    suffit pas, un b&eacute;n&eacute;ficiaire peut puiser dans sa R&eacute;serve
+    de&nbsp; Sang-Froid, voire dans celle du Groupe. Si cela ne suffit encore
+    pas, le chaman peut fournir ses propres&nbsp;D&eacute;s de R&eacute;serve,
+    au risque de s&rsquo;&eacute;puiser. De plus les b&eacute;n&eacute;ficiaires
+    devront partager la transe du chaman pendant toute sa dur&eacute;e : si elle
+    &eacute;tait bris&eacute;e pour l&rsquo;un&nbsp;d&rsquo;entre eux, chaque
+    b&eacute;n&eacute;ficiaire se verrait infliger une Blessure
+    L&eacute;g&egrave;re et perdrait 2D de chaque R&eacute;serve.</p>
+
+    <p>&nbsp;</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman dispose des décoctions médicinales sur les blessures et fait
+    couler quelques gouttes du sang de quiconque souhaite être soigné. 
+  transe: 'Survie : 1 nuit, Cauchemar : 1 heure, Apocalypse : 10 minutes'
+  ability: health
+  effect: ''
+  effects: >-
+    <p>Le Rite soigne automatiquement une Blessure L&eacute;g&egrave;re chez
+    chaque b&eacute;n&eacute;ficiaire. Puis le chaman soigne une Blessure
+    L&eacute;g&egrave;re suppl&eacute;mentaire par R&eacute;ussite,
+    r&eacute;partie comme il le souhaite entre les b&eacute;n&eacute;ficiaires
+    et lui-m&ecirc;me. Ce Rite ne fonctionne que sur les Blessures
+    L&eacute;g&egrave;res en Mode Survie, demande deux R&eacute;ussites par
+    Blessure Grave en Mode Cauchemar, et trois par Blessure Mortelle en Mode
+    Apocalypse</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100175641
+  modifiedTime: 1694101542699
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: vX832Z4LpasxLIIx
+sort: 300000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!vX832Z4LpasxLIIx'
+

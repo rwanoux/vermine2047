@@ -1,0 +1,107 @@
+folder: null
+name: Rite de l'aspect totémique
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Le chaman utilise ce Rite pour invoquer l&rsquo;aide d&rsquo;un Totem et
+    b&eacute;n&eacute;ficier d&rsquo;un aspect d&rsquo;un animal li&eacute;
+    &agrave; ce dernier. Le chaman a de plus grandes facilit&eacute;s pour
+    invoquer un aspect de son propre Totem et ne peut pas invoquer un aspect du
+    Totem oppos&eacute; au sien. Avant de r&eacute;aliser le rituel, le chaman
+    doit choisir un animal li&eacute; au Totem souhait&eacute; et l&rsquo;aspect
+    qu&rsquo;il veut invoquer. En Mode Survie, on pourrait penser que le chaman
+    s&rsquo;auto persuade de sa nouvelle capacit&eacute;. &Agrave; partir du
+    <strong>Mode Cauchemar</strong>, la gestuelle et les d&eacute;placements du
+    chaman miment ceux de l&rsquo;animal de fa&ccedil;on troublante. En
+    <strong>Mode Apocalypse</strong>, il est probable qu&rsquo;une partie du
+    corps du chaman soit modifi&eacute;e.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman verse son sang en offrande, s’infligeant ainsi une Blessure Légère
+    et entame des
+
+    danses rituelles.
+  transe: 'Survie : 1 heure, Cauchemar : 10 minutes, Apocalypse : 1 minute'
+  ability: will
+  effect: ''
+  effects: >-
+    <p>Le personnage re&ccedil;oit l&rsquo;aspect de l&rsquo;animal
+    s&eacute;lectionn&eacute; et b&eacute;n&eacute;fice pendant une
+    sc&egrave;ne, pour les Actions qui font intervenir cet aspect, d&rsquo;un
+    Bonus &agrave; la hauteur du nombre de R&eacute;ussites obtenues. Si
+    l&rsquo;animal n&rsquo;est pas li&eacute; au Totem du chaman, le jet subit
+    un Malus (de 1D ou plus &agrave; l&rsquo;appr&eacute;ciation du meneur).
+    Quelques exemples d&rsquo;aspects sont donn&eacute;s ci-dessous, mais la
+    liste n&rsquo;est pas exhaustive.&nbsp;</p>
+
+    <ul>
+
+    <li>Abeille (Ruche) : production de nourriture, soin et d&eacute;fense des
+    foyers&nbsp;</li>
+
+    <li>Anguille (Charognard, Parasite) : agilit&eacute;, natation&nbsp;</li>
+
+    <li>Castor (B&acirc;tisseur) : r&eacute;sistance au froid ou &agrave; la
+    chaleur, construction&nbsp;</li>
+
+    <li>Fourmi (B&acirc;tisseur, Symbiote) : sauts, attaques sur un adversaire
+    plus grand&nbsp;</li>
+
+    <li>Gu&eacute;pard (Pr&eacute;dateur, Solitaire) : course rapide,
+    discr&eacute;tion&nbsp;</li>
+
+    <li>Hy&egrave;ne (Charognard, Horde) : odorat et vue, attaques en
+    groupe&nbsp;</li>
+
+    <li>Loup (Pr&eacute;dateur, Ruche) : odorat, attaques au corps &agrave;
+    corps&nbsp;</li>
+
+    <li>Singe (Horde, Solitaire) : escalade f Ver (Parasite,</li>
+
+    </ul>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099072885
+  modifiedTime: 1694101825644
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: UsiqnE893iXGS0HL
+sort: 100000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!UsiqnE893iXGS0HL'
+

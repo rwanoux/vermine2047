@@ -1,0 +1,182 @@
+name: Historiques
+description: <p>A random table created from the contents of the Historiques Folder.</p>
+results:
+  - text: Arme optimisée
+    type: document
+    documentCollection: Item
+    documentId: CWvvfh1TPJXTsv3B
+    img: icons/weapons/polearms/halberd-crescent-glowing.webp
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: X6MVePGTCpDvcpye
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.X6MVePGTCpDvcpye'
+  - text: Compagnon animal majeur
+    type: document
+    documentCollection: Item
+    documentId: VeJFtV1XSYRMg7QQ
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: QPTY1NYdwXN4D42b
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.QPTY1NYdwXN4D42b'
+  - text: Compagnon animal mineur
+    type: document
+    documentCollection: Item
+    documentId: D6rUglxVmNfrk6B2
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: IvD2LcTs6PoZEp0M
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.IvD2LcTs6PoZEp0M'
+  - text: Objet fétiche
+    type: document
+    documentCollection: Item
+    documentId: EArnqSjMdPudRIPz
+    img: icons/weapons/hammers/hammer-double-simple-worn.webp
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 2cXsqFKK66cMKZeL
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.2cXsqFKK66cMKZeL'
+  - text: Héros local
+    type: document
+    documentCollection: Item
+    documentId: 8Cfw0vIR5quRTteV
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: I9dllgjwWqMf7sAn
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.I9dllgjwWqMf7sAn'
+  - text: Mental d'acier
+    type: document
+    documentCollection: Item
+    documentId: rVs6PGqESPgRWkom
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: yg18gLo2KgV2XaMi
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.yg18gLo2KgV2XaMi'
+  - text: Nomade
+    type: document
+    documentCollection: Item
+    documentId: HuRIkOYl0DHeO8QA
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 1uDVmxo1E6kL7jjD
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.1uDVmxo1E6kL7jjD'
+  - text: Organisation alliée
+    type: document
+    documentCollection: Item
+    documentId: 4kgC7u6mZqvjbVCI
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: N7hyFnErNAhmYfFN
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.N7hyFnErNAhmYfFN'
+  - text: Refuge secret
+    type: document
+    documentCollection: Item
+    documentId: OQOzrEs8JrnWsA3A
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 76B2ZqYbFVJ9hi0E
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.76B2ZqYbFVJ9hi0E'
+  - text: Relique
+    type: document
+    documentCollection: Item
+    documentId: XMcsVAhDmSddGjE1
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: hcI1rdESMXAp61EH
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.hcI1rdESMXAp61EH'
+  - text: Réseau
+    type: document
+    documentCollection: Item
+    documentId: CilDiUrLbdvUhSct
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: cSFuzQJFACZJKOtI
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.cSFuzQJFACZJKOtI'
+  - text: Vieil ami
+    type: document
+    documentCollection: Item
+    documentId: fymjg26NuHzyOvTz
+    img: systems/vermine2047/assets/icons/items/background.webp
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: ymnitiW2yAuk75M3
+    flags: {}
+    _key: '!tables.results!dXo0EN9ieo1tSnRY.ymnitiW2yAuk75M3'
+formula: 1d12
+img: icons/svg/clockwork.svg
+replacement: true
+displayRoll: true
+folder: null
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694086932003
+  modifiedTime: 1694101186092
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: dXo0EN9ieo1tSnRY
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!tables!dXo0EN9ieo1tSnRY'
+

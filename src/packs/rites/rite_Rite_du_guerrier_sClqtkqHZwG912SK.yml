@@ -1,0 +1,77 @@
+folder: null
+name: Rite du guerrier
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Apr&egrave;s une transe particuli&egrave;rement brutale o&ugrave; le
+    chaman&nbsp;ressent le sort de ses futures victimes, le Totem
+    du&nbsp;Pr&eacute;dateur lui accorde des prouesses martiales et
+    m&ecirc;me&nbsp;de transmettre sa rage combative &agrave; ses
+    compagnons.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: |-
+    Le chaman sacrife un animal prédateur pour se
+    couvrir de peintures de guerre de son sang. Plus la bête
+    est imposante, plus les effets du Rite sont importants.
+  transe: 'Survie : 1 heure, Cauchemar : 10 minutes, Apocalypse : 1 minute'
+  ability: vigor
+  effect: ''
+  effects: >-
+    <p>Le chaman ajoute &agrave; la R&eacute;serve de Groupe un nombre de
+    D&eacute;s temporaires &eacute;gal au nombre de R&eacute;ussites obtenues
+    lors du Rite, augment&eacute; du score d&rsquo;Attaque de l&rsquo;animal
+    sacrifi&eacute;. Ces D&eacute;s temporaires ne peuvent &ecirc;tre
+    utilis&eacute;s que pour accomplir un acte de pr&eacute;dation qui
+    respectera les Instincts du Pr&eacute;dateur : livrer un combat, traquer une
+    proie, suivre une piste jusqu&rsquo;&agrave; une source de
+    nourriture&hellip; Puiser 1D de la R&eacute;serve de Groupe permet comme
+    &agrave; l&rsquo;ordinaire de b&eacute;n&eacute;ficier d&rsquo;un Bonus de
+    1D ou d&rsquo;une Relance. Les d&eacute;s temporaires inutilis&eacute;s
+    disparaissent &agrave; la fin du prochain combat, ou douze heures
+    apr&egrave;s le Rite.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694100374220
+  modifiedTime: 1694101523831
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: sClqtkqHZwG912SK
+sort: 0
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!sClqtkqHZwG912SK'
+

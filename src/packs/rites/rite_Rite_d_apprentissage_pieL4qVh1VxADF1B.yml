@@ -1,0 +1,74 @@
+folder: null
+name: Rite d'apprentissage
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite permet au chaman de communier avec les Totems afin
+    d&rsquo;apprendre un nouveau Rite chamanique ou d&rsquo;augmenter son Niveau
+    de ma&icirc;trise d&rsquo;un Rite qu&rsquo;il poss&egrave;de
+    d&eacute;j&agrave;. Indispensable &agrave; la progression du chaman sur son
+    chemin spirituel, il ne peut &ecirc;tre r&eacute;alis&eacute; que pendant
+    une phase d&rsquo;Exp&eacute;rience. Le chaman indique quel Rite il souhaite
+    apprendre ou am&eacute;liorer avant d&rsquo;entamer le rituel.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman entreprend des danses rituelles épuisantes. Au terme du Rite, ses
+    deux Réserves sont vides.
+  transe: 'Survie : 3 jours, Cauchemar : 12 heures, Apocalypse : 3 heures'
+  ability: ''
+  effect: ''
+  effects: >-
+    <p>Pour apprendre un nouveau Rite, au terme de la transe, le chaman peut
+    tenter un jet d&rsquo;Exp&eacute;rience contre une Difficult&eacute; de 5.
+    En cas de Succ&egrave;s, il apprend le nouveau Rite au Niveau
+    D&eacute;butant. Pour am&eacute;liorer son Niveau de ma&icirc;trise
+    d&rsquo;un Rite, la Difficult&eacute; est de 7 pour passer au Niveau
+    Confirm&eacute;, 9 pour passer au Niveau Expert et 10 pour atteindre le
+    Niveau Ma&icirc;tre. Pour davantage de d&eacute;tails sur les phases
+    d&rsquo;Exp&eacute;rience, voir page 112.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694090637035
+  modifiedTime: 1694101119541
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: pieL4qVh1VxADF1B
+sort: 1200000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!pieL4qVh1VxADF1B'
+

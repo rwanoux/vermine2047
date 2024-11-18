@@ -1,0 +1,76 @@
+folder: null
+name: Rite de bénédiction
+type: rite
+img: systems/vermine2047/assets/icons/items/rite.webp
+system:
+  description: >-
+    <p>Ce Rite permet de rendre un objet, un outil ou une arme plus efficace. En
+    versant le sang d&rsquo;un animal sur l&rsquo;objet, le chaman lui transmet
+    un peu de l&rsquo;essence&nbsp;d&rsquo;un Totem.</p>
+  rarity: 3
+  reliability: 3
+  quantity: 1
+  weight: 0
+  traits: []
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  rituel: >-
+    Le chaman verse le sang d’un animal en rapport avec l’utilisation de
+    l’objet. L’animal ne doit pas être sacrifié, quelques gouttes de sang
+    peuvent suffire (un prédateur pour une arme, un cheval de trait pour un soc
+    de charrue, un animal bâtisseur comme un castor pour des outils de
+    construction, etc.). Ce rituel ne peut être lancé à partir de sang conservé
+    dans un récipient.
+  transe: 'Survie : 12 heures, Cauchemar : 1 heure, Apocalypse : 1 minute'
+  ability: ''
+  effect: ''
+  effects: >-
+    <p>Caract&eacute;ristique : La Caract&eacute;ristique utilis&eacute;e
+    lorsqu&rsquo;on&nbsp;utilise l&rsquo;objet.</p>
+
+    <p>Effet : L&rsquo;utilisateur de l&rsquo;objet b&eacute;ni
+    b&eacute;n&eacute;ficie pendant un jour de 1D Bonus par R&eacute;ussite
+    obtenue par le chaman. Le chaman ne peut b&eacute;nir qu&rsquo;un nombre
+    d&rsquo;objets &eacute;gal &agrave; son Niveau de ma&icirc;trise du Rite.
+    Une fois ce quota atteint, il doit attendre qu&rsquo;une
+    b&eacute;n&eacute;diction arrive &agrave; son terme avant d&rsquo;en
+    r&eacute;aliser une nouvelle.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: vermine2047
+  systemVersion: 0.1.12
+  coreVersion: '12.327'
+  createdTime: 1694099266526
+  modifiedTime: 1694101119541
+  lastModifiedBy: F3zbj3L14DMaK5jv
+  compendiumSource: null
+  duplicateSource: null
+_id: 3NuPeRhorRN1SnhJ
+sort: 800000
+ownership:
+  default: 0
+  F3zbj3L14DMaK5jv: 3
+_key: '!items!3NuPeRhorRN1SnhJ'
+
