@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "launch window Foundry11": "cd C:/Program Files/Foundry Virtual Tabletop_V11/resources/app && node main.js",
     "launch Foundry12": "cd C:/Program Files/Foundry Virtual Tabletop_V12/resources/app && node main.js",
     "watch": "gulp watch",
-    "buildStyle": "gulp buildStyles"
+    "buildStyle": "gulp buildStyles",
+    "pushLDBtoYAML": "node ./tools/pushLDBtoYAML.mjs",
+    "pullYAMLtoLDB": "node ./tools/pullYAMLtoLDB.mjs"
   },
-  "author": "",
+  "author": "Rwan",
   "devDependencies": {
     "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
+    "@foundryvtt/foundryvtt-cli": "^1.0.2",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",

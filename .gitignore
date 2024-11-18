@@ -1,13 +1,13 @@
 # IDE
 .idea/
-.vs/
+.vsode
 
 # Node Modules
-node_modules/
+node_modules
 npm-debug.log
 
 # les bdd de packs
-packs/
+packs
 
 # Foundry
 *.lock
