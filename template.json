@@ -487,6 +487,7 @@
         "description": "",
         "rarity": 3,
         "reliability": 3,
+        "handicap": 0,
         "quantity": 1,
         "weight": 0,
         "traits": {},
@@ -534,7 +535,8 @@
       "max_range": 0,
       "damage": {
         "value": 0,
-        "type": ""
+        "type": "",
+        "addVigor": false
       },
       "ammo": 0
     },

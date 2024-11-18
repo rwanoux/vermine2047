@@ -13,10 +13,10 @@
   },
   "author": "Rwan",
   "devDependencies": {
-    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
     "@foundryvtt/foundryvtt-cli": "^1.0.2",
-    "browser-sync": "^2.27.11",
-    "gulp": "^4.0.2",
+    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.55.0"
   }

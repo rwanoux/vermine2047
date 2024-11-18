@@ -66,6 +66,7 @@ export class VermineItemSheet extends ItemSheet {
 
     html.find('.traits-selector').click(ev => {
       this.openTraitSelector(ev)
+
     })
   }
   async _onClickDamage(ev) {

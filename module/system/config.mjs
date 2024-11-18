@@ -246,3 +246,9 @@ VERMINE.traits = {
   },
   // etc...etc...
 }
+VERMINE.damageTypes = [
+  "choc",
+  "lame",
+  "feu",
+  "balle"
+]

@@ -149,27 +149,37 @@ export class TraitSelector extends Application {
   async activateListeners(html) {
     super.activateListeners(html);
     this.validateTraits(html);
-    html.find('input').click(ev => {
+    html.find('input').change(ev => {
       this.onChangeInput(ev)
     })
 
   }
   async validateTraits(html) {
     let checks = html.find("input.trait-selector");
-    for (let ch of checks) {
-      if (this.targetItem.system.traits[ch.dataset.trait]) {
-        ch.checked = true
+    let val = html.find("input.trait-value");
+    for (let inp of [...checks, val]) {
+      if (this.targetItem.system.traits[inp.dataset.trait]) {
+        if (inp.type == "checkbox") {
+          inp.checked = true
+        }
+        if (inp.type == "value") {
+          inp.value = this.targetItem.system.traits[inp.dataset.trait].value
+        }
       }
-
     }
   }
 
   async onChangeInput(ev) {
     let el = ev.currentTarget;
-    if (el.classList.contains('trait-selector')) {
-      let traitKey = el.dataset.trait; // Récupère la clé du trait à partir de l'attribut data-trait
-      let traits = this.targetItem.system.traits || {}; // Récupère les traits actuels, ou un objet vide si aucun trait n'est défini
 
+    let traitKey = el.dataset.trait; // Récupère la clé du trait à partir de l'attribut data-trait
+    let traitValue = parseInt(el.value) || null
+    let traits = this.targetItem.system.traits || {}; // Récupère les traits actuels, ou un objet vide si aucun trait n'est défini
+
+
+    console.log(traitKey, traitValue, traits)
+
+    if (el.classList.contains('trait-selector')) {
       if (!traits[traitKey]) {
         // Si la case est cochée, ajoute le trait
         await this.targetItem.update({ [`system.traits.${traitKey}`]: this.traits[traitKey] });
@@ -178,8 +188,12 @@ export class TraitSelector extends Application {
         await this.targetItem.update({ [`system.traits.${traitKey}`]: null });
       }
     }
-    else if (el.classList.contains('trait-value')) {
+    if (traitValue) {
+      console.log(el.value)
       // Logique pour les valeurs des traits si nécessaire
+      el.closest("label").querySelector('.trait-selector').checked = true;
+    } else {
+      el.closest("label").querySelector('.trait-selector').checked = false;
     }
   }
 }

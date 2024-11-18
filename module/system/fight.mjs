@@ -326,7 +326,7 @@ export class VermineCombat extends Combat {
   }
 
   async rollInitiative(ids, formula = undefined, messageOptions = {}) {
-    // console.log(`${game.system.title} | Combat.rollInitiative()`, ids, formula, messageOptions);
+    console.log(`${game.system.title} | Combat.rollInitiative()`, ids, formula, messageOptions);
     // Structure input data
     ids = typeof ids === "string" ? [ids] : ids;
 
@@ -428,20 +428,7 @@ export class VermineCombatTracker extends CombatTracker {
     return "systems/vermine2047/templates/combat-tracker.hbs";
   }
 
-  async getData(options) {
-    const context = await super.getData(options);
 
-    if (!context.hasCombat) {
-      return context;
-    }
-
-    for (let [i, combatant] of context.combat.turns.entries()) {
-      context.turns[i].hasActed = combatant.getFlag("world", "hasActed");
-      context.turns[i].isPlayer = combatant.actor.type == "player";
-      context.turns[i].isNpc = combatant.actor.type == "npc";
-    }
-    return context;
-  }
 
   /* -------------------------------------------- */
   get template() {
@@ -466,14 +453,26 @@ export class VermineCombatTracker extends CombatTracker {
 
   activateListeners(html) {
     super.activateListeners(html);
-
     html.find("[data-attitude]").click(this._setStatut.bind(this));
+    html.find("[data-control='rollInitiative']").click(this.rollVermineInitiative.bind(this))
+  }
+
+  async rollVermineInitiative(ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    const btn = ev.currentTarget;
+    const li = btn.closest(".combatant");
+    const combat = this.viewed;
+    const combatant = combat.combatants.get(li.dataset.combatantId);
+
+    console.log(combatant)
   }
 
   /**
    * @description Use to put an attitude to an actor
    * @param {*} event 
    */
+
   async _setStatut(event) {
     event.preventDefault();
     event.stopPropagation();

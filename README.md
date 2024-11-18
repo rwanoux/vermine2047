@@ -7,7 +7,7 @@
 
 - [X] création de spécialitées depuis le (+) des compétences
 - [X] fixer les cases hexas , comprtement chelou , piste = un click à l'air d'envoyer 2 update, verifier le onChange
-- [ ] dialog d'edition des min-max
+- [X] dialog d'edition des min-max
 
 ### fiche de groupe
 - [ ] pas encore penché dessus
@@ -24,8 +24,8 @@
 
 ### les jets de dés
 - [ ] redesign de rollDialog => `<details>+<sumary>`=> rendre moins dense
-- [ ] envoyer les spécialités utilisables au rollDialog
-- [ ] envoyer les items utilisables au rollDialog
+- [X] envoyer les spécialités utilisables au rollDialog
+- [X] envoyer les items utilisables au rollDialog
 - [ ] gérer le fait de choisir quel totem garder : recalcul des réussites
 - [X] refacto des template chat de roll
 - [X] gérer les dés de totems humains et adapté : couleur différente/double succès +update actor
@@ -39,11 +39,13 @@
 
 ### le combat
 faut s'y pencher
+- [ ] modifier la difficulté en fonction de l'état du combatant /offensif/actif/passif/
+
 
 ### les items
-- [ ] gérer les rolls d'items dans le chat
+- [-] gérer les rolls d'items dans le chat
 - [-] repasser sur les différents itemTypes et sheets
-- [ ] construire une selecteur de traits, traits= CONFIG.VERMINE.traits
+- [X] construire une selecteur de traits, traits= CONFIG.VERMINE.traits
         traits:[
             key:{
                 name:string,

@@ -51,7 +51,9 @@ export default class RollDialog extends Dialog {
     }) {
         // Retrieve the actor data based on the actorId
         data.actor = await game.actors.get(data.actorId);
+        console.log(data.actor)
         data.availableSpecialties = data.actor.items.filter(it => it.type == "specialty");
+        console.log(data.availableSpecialties)
         data.availableItems = data.actor.items.filter(it => it.type == "item");
         data.config = CONFIG.VERMINE;
         // Define options for the dialog

@@ -27,6 +27,7 @@ img.profile-img {
   filter: drop-shadow(0px 0px 20px rgb(110, 133, 27));
   height: auto;
   width: 100%;
+  max-width: 10rem;
 }
 
 /* custom styles */
@@ -35,13 +36,6 @@ body.system-vermine2047 img#logo {
   height: auto;
 }
 
-/* Customize the chat roll area! */
-#chat-form textarea {
-  background: url(/systems/vermine2047/assets/images/ui/box_background.webp) repeat;
-  /*font-family: monospace; 
-  font-size: 14px; 
-  color: black; */
-}
 
 /* Customize the chat history area! */
 #chat-log .message {
@@ -112,24 +106,22 @@ ul.unstyled li {
 }
 
 .actor.sheet form .form {
-  display: grid;
+  display: flex;
 
-  grid-template-columns: minmax(230px, 1fr) 3fr;
-  grid-template-rows: 1fr;
   align-items: flex-start;
   height: 100%;
   overflow: auto;
 }
 
 .actor.sheet .form aside {
-  grid-row: span 1 / span 1;
+  min-width: max-content;
   background-image: url(/systems/vermine2047/assets/images/ui/barre_laterale.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 200%;
+  border-right: 2px black;
   height: 100%;
-  width: 240px;
   padding: 0 0.3rem;
-  box-shadow: -20px 0px 100px #000000b5 inset;
+  box-shadow: -20px 0px 100px 15px #000000b5 inset;
 
 
   .major-totem {
@@ -482,8 +474,7 @@ ul.unstyled li {
 }
 
 .system-vermine2047 .sheet.actor .sidebar {
-  width: 230px;
-  min-height: 518px;
+  flex: 0.2;
 }
 
 .system-vermine2047 .sheet.actor .floatright {
@@ -700,7 +691,8 @@ ul.unstyled li {
 
 .system-vermine2047 .sheet.actor #edit {
   background-color: black;
-  color: white
+  color: white;
+  width: 100%
 }
 
 .system-vermine2047 .sheet.actor .reserve-grid {
@@ -735,6 +727,7 @@ ul.unstyled li {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
   max-height: 1.2rem;
   max-width: 1.2rem;
+  min-width: 1.2rem;
   aspect-ratio: 1/1;
   color: black;
   vertical-align: center;

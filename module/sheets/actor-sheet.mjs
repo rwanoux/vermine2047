@@ -57,7 +57,6 @@ export class VermineActorSheet extends ActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    html.find('.min-max-edit').click(this._onMinMaxEdit.bind(this))
     // Render the item sheet for viewing/editing prior to the editable check.
     html.find('.item-edit').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
@@ -79,7 +78,9 @@ export class VermineActorSheet extends ActorSheet {
       item.delete();
       li.slideUp(200, () => this.render(false));
     });
-
+    html.find(".item-roll").click(ev => {
+      this._onRollItem(ev)
+    })
     // Active Effect management
     html.find(".effect-control").click(ev => onManageActiveEffect(ev, this.actor));
 
@@ -103,6 +104,12 @@ export class VermineActorSheet extends ActorSheet {
     })
 
   }
+
+  async _onRollItem(ev) {
+    const li = $(ev.currentTarget).parents(".item");
+    const item = this.actor.items.get(li.data("itemId"));
+    item.roll();
+  }
   _onClickRadioHexa(ev) {
     let input = ev.currentTarget;
     console.log(input.value, input.name);
@@ -123,35 +130,6 @@ export class VermineActorSheet extends ActorSheet {
 
 
 
-  }
-  async _onMinMaxEdit(event) {
-    event.preventDefault();
-    let propPath = event.currentTarget.dataset.prop;
-    let propName = propPath.split('.').slice(-1).pop()
-    let data = {
-      actorName: this.actor.name,
-      propName: propName
-    }
-    let html = await renderTemplate('systems/vermine2047/templates/dialogs/min-max-edit.hbs', data);
-
-    let ui = new Dialog({
-      title: "edit : " + propName,
-      content: html,
-      buttons: {
-        roll: {
-          label: "ok",
-          callback: (html) => { }
-
-
-        },
-        cancel: {
-          label: game.i18n.localize('Close'),
-          callback: () => { }
-        }
-      }
-    }
-    );
-    ui.render(true)
   }
   async _onItemCreate(event) {
     event.preventDefault();

@@ -1,9 +1,6 @@
 <div class="grid grid-2col">
-  <div class="self-control-container">
+  <div class="self-control-container flexcol align-center">
     <h4 class="align-center">
-      <a class="min-max-edit" data-prop="system.attributes.self_control">
-        <i class="fas fa-cogs"> </i>
-      </a>
 
       {{ localize "VERMINE.self_control"}} :
       {{@root.system.attributes.self_control.value}}/
@@ -41,11 +38,9 @@
       {{/repeat}}
     </div>
   </div>
-  <div class="effort-container">
+  <div class="effort-container flexcol align-center">
     <h4 class="align-center">
-      <a class="min-max-edit" data-prop="system.attributes.effort">
-        <i class="fas fa-cogs"></i>
-      </a>
+
       {{ localize "VERMINE.effort"}} :
       {{@root.system.attributes.effort.value}}/
       {{@root.system.attributes.effort.max}}
@@ -84,7 +79,7 @@
     </div>
   </div>
 </div>
-<h4 class="item-name effect-name flexrow">{{ localize
+<h4 class="item-name  flexrow">{{ localize
   "VERMINE.wounds.name"}}</h4>
 <ul class="unstyled">
   <li class="row mdb">{{ localize 'VERMINE.wounds.light'}} <span

@@ -11,11 +11,11 @@ export class VermineItem extends Item {
     // preparation methods overridden (such as prepareBaseData()).
     super.prepareData();
   }
-  prepareBaseData(){
+  prepareBaseData() {
     const actorType = (this.actor !== null) ? this.actor.type : 'character';
 
-    switch (this.type){
-      case 'ability':        
+    switch (this.type) {
+      case 'ability':
         if (this.system.type == "") {
           // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
           this.system.type = actorType;
@@ -34,9 +34,9 @@ export class VermineItem extends Item {
    * Prepare a data object which is passed to any Roll formulas which are created related to this Item
    * @private
    */
-   getRollData() {
+  getRollData() {
     // If present, return the actor's roll data.
-    if ( !this.actor ) return null;
+    if (!this.actor) return null;
     const rollData = this.actor.getRollData();
     // Grab the item's system data as well.
     rollData.item = foundry.utils.deepClone(this.system);
@@ -50,6 +50,9 @@ export class VermineItem extends Item {
    * @private
    */
   async roll() {
+    if (this.type == "weapon") {
+      this.rollWeapon()
+    }
     const item = this;
 
     // Initialize chat data.

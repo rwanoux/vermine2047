@@ -108,7 +108,14 @@
         {{#if availableSpecialties.length}}
         <label class="label">{{localize 'VERMINE.specialty'}} (+1D)</label>
         <div class="flexrow">
+          <span data-spec-skill="{{spec.system.skill}}">
+            <i>aucunes</i>
+            <input type="radio" data-roll="true" name="usingSpecialization"
+              id="usingSpecialization"
+              value="aucune">
+          </span>
           {{#each availableSpecialties as |spec ind|}}
+
           <span data-spec-skill="{{spec.system.skill}}">
             <i>{{spec.name}}</i>
             <input type="radio" data-roll="true" name="usingSpecialization"
@@ -145,24 +152,24 @@
           min="0"
           max="0" value="0" />
       </div>
-      <div class="flexrow row mdb">
+      <div class="flexcol row mdb">
         <label class="label">{{localize 'VERMINE.tooling'}} (+1D)</label>
-        <span>
-          <i>Auncun</i>
-          <input type="radio" data-roll="true" name="usingTools"
-            id="usingTools" value="0" checked>
-        </span>
-      </div>
 
-      <div class="item-list grid grid-4col">
-        {{#each availableItems as |item ind|}}
-        <span>
-          <i>{{item.name}}</i>
-          <input type="radio" data-roll="true" name="usingTools"
-            id="usingTools"
-            value="{{item.name}}">
-        </span>
-        {{/each}}
+        <div class="item-list grid grid-4col">
+          <h3>
+            <i>Auncun</i>
+            <input type="radio" data-roll="true" name="usingTools"
+              id="usingTools" value="0" checked>
+          </h3>
+          {{#each availableItems as |item ind|}}
+          <span>
+            <i>{{item.name}}</i>
+            <input type="radio" data-roll="true" name="usingTools"
+              id="usingTools"
+              value="{{item.name}}">
+          </span>
+          {{/each}}
+        </div>
       </div>
 
       <div class="flexrow">
