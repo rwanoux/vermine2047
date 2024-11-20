@@ -13,7 +13,7 @@ import { VermineItem } from "./documents/item.mjs";
 import { VermineItemSheet } from "./sheets/item-sheet.mjs";
 
 import { VermineUtils } from "./system/roll.mjs";
-import { VermineCombat, VermineCombatTracker } from "./system/fight.mjs";
+import { VermineCombat, VermineCombatant, VermineCombatTracker } from "./system/fight.mjs";
 
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates, registerHandlebarsHelpers } from "./system/handlebars-manager.mjs";
@@ -49,7 +49,9 @@ Hooks.once('init', async function () {
   // Define custom Document classes
   CONFIG.Actor.documentClass = VermineActor;
   CONFIG.Item.documentClass = VermineItem;
+
   CONFIG.ui.combat = VermineCombatTracker;
+  CONFIG.Combatant.documentClass = VermineCombatant;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);

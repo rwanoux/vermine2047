@@ -224,8 +224,8 @@ VERMINE.traits = {
     description: "L’objet a une portée utile ou maximale de(n) mètres.Les armes de distance disposent de plusieurs Portées, qui peuvent être fixes ou modifiées par la Vigueur de l’attaquant, notamment pour les armes de tir ou de lancer.",
     value: 1
   },
-  "pratique.": {
-    name: "Pratique.",
+  "pratique": {
+    name: "Pratique",
     description: "Le matériel offre une prise en main exceptionnelle, une maniabilité étonnante, une simplicité d’usage remarquable.Utiliser un tel matériel pour une action adéquate accorde un Bonus de 2D au lieu de 1D.Rechercher ce Trait sur un matériel compte comme deux critères de Rareté à lui seul.De plus les réparations, améliorations et fabrications de matériel avec ce Trait souffrent de(I) Handicap en plus de ceux applicables normalement.",
     value: 0
   },
@@ -251,4 +251,5 @@ VERMINE.damageTypes = [
   "lame",
   "feu",
   "balle"
-]
+];
+

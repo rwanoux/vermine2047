@@ -156,17 +156,14 @@ export class TraitSelector extends Application {
   }
   async validateTraits(html) {
     let checks = html.find("input.trait-selector");
-    let val = html.find("input.trait-value");
-    for (let inp of [...checks, val]) {
+    for (let inp of checks) {
       if (this.targetItem.system.traits[inp.dataset.trait]) {
         if (inp.type == "checkbox") {
           inp.checked = true
         }
-        if (inp.type == "value") {
-          inp.value = this.targetItem.system.traits[inp.dataset.trait].value
-        }
-      }
+             }
     }
+    await this.render(true)
   }
 
   async onChangeInput(ev) {
@@ -195,5 +192,6 @@ export class TraitSelector extends Application {
     } else {
       el.closest("label").querySelector('.trait-selector').checked = false;
     }
+    this.render(true)
   }
 }

@@ -10,7 +10,7 @@ export class VermineItemSheet extends ItemSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "item"],
-      width: "fit-content",
+      width: 450,
       height: "auto",
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
     });
@@ -19,11 +19,6 @@ export class VermineItemSheet extends ItemSheet {
   /** @override */
   get template() {
     const path = "systems/vermine2047/templates/item";
-    // Return a single sheet for all item types.
-    // return `${path}/item-sheet.html`;
-
-    // Alternatively, you could use the following return statement to do a
-    // unique item sheet by type, like `weapon-sheet.html`.
     return `${path}/item-${this.item.type}-sheet.html`;
   }
 

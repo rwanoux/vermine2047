@@ -485,7 +485,10 @@
     "templates": {
       "base": {
         "description": "",
-        "rarity": 3,
+        "rarity": {
+          "value": 3,
+          "handicap": 0
+        },
         "reliability": 3,
         "handicap": 0,
         "quantity": 1,

@@ -442,30 +442,13 @@ export class VermineCombatTracker extends CombatTracker {
       return context;
     }
 
-    for (let [i, combatant] of context.combat.turns.entries()) {
-      context.turns[i].attitude = combatant.getFlag("world", "attitude");
-      context.turns[i].isPlayer = combatant.actor.type == "character";
-      context.turns[i].isNpc = combatant.actor.type == "npc";
-      context.turns[i].isCreature = combatant.actor.type == "creature";
-    }
+
     return context;
   }
 
   activateListeners(html) {
     super.activateListeners(html);
     html.find("[data-attitude]").click(this._setStatut.bind(this));
-    html.find("[data-control='rollInitiative']").click(this.rollVermineInitiative.bind(this))
-  }
-
-  async rollVermineInitiative(ev) {
-    ev.preventDefault();
-    ev.stopPropagation();
-    const btn = ev.currentTarget;
-    const li = btn.closest(".combatant");
-    const combat = this.viewed;
-    const combatant = combat.combatants.get(li.dataset.combatantId);
-
-    console.log(combatant)
   }
 
   /**
@@ -489,4 +472,23 @@ export class VermineCombatTracker extends CombatTracker {
     }
 
   }
+}
+
+export class VermineCombatant extends Combatant {
+  constructor(data, context) {
+    super(data, context);
+    this.setDefaultAttitude();
+    console.log(this)
+
+  }
+  setDefaultAttitude() {
+    this.attitude = this.token.flags.world?.attitude || "active"
+  }
+  _getInitiativeFormula() {
+
+    console.log(this);
+    return String(CONFIG.Combat.initiative.formula || game.system.initiative);
+  }
+
+
 }

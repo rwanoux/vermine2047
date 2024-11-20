@@ -1,12 +1,11 @@
 <form class="{{cssClass}}" autocomplete="off">
-	<header class="sheet-header">
-		<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-		<div class="header-fields">
-			<h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-		</div>
-	</header>
+	{{log this}}
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
+
+
 	<section class="sheet-body">
 		{{> "systems/vermine2047/templates/item/partials/traits.html"}}
+
 
 		<h4 class="flexrow">
 			<div class="resource align-center flexcol">
@@ -32,35 +31,26 @@
 							<input type="checkbox" data-tooltip="ajouter la vigueur" name="system.damage.addVigor" {{#if system.damage.addVigor}} checked {{/if}}>
 						</span>
 					</div>
-					<input type="text" placeholder="type" name="system.damage.type" value="{{system.damage.type}}" data-dtype="Text" list="damageType"/>
-					<datalist id="damageType">
-						<option value="choc">choc</option>
-						<option value="lame">lame</option>
-						<option value="feu">feu</option>
-						<option value="balle">balle</option>
-					</datalist>
-
-
+					<select name="system.damage.type">
+						<option value="0">type</option>
+						{{#each config.damageTypes as |label index|}}
+							<option value="{{label}}" {{#ife @root.system.damage.type label}} selected {{/ife}}>
+								{{label}}
+							</option>
+						{{/each}}
+					</select>
 				</div>
 			</div>
 			<div class="resource align-center flexcol">
-
 				<label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
 				<div class="hexa"><input type="number" name="system.ammo" value="{{system.ammo}}" data-dtype="Number"/></div>
 			</div>
-			<div class="resource align-center flexcol">
 
-				<label class="resource-label">{{ localize "VERMINE.rarity"}}</label>
-				<div class="hexa"><input type="number" name="system.rarity" value="{{system.rarity}}" data-dtype="Number"/></div>
-			</div>
-			<div class="resource align-center flexcol">
 
-				<label class="resource-label">{{ localize "VERMINE.reliability"}}</label>
-				<div class="hexa"><input type="number" name="system.reliability" value="{{system.reliability}}" data-dtype="Number"/></div>
-			</div>
 		</h4>
-		<h2>description</h2>
-		{{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-		{{> "systems/vermine2047/templates/item/partials/damages.html"}}
+
+
+		{{> "systems/vermine2047/templates/item/partials/physicalItems.hbs"}}
+
 
 	</form>

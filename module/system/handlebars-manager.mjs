@@ -41,6 +41,8 @@ export const preloadHandlebarsTemplates = async function () {
     //items partials
     "systems/vermine2047/templates/item/partials/damages.html",
     "systems/vermine2047/templates/item/partials/traits.html",
+    "systems/vermine2047/templates/item/partials/header.hbs",
+    "systems/vermine2047/templates/item/partials/physicalItems.hbs",
 
   ]);
 };
@@ -83,6 +85,24 @@ export const registerHandlebarsHelpers = function () {
 
   Handlebars.registerHelper('toLowerCase', function (str) {
     return str.toLowerCase();
+  });
+  Handlebars.registerHelper('romanNumber', function (numb) {
+    switch (numb) {
+      case 0:
+        return '';
+      case 1:
+        return 'I';
+      case 2:
+        return 'II';
+      case 3:
+        return 'III';
+      case 4:
+        return 'IV';
+      case 5:
+        return 'V';
+      default:
+        throw new Error('Le handicap rareté doit être comprise entre 0 et 5');
+    }
   });
 
   // search translation with variables

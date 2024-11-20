@@ -5,23 +5,30 @@
     <div class="item-rarity">{{ localize 'VERMINE.rarity'}}</div>
     <div class="item-reliability">{{ localize 'VERMINE.reliability'}}</div>
     <div class="item-controls">
-      <a class="item-control item-create" title="Create item" data-type="vehicle"><i class="fas fa-plus"></i></a>
+      <a class="item-control item-create" title="Create item"
+        data-type="vehicle"><i class="fas fa-plus"></i></a>
     </div>
   </li>
   {{#each vehicles as |item id|}}
-    <li class="item flexrow flex-group-center" data-item-id="{{item._id}}">
-      <div class="item-name" style="flex:4;">
-        <div class="item-image">
-          <a class="item-control item-edit" data-roll-type="item"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
-        </div>
-        <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+  <li class="item flexrow flex-group-center" data-item-id="{{item._id}}">
+    <div class="item-name" style="flex:4;">
+      <div class="item-image">
+        <a class="item-control item-edit" data-roll-type="item"><img
+            src="{{item.img}}" title="{{item.name}}" width="24"
+            height="24" /></a>
       </div>
-      <p><a class="item-control item-edit" title="Edit Item">{{item.system.mobility}}</a></p>
-      <p><a class="item-control item-edit" title="Edit Item">{{item.system.rarity}}</a></p>
-      <p><a class="item-control item-edit" title="Edit Item">{{item.system.reliability}}</a></p>
-      <div class="item-controls">
-        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-      </div>
-    </li>
+      <a class="item-control item-edit" title="Edit Item">{{item.name}}</a>
+    </div>
+    <p><a class="item-control item-edit"
+        title="Edit Item">{{item.system.mobility}}</a></p>
+    <p><a class="item-control item-edit"
+        title="Edit Item">{{item.system.rarity.value}}</a></p>
+    <p><a class="item-control item-edit"
+        title="Edit Item">{{item.system.reliability}}</a></p>
+    <div class="item-controls">
+      <a class="item-control item-delete" title="Delete Item"><i
+          class="fas fa-trash"></i></a>
+    </div>
+  </li>
   {{/each}}
 </ol>

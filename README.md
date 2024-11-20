@@ -38,13 +38,16 @@
 - [ ] gérer les seuils auto si compétence non maitrisée
 
 ### le combat
-faut s'y pencher
 - [ ] modifier la difficulté en fonction de l'état du combatant /offensif/actif/passif/
 
 
 ### les items
+- [X] passer le type d'arme en select/options
+- [X] ajouter handicap de rareté
+- [ ] ajouter pour items Item "competence nécessaire"
 - [-] gérer les rolls d'items dans le chat
 - [-] repasser sur les différents itemTypes et sheets
+- [X] verifier le selector de traits (trait pratique cf : msg pretre) 
 - [X] construire une selecteur de traits, traits= CONFIG.VERMINE.traits
         traits:[
             key:{
