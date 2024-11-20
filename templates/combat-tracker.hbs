@@ -77,60 +77,70 @@
     </header>
 
     <ol id="combat-tracker" class="directory-list">
-        {{#each turns}}
-        <li class="combatant actor directory-item flexrow {{this.css}}"
-            data-combatant-id="{{this.id}}">
-            <img class="token-image" data-src="{{this.img}}"
-                alt="{{this.name}}" />
+        {{#each turns as |turn index|}}
+        {{log turn}}
+        <li class="combatant actor directory-item flexrow {{turn.css}}"
+            data-combatant-id="{{turn.id}}">
+            <img class="token-image" data-src="{{turn.img}}"
+                alt="{{turn.name}}" />
             <div class="token-name flexcol">
                 <h4
-                    class="{{getCombatTrackerColor this.isPlayer this.isNpc}}">{{this.name}}</h4>
-                <div class="combatant-controls flexrow">
-                    <a
-                        class="combatant-control {{#if this.hidden}}active{{/if}}"
-                        data-tooltip="COMBAT.ToggleVis"
-                        data-control="toggleHidden">
-                        <i class="fas fa-eye-slash"></i>
-                    </a>
-                    <a
-                        class="combatant-control {{#if this.defeated}}active{{/if}}"
-                        data-tooltip="COMBAT.ToggleDead"
-                        data-control="toggleDefeated">
-                        <i class="fas fa-skull"></i>
-                    </a>
-                    <a class="combatant-control offensive status"
-                        data-tooltip="{{localize 'ATTITUDES.offensive.name'}}"
-                        data-attitude="offensive">
-                        <i
-                            class="fas fa-fist-raised"
-                            style="{{#if (eq this.attitude "offensive")}}color:white
-                            {{else}}color:gray {{/if}}"></i>
-                    </a>
-                    <a class="combatant-control active status"
-                        data-tooltip="{{localize 'ATTITUDES.active.name'}}"
-                        data-attitude="active">
-                        <i
-                            class="fas fa-bow-arrow"
-                            style="{{#if (eq this.attitude "active")}}color:white
-                            {{else}} color:gray
-                            {{/if}}"></i>
-                    </a>
-                    <a class="combatant-control passive status"
-                        data-tooltip="{{localize 'ATTITUDES.passive.name'}}"
-                        data-attitude="passive">
-                        <i class="fas fa-shield-quartered"
-                            style="{{#if  (eq this.attitude "passive")}}color:white
-                            {{else}} color:gray{{/if}}"></i>
-                    </a>
-                    {{#if this.canPing}}
-                    <a class="combatant-control"
-                        data-tooltip="COMBAT.PingCombatant"
-                        data-control="alertPingCombatant">
-                        <i class="fa-solid fa-bullseye-arrow"></i>
-                    </a>
+                    class="{{getCombatTrackerColor turn.isPlayer turn.isNpc}}">{{turn.name}}</h4>
+                <div class="combatant-controls flexrow flex-between">
+                    <div class="flexrow flex-around">
+                        <a
+                            class="combatant-control {{#if turn.hidden}}active{{/if}}"
+                            data-tooltip="COMBAT.ToggleVis"
+                            data-control="toggleHidden">
+                            <i class="fas fa-eye-slash"></i>
+                        </a>
+                        <a
+                            class="combatant-control {{#if turn.defeated}}active{{/if}}"
+                            data-tooltip="COMBAT.ToggleDead"
+                            data-control="toggleDefeated">
+                            <i class="fas fa-skull"></i>
+                        </a>
+
+                        {{#if turn.canPing}}
+                        <a class="combatant-control"
+                            data-tooltip="COMBAT.PingCombatant"
+                            data-control="alertPingCombatant">
+                            <i class="fa-solid fa-bullseye-arrow"></i>
+                        </a>
+                        {{/if}}
+                    </div>
+                    {{#if turn.owner }}
+
+                    <div class="flexrow flex-around">
+                        <a class="combatant-control offensive status"
+                            data-tooltip="{{localize 'ATTITUDES.offensive.name'}}"
+                            data-attitude="offensive">
+                            <i
+                                class="fas fa-fist-raised"
+                                style="{{#if (eq turn.attitude "offensive")}}color:white
+                                {{else}}color:gray {{/if}}"></i>
+                        </a>
+                        <a class="combatant-control active status"
+                            data-tooltip="{{localize 'ATTITUDES.active.name'}}"
+                            data-attitude="active">
+                            <i
+                                class="fas fa-bow-arrow"
+                                style="{{#if (eq turn.attitude "active")}}color:white
+                                {{else}} color:gray
+                                {{/if}}"></i>
+                        </a>
+                        <a class="combatant-control passive status"
+                            data-tooltip="{{localize 'ATTITUDES.passive.name'}}"
+                            data-attitude="passive">
+                            <i class="fas fa-snooze"
+                                style="{{#if  (eq turn.attitude "passive")}}color:white
+                                {{else}} color:gray{{/if}}"></i>
+                        </a>
+                    </div>
                     {{/if}}
+
                     <div class="token-effects">
-                        {{#each this.effects}}
+                        {{#each turn.effects}}
                         <img class="token-effect" src="{{this}}" />
                         {{/each}}
                     </div>
@@ -165,7 +175,8 @@
             data-control="previousRound"><i
                 class="fas fa-step-backward"></i></a>
         <a class="combat-control" data-tooltip="COMBAT.TurnPrev"
-            data-control="previousTurn"><i class="fas fa-arrow-left"></i></a>
+            data-control="previousTurn"><i
+                class="fas fa-arrow-left"></i></a>
         <a class="combat-control center" data-control="endCombat">{{localize
             'COMBAT.End'}}</a>
         <a class="combat-control" data-tooltip="COMBAT.TurnNext"
@@ -173,12 +184,14 @@
         <a class="combat-control" data-tooltip="COMBAT.RoundNext"
             data-control="nextRound"><i class="fas fa-step-forward"></i></a>
         {{else}}
-        <a class="combat-control center" data-control="startCombat">{{localize
+        <a class="combat-control center"
+            data-control="startCombat">{{localize
             'COMBAT.Begin'}}</a>
         {{/if}}
         {{else if control}}
         <a class="combat-control" data-tooltip="COMBAT.TurnPrev"
-            data-control="previousTurn"><i class="fas fa-arrow-left"></i></a>
+            data-control="previousTurn"><i
+                class="fas fa-arrow-left"></i></a>
         <a class="combat-control center" data-control="nextTurn">{{localize
             'COMBAT.TurnEnd'}}</a>
         <a class="combat-control" data-tooltip="COMBAT.TurnNext"
