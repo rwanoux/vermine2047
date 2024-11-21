@@ -1,101 +1,43 @@
-<form
-  class="{{cssClass}}"
-  autocomplete="off"
->
-  <header class="sheet-header">
-    <img
-      class="profile-img"
-      src="{{item.img}}"
-      data-edit="img"
-      title="{{item.name}}"
-    />
-    <div class="header-fields">
-      <h1 class="charname"><input
-          name="name"
-          type="text"
-          value="{{item.name}}"
-          placeholder="Name"
-        /></h1>
+<form class="{{cssClass}}" autocomplete="off">
+	<header class="sheet-header">
+		<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+		<div class="header-fields">
+			<h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
 
-    </div>
-  </header>
+		</div>
+	</header>
 
-  <section class="sheet-body">
-    <h4 class="resource flexrow">
-      <label class="resource-label">{{ localize "VERMINE.level"}}</label>
-      <span class="hexa"><input
-          type="number"
-          name="system.level.value"
-          value="{{system.level.value }}"
-          data-dtype="Number"
-          min="{{system.level.min }}"
-          max="{{system.level.max }}"
-        />
-      </span>
+	<section class="sheet-body">
+		<h4 class="resource flexrow">
+			<label class="resource-label">{{ localize "VERMINE.level"}}</label>
+			<span class="hexa"><input type="number" name="system.level.value" value="{{system.level.value }}" data-dtype="Number" min="{{system.level.min }}" max="{{system.level.max }}"/>
+			</span>
 
 
-      <label class="resource-label">{{ localize "VERMINE.type"}}</label>
-      <select
-        name="system.type"
-        data-dtype="String"
-      >
-        <option
-          value="character"
-          {{#if (eq system.type "character")}}selected{{/if}}
-        >Personnage</option>
-        <option
-          value="group"
-          {{#if (eq system.type "group")}}selected{{/if}}
-        >Groupe</option>
-        <option
-          value="creature"
-          {{#if (eq system.type "creature")}}selected{{/if}}
-        >Créature</option>
-        <option
-          value="totem"
-          {{#if (eq system.type "totem")}}selected{{/if}}
-        >Totem</option>
-      </select>
-      <label class="resource-label">{{ localize "IDENTITY.totem"}}</label>
-      <select
-        name="system.totem"
-        data-dtype="String"
-      >
-        {{#each config.totems as | totem tk|}}
-          <option
-            value="{{tk}}"
-            {{#if (eq tk @root.system.totem)}}selected="selected"
-            {{/if}}
-          >{{ localize totem }}</option>
-        {{/each}}
-      </select>
-    </h4>
-    {{#if (eq system.type "group")}}
-      <h4 class="resource flexrow">
-        <label class="resource-label">{{ localize "ITEMS.learning"}}</label>
-        <span class=" hexa">
-          <input
-            type="number"
-            name="system.learning.threshold"
-            value="{{system.learning.threshold }}"
-            data-dtype="Number"
-            min="3"
-            max="10"
-          />
-        </span>/
-        <span class="hexa">
-          <input
-            type="number"
-            name="system.learning.hindrance"
-            value="{{system.learning.hindrance }}"
-            data-dtype="Number"
-            min="0"
-            max="3"
-          />
-        </span>
-      </h4>
-    {{/if}}
-    <h4>description</h4>
-    {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-  </section>
+			<label class="resource-label">{{ localize "VERMINE.type"}}</label>
+			<select name="system.type" data-dtype="String">
+				<option value="character" {{#if (eq system.type "character")}} selected {{/if}}>Personnage</option>
+				<option value="group" {{#if (eq system.type "group")}} selected {{/if}}>Groupe</option>
+				<option value="creature" {{#if (eq system.type "creature")}} selected {{/if}}>Créature</option>
+				<option value="totem" {{#if (eq system.type "totem")}} selected {{/if}}>Totem</option>
+			</select>
+			<label class="resource-label">{{ localize "IDENTITY.totem"}}</label>
+			<select name="system.totem" data-dtype="String">
+				{{#each config.totems as | totem tk|}}
+					<option value="{{tk}}" {{#if (eq tk @root.system.totem)}} selected="selected" {{/if}}>{{ localize totem }}</option>
+				{{/each}}
+			</select>
+		</h4>
+		<h4 class="resource flexrow">
+			<label class="resource-label">{{ localize "ITEMS.learning"}}</label>
+			<span class=" hexa">
+				<input type="number" name="system.learning.threshold" value="{{system.learning.threshold }}" data-dtype="Number" min="3" max="10"/>
+			</span>/
+			<span class="hexa">
+				<input type="number" name="system.learning.hindrance" value="{{system.learning.hindrance }}" data-dtype="Number" min="0" max="3"/>
+			</span>
+		</h4>
+		<h4>description</h4>
+		{{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+	</section>
 </form>

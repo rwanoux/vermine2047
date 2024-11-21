@@ -528,7 +528,8 @@
     "item": {
       "templates": [
         "base"
-      ]
+      ],
+      "needSkill": false
     },
     "weapon": {
       "templates": [
@@ -548,7 +549,12 @@
         "base"
       ],
       "level": 0,
-      "mobility": 3
+      "specificLevel": {
+        "label": "",
+        "level": 0
+      },
+      "mobility": 0,
+      "isShield": false
     },
     "ability": {
       "templates": [

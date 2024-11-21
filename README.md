@@ -42,6 +42,7 @@
 
 
 ### les items
+- [X]ajouter apprentissage aux abilities
 - [X] passer le type d'arme en select/options
 - [X] ajouter handicap de rareté
 - [ ] ajouter pour items Item "competence nécessaire"
