@@ -56,11 +56,16 @@ ___________abstract Items_____________
     <ol class="list-item">
       {{#each abilities as |item id|}}
       <li class="item flexrow" data-item-id="{{item._id}}">
-        <div class="item-name" style="flex:4;">
+        <div class="item-name" class="flexrow" style="flex:4;">
           <a
             class="item-control item-edit"
-            title="Edit Item">{{item.name}}</a>
-
+            data-tooltip="edit">{{item.name}}</a>
+          <span class="hexa"
+            data-tooltip="niveau">{{item.system.level.value}}</span>
+          <span
+            data-tooltip="apprentissage">
+            {{item.system.learn.threshold}}/{{item.system.learn.hindrance}}
+          </span>
         </div>
         <div class="item-controls flexrow">
           {{#if item.system.description}}
@@ -90,6 +95,7 @@ ___________abstract Items_____________
           <a
             class="item-control item-edit"
             title="Edit Item">{{item.name}}</a>
+          <span data-tooltip="{{compétence}}">{{item.system.skill}}</span>
         </div>
         <div class="item-controls flexrow">
           {{#if item.system.description}}
