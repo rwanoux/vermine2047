@@ -374,6 +374,10 @@
           "category": "world",
           "rarity": 1
         }
+      },
+      "combatStatus": {
+        "label": "",
+        "difficulty": 7
       }
     },
     "npc": {
@@ -529,7 +533,10 @@
       "templates": [
         "base"
       ],
-      "needSkill": false
+      "needSkill": {
+        "value": false,
+        "skill": ""
+      }
     },
     "weapon": {
       "templates": [

@@ -42,7 +42,7 @@ Hooks.once('init', async function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "(@abilities.reflexes.value + @skills.alertness.value)d10cs>=7",
+    formula: "(@abilities.reflexes.value + @skills.alertness.value)d10cs>=@combatStatus.difficulty",
     decimals: 2
   };
 
