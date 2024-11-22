@@ -1,0 +1,20 @@
+name: Communauté
+sorting: a
+folder: null
+type: RollTable
+_id: 6oZ2nytAVyR5lCgQ
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.6oZ2nytAVyR5lCgQ
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761090
+  modifiedTime: 1732291761292
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!6oZ2nytAVyR5lCgQ'
+

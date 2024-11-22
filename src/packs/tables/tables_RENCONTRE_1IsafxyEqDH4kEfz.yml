@@ -1,0 +1,154 @@
+folder: E7wK1Y73yfokmf1U
+name: RENCONTRE
+_id: 1IsafxyEqDH4kEfz
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: kHD3rQu9y29AcAhq
+    text: >-
+      Un entremetteur a jugé que nous formerions une bonne équipe. Après la
+      mission, nous avons continué à bosser ensemble.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.kHD3rQu9y29AcAhq'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: 36rZyua3ooFHmmQr
+    text: La moitié d’entre nous a sauvé la peau des autres.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.36rZyua3ooFHmmQr'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: RzYdEcLNaazwYowM
+    text: Nous sommes les derniers survivants d’un groupe plus important.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.RzYdEcLNaazwYowM'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: S8lCG8kzEosz5Y9H
+    text: Nous cherchions tous des ressources au même endroit, au même moment.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.S8lCG8kzEosz5Y9H'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: roV1klih0a18D3V2
+    text: >-
+      Nous avons fait face à une menace commune et avons associé nos forces pour
+      nous en sortir.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.roV1klih0a18D3V2'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: pVbAAbh3tg0bfG2l
+    text: Nous étions prisonniers d’une horde, nous seuls avons pu nous échapper.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.pVbAAbh3tg0bfG2l'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: UZtX3PozvmoZscXe
+    text: >-
+      Nous sommes rassemblés autour du plus ancien, il était déjà là avant
+      l’effondrement.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.UZtX3PozvmoZscXe'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: nkIN6kZUlNMBPoky
+    text: Le Groupe s’est formé au fil des rencontres. D’abord deux, puis trois…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.nkIN6kZUlNMBPoky'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: rGq1Y7uxlJQloE9B
+    text: >-
+      Dans une « auberge ». Nous cherchions tous refuge dans la même communauté,
+      nous sommes repartis ensemble.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.rGq1Y7uxlJQloE9B'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: OTqheiKdJ89ZIAyp
+    text: Une force « mystique » nous unit et nous pousse à rester ensemble.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!1IsafxyEqDH4kEfz.OTqheiKdJ89ZIAyp'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!1IsafxyEqDH4kEfz'
+

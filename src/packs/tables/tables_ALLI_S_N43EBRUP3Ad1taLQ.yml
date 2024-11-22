@@ -1,0 +1,168 @@
+folder: E7wK1Y73yfokmf1U
+name: ALLIÉS
+_id: N43EBRUP3Ad1taLQ
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: zWI1mHb34MWzREg4
+    text: >-
+      Dans la ferme d’Hélène, on peut toujours troquer un peu d’huile de coude
+      contre de la nourriture.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.zWI1mHb34MWzREg4'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: YU7xZfVmKIzASTPu
+    text: >-
+      Les enfants de la forêt nous servent de guides chaque fois qu’on passe sur
+      leur territoire.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.YU7xZfVmKIzASTPu'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: tiyGt9MjnxfUlijj
+    text: >-
+      Nous ne savons pas où Serge trouve ses munitions, mais il en a toujours en
+      stock.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.tiyGt9MjnxfUlijj'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 5PECofvaRFSVaCqz
+    text: >-
+      Le bac des « flfleuviers » nous permet de traverser et nous évite un long
+      détour. Ils aiment la viande que nous leur apportons.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.5PECofvaRFSVaCqz'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 1MPhln29FZGIMPoE
+    text: >-
+      Le rebouteux de la clairière a toujours un onguent ou une huile pour
+      soigner nos blessures.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.1MPhln29FZGIMPoE'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: dXG2ybdUJD2SBzfE
+    text: >-
+      Si on avait un jour besoin de force de frappe, Olivia et ses hommes se
+      battraient pour nous, comme nous nous sommes un jour battus pour eux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.dXG2ybdUJD2SBzfE'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: SXgpDYKqfkXkswBs
+    text: >-
+      Pour réparer ou améliorer un véhicule, ou simplement faire le plein, chez
+      Tex, tout le monde est le bienvenu. En plus il y a toujours du monde avec
+      qui échanger
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.SXgpDYKqfkXkswBs'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: zwo2axvUW8BQ7TlV
+    text: >-
+      Maya sait nous écouter. Elle nous regonflfle à bloc et redonne un sens à
+      nos actions. Ça vaut bien les petits services qu’elle demande quand on
+      passe dans le coin.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.zwo2axvUW8BQ7TlV'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: AEzqhbf8TkOX3m4N
+    text: >-
+      Contre une partie de nos prises, l’équarrisseur propose de nous
+      conditionner de la viande qui se conservera longtemps.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.AEzqhbf8TkOX3m4N'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: gci56E9MP2ZeBu1J
+    text: >-
+      Dans le bunker des gars de la trentième, on peut s’abriter d’une menace :
+      tempête, horde, vermine…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!N43EBRUP3Ad1taLQ.gci56E9MP2ZeBu1J'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!N43EBRUP3Ad1taLQ'
+

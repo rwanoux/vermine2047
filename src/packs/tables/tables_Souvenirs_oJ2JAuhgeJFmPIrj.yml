@@ -1,0 +1,686 @@
+folder: 9T2HfAyfS29pS42O
+name: Souvenirs
+_id: oJ2JAuhgeJFmPIrj
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: Qug8ESqds46bcIjN
+    text: >-
+      Une dent : Dent d’animal, dent de lait ou dent d’adulte. Celle qui manque
+      au personnage ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.Qug8ESqds46bcIjN'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: DyzjaFqpCOWb0BXl
+    text: 'Une bague :  Pacotille ou vrai bijou, alliance ou ornement…'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.DyzjaFqpCOWb0BXl'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: r7MIKS66feQQofqk
+    text: >-
+      Des plaques d’identification : S’agit-il d’un gadget trouvé dans une
+      boutique, ou des vraies plaques du personnage quand il était en service ?
+      D’ailleurs, portent-elles son (vrai) nom ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.r7MIKS66feQQofqk'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: z7smsSfESjOlAf4n
+    text: >-
+      Une patte de lapin : Le porte-bonheur classique. Est-ce bien une patte de
+      lapin, au fait ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.z7smsSfESjOlAf4n'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: RmOGrSsBsmY4pYVl
+    text: >-
+      Une carte à jouer : Une carte d’un jeu de 52 cartes. Ou d’un jeu de tarot.
+      Ou de tout autre jeu de cartes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.RmOGrSsBsmY4pYVl'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: ISFCE3xEosoXuNv3
+    text: >-
+      Un ou deux dés : Même pas pipés, peut-être pas assortis. Nombre de faces
+      et couleur au choix du joueur ou à la discrétion du meneur.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.ISFCE3xEosoXuNv3'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: YqgoRuLDWYCCYdWz
+    text: >-
+      Une lettre : Un courrier typographié ou manuscrit, quelques mots
+      griffonnés sur un papier : un mot d’amour, une note « Je reviens après
+      manger », une liste de courses, un pense-bête… qui d’autre arrive à la
+      lire ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.YqgoRuLDWYCCYdWz'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: 6jz68a9eQPtenknw
+    text: >-
+      Un bouchon : N’importe quoi qui sert à boucher, mais jamais utilisé pour.
+      Se décline en liège, plastique, ou en capsule de bière ou encore de
+      champagne.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.6jz68a9eQPtenknw'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: rajQI5eODgiEqqLL
+    text: 'Un trèfle : A priori à quatre feuilles, mais peut-être pas.'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.rajQI5eODgiEqqLL'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: pCS8Vc8FyAgqULeR
+    text: >-
+      Une mèche de cheveux : Trophée ou souvenir ? D’une cuite mémorable où le
+      personnage s’est rasé la tête, ou de la première coupe d’un enfant ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.pCS8Vc8FyAgqULeR'
+  - type: text
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: dAjaD5VfxnnA3QWe
+    text: >-
+      Une bille : Les enfants jouaient à ça dans les cours de récré. Quand il y
+      avait des cours de récré.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.dAjaD5VfxnnA3QWe'
+  - type: text
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: TmJ6Pw6d0aA7Xm6F
+    text: >-
+      Un badge : Pins ou écusson brodé, aux couleurs d’un club sportif, d’un
+      groupe de musique, d’un personnage de dessin animé, d’une marque…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.TmJ6Pw6d0aA7Xm6F'
+  - type: text
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _id: 3mGJPkQH2koZ3Qqh
+    text: >-
+      Un paquet de tabac : À rouler ou de cigarettes, mais vide. Avec des
+      mentions réjouissantes comme « Fumer vous pourrit de l’intérieur ». Ou
+      encore plus ancien, une relique avec de jolies couleurs (sans doute un peu
+      élimées…).
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.3mGJPkQH2koZ3Qqh'
+  - type: text
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _id: Gd1CYwm64ZX5q3Ek
+    text: >-
+      Un jouet antistress : Hand spinner, balle à écraser, ce gadget servait à
+      se concentrer avant de devenir une mode, puis un déchet. Incroyablement
+      intact après tout ce temps.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.Gd1CYwm64ZX5q3Ek'
+  - type: text
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _id: gA5rTEeTMvOwYgZk
+    text: 'Une tétine : Le caoutchouc s’effrite et le plastique est jauni.'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.gA5rTEeTMvOwYgZk'
+  - type: text
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _id: krgVUftH26YwZMVM
+    text: >-
+      Un sifflet : sans bille Tout juste bon à faire « pffffffff ». Et puis,
+      comment la bille est-elle sortie sans casser le sifflet ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.krgVUftH26YwZMVM'
+  - type: text
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _id: ifOm0iCodpJ7cK2r
+    text: >-
+      Un kaléidoscope : Un petit tube bouché des deux côtés : quand on regarde
+      d’un côté, on voit des paillettes qui s’agencent au hasard. Elles se
+      déplacent quand on fait rouler le tube.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.ifOm0iCodpJ7cK2r'
+  - type: text
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _id: AOLQdXW1qUODHL2m
+    text: >-
+      Un bracelet textile : Ce n’est peut-être plus qu’un bout de ficelle, ou un
+      tressage basique de quelques fils de couleur. Traditionnellement, on le
+      nouait au poignet en faisant un voeu ; il s’exauçait quand le bracelet se
+      brisait. Est-il encore au bras du personnage ? Son voeu s’est-il exaucé ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.AOLQdXW1qUODHL2m'
+  - type: text
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    _id: nXacU6sIOGOaRF10
+    text: >-
+      Une pièce de monnaie : Elle n’avait déjà plus cours longtemps avant tout
+      ça. D’ailleurs est-ce une pièce ou une sorte de médaille ? À moins que ce
+      ne soit un jeton de caddie, avec la marque de l’enseigne ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.nXacU6sIOGOaRF10'
+  - type: text
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    _id: x7YgyLNPx6PntsSu
+    text: >-
+      Une figurine : Cinq centimètres de haut, des pièces qui se détachent tout
+      le temps, qu’elle soit encore complète relève du miracle. Ou de
+      l’obsession.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.x7YgyLNPx6PntsSu'
+  - type: text
+    weight: 1
+    range:
+      - 21
+      - 21
+    drawn: false
+    _id: hz7BoHR474wzpbGc
+    text: >-
+      Un téléphone factice : Un modèle d’exposition de magasin : une coque vide
+      avec une image fixe en guise d’écran, pour éviter les vols.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.hz7BoHR474wzpbGc'
+  - type: text
+    weight: 1
+    range:
+      - 22
+      - 22
+    drawn: false
+    _id: UhUJjUEBnknFARr3
+    text: >-
+      Un caillou : Une forme agréable, une couleur originale ou un bout de
+      pierre quelconque ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.UhUJjUEBnknFARr3'
+  - type: text
+    weight: 1
+    range:
+      - 23
+      - 23
+    drawn: false
+    _id: ZmL4EZP7VIBYQemP
+    text: >-
+      Un briquet vide : Plus d’essence depuis longtemps. Même pas dit que la
+      pierre à feu produise encore la moindre étincelle. Est-il seulement en
+      métal, ce truc ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.ZmL4EZP7VIBYQemP'
+  - type: text
+    weight: 1
+    range:
+      - 24
+      - 24
+    drawn: false
+    _id: J9iVvMKVsLAb1NSu
+    text: >-
+      Un bouton : Métal, bois, nacre, plastique, tissu ? Il est toujours
+      dépareillé et quand bien même, le coudre quelque part ne semble pas en
+      projet.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.J9iVvMKVsLAb1NSu'
+  - type: text
+    weight: 1
+    range:
+      - 25
+      - 25
+    drawn: false
+    _id: S9pi4nfOB5yQzYXy
+    text: >-
+      Une clef : Elle n’ouvre aucune autre pièce d’équipement ni aucun lieu
+      récemment visité. Enfin, c’est ce qu’affirme le personnage. Peut-être.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.S9pi4nfOB5yQzYXy'
+  - type: text
+    weight: 1
+    range:
+      - 26
+      - 26
+    drawn: false
+    _id: JLm5y2Z1zzxBRvZI
+    text: >-
+      Un porte-clefs : Fait main ou du commerce, il ne servait déjà que de
+      décoration avant.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.JLm5y2Z1zzxBRvZI'
+  - type: text
+    weight: 1
+    range:
+      - 27
+      - 27
+    drawn: false
+    _id: dgYfVzSiumFcXIPe
+    text: >-
+      Un bout de tissu : Un tout petit coupon, sans doute un échantillon ou une
+      chute, trop petit pour en faire même un mouchoir.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.dgYfVzSiumFcXIPe'
+  - type: text
+    weight: 1
+    range:
+      - 28
+      - 28
+    drawn: false
+    _id: nD8lXqt3xHcHuEEj
+    text: 'Un cadenas : Verrouillé. Bien sûr que la clef est perdue.'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.nD8lXqt3xHcHuEEj'
+  - type: text
+    weight: 1
+    range:
+      - 29
+      - 29
+    drawn: false
+    _id: IeNoXV7OOfPezwMo
+    text: >-
+      Un morceau de plastique : Sans explication, personne ne peut reconnaître
+      le médiator, le cale-porte, le réacteur d’avion-jouet, le sablier vide que
+      ce truc était avant.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.IeNoXV7OOfPezwMo'
+  - type: text
+    weight: 1
+    range:
+      - 30
+      - 30
+    drawn: false
+    _id: KrGGeSIX4gbJEkP0
+    text: >-
+      Un couteau suisse : De prime abord, c’est très utile. Mais avec sa grande
+      lame brisée, sa petite pas mieux, ses tournevis vrillés, c’est une coque
+      de plastique qui entoure des bouts de métal dépliables.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.KrGGeSIX4gbJEkP0'
+  - type: text
+    weight: 1
+    range:
+      - 31
+      - 31
+    drawn: false
+    _id: I6U7IW6HfTYmG1Uw
+    text: >-
+      Un mécanisme de boîte à musique : Fonctionne-t-il encore ? Si oui, que
+      joue-t-il ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.I6U7IW6HfTYmG1Uw'
+  - type: text
+    weight: 1
+    range:
+      - 32
+      - 32
+    drawn: false
+    _id: 7zYiVxrbVD36VBf9
+    text: >-
+      Un billet de Monopoly : Ou d’un autre jeu. Ou dessiné par un enfant. Une
+      monnaie factice, en tout cas. En parfait état, ou chiffonné jusqu’à être
+      méconnaissable.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.7zYiVxrbVD36VBf9'
+  - type: text
+    weight: 1
+    range:
+      - 33
+      - 33
+    drawn: false
+    _id: 0Oh1jCeRYvycJgNl
+    text: >-
+      Un bout de bois : C’était peut-être le manche d’un tire-bouchon. Ou un
+      projet de fronde. Ou de baguette magique. En attendant, c’est juste un
+      bout de bois.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.0Oh1jCeRYvycJgNl'
+  - type: text
+    weight: 1
+    range:
+      - 34
+      - 34
+    drawn: false
+    _id: OhFFnhvWmebN97aG
+    text: >-
+      Un « chapeau » : Son propriétaire affirme que c’est une casquette. Enfin,
+      un vêtement qui se met sur la tête. Autrefois, peut-être, sans la crasse
+      ni l’usure.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.OhFFnhvWmebN97aG'
+  - type: text
+    weight: 1
+    range:
+      - 35
+      - 35
+    drawn: false
+    _id: a1muuPTP50N7SS1g
+    text: >-
+      Un vieux feutre : Il n’écrit plus depuis… au moins ça. Seul le bouchon
+      permet encore de savoir de quelle couleur il était.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.a1muuPTP50N7SS1g'
+  - type: text
+    weight: 1
+    range:
+      - 36
+      - 36
+    drawn: false
+    _id: 6TW8jCh4dPU6CU8h
+    text: >-
+      Une paire de lunettes : Ou juste la moitié. En tout cas, il n’y a plus de
+      verres, ou alors dans un état…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.6TW8jCh4dPU6CU8h'
+  - type: text
+    weight: 1
+    range:
+      - 37
+      - 37
+    drawn: false
+    _id: o8zAIqNpNTUrQvFQ
+    text: >-
+      Un ticket : De loterie ? De caisse ? D’entrée dans un musée ? Pour un
+      manège ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.o8zAIqNpNTUrQvFQ'
+  - type: text
+    weight: 1
+    range:
+      - 38
+      - 38
+    drawn: false
+    _id: 6Byjtm4cyrJ13wzI
+    text: >-
+      Une plume : Peut-être artificielle, ou réelle. Exotique (à l’époque) ou
+      très banale. Vestige d’une balade ou d’un vieux vêtement ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.6Byjtm4cyrJ13wzI'
+  - type: text
+    weight: 1
+    range:
+      - 39
+      - 39
+    drawn: false
+    _id: GiDTDLNV3hl3kVKT
+    text: >-
+      Une montre : Mécanisme foutu, plus de piles, le verre au mieux rayé, au
+      pire perdu et les aiguilles avec, qu’importe, elle reste vissée au poignet
+      (si jamais le bracelet tient encore).
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.GiDTDLNV3hl3kVKT'
+  - type: text
+    weight: 1
+    range:
+      - 40
+      - 40
+    drawn: false
+    _id: HZQoV9ECd2JH6TeW
+    text: >-
+      Un coquillage : Très classique, ramassé sur une plage engloutie depuis par
+      la montée des eaux. À moins qu’il n’ait une forme... étrange ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.HZQoV9ECd2JH6TeW'
+  - type: text
+    weight: 1
+    range:
+      - 41
+      - 41
+    drawn: false
+    _id: rFG41qXlGcsc4ovF
+    text: >-
+      Un aimant de frigo : Une lettre de l’alphabet, un département, une recette
+      de cocktail, un demi-animal, un porte-photo (vide ?) ; en tout cas, pas
+      assez puissant pour attirer quoi que ce soit de plus que de la limaille et
+      encore, un jour sans vent.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.rFG41qXlGcsc4ovF'
+  - type: text
+    weight: 1
+    range:
+      - 42
+      - 42
+    drawn: false
+    _id: u9TQkZU94iV5zp7F
+    text: >-
+      Une flasque trouée : Une minuscule bouteille plate, en métal, trouée. Le
+      bouchon y est, mais de toute façon, ça ne peut rien contenir.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.u9TQkZU94iV5zp7F'
+  - type: text
+    weight: 1
+    range:
+      - 43
+      - 43
+    drawn: false
+    _id: CWjpYdInvW6tt1oc
+    text: >-
+      Un bout de ficelle : Ça s’effiloche de partout, c’est trop court pour
+      faire ne serait-ce qu’un lacet ou même fermer un bout de tissu. Et
+      pourtant… elle est là.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.CWjpYdInvW6tt1oc'
+  - type: text
+    weight: 1
+    range:
+      - 44
+      - 44
+    drawn: false
+    _id: KV3mCIBMOsxjI5vf
+    text: >-
+      Un marron : Ou toute autre graine ou noyau. Traîne dans une poche depuis
+      bien trop longtemps pour pouvoir encore germer.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.KV3mCIBMOsxjI5vf'
+  - type: text
+    weight: 1
+    range:
+      - 45
+      - 45
+    drawn: false
+    _id: FWxgAJYcXcym74MX
+    text: >-
+      Un pendule : Une bille de métal pour faire un poids, une chaînette trop
+      fragile pour autre chose que la retenir, et la réponse à toutes les
+      questions. Aucune influence extérieure, bien sûr.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.FWxgAJYcXcym74MX'
+  - type: text
+    weight: 1
+    range:
+      - 46
+      - 46
+    drawn: false
+    _id: cJYNfwDcqHT29TBa
+    text: >-
+      Une écaille : De tortue, de serpent ou d’un autre reptile. À moins que ça
+      ne soit l’élytre très solide d’un insecte trop robuste ou un coquillage.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!oJ2JAuhgeJFmPIrj.cJYNfwDcqHT29TBa'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d46
+_key: '!tables!oJ2JAuhgeJFmPIrj'
+

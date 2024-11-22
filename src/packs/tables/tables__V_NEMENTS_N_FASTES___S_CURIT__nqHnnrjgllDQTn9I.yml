@@ -1,0 +1,174 @@
+folder: 6oZ2nytAVyR5lCgQ
+name: ÉVÉNEMENTS NÉFASTES - SÉCURITÉ
+_id: nqHnnrjgllDQTn9I
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: TdHmwzpoUMNqMIve
+    text: >-
+      Les intempéries des dernières semaines ont fragilisé les structures de la
+      Communauté. Inondations, humidité, vents forts, écroulements, faiblesses
+      dans les fondations en découlent.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.TdHmwzpoUMNqMIve'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: VrvWtDKgZ1QsIUdY
+    text: >-
+      La fatigue, l’angoisse et l’incertitude de ces dernières semaines ont
+      diminué la vigilance de la communauté. Des pertes, des vols et des
+      tensions surviennent.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.VrvWtDKgZ1QsIUdY'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: SiWLHBG7zznOgmEa
+    text: >-
+      Nos ressources attirent l’attention d’autres groupes, enclins à l’échange…
+      ou au pillage ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.SiWLHBG7zznOgmEa'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: bk5xJBhg91x7FwaW
+    text: >-
+      Un membre de la Communauté est retrouvé inconscient, blessé ou mort alors
+      qu’aucune disparition n’avait été signalée.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.bk5xJBhg91x7FwaW'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 32V8My8yKfvzrkFb
+    text: >-
+      Un ou plusieurs individus au sein de la Communauté commencent à passer
+      outre les règles de vie. Ils saccagent, prennent sans demander, remettent
+      en question l’ordre établi.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.32V8My8yKfvzrkFb'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 6vTwRLw9Xve6hxDG
+    text: >-
+      Certains membres de la Communauté négligent des blessures
+      superfificielles. Des infections et des individus fiévreux sont signalés.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.6vTwRLw9Xve6hxDG'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: ZyTpBtBCAFZ6MwEH
+    text: >-
+      Même si du matériel médical ou des médicaments sont à disposition, des
+      individus malades pris en charge peinent à guérir. Il faut envisager
+      l’avis d’un spécialiste, d’un médecin, ou récupérer un médicament
+      spécifique.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.ZyTpBtBCAFZ6MwEH'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: 4VIjyPHz6B8pIqJ9
+    text: >-
+      Une étrange pathologie sévit dans les environs d’après certaines rumeurs.
+      Un avis médical serait judicieux pour anticiper la propagation.
+      Malheureusement, un cas vient d’être recensé au sein de la Communauté.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.4VIjyPHz6B8pIqJ9'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: aJTKBshqobDlZw5Q
+    text: >-
+      Certains membres sont victimes d’effffets secondaires de médicaments pris
+      en trop grande quantité. Les doses sont mal jaugées et provoquent des
+      hallucinations, des vomissements, des changements radicaux du
+      comportement…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.aJTKBshqobDlZw5Q'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 0VmSBGQK5GxngNn8
+    text: >-
+      Un affffrontement a eu lieu au sein de la Communauté entre plusieurs
+      membres. Ils sont allés jusqu’à se menacer avec des armes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!nqHnnrjgllDQTn9I.0VmSBGQK5GxngNn8'
+replacement: true
+displayRoll: true
+sort: 450000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761159
+  modifiedTime: 1732291761159
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!nqHnnrjgllDQTn9I'
+

@@ -1,0 +1,20 @@
+name: Armes de tir
+sorting: a
+folder: dN6gqnKv1JQLV0uv
+type: Item
+_id: qeZZA51nqkQ0oY2O
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414472
+  modifiedTime: 1732294414472
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!qeZZA51nqkQ0oY2O'
+

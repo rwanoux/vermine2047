@@ -1,0 +1,187 @@
+folder: 1pvgIDHYjQZVdpjn
+name: ORIGINES POUR UN PERSONNAGE ADULTE
+_id: vd2UEYO5bZKB7FfD
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: OqPuzSj4KDC3Lmj3
+    text: >-
+      Ma mère tentait vaille que vaille de maintenir la centrale en
+      fonctionnement. Quand les terroristes ont attaqué, elle a réussi à
+      empêcher l’explosion du réacteur. Ensuite il n’y a plus rien eu d’autre à
+      sauver que ma vie.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.OqPuzSj4KDC3Lmj3'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: GgOmlIwbEywbDQxR
+    text: >-
+      On se débrouillait pour faire pousser quelques champignons dans une série
+      de caves du quartier. On s’accommodait des blackouts réguliers. Mais les
+      pillards, c’était trop pour nous. Nous avons fui vers la campagne avec
+      plusieurs familles voisines.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.GgOmlIwbEywbDQxR'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 2RUU7fe2QR551RAN
+    text: >-
+      Ma famille possédait une péniche. À l’abri au milieu du fleuve, nous
+      n’avons pas remarqué les vers qui ont contaminé l’eau. J’ai dû incendier
+      le bateau. Et tuer mon père rendu fou par ces saletés dans son cerveau.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.2RUU7fe2QR551RAN'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: I59f7YtYCiRt4Y06
+    text: >-
+      J’étais un privilégié. Riche et puissant, j’avais une place dans ce
+      luxueux bunker de survie. Quand les nids de guêpes ont bloqué les
+      aérations, nous avons dû ouvrir les portes. Je n’oublierai jamais la
+      taille de l’essaim. Ni les trois jours passés calfeutré dans un conduit
+      technique à entendre tout le monde agoniser.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.I59f7YtYCiRt4Y06'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: Zf6a6EdfhZopt3UQ
+    text: >-
+      La Nature se rebellait, il fallait l’admettre, cesser de lutter et
+      accepter notre destin. Couper les communications était indispensable pour
+      avancer. J’étais sous l’eau, occupé à détruire le câble sous-marin, quand
+      l’armée a pilonné notre chalutier. Heureusement que la côte était proche.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.Zf6a6EdfhZopt3UQ'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: Fw2DzLActdukV5wP
+    text: >-
+      Avec mes amis, nous étions les rois de la route. À bord de nos véhicules
+      puissants et blindés, nous nous servions sur les corps des plus faibles.
+      Un jour, nous avons été à notre tour les faibles d’un autre Groupe. Je me
+      suis réveillé quand des charognards ont soulevé la carcasse de ma voiture.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.Fw2DzLActdukV5wP'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: a4bniHK7LktTEnzJ
+    text: >-
+      J’étais un « réfugié climatique » qu’ils ont dit. Ils m’ont parqué dans un
+      camp en Italie. Un jour, la Terre a tremblé et les soldats sont partis.
+      J’ai fui vers le nord. Ceux qui sont restés sont morts rapidement quand le
+      volcan a explosé.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.a4bniHK7LktTEnzJ'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: yg1JYu0NZFMxx7z4
+    text: >-
+      J’ai tenté de les prévenir. Cette souche de grippe allait nous décimer.
+      J’avais un projet de vaccin prometteur. Ils n’en ont pas voulu. J’ai
+      survécu grâce à lui, j’en suis sûr. Des millions sont morts.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.yg1JYu0NZFMxx7z4'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: orsJgETGOvNGWjOu
+    text: >-
+      Nous avons voté la fermeture des frontières. Nous avons voté
+      l’autorisation de la torture sur les terroristes. Nous avons voté pour la
+      loi martiale. Nous avons voté pour refouler les réfugiés. Tout cela n’a
+      pas suffi. Nous, la « classe politique », avons échoué. Aujourd’hui je
+      mendie chaque jour pour un repas.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.orsJgETGOvNGWjOu'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: iwRMAFhFRhytgVQ4
+    text: >-
+      J’étais paumé. Ma vie n’avait pas de sens. Le monde mourait rapidement et
+      je m’en fichais. Je m’en réjouissais même. Puis j’ai fait ce rêve. Je
+      devais être un guide, car j’avais moi-même été perdu et je m’étais
+      retrouvé. Je devais sauver le plus de gens possible et leur apprendre à
+      revivre.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!vd2UEYO5bZKB7FfD.iwRMAFhFRhytgVQ4'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!vd2UEYO5bZKB7FfD'
+

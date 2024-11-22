@@ -1,0 +1,181 @@
+folder: 6oZ2nytAVyR5lCgQ
+name: PERTES ET MENACES
+_id: MvKgxUJyDowo1I3W
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 0ZElrIFBE5VvS41A
+    text: >-
+      Une équipe de collecte n’est pas rentrée. Des soucis sur le trajet du
+      retour, un éboulement, une rencontre hostile, un exode. L’effectif de la
+      Communauté diminue.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.0ZElrIFBE5VvS41A'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: 1zXJ1UdFtIRxpMT0
+    text: >-
+      Un groupe de nomades propose des individus à troquer. Des sortes
+      d’esclavagistes suivis par des enfants, des femmes et des hommes
+      enchaînés. Si la Communauté ne veut pas négocier, les nomades réclament un
+      homme fort ou une femme agile comme tribut.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.1zXJ1UdFtIRxpMT0'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: MCctmB95mcvCMYjv
+    text: >-
+      Quelques survivants réclament un refuge. Un homme, une femme, deux
+      enfants. Une famille. Ils montrent des signes de maladie, d’infection. Les
+      accepter, c’est gagner en effffectif temporairement car ils mourront, tout
+      en exposant la Communauté à une contamination potentielle.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.MCctmB95mcvCMYjv'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: rH0Lh3bpuJ6BbENG
+    text: >-
+      Une naissance est à relever au sein de la Communauté. Il faut trouver de
+      quoi nourrir le bébé, des vitamines et de quoi le changer. Il est exposé à
+      toutes les infections possibles et devient une véritable bombe à germes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.rH0Lh3bpuJ6BbENG'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: ZaXSaN1vwNboIRmr
+    text: >-
+      Un dixième de la population de la Communauté est affamé, assoiffffé,
+      blessé, ou malade. Un individu est retrouvé mort au petit matin. Si rien
+      n’est fait, il y aura un autre cadavre le lendemain.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.ZaXSaN1vwNboIRmr'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 85SuPC8BS07hd4Ec
+    text: >-
+      Depuis plusieurs semaines, une vermine environnante est plus agitée,
+      agressive. Des piqûres et des morsures s’infectent rapidement et
+      provoquent des crises, des allergies fulgurantes. D’ici quelques jours,
+      plusieurs victimes risquent de mourir de suffocation ou d’empoisonnement.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.85SuPC8BS07hd4Ec'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: EtOmuNbCONXwccBP
+    text: >-
+      Un tremblement de terre a complètement modifié les environs, condamnant
+      des accès, brisant des chemins, détruisant des abris. Des individus sont
+      portés disparus, d’autres ont été tués par des éboulements et des chutes
+      dans des crevasses.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.EtOmuNbCONXwccBP'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: JKmMFpeN6SHRlXzD
+    text: >-
+      Un message radio, des symboles gravés sur les arbres, graffffés sur des
+      murs, des feux de forêt déclenchés par la main de l’homme… des menaces
+      perpétrées par un groupuscule belliqueux qui a la Communauté en ligne de
+      mire.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.JKmMFpeN6SHRlXzD'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: qwAt4sBcQAqtBPea
+    text: >-
+      Un membre ou une équipe effectue une reconnaissance routinière des
+      environs. Ce qui prend d’ordinaire quelques heures devient une absence
+      alarmante de presque une journée. Que faire ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.qwAt4sBcQAqtBPea'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: KIS4AgU34IrTtph1
+    text: >-
+      Une Communauté voisine ne donne plus signe de vie. Pire, sur place, tout a
+      été saccagé, brûlé, pillé. Même les corps ont disparu. Qui a fait ça ?
+      Sommes-nous en danger ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!MvKgxUJyDowo1I3W.KIS4AgU34IrTtph1'
+replacement: true
+displayRoll: true
+sort: 400000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761159
+  modifiedTime: 1732291761159
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!MvKgxUJyDowo1I3W'
+

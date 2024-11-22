@@ -1,0 +1,78 @@
+folder: 9T2HfAyfS29pS42O
+name: Soins
+_id: 5XWd8QG7QOrhUGGO
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: document
+    weight: 1
+    range:
+      - 1
+      - 4
+    drawn: false
+    _id: yCY2jecjvgibBMXx
+    text: Produits d’hygiène
+    img: icons/svg/d20-grey.svg
+    documentId: q5hekiCP1CQthJFA
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!5XWd8QG7QOrhUGGO.yCY2jecjvgibBMXx'
+  - type: document
+    weight: 1
+    range:
+      - 5
+      - 6
+    drawn: false
+    _id: bA9b1y6waLXVvBD2
+    text: Armoire à pharmacie
+    img: icons/svg/d20-grey.svg
+    documentId: hWE8byi6uwQbg7Me
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!5XWd8QG7QOrhUGGO.bA9b1y6waLXVvBD2'
+  - type: document
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: O7E87EABrmcCdoI7
+    text: Matériel médical
+    img: icons/svg/d20-grey.svg
+    documentId: ZDPYBVRtvYn5IjHZ
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!5XWd8QG7QOrhUGGO.O7E87EABrmcCdoI7'
+  - type: document
+    weight: 1
+    range:
+      - 8
+      - 10
+    drawn: false
+    _id: BcEoDaazmClmFG1p
+    text: Médicaments
+    img: icons/svg/d20-grey.svg
+    documentId: lvrw1KDUsbEF98uk
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!5XWd8QG7QOrhUGGO.BcEoDaazmClmFG1p'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!5XWd8QG7QOrhUGGO'
+

@@ -1,0 +1,581 @@
+name: Objets Courants
+_id: 2K3iT5neHYH0gwFT
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: jUJJPjLxnsnjiOF7
+    text: Trousseau de clefs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.jUJJPjLxnsnjiOF7'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: jtvaTdy5qFGq9HV5
+    text: Bonbons
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.jtvaTdy5qFGq9HV5'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 8248lAmbDc51oKqK
+    text: Briquet
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.8248lAmbDc51oKqK'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: A2CNGAh490ylEP6x
+    text: Sac à dos
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.A2CNGAh490ylEP6x'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: Nmu1II6XJzdYXTzG
+    text: Bracelet-montre
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.Nmu1II6XJzdYXTzG'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: PYPZezvHvTrsxdJo
+    text: Pile
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.PYPZezvHvTrsxdJo'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: WNXQFv3iSZlpkNAZ
+    text: Lunettes de soleil
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.WNXQFv3iSZlpkNAZ'
+  - type: document
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: StjuvJf2aoLTywvX
+    text: Outils
+    img: icons/svg/d20-grey.svg
+    documentId: QRj3iDqc1rczPLw9
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!2K3iT5neHYH0gwFT.StjuvJf2aoLTywvX'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: OAd9uznhRoi5fB1v
+    text: Cigarettes
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.OAd9uznhRoi5fB1v'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: wGzpMtdijevjAOUc
+    text: Miroir de poche
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.wGzpMtdijevjAOUc'
+  - type: text
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: Kumx7tFcmiKH1Fpf
+    text: Téléphone
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.Kumx7tFcmiKH1Fpf'
+  - type: text
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: VqQz1Ldc0SdXJ3yu
+    text: Bouteille d’eau
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.VqQz1Ldc0SdXJ3yu'
+  - type: text
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _id: zKBYuv3J2EUFlJhM
+    text: Trousse d’école avec trombones, colle, stylo, scotch
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.zKBYuv3J2EUFlJhM'
+  - type: text
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _id: kcMy7Yd8y6ioL5nu
+    text: Papier
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.kcMy7Yd8y6ioL5nu'
+  - type: text
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _id: It7UPaqRDpwVnchZ
+    text: Parfum
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.It7UPaqRDpwVnchZ'
+  - type: text
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _id: haNsofpd571Thkxd
+    text: Bijoux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.haNsofpd571Thkxd'
+  - type: text
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _id: 41uxGfyQM1eQoLlV
+    text: Chargeur USB
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.41uxGfyQM1eQoLlV'
+  - type: text
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _id: wtIgPu0CBwYWOyU8
+    text: Élastiques
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.wtIgPu0CBwYWOyU8'
+  - type: text
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    _id: y4uUtmOfaUrTiuw7
+    text: Gel hydroalcoolique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.y4uUtmOfaUrTiuw7'
+  - type: text
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    _id: sIb5LrUXBQyLV5Y8
+    text: Préservatifs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.sIb5LrUXBQyLV5Y8'
+  - type: text
+    weight: 1
+    range:
+      - 21
+      - 21
+    drawn: false
+    _id: UffbbO3iaib3Nrs3
+    text: Cigarette électronique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.UffbbO3iaib3Nrs3'
+  - type: text
+    weight: 1
+    range:
+      - 22
+      - 22
+    drawn: false
+    _id: VEcUNDHRd8Y6lVKy
+    text: Magazines
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.VEcUNDHRd8Y6lVKy'
+  - type: text
+    weight: 1
+    range:
+      - 23
+      - 23
+    drawn: false
+    _id: 3rcqcTXM2GoLb5Q2
+    text: Couteau suisse (Fiabilité 5)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.3rcqcTXM2GoLb5Q2'
+  - type: text
+    weight: 1
+    range:
+      - 24
+      - 24
+    drawn: false
+    _id: KCwxVqyZ2VTH8uF9
+    text: Sac plastique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.KCwxVqyZ2VTH8uF9'
+  - type: text
+    weight: 1
+    range:
+      - 25
+      - 25
+    drawn: false
+    _id: hlyyoG5MBEffXnEM
+    text: Portefeuille
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.hlyyoG5MBEffXnEM'
+  - type: text
+    weight: 1
+    range:
+      - 26
+      - 26
+    drawn: false
+    _id: rP10sLeQH5B4SGEe
+    text: Livre
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.rP10sLeQH5B4SGEe'
+  - type: text
+    weight: 1
+    range:
+      - 27
+      - 27
+    drawn: false
+    _id: rUsnXv7M5CqkjZjc
+    text: Décapsuleur
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.rUsnXv7M5CqkjZjc'
+  - type: text
+    weight: 1
+    range:
+      - 28
+      - 28
+    drawn: false
+    _id: 1uqOQLSvLYVhQ5lm
+    text: Couteau, fourchette ou cuillère de table
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.1uqOQLSvLYVhQ5lm'
+  - type: text
+    weight: 1
+    range:
+      - 29
+      - 29
+    drawn: false
+    _id: qYqv4fWXv7ZpyJqi
+    text: Allumettes
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.qYqv4fWXv7ZpyJqi'
+  - type: text
+    weight: 1
+    range:
+      - 30
+      - 30
+    drawn: false
+    _id: qdK12FIV2bbjtdSM
+    text: Parapluie
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.qdK12FIV2bbjtdSM'
+  - type: text
+    weight: 1
+    range:
+      - 31
+      - 31
+    drawn: false
+    _id: 5WlHCRwCdrRhmUQK
+    text: Stylo
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.5WlHCRwCdrRhmUQK'
+  - type: text
+    weight: 1
+    range:
+      - 32
+      - 32
+    drawn: false
+    _id: UikxIB7H6qe0oDDS
+    text: Mouchoirs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.UikxIB7H6qe0oDDS'
+  - type: text
+    weight: 1
+    range:
+      - 33
+      - 33
+    drawn: false
+    _id: jvpsvO3zh6Ez574y
+    text: Appareil photo
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.jvpsvO3zh6Ez574y'
+  - type: text
+    weight: 1
+    range:
+      - 34
+      - 34
+    drawn: false
+    _id: kgmEdEgS0UG0dpzh
+    text: Produit d’entretien
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.kgmEdEgS0UG0dpzh'
+  - type: text
+    weight: 1
+    range:
+      - 35
+      - 35
+    drawn: false
+    _id: gkWIedsWqEoqrmQ5
+    text: Corde
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.gkWIedsWqEoqrmQ5'
+  - type: text
+    weight: 1
+    range:
+      - 36
+      - 36
+    drawn: false
+    _id: 1ZxBRwtORAznzNrx
+    text: Lampe de poche
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.1ZxBRwtORAznzNrx'
+  - type: document
+    weight: 1
+    range:
+      - 37
+      - 37
+    drawn: false
+    _id: Pfvq7Pgc2cprSUpG
+    text: Soins
+    img: icons/svg/d20-grey.svg
+    documentId: 5XWd8QG7QOrhUGGO
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!2K3iT5neHYH0gwFT.Pfvq7Pgc2cprSUpG'
+  - type: text
+    weight: 1
+    range:
+      - 38
+      - 38
+    drawn: false
+    _id: eSvL0Kr6QJNsLg8m
+    text: Nourriture (comestible au bon vouloir du meneur)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.eSvL0Kr6QJNsLg8m'
+  - type: text
+    weight: 1
+    range:
+      - 39
+      - 39
+    drawn: false
+    _id: bQxYnB63TbrJxId7
+    text: Ouvre-boîte
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.bQxYnB63TbrJxId7'
+  - type: text
+    weight: 1
+    range:
+      - 40
+      - 40
+    drawn: false
+    _id: M264mOirQaTmFSYh
+    text: Sachet de coton
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.M264mOirQaTmFSYh'
+  - type: document
+    weight: 1
+    range:
+      - 41
+      - 41
+    drawn: false
+    _id: x13G48hzBiIqeppH
+    text: Produits d’hygiène
+    img: icons/svg/d20-grey.svg
+    documentId: q5hekiCP1CQthJFA
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!2K3iT5neHYH0gwFT.x13G48hzBiIqeppH'
+  - type: text
+    weight: 1
+    range:
+      - 42
+      - 42
+    drawn: false
+    _id: No3ClFxw0uvUyJ9a
+    text: Bouteille d’alcool
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.No3ClFxw0uvUyJ9a'
+  - type: text
+    weight: 1
+    range:
+      - 43
+      - 43
+    drawn: false
+    _id: 8GJmvP8LmS9tt1IY
+    text: Chewing-gum
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.8GJmvP8LmS9tt1IY'
+  - type: text
+    weight: 1
+    range:
+      - 44
+      - 44
+    drawn: false
+    _id: UI0PGfecfz87IZne
+    text: Aspivenin
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.UI0PGfecfz87IZne'
+  - type: text
+    weight: 1
+    range:
+      - 45
+      - 45
+    drawn: false
+    _id: oYcZ0A1KSFEQV69p
+    text: Bâche
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.oYcZ0A1KSFEQV69p'
+  - type: text
+    weight: 1
+    range:
+      - 46
+      - 46
+    drawn: false
+    _id: SuN7vCafEBO1b2rZ
+    text: Vêtements
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!2K3iT5neHYH0gwFT.SuN7vCafEBO1b2rZ'
+replacement: true
+displayRoll: true
+folder: 9T2HfAyfS29pS42O
+sort: 200000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: 1d46
+_key: '!tables!2K3iT5neHYH0gwFT'
+

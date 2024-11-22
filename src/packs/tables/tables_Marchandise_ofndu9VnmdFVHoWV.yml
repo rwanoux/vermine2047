@@ -1,0 +1,146 @@
+folder: 9T2HfAyfS29pS42O
+name: Marchandise
+_id: ofndu9VnmdFVHoWV
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: Bg5CWsW09gQWKIFx
+    text: Électroménager
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.Bg5CWsW09gQWKIFx'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: K68J5782MZoqSHrF
+    text: Matériel électronique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.K68J5782MZoqSHrF'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 579xLwGvVFTFJleo
+    text: Véhicule
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.579xLwGvVFTFJleo'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 2TmngX4R0zcfwFYD
+    text: Carburant/Gaz
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.2TmngX4R0zcfwFYD'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 0km50VZiLecWc7VY
+    text: Matériel de construction
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.0km50VZiLecWc7VY'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: xnMwmLwlyi4kIuex
+    text: Ressources (bois, métal…)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.xnMwmLwlyi4kIuex'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: CaVgJNMWMTPwMLoK
+    text: Frigorifique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.CaVgJNMWMTPwMLoK'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: rn9Q6ykEw2RejuiD
+    text: Eau
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.rn9Q6ykEw2RejuiD'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: AqYUzhH6PEvAweUg
+    text: Alimentation
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.AqYUzhH6PEvAweUg'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: NI4KJgSkx1eW818b
+    text: Matériel industriel (machine-outil…)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ofndu9VnmdFVHoWV.NI4KJgSkx1eW818b'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!ofndu9VnmdFVHoWV'
+

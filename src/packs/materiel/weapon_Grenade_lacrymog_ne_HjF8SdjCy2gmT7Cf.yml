@@ -1,0 +1,83 @@
+folder: rDl3lT6ikJ7VTAFj
+name: Grenade lacrymogène
+type: weapon
+_id: HjF8SdjCy2gmT7Cf
+img: systems/vermine2047/assets/icons/items/weapon.webp
+system:
+  description: ''
+  rarity:
+    value: 9
+    handicap: 0
+  reliability: 6
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits:
+    duree:
+      name: Durée
+      description: >-
+        Les effets de l’arme ou de l’objet durent (n) Tours de combat.Les durées
+        en minutes, en heures ou en jours sont toujours indiquées de façon
+        claire, notamment dans le cas des maladies ou des empoisonnements.
+      value: 4
+    malus:
+      name: Malus
+      description: >-
+        L’arme ou l’objet inflige un Malus de(n) D à toutes les actions des
+        personnages affectés pendant toute la Durée de l’effet.C’est le cas
+        notamment de certains gaz, venins, poisons ou maladies.
+      value: 1
+    zone:
+      name: Zone
+      description: >-
+        L’arme ou l’objet déclenche ses effets dans une zone de(n) mètres de
+        diamètre.Si l’objet inflige des Dommages, tout ce qui se trouve dans la
+        zone les subit.
+      value: 8
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  min_range: 3
+  max_range: 8
+  damage:
+    value: 0
+    type: ''
+    addVigor: false
+  ammo: 0
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414693
+  modifiedTime: 1732294414693
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!items!HjF8SdjCy2gmT7Cf'
+

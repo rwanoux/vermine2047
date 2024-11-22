@@ -1,0 +1,20 @@
+name: Armes de lancer
+sorting: a
+folder: dN6gqnKv1JQLV0uv
+type: Item
+_id: rDl3lT6ikJ7VTAFj
+description: ''
+sort: 0
+color: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414472
+  modifiedTime: 1732294414472
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!rDl3lT6ikJ7VTAFj'
+

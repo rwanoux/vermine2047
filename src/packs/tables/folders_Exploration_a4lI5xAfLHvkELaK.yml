@@ -1,0 +1,20 @@
+name: Exploration
+sorting: a
+folder: null
+type: RollTable
+_id: a4lI5xAfLHvkELaK
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.a4lI5xAfLHvkELaK
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767630
+  modifiedTime: 1732291768038
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!a4lI5xAfLHvkELaK'
+

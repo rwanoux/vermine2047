@@ -1,0 +1,78 @@
+name: Outillage
+_id: jC7yUlkvSmIsDjzA
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: document
+    weight: 1
+    range:
+      - 1
+      - 5
+    drawn: false
+    _id: uGEjryq5dafZmOHN
+    text: Outils
+    img: icons/svg/d20-grey.svg
+    documentId: QRj3iDqc1rczPLw9
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!jC7yUlkvSmIsDjzA.uGEjryq5dafZmOHN'
+  - type: document
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: LXPfFldzxQNi6Mlf
+    text: Matériel électrique
+    img: icons/svg/d20-grey.svg
+    documentId: 9NI7p2u9vsEpq2sc
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!jC7yUlkvSmIsDjzA.LXPfFldzxQNi6Mlf'
+  - type: document
+    weight: 1
+    range:
+      - 7
+      - 9
+    drawn: false
+    _id: 7BbpFWIRTWgYQ5hA
+    text: Quincaillerie
+    img: icons/svg/d20-grey.svg
+    documentId: GDlRmTnpxicdT1XZ
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!jC7yUlkvSmIsDjzA.7BbpFWIRTWgYQ5hA'
+  - type: document
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 08BW67Mh4Cnp2Isk
+    text: Composants
+    img: icons/svg/d20-grey.svg
+    documentId: kaNFcTy96Yd8yzK2
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!jC7yUlkvSmIsDjzA.08BW67Mh4Cnp2Isk'
+replacement: true
+displayRoll: true
+folder: 9T2HfAyfS29pS42O
+sort: 100000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!jC7yUlkvSmIsDjzA'
+

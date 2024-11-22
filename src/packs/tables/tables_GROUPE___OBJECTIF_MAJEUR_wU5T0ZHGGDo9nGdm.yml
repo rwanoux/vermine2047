@@ -1,0 +1,166 @@
+folder: E7wK1Y73yfokmf1U
+name: GROUPE - OBJECTIF MAJEUR
+_id: wU5T0ZHGGDo9nGdm
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 4l400FSblIUzGLll
+    text: >-
+      Nous voulons trouver une communauté qui nous corresponde pour nous
+      installer durablement
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.4l400FSblIUzGLll'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: z1caVDl3HS1oQwq6
+    text: >-
+      Nous voulons trouver des créatures géantes et apporter au monde la preuve
+      de leur existence.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.z1caVDl3HS1oQwq6'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: cjclKt46NMAeyums
+    text: >-
+      Nous avons découvert le carnet de notes d’une survivante. Nous voulons
+      retrouver l’autrice pour comprendre son cheminement mystique.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.cjclKt46NMAeyums'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: g3Phv3GL6e3XHgF9
+    text: >-
+      Nous cherchons à découvrir ce qui se passe au-delà de la Manche, de la
+      Méditerranée ou des Alpes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.g3Phv3GL6e3XHgF9'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: mJTZy5sBPMho8EVu
+    text: >-
+      Nous voulons fonder un hôpital où chacun sera le bienvenu et accueilli
+      sans jugement.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.mJTZy5sBPMho8EVu'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: p7tMsjabhYK3OX6x
+    text: >-
+      Une rumeur parle d’une technologie qui repousse les insectes. Nous voulons
+      la trouver et la partager avec le plus grand nombre.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.p7tMsjabhYK3OX6x'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: eE3IPW6EDWbgCLRK
+    text: >-
+      On nous a parlé d’un luthier dans l’Est qui fabrique des instruments sans
+      pareils. Ce serait un ajout fantastique pour notre troupe itinérante.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.eE3IPW6EDWbgCLRK'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: OszPwYRA1CM4xy55
+    text: >-
+      Une horde a massacré notre village. On veut les retrouver et les faire
+      payer.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.OszPwYRA1CM4xy55'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: qgViTM9IjcZ20v7l
+    text: >-
+      Les mammifères de la région sont infectés par une étrange maladie. Il faut
+      que l’on comprenne ce dont il s’agit et qu’on remédie au problème.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.qgViTM9IjcZ20v7l'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 4wBweSBybseNgvR8
+    text: >-
+      Jay et Carla s’aiment, et cette dernière est enceinte. Nous avons quelques
+      mois pour trouver le bon endroit pour donner naissance à un bébé.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!wU5T0ZHGGDo9nGdm.4wBweSBybseNgvR8'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!wU5T0ZHGGDo9nGdm'
+

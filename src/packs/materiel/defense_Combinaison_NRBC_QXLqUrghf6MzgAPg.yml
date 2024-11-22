@@ -1,0 +1,71 @@
+folder: cDPaY8tYofGA559j
+name: Combinaison NRBC
+type: defense
+_id: QXLqUrghf6MzgAPg
+img: systems/vermine2047/assets/icons/items/defense.webp
+system:
+  description: ''
+  rarity:
+    value: 10
+    handicap: 0
+  reliability: 7
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits:
+    etanche:
+      name: Étanche.
+      description: >-
+        Tant que sa Fiabilité est à son maximum, l’objet ignore les Dommages dus
+        à l’immersion prolongée.De plus, les vêtements et protections Étanches
+        permettent d’éviter les effets de Zone liés aux gaz, et font baisser
+        d’un cran le niveau d’exposition à une maladie(jusqu’à éventuellement
+        éviter de lancer les Dés de Santé) – voir « Maladies et infections »,
+        page 105.
+      value: 0
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  level: 0
+  specificLevel:
+    label: ''
+    level: 0
+  mobility: 2
+  isShield: false
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294422520
+  modifiedTime: 1732294422520
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!items!QXLqUrghf6MzgAPg'
+

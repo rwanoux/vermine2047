@@ -1,0 +1,103 @@
+folder: 5NgvRID1TS2GeHYi
+name: CE QU’ON TROUVE DANS LES BÂTIMENTS
+_id: DsTCUyfxzZ0ebZeF
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: document
+    weight: 1
+    range:
+      - 1
+      - 4
+    drawn: false
+    _id: cB3PFocppUUjjdCu
+    text: Objets Courants
+    img: icons/svg/d20-grey.svg
+    documentId: 2K3iT5neHYH0gwFT
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.cB3PFocppUUjjdCu'
+  - type: document
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: IQFrNxjGNoQUWkLE
+    text: Communication
+    img: icons/svg/d20-grey.svg
+    documentId: a8TkzGcWwu7GNowm
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.IQFrNxjGNoQUWkLE'
+  - type: document
+    weight: 1
+    range:
+      - 6
+      - 7
+    drawn: false
+    _id: N0FEtRX9TT2Vz37J
+    text: Outillage
+    img: icons/svg/d20-grey.svg
+    documentId: jC7yUlkvSmIsDjzA
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.N0FEtRX9TT2Vz37J'
+  - type: document
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: G25h5USOAQVEYeCj
+    text: Pièces de Véhicules
+    img: icons/svg/d20-grey.svg
+    documentId: yoecVdoNEKD8JH5Y
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.G25h5USOAQVEYeCj'
+  - type: document
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: egsmuW7Excu282XX
+    text: Soins
+    img: icons/svg/d20-grey.svg
+    documentId: 5XWd8QG7QOrhUGGO
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.egsmuW7Excu282XX'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: PbUyGLXP54IOapbh
+    text: Armes (au choix du meneur)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!DsTCUyfxzZ0ebZeF.PbUyGLXP54IOapbh'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!DsTCUyfxzZ0ebZeF'
+

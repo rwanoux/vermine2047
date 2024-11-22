@@ -1,0 +1,150 @@
+folder: 1pvgIDHYjQZVdpjn
+name: PERSONNAGE - OBJECTIFS MAJEURS
+_id: sKIC6MlKF6rQRlU4
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: x0bvidHmn4BcIBmK
+    text: Retrouver un proche disparu.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.x0bvidHmn4BcIBmK'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: b2y95OMCFrrIgLun
+    text: >-
+      Capturer un spécimen de scolie à front jaune pour en extraire de
+      l’hémolymphe et fabriquer de l’antivenin.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.b2y95OMCFrrIgLun'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: YDPF1fBfEERIY0UU
+    text: Buter le leader de la Base et tous ceux qui tenteront de m’en empêcher
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.YDPF1fBfEERIY0UU'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: k2O1Fun7FGWpMnkj
+    text: Amener le Groupe à bon port, sans aucune perte.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.k2O1Fun7FGWpMnkj'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: jpD5XniaWEWleTTd
+    text: Fonder une famille dans un endroit sûr.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.jpD5XniaWEWleTTd'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: tAyzsnqfR9MYT94X
+    text: Sauver une oeuvre d’art de la destruction.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.tAyzsnqfR9MYT94X'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Jek5Cqc2Y2dVnMdw
+    text: Étendre ma Renommée à toute la France grâce à mes talents.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.Jek5Cqc2Y2dVnMdw'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: Oo08IPLOoyPvOlOI
+    text: Me venger de la Horde et mettre un terme à ses agissements.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.Oo08IPLOoyPvOlOI'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: hjdO6KXy7InUEgld
+    text: Découvrir l’Île du Salut, et l’hôpital qu’elle est encore censée abriter.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.hjdO6KXy7InUEgld'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: pgIAgMgSihEJO5G9
+    text: >-
+      Trouver un moyen de purififier de l’eau en grande quantité pour en faire
+      profiter un maximum de gens.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!sKIC6MlKF6rQRlU4.pgIAgMgSihEJO5G9'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!sKIC6MlKF6rQRlU4'
+

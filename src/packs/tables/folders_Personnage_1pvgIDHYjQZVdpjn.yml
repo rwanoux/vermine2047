@@ -1,0 +1,20 @@
+name: Personnage
+sorting: a
+folder: null
+type: RollTable
+_id: 1pvgIDHYjQZVdpjn
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.1pvgIDHYjQZVdpjn
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858015
+  modifiedTime: 1732291858176
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!1pvgIDHYjQZVdpjn'
+

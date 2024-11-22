@@ -1,0 +1,71 @@
+folder: fFHxPAEUycpHr62y
+name: Canon scié
+type: weapon
+img: systems/vermine2047/assets/icons/items/weapon.webp
+system:
+  description: ''
+  rarity:
+    value: null
+    handicap: '0'
+  reliability: 6
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits:
+    lourd:
+      name: Lourd
+      description: >-
+        L’objet est particulièrement lourd et demande une Vigueur minimum de(n)
+        D pour être porté, manié ou utilisé correctement.Si la Vigueur du
+        personnage est inférieure à(n), il subit un Malus de 1D. S’il porte
+        plusieurs objets Lourds, comme une arme Lourde et une Protection
+        blindée, les Malus éventuels se cumulent.
+      value: 2
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  min_range: 5
+  max_range: 20
+  damage:
+    value: null
+    type: '0'
+    addVigor: false
+  ammo: 0
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414693
+  modifiedTime: 1732294414693
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_id: fmVe2FVMLwsfK17I
+_key: '!items!fmVe2FVMLwsfK17I'
+

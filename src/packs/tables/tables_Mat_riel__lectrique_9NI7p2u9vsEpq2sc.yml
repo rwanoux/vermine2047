@@ -1,0 +1,146 @@
+name: Matériel électrique
+_id: 9NI7p2u9vsEpq2sc
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: aOBge9F2lFTGUmLY
+    text: 'Multimètre (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.aOBge9F2lFTGUmLY'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: Lk6GAlwrRkrKVpem
+    text: Scotch d’électricien
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.Lk6GAlwrRkrKVpem'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: VWyQlyAlYZY4IbMn
+    text: 'Pince de précision (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.VWyQlyAlYZY4IbMn'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: L7BIJO8rKtvojWBX
+    text: Gants isolants - Protection partielle 0/1 (F)*
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.L7BIJO8rKtvojWBX'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: dJi9y8ZwgCkgDUNg
+    text: 'Pince à dénuder (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.dJi9y8ZwgCkgDUNg'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: Zk9DKYejD2AWimpQ
+    text: 'Tournevis de précision (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.Zk9DKYejD2AWimpQ'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Ty4qEbPjKT0LQ06E
+    text: 'Chargeur (piles, accus…) (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.Ty4qEbPjKT0LQ06E'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: taNao7hOiHOoO1OE
+    text: Bobine d’étain
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.taNao7hOiHOoO1OE'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 76solazXwMHhE2bb
+    text: 'Aimants (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.76solazXwMHhE2bb'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: vspTug36sRG80Znj
+    text: 'Fer à souder (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NI7p2u9vsEpq2sc.vspTug36sRG80Znj'
+replacement: true
+displayRoll: true
+folder: 2MYjLakLwB6C0V3K
+sort: 200000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!9NI7p2u9vsEpq2sc'
+

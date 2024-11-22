@@ -1,0 +1,165 @@
+folder: E7wK1Y73yfokmf1U
+name: ENNEMIS
+_id: xXpljJ96pMXd8QCS
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: ufiBrKU17f1jZcfr
+    text: >-
+      Les Rongeurs, un groupe de charognards dont nous avons tué plusieurs
+      membres.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.ufiBrKU17f1jZcfr'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: YOFwt3I6JbEq7FDV
+    text: >-
+      Elle se fait appeler « C ». Elle et sa ruche nous ont chassés de leur «
+      colonie »… après nous avoir délestés de notre matériel.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.YOFwt3I6JbEq7FDV'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 83azrAV5ZogMsIsh
+    text: Élie, qui semble revenir nous chasser à chaque nouvelle lune.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.83azrAV5ZogMsIsh'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: b0WSUNtfhxQa7aC4
+    text: >-
+      Marius, ce « docteur » toujours à la recherche de cobayes pour ses
+      expériences.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.b0WSUNtfhxQa7aC4'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 12ofZIlDlThlrK58
+    text: >-
+      La section 4, un groupe paramilitaire. Nous les avons coiffés au poteau
+      pour vider un stock de médicaments.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.12ofZIlDlThlrK58'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 8dlEPPH2ytfD2u8p
+    text: >-
+      Ils n’ont pas de nom. Ils ont voulu qu’on mange l’un d’entre eux pour
+      pouvoir nous sacrififier ensuite. Leur « déesse » se cachait dans une
+      grange, elle avait l’air énorme. Affamée…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.8dlEPPH2ytfD2u8p'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: EEschkxaBANFxJnD
+    text: >-
+      La Meute. Ils ont dressé des chiens. On voulait juste traverser cette zone
+      industrielle…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.EEschkxaBANFxJnD'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: mMJW1yY6qkhXnL1K
+    text: >-
+      Parfois on craque pour la personne qu’il ne faut pas. C’est arrivé à l’un
+      d’entre nous. Le légitime n’a pas apprécié.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.mMJW1yY6qkhXnL1K'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: UbWqw5VJL7yOaJ7Q
+    text: >-
+      Quand on a cramé cette termitière, comment aurions-nous pu deviner que des
+      Adaptés s’en nourrissaient ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.UbWqw5VJL7yOaJ7Q'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 22D75NpbhVz7y03q
+    text: >-
+      Don et ses gars semblent vraiment vouloir faire main basse sur cette pièce
+      d’équipement rare que nous possédons.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!xXpljJ96pMXd8QCS.22D75NpbhVz7y03q'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!xXpljJ96pMXd8QCS'
+

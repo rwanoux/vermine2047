@@ -1,0 +1,146 @@
+folder: 2MYjLakLwB6C0V3K
+name: Produits d’hygiène
+_id: q5hekiCP1CQthJFA
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: l1bxG0isCtzz8KrV
+    text: Brosse à cheveux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.l1bxG0isCtzz8KrV'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: ltPDArBRAImjz9av
+    text: Crème solaire ou spray antimoustique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.ltPDArBRAImjz9av'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: NVCcJ5DOaw9eLc4M
+    text: Dentifrice
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.NVCcJ5DOaw9eLc4M'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: XYEmbKADK367FIsJ
+    text: Coupe-ongles ou ciseaux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.XYEmbKADK367FIsJ'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: rHCjNNNIRrSUeTlO
+    text: Savon ou dentifrice
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.rHCjNNNIRrSUeTlO'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: ZNC4OYLwphXfRK0T
+    text: Alcool à 70°
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.ZNC4OYLwphXfRK0T'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: oefjMexGu6KOZ6fW
+    text: Mouchoir, gant de toilette
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.oefjMexGu6KOZ6fW'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: 12HR8NSgGlvkFsFd
+    text: Préservatifs, protections périodiques
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.12HR8NSgGlvkFsFd'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 2ApCnQ33rXBz1h3B
+    text: Pince à épiler
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.2ApCnQ33rXBz1h3B'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: mxuWA5NK4gMP45Ud
+    text: Pansements adhésifs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!q5hekiCP1CQthJFA.mxuWA5NK4gMP45Ud'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: ''
+_key: '!tables!q5hekiCP1CQthJFA'
+

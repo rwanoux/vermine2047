@@ -1,0 +1,20 @@
+name: Objets
+sorting: a
+folder: null
+type: Item
+_id: 26K0SlUaJQSiRLxy
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.26K0SlUaJQSiRLxy
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294419691
+  modifiedTime: 1732294420423
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!26K0SlUaJQSiRLxy'
+

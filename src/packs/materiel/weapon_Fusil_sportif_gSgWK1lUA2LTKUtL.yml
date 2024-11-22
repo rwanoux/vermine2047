@@ -1,0 +1,67 @@
+folder: fFHxPAEUycpHr62y
+name: Fusil sportif
+type: weapon
+img: systems/vermine2047/assets/icons/items/weapon.webp
+system:
+  description: <p>Fragile, Pratique</p>
+  rarity:
+    value: null
+    handicap: '0'
+  reliability: 6
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits:
+    pratique: {}
+    cassant:
+      name: cassant
+      description: Toutes les pertes de Fiabilité subies sont majorées de 1 point.
+      value: 0
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  min_range: 5
+  max_range: 20
+  damage:
+    value: null
+    type: '0'
+    addVigor: false
+  ammo: 0
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414693
+  modifiedTime: 1732294414693
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_id: gSgWK1lUA2LTKUtL
+_key: '!items!gSgWK1lUA2LTKUtL'
+

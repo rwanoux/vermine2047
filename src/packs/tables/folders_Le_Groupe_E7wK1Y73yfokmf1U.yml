@@ -1,0 +1,20 @@
+name: Le Groupe
+sorting: a
+folder: null
+type: RollTable
+_id: E7wK1Y73yfokmf1U
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.E7wK1Y73yfokmf1U
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855258
+  modifiedTime: 1732291855490
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!E7wK1Y73yfokmf1U'
+

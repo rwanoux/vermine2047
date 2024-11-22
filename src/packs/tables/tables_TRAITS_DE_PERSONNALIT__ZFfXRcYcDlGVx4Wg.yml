@@ -1,0 +1,506 @@
+folder: 1pvgIDHYjQZVdpjn
+name: TRAITS DE PERSONNALITÉ
+_id: ZFfXRcYcDlGVx4Wg
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: dg7qzIDvl0dtGy18
+    text: Aventureux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.dg7qzIDvl0dtGy18'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: Wq7JRRJaj89aS8cz
+    text: Altruiste
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Wq7JRRJaj89aS8cz'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: qC8xAclGddnzJi5E
+    text: Astucieux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.qC8xAclGddnzJi5E'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 3lNj0fcn4u5Nak0w
+    text: Calme
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.3lNj0fcn4u5Nak0w'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 0YM0Lvdf9MF22PK3
+    text: Romantique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.0YM0Lvdf9MF22PK3'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: lWglk7Xy6RVrPWvG
+    text: Déterminé
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.lWglk7Xy6RVrPWvG'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: NpcyOBH68SPmLJ0T
+    text: Enthousiaste
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.NpcyOBH68SPmLJ0T'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: CyL4rJUIbMnPM0hR
+    text: Méticuleux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.CyL4rJUIbMnPM0hR'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: tktrzIPU03QI2vhh
+    text: Bienveillant
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.tktrzIPU03QI2vhh'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: QKf7LY6RAU9ia31i
+    text: Diplomate
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.QKf7LY6RAU9ia31i'
+  - type: text
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: iePtporsjbu7ZdzV
+    text: Ambitieux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.iePtporsjbu7ZdzV'
+  - type: text
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: z5qxQHI2O9uTwSAU
+    text: Charismatique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.z5qxQHI2O9uTwSAU'
+  - type: text
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _id: w6PzftPigmKCU9DZ
+    text: Confiant
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.w6PzftPigmKCU9DZ'
+  - type: text
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _id: AplojPbp289pA5V2
+    text: Fantasque
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.AplojPbp289pA5V2'
+  - type: text
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _id: Jx0N1EpaCtboeRD0
+    text: Curieux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Jx0N1EpaCtboeRD0'
+  - type: text
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _id: Jmovc61Zjsmx3s7T
+    text: Exubérant
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Jmovc61Zjsmx3s7T'
+  - type: text
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _id: 6hnfkKHFH6WW8f9C
+    text: Honnête
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.6hnfkKHFH6WW8f9C'
+  - type: text
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _id: wMwyjynWsg9c1nTC
+    text: Pensif
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.wMwyjynWsg9c1nTC'
+  - type: text
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    _id: agOndPiENR7RWSL8
+    text: Cérébral
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.agOndPiENR7RWSL8'
+  - type: text
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    _id: bKyz3OB6DtgibI1g
+    text: Émotif
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.bKyz3OB6DtgibI1g'
+  - type: text
+    weight: 1
+    range:
+      - 21
+      - 21
+    drawn: false
+    _id: ovYrhDDi6ZnPHeM0
+    text: Désespéré
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.ovYrhDDi6ZnPHeM0'
+  - type: text
+    weight: 1
+    range:
+      - 22
+      - 22
+    drawn: false
+    _id: wc6VNNvzzrR5ZM0B
+    text: Brutal
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.wc6VNNvzzrR5ZM0B'
+  - type: text
+    weight: 1
+    range:
+      - 23
+      - 23
+    drawn: false
+    _id: MxLXtdEabWdACa5R
+    text: Arrogant
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.MxLXtdEabWdACa5R'
+  - type: text
+    weight: 1
+    range:
+      - 24
+      - 24
+    drawn: false
+    _id: Xu8ZBEML27yHJuM6
+    text: Désabusé
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Xu8ZBEML27yHJuM6'
+  - type: text
+    weight: 1
+    range:
+      - 25
+      - 25
+    drawn: false
+    _id: jYCzSgSK1FENhyhi
+    text: Malhonnête
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.jYCzSgSK1FENhyhi'
+  - type: text
+    weight: 1
+    range:
+      - 26
+      - 26
+    drawn: false
+    _id: C4gAEQNO3sxxnGzm
+    text: Baratineur
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.C4gAEQNO3sxxnGzm'
+  - type: text
+    weight: 1
+    range:
+      - 27
+      - 27
+    drawn: false
+    _id: Nd7A7XVupVP8yDHN
+    text: Névrosé
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Nd7A7XVupVP8yDHN'
+  - type: text
+    weight: 1
+    range:
+      - 28
+      - 28
+    drawn: false
+    _id: rn3TH2YvcUWKMv5n
+    text: Distrait
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.rn3TH2YvcUWKMv5n'
+  - type: text
+    weight: 1
+    range:
+      - 29
+      - 29
+    drawn: false
+    _id: PItehZfNitdZucel
+    text: Buté
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.PItehZfNitdZucel'
+  - type: text
+    weight: 1
+    range:
+      - 30
+      - 30
+    drawn: false
+    _id: rx4NV8r0Y3fcBPCp
+    text: Cynique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.rx4NV8r0Y3fcBPCp'
+  - type: text
+    weight: 1
+    range:
+      - 31
+      - 31
+    drawn: false
+    _id: QQqqedcl2cPxpxAw
+    text: Débauché
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.QQqqedcl2cPxpxAw'
+  - type: text
+    weight: 1
+    range:
+      - 32
+      - 32
+    drawn: false
+    _id: ngIXpzx50abUEJyY
+    text: Lymphatique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.ngIXpzx50abUEJyY'
+  - type: text
+    weight: 1
+    range:
+      - 33
+      - 33
+    drawn: false
+    _id: MKSfHb2fEyBKfsXh
+    text: Paresseux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.MKSfHb2fEyBKfsXh'
+  - type: text
+    weight: 1
+    range:
+      - 34
+      - 34
+    drawn: false
+    _id: n3T2s7OoDjh6S8FF
+    text: Fourbe
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.n3T2s7OoDjh6S8FF'
+  - type: text
+    weight: 1
+    range:
+      - 35
+      - 35
+    drawn: false
+    _id: vQAY5M9kjiBdrdit
+    text: Détaché
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.vQAY5M9kjiBdrdit'
+  - type: text
+    weight: 1
+    range:
+      - 36
+      - 36
+    drawn: false
+    _id: K103ndqj13Ywb7vA
+    text: Égoïste
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.K103ndqj13Ywb7vA'
+  - type: text
+    weight: 1
+    range:
+      - 37
+      - 37
+    drawn: false
+    _id: Gh7HXLrflNd1EynM
+    text: Orgueilleux
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.Gh7HXLrflNd1EynM'
+  - type: text
+    weight: 1
+    range:
+      - 38
+      - 38
+    drawn: false
+    _id: mruNTHeK3VxTi1kw
+    text: Opportuniste
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.mruNTHeK3VxTi1kw'
+  - type: text
+    weight: 1
+    range:
+      - 39
+      - 39
+    drawn: false
+    _id: bYWCYZsFnc5n7Usv
+    text: Machiavélique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.bYWCYZsFnc5n7Usv'
+  - type: text
+    weight: 1
+    range:
+      - 40
+      - 40
+    drawn: false
+    _id: vo4EOmLTPrO8Zu7T
+    text: Rebelle
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZFfXRcYcDlGVx4Wg.vo4EOmLTPrO8Zu7T'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d40
+_key: '!tables!ZFfXRcYcDlGVx4Wg'
+

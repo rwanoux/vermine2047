@@ -1,0 +1,176 @@
+folder: 6oZ2nytAVyR5lCgQ
+name: NOUVEAUX VENUS
+_id: HoTLrJGjgvazrCdF
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: z7w7hJaTTcyQLYXw
+    text: >-
+      Une femme enceinte est retrouvée, délirante de fièvre. Elle se plaint de
+      douleurs à l’abdomen, son ventre est particulièrement gros. Quelques jours
+      plus tard, un émissaire d’une autre Communauté exige de la récupérer.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.z7w7hJaTTcyQLYXw'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: sgZnncaQMlBalAOM
+    text: >-
+      Un groupe d’enfants sales, aux visages et aux habits lacérés, est repéré.
+      Ils fuient si on cherche à les rejoindre, mais ils ne peuvent pas
+      s’empêcher de s’approcher lorsqu’on ne s’en occupe plus.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.sgZnncaQMlBalAOM'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 2kRWMm4T3CtNXJ9i
+    text: >-
+      Une remorque de camion rafistolée de partout, tractée par un cheval et un
+      dromadaire, se présente ; il s’agit d’un marchand itinérant et de ses
+      mercenaires prêts à tout pour vanter la qualité de leurs possessions : des
+      bêtes en cage, affffamées et malmenées.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.2kRWMm4T3CtNXJ9i'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: qNRtS0FZvTEdAoZu
+    text: >-
+      Des survivants assoiffés, affamés et épuisés réclament un refuge pour la
+      nuit. Ils sont désespérés.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.qNRtS0FZvTEdAoZu'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 5grKODNXfHQB2WMw
+    text: >-
+      Une patrouille repère deux à quatre individus bien équipés et munis
+      d’armes à feu de qualité, qui se déplacent d’une manière très organisée en
+      observant tout ce qui se passe autour d’eux.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.5grKODNXfHQB2WMw'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: cBlPxJ9UkqmTC8GL
+    text: >-
+      Un contact radio, un feu au loin, des cris dans la forêt, des silhouettes
+      en haut de la colline ou du bâtiment… Quelqu’un circule librement dans les
+      environs et cherche à entrer en contact.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.cBlPxJ9UkqmTC8GL'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: gEBWL8Bv0PReyy1I
+    text: >-
+      Un individu seul, isolé, qui n’a rien d’un survivant et qui pourtant
+      s’expose dangereusement. C’est un spécialiste, un Ancien, quelqu’un qui
+      s’y connaît. Exactement celui dont vous aviez besoin…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.gEBWL8Bv0PReyy1I'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: OMhA9MczyerLd81l
+    text: >-
+      Plusieurs fourgons tractés par des bêtes et d’autres qui roulent encore
+      par eux-mêmes laissent descendre un groupe de marchands qui ont estimé que
+      votre Communauté pouvait être ouverte au troc. Mais avant de vendre leurs
+      babioles, ils attendent de savoir ce que vous avez à proposer à l’échange.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.OMhA9MczyerLd81l'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: pzpzTHGtg0VF52zh
+    text: >-
+      Une meute de chiens, un troupeau de chevaux, ou tout autre type d’animal,
+      circule dans les environs et s’approche parfois pour boire ou manger.
+      Doit-on les chasser, les anéantir… ou les apprivoiser ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.pzpzTHGtg0VF52zh'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: Oi9nu52o2Q9NrQeU
+    text: >-
+      Un petit groupe de survivants en panique est aux portes de la Communauté.
+      Ils sont effrayés et semblent avoir fui quelqu’un… ou quelque chose.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HoTLrJGjgvazrCdF.Oi9nu52o2Q9NrQeU'
+replacement: true
+displayRoll: true
+sort: 300000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761159
+  modifiedTime: 1732291761159
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!HoTLrJGjgvazrCdF'
+

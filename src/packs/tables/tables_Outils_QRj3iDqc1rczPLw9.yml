@@ -1,0 +1,146 @@
+name: Outils
+_id: QRj3iDqc1rczPLw9
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: MU8Mdz7zx3g6eOZ0
+    text: 'Tournevis (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.MU8Mdz7zx3g6eOZ0'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: lBlLSYHdCBaP2nbT
+    text: 'Marteau (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.lBlLSYHdCBaP2nbT'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 17UcFYtfwstoFwA9
+    text: 'Pied-de-biche (F : 10)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.17UcFYtfwstoFwA9'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 9rrDJgkts0tTNGOP
+    text: 'Pince coupante (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.9rrDJgkts0tTNGOP'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: pESAAocWfnpjKMYa
+    text: 'Cutter (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.pESAAocWfnpjKMYa'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: xwg3BD3ebKUvrkV6
+    text: 'Perceuse (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.xwg3BD3ebKUvrkV6'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Hkufc1ZGSNwrfrgx
+    text: 'Clé à molette (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.Hkufc1ZGSNwrfrgx'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: 9HTfJyEJ1bOFzm8a
+    text: 'Pince multi (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.9HTfJyEJ1bOFzm8a'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: O76no8ymkA4gzle1
+    text: 'Clé plate (F : 10)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.O76no8ymkA4gzle1'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 3zcrGpIXKgg24493
+    text: 'Scie (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!QRj3iDqc1rczPLw9.3zcrGpIXKgg24493'
+replacement: true
+displayRoll: true
+folder: 2MYjLakLwB6C0V3K
+sort: 400000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!QRj3iDqc1rczPLw9'
+

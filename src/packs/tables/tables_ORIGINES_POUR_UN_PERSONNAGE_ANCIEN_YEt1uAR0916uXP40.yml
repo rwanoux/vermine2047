@@ -1,0 +1,185 @@
+folder: 1pvgIDHYjQZVdpjn
+name: ORIGINES POUR UN PERSONNAGE ANCIEN
+_id: YEt1uAR0916uXP40
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: rM54pYQ3ExDgKZSV
+    text: >-
+      Mes recherches dans une réserve naturelle m’ont préservé du pire. J’ai vu
+      l’humanité crouler de loin, et la Nature se transformer de près. Je m’en
+      sortais plutôt pas mal, loin de tout, jusqu’à ce que les pillards
+      débarquent.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.rM54pYQ3ExDgKZSV'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: jj0F4khUE6wQjhfP
+    text: >-
+      J’ai vu le monde passer du calme relatif à l’instabilité croissante pour
+      finir dans le chaos général, tentant tant bien que mal de continuer à
+      enseigner l’histoire à des gamins qui s’en désintéressaient de plus en
+      plus. Je n’aurais jamais cru qu’on allait régresser jusqu’au Moyen Âge.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.jj0F4khUE6wQjhfP'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: b7LKuxU2azbcPCYU
+    text: >-
+      Ma carrière dans l’armée m’avait appris à me défendre et à me préparer au
+      pire. Elle ne m’avait pas préparé à ce qu’il n’y ait plus vraiment ni
+      pays, ni armée.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.b7LKuxU2azbcPCYU'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: ntqVhWcniyURAX9M
+    text: >-
+      J’ai toujours aimé la mer. Les sorties de pêche avec mon père, les courses
+      de voilier quand j’étais jeune, le petit bateau qu’on a acheté avec mon
+      époux. Nous pensions être à l’abri sur l’eau, et puis une simple coupure
+      sur un poisson qu’il a pêché, et me voilà seule.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.ntqVhWcniyURAX9M'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 3uQ2UtTWY4Myuf3W
+    text: >-
+      Je vivais une vie tranquille qui me convenait : métro, boulot, dodo, rien
+      de bien excitant à part mes parties de jeux de rôle avec les amis. On
+      s’imaginait aventuriers. Quand l’épidémie a frappé et qu’on a dû fuir la
+      grande ville, nous en sommes devenus pour de vrai.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.3uQ2UtTWY4Myuf3W'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 6eHw4wu5OVebv378
+    text: >-
+      Je fais partie de la dernière génération à avoir reçu une éducation
+      médicale complète, avant que les universités et les hôpitaux ne soient
+      complètement dépassés. Ceci dit, sans matériel, ni médicaments, je suis à
+      peine plus efficace qu’un adepte de la saignée.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.6eHw4wu5OVebv378'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: hyYZuzjEl9AXBPoo
+    text: >-
+      Personne ne me croyait. Ils me traitaient de vieux fou, de parano. Mais
+      j’ai quand même passé toute ma vie à me préparer. Une cabane dans la
+      forêt, des armes, des provisions, du matériel. Quand la fin du monde est
+      arrivée, j’étais prêt, et eux étaient morts.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.hyYZuzjEl9AXBPoo'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: S8B0FY7FhpKVDlDW
+    text: >-
+      Quand tout est parti en vrille, j’ai su que seule la foi pouvait nous
+      sauver. Le châtiment divin était là. Pendant que mes proches mouraient de
+      maladie, je priais. Alors que la vermine envahissait mon village, je
+      priais. Ma survie prouve bien que mes prières sont entendues.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.S8B0FY7FhpKVDlDW'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: MpIQTw4T2295E90r
+    text: >-
+      Déjà au début du siècle, la peinture ne payait pas. Et plus ça avançait,
+      moins les gens avaient d’argent à dépenser pour l’art. Mais un artiste se
+      doit de créer, même quand le simple fait de trouver des pinceaux est un
+      calvaire en soi.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.MpIQTw4T2295E90r'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: odiVlzpVEeeL7A0g
+    text: >-
+      Avant l’effondrement, on pouvait voyager. Beaucoup. J’ai toujours voulu
+      visiter la France, mais je remettais ça à plus tard. Maintenant, tant qu’à
+      vivre sur la route, autant réaliser ce rêve, même si ça veut dire
+      parcourir des milliers de kilomètres pour y arriver.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YEt1uAR0916uXP40.odiVlzpVEeeL7A0g'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!YEt1uAR0916uXP40'
+

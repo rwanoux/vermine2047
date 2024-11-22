@@ -1,0 +1,73 @@
+folder: JJryHiW4jC8KRrim
+name: Sabre, épée
+type: weapon
+_id: QRWYqNUyIwYDgQJj
+img: systems/vermine2047/assets/icons/items/weapon.webp
+system:
+  description: ''
+  rarity:
+    value: 7
+    handicap: 0
+  reliability: 7
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits:
+    intimidant:
+      name: Intimidant
+      description: >-
+        Tant que le personnage utilise cet objet, il bénéficie d’une Relance de
+        1D sur ses jets visant à effrayer, impressionner ou menacer. Il subit
+        cependant un Malus de 1D à toutes ses Actions avec Psychologie.Le meneur
+        peut décider qu’une créature est trop bête ou trop confiante pour se
+        laisser intimider.De plus si votre personnage brandit un objet
+        Intimidant mais démontre rapidement qu’il ne sait pas s’en servir, le
+        meneur peut le priver de sa Relance.
+      value: 0
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  min_range: 0
+  max_range: 0
+  damage:
+    value: 2
+    type: L
+    addVigor: false
+  ammo: 0
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294414693
+  modifiedTime: 1732294414693
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!items!QRWYqNUyIwYDgQJj'
+

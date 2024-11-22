@@ -1,0 +1,104 @@
+folder: eZy1jYCnVZ8ZPNm7
+name: RETARD
+_id: tEHdqUMnrN0yqhX1
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: nkeYmnXQ1cAuT2OA
+    text: La fatigue ou le manque d’entraînement
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.nkeYmnXQ1cAuT2OA'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: HG33w9vHRlCGGzkX
+    text: >-
+      Un matériel insuffiffisant ou défificient lâche au mauvais moment
+      (boussole, coupe-coupe, bottes, etc.)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.HG33w9vHRlCGGzkX'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: wgslFGOr6gEWgKMR
+    text: L’expédition s’égare
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.wgslFGOr6gEWgKMR'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: mQTYLIlXROefmoSl
+    text: >-
+      Un PNJ (ou les personnages liés au Totem Adapté) perçoit un danger que
+      l’expédition décide de contourner
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.mQTYLIlXROefmoSl'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 1TsBOPrePcB3Zm4U
+    text: >-
+      Des détours pour éviter un obstacle naturel (ravine, marécage, plantes
+      vénéneuses)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.1TsBOPrePcB3Zm4U'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: r3t3xvVXvEPhNR5w
+    text: La recherche d’un point d’eau potable
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tEHdqUMnrN0yqhX1.r3t3xvVXvEPhNR5w'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291770580
+  modifiedTime: 1732291770580
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d6
+_key: '!tables!tEHdqUMnrN0yqhX1'
+

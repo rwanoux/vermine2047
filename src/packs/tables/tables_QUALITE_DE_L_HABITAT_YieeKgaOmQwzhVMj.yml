@@ -1,0 +1,146 @@
+folder: E7wK1Y73yfokmf1U
+name: QUALITE DE L'HABITAT
+_id: YieeKgaOmQwzhVMj
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: tCQOnnKw1i7TZTOg
+    text: Barricadé, imprenable
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.tCQOnnKw1i7TZTOg'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: hvpiY3guXr8Qpn6C
+    text: Aux trois quarts effondré
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.hvpiY3guXr8Qpn6C'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: w986h4junj1lP0P0
+    text: Envahi de végétation
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.w986h4junj1lP0P0'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 2leQAe5nntbd9Tmv
+    text: Sans aucune trace de vermine
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.2leQAe5nntbd9Tmv'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: ndykKg0z8Mrr1MVh
+    text: Rongé par l’humidité
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.ndykKg0z8Mrr1MVh'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: V0qhoz4V1UQnNfNc
+    text: Très isolé
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.V0qhoz4V1UQnNfNc'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: TFi94VLTHkGht0pA
+    text: Complètement invisible
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.TFi94VLTHkGht0pA'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: GQdzG3v9FMxiv3b2
+    text: Où nous devons cohabiter avec…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.GQdzG3v9FMxiv3b2'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: nngM86N9APnMPTvL
+    text: À proximité d’une grande communauté
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.nngM86N9APnMPTvL'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: PKOE2czJRWYZQXlr
+    text: Proche d’une route fréquentée
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!YieeKgaOmQwzhVMj.PKOE2czJRWYZQXlr'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!YieeKgaOmQwzhVMj'
+

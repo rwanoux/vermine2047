@@ -1,0 +1,173 @@
+folder: eZy1jYCnVZ8ZPNm7
+name: ÉVÉNEMENT OU DÉTAIL
+_id: PzY6Mgh2lLWq3sVR
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: TEOwK6XDulVyzo64
+    text: >-
+      Dans une boutique, une bouteille de whisky sur un présentoir. Elle semble
+      neuve. Pourquoi personne ne l’a prise avant ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.TEOwK6XDulVyzo64'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: 09BLq5PvO4WqA2lH
+    text: >-
+      Dans le réfrigérateur d’un restaurant, un cadavre enfermé dans un sac
+      mortuaire. Un papier jauni indique « Contaminé, ne pas ouvrir », mais cela
+      fait longtemps que le corps à l’intérieur est décomposé.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.09BLq5PvO4WqA2lH'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 4khbkqVr9R87xuN5
+    text: >-
+      Des valises entassées pour former un mur et bloquer l’accès à un magasin
+      de sport.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.4khbkqVr9R87xuN5'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: H2DKxc1TtRyCkBRW
+    text: >-
+      Des caddies à bagages qui permettraient aux personnages de transporter les
+      trouvailles des personnages s’ils s’accommodent du grincement de leurs
+      roulettes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.H2DKxc1TtRyCkBRW'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: UEtO4iAKCnLwye5U
+    text: >-
+      Dans les toilettes, un étrange collage d’articles de journaux sur le mur
+      de faïence fait des liens entre des événements apparemment sans rapport
+      entre eux. Le mot virus revient souvent.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.UEtO4iAKCnLwye5U'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 6F5ydDe0BjgRi3Xo
+    text: >-
+      Une rangée de consignes dont tous les casiers ont été ouverts sauf un. Une
+      scolopendre de 50 cm vit embusquée dans l’un des compartiments.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.6F5ydDe0BjgRi3Xo'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 76DEXhp3dKHPqbiJ
+    text: >-
+      Une petite valise rose avec une peluche en forme d’ours coincée dans la
+      poignée. Un de ses yeux pend, encore attaché grâce à un fifil et un de ses
+      bras est arraché.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.76DEXhp3dKHPqbiJ'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: d0lhvhfSNuGkBOTx
+    text: >-
+      Une maison de la presse ravagée par un groupe de pillards de la première
+      heure. Des journaux et des magazines people dont tout le monde se fifiche
+      aujourd’hui jonchent encore le sol. Les livres de jeux et les revues pour
+      adultes ont toutes été emportées depuis longtemps.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.d0lhvhfSNuGkBOTx'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: CDKa3rQ6paq3wuDG
+    text: >-
+      Un plan du terminal indiquant les issues de secours des difffférents
+      niveaux. Griffffonné au marqueur noir comme dans un ultime recours : « Je
+      te retrouverai Juliette, tiens ta promesse ! C. »
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.CDKa3rQ6paq3wuDG'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: t7wDreGfKkLZ1bS0
+    text: >-
+      Un kiosque à glace empêtré dans un agglomérat de chitine et de tissus en
+      putréfaction. L’odeur est insoutenable.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!PzY6Mgh2lLWq3sVR.t7wDreGfKkLZ1bS0'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291770580
+  modifiedTime: 1732291770580
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!PzY6Mgh2lLWq3sVR'
+

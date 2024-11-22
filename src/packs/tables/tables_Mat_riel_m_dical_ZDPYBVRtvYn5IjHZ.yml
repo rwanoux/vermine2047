@@ -1,0 +1,152 @@
+folder: 2MYjLakLwB6C0V3K
+name: Matériel médical
+_id: ZDPYBVRtvYn5IjHZ
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: hkGfMrHhJMasbJWs
+    text: >-
+      Béquilles - Annule un degré de Handicap de Mobilité dû à une blessure,
+      min. (I)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.hkGfMrHhJMasbJWs'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: uXmq7PnniL1Qir5E
+    text: Seringues stériles - Évite les Handicaps sur les jets de soins
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.uXmq7PnniL1Qir5E'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: eENYVosVvE4jTIpi
+    text: Stéthoscope - Bonus aux jets de diagnostic (si Santé Confirmé)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.eENYVosVvE4jTIpi'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 7R5A2QIUN3q5FVa4
+    text: Tensiomètre - Bonus aux jets de diagnostic (si Santé Confirmé)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.7R5A2QIUN3q5FVa4'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: NsaMEBi2LU7xVzCU
+    text: Gants chirurgicaux - Évite les Handicaps sur les jets de soins
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.NsaMEBi2LU7xVzCU'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: TrLkJE1ZsUCo0vlj
+    text: Masques chirurgicaux - Bonus aux jets de Santé contre les maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.TrLkJE1ZsUCo0vlj'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: sQMGN0kx4vi1K7Af
+    text: >-
+      Fil de suture - Bonus aux jets de soin sur les Blessures par Lame (si
+      Santé Confirmé)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.sQMGN0kx4vi1K7Af'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: wE5FHeu8FySJdJMz
+    text: Couverture de survie - Bonus aux jets de Santé face au froid
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.wE5FHeu8FySJdJMz'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: vALenNv2SWO5nbFh
+    text: Sonde d’intubation nasale - Bonus aux jets de soin (si Santé Expert)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.vALenNv2SWO5nbFh'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: RrEMSuGdIRvXwH1Z
+    text: >-
+      Défibrillateur - Permet d’annuler 1 Blessure Mortelle si utilisé dans les
+      5 min
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZDPYBVRtvYn5IjHZ.RrEMSuGdIRvXwH1Z'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!ZDPYBVRtvYn5IjHZ'
+

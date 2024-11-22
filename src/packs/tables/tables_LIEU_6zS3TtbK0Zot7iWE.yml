@@ -1,0 +1,146 @@
+folder: eZy1jYCnVZ8ZPNm7
+name: LIEU
+_id: 6zS3TtbK0Zot7iWE
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: KOgq3VvDNoiw56LW
+    text: Une aire d’autoroute…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.KOgq3VvDNoiw56LW'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: DUh7XM2dSxexv28I
+    text: Un centre commercial…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.DUh7XM2dSxexv28I'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: vm8XcXWCQeH9l4Z3
+    text: Un petit village…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.vm8XcXWCQeH9l4Z3'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: ADgdKvjshCVa2PBx
+    text: Une zone industrielle…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.ADgdKvjshCVa2PBx'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: IiZ9WaI2KkdYKAro
+    text: Une forêt…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.IiZ9WaI2KkdYKAro'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: bArjpqYTkd2m9CG9
+    text: Une école…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.bArjpqYTkd2m9CG9'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Q2GzAthr4ZeaKd9j
+    text: L’épave d’un train…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.Q2GzAthr4ZeaKd9j'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: sc2Mw3fEC9YXr1sz
+    text: Dans un tunnel…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.sc2Mw3fEC9YXr1sz'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: Ux0wnJoMKnPFVhOM
+    text: Un cinéma…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.Ux0wnJoMKnPFVhOM'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: y84tQFPTAfSWmMCH
+    text: Un barrage…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!6zS3TtbK0Zot7iWE.y84tQFPTAfSWmMCH'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291770580
+  modifiedTime: 1732291770580
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: ''
+_key: '!tables!6zS3TtbK0Zot7iWE'
+

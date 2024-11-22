@@ -1,0 +1,20 @@
+name: La Route
+sorting: a
+folder: null
+type: RollTable
+_id: eZy1jYCnVZ8ZPNm7
+description: ''
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.eZy1jYCnVZ8ZPNm7
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291770515
+  modifiedTime: 1732291770715
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!folders!eZy1jYCnVZ8ZPNm7'
+

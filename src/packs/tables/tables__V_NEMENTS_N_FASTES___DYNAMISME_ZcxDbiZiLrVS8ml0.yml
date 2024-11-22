@@ -1,0 +1,173 @@
+folder: 6oZ2nytAVyR5lCgQ
+name: ÉVÉNEMENTS NÉFASTES - DYNAMISME
+_id: ZcxDbiZiLrVS8ml0
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: Z8dkhlDIVt3WQoZ4
+    text: >-
+      Les décisions du meneur de la communauté sont de plus en plus
+      controversées.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.Z8dkhlDIVt3WQoZ4'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: ow7o0KlAp9mke8hY
+    text: >-
+      La faune ou une autre Communauté locale est particulièrement agressive et
+      agitée, ce qui effffraye certains membres de la Communauté et crée un
+      mouvement de panique.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.ow7o0KlAp9mke8hY'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: yk5C0RnzV7gAbZYi
+    text: >-
+      L’échec d’une construction, d’une expédition ou d’une récolte provoque une
+      démotivation générale de la plupart des membres.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.yk5C0RnzV7gAbZYi'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: VQPb7d2sebG6zoGE
+    text: >-
+      Un ou plusieurs membres tentent de former, enseigner, apprendre des choses
+      à d’autres, mais la pédagogie ne fonctionne pas vraiment et les élèves se
+      braquent, ne s’impliquent pas.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.VQPb7d2sebG6zoGE'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: uPKyTokNm0kC6GqK
+    text: >-
+      Des outils spécifiques sont manquants ou en très mauvais état, freinant
+      considérablement l’avancée de travaux de construction, de consolidation ou
+      d’amélioration.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.uPKyTokNm0kC6GqK'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 1gTJJoaiaBAyMyH3
+    text: >-
+      Avec toute la bonne volonté du monde, il est clair qu’il manque des bras
+      pour continuer correctement les tâches du quotidien. Les activités sont
+      freinées, voire irréalisables, tant qu’il n’y aura pas une main-d’oeuvre
+      appropriée.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.1gTJJoaiaBAyMyH3'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 8XTBpJ9inI7M0GcA
+    text: >-
+      Un des Objectifs (majeur ou mineur) paraît insurmontable pour certains
+      membres. Il faut revoir à la baisse les priorités.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.8XTBpJ9inI7M0GcA'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: qnFIORI6U50ypyOn
+    text: >-
+      Une des personnes en charge cumule les mauvaises prises de décisions, aux
+      conséquences de plus en plus graves, tout en refusant d’admettre son
+      manque de compétences.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.qnFIORI6U50ypyOn'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: Lpt7WRfJ0rXXwlOT
+    text: >-
+      Des traces de sabotage sont découvertes. Qui pourrait en être à l’origine,
+      et dans quel but ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.Lpt7WRfJ0rXXwlOT'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: uBMJftLOVK2ClxXx
+    text: >-
+      Des infrastructures sont menacées par une inondation, un glissement de
+      terrain, des températures extrêmes… Il faut intervenir rapidement pour
+      espérer les préserver.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!ZcxDbiZiLrVS8ml0.uBMJftLOVK2ClxXx'
+replacement: true
+displayRoll: true
+sort: 200000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761159
+  modifiedTime: 1732291761159
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!ZcxDbiZiLrVS8ml0'
+

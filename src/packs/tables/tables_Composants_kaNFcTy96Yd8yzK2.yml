@@ -1,0 +1,146 @@
+name: Composants
+_id: kaNFcTy96Yd8yzK2
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 2vXlAci5zI8IsFtU
+    text: Résistances
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.2vXlAci5zI8IsFtU'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: xaKHBGA7DBRrqYjL
+    text: Câblages
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.xaKHBGA7DBRrqYjL'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: FfILGQhGJx4OoeTO
+    text: Accumulateurs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.FfILGQhGJx4OoeTO'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 0yZjmxqDPgoMUnkF
+    text: Puces électroniques
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.0yZjmxqDPgoMUnkF'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: z7feMziUVKiYHVJN
+    text: Capteurs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.z7feMziUVKiYHVJN'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: tdMrHd5Yl8VYnqkA
+    text: Piles
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.tdMrHd5Yl8VYnqkA'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: CAbQ4JCFwXkloI1Q
+    text: Optoélectronique
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.CAbQ4JCFwXkloI1Q'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: DnKQKHpAZDKQhaXq
+    text: Condensateurs
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.DnKQKHpAZDKQhaXq'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: MBfrf93J7VQ5BPLN
+    text: Batterie de véhicule
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.MBfrf93J7VQ5BPLN'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: UvbHCcXEfLTfted5
+    text: Écran
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!kaNFcTy96Yd8yzK2.UvbHCcXEfLTfted5'
+replacement: true
+displayRoll: true
+folder: 2MYjLakLwB6C0V3K
+sort: 100000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!kaNFcTy96Yd8yzK2'
+

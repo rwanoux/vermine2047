@@ -1,0 +1,146 @@
+name: Quincaillerie
+_id: GDlRmTnpxicdT1XZ
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 5VaHQPF546AHS4yo
+    text: Vis
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.5VaHQPF546AHS4yo'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: WR2uEyDkrNP7oNmt
+    text: Clous
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.WR2uEyDkrNP7oNmt'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: PC7pGajNnxPGZpWR
+    text: Scotch
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.PC7pGajNnxPGZpWR'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: HjEJWRCrOPfds0zx
+    text: Colle
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.HjEJWRCrOPfds0zx'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: NxGjRm9ghUbol3dG
+    text: Boulons
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.NxGjRm9ghUbol3dG'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 1VIxYbnbp56qrFVe
+    text: Écrous
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.1VIxYbnbp56qrFVe'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 9owGnxDreY4zlj7e
+    text: Rondelles
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.9owGnxDreY4zlj7e'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: KCH2wCzFlHlDEEg5
+    text: Rivets
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.KCH2wCzFlHlDEEg5'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: ii8iw4sWb2slmnPh
+    text: Colliers de serrage
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.ii8iw4sWb2slmnPh'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: hhQgykkCj2DpSx9w
+    text: Crochets
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!GDlRmTnpxicdT1XZ.hhQgykkCj2DpSx9w'
+replacement: true
+displayRoll: true
+folder: 2MYjLakLwB6C0V3K
+sort: 300000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!GDlRmTnpxicdT1XZ'
+

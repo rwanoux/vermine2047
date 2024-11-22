@@ -1,0 +1,150 @@
+folder: 1pvgIDHYjQZVdpjn
+name: PERSONNAGE - OBJECTIFS MINEURS
+_id: 9NUjXjWIg9GZ80V2
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 3ybnAvErARDMJUhQ
+    text: >-
+      Réparer un objet important, comme une radio à ondes courtes ou un fusil
+      enrayé.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.3ybnAvErARDMJUhQ'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: vX39wbHpxhniLcLR
+    text: >-
+      Cueillir suffisamment de laurier des montagnes pour en faire de
+      l’insecticide.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.vX39wbHpxhniLcLR'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: aSVQ8R6SpcoJVEFL
+    text: Trouver une arme spécififique, comme un fusil de précision.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.aSVQ8R6SpcoJVEFL'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: yNYy3UrT7KSe6JdH
+    text: En apprendre plus sur un autre personnage.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.yNYy3UrT7KSe6JdH'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: RFAhourTck49HboW
+    text: Trouver des épices, j’en ai marre de la bouffe insipide.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.RFAhourTck49HboW'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: Rsz770gIJ4FqqJ7C
+    text: Apprendre à conduire notre véhicule.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.Rsz770gIJ4FqqJ7C'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 1zYfadg845TY5isF
+    text: Recharger la batterie de mon drone, mon appareil photo, mon talkie-walkie…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.1zYfadg845TY5isF'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: YC8NahZ4fFxRBUVu
+    text: Trouver un instrument de musique pour égayer nos soirées.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.YC8NahZ4fFxRBUVu'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 1M7LFdXVZGQbXU35
+    text: Trouver quelqu’un qui pourra me fabriquer des balles à tête creuse.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.1M7LFdXVZGQbXU35'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: oqwc5XsST1hFMwbh
+    text: Me faire tatouer les noms de ceux que j’ai perdus.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!9NUjXjWIg9GZ80V2.oqwc5XsST1hFMwbh'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!9NUjXjWIg9GZ80V2'
+

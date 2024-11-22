@@ -1,0 +1,58 @@
+folder: BvDvVZ46fM0j2gDC
+name: Sérum physiologique
+type: item
+_id: 3j96YuLbTI1OyCzH
+img: systems/vermine2047/assets/icons/items/item.webp
+system:
+  description: ''
+  rarity:
+    value: 7
+    handicap: 0
+  reliability: 3
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits: {}
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  needSkill:
+    value: false
+    skill: ''
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294419909
+  modifiedTime: 1732294419909
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!items!3j96YuLbTI1OyCzH'
+

@@ -1,0 +1,150 @@
+folder: 5NgvRID1TS2GeHYi
+name: CE QU’ON TROUVE DANS LES VOITURES
+_id: Ti1LvKX5Rb4s6QNh
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: document
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: GnRwA7ombPQfxSsK
+    text: Objets Courants
+    img: icons/svg/d20-grey.svg
+    documentId: 2K3iT5neHYH0gwFT
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.GnRwA7ombPQfxSsK'
+  - type: document
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: 7nra93k4YExoft94
+    text: Soins
+    img: icons/svg/d20-grey.svg
+    documentId: 5XWd8QG7QOrhUGGO
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.7nra93k4YExoft94'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: Bc4Ch7lLeW9jfm0E
+    text: Lampe de poche ou chargeur allume-cigare
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.Bc4Ch7lLeW9jfm0E'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: v7CBBSy51qnV4q3b
+    text: Carte routière
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.v7CBBSy51qnV4q3b'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 4OVlYOPXB5qUmTwk
+    text: Câbles de batterie
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.4OVlYOPXB5qUmTwk'
+  - type: document
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: v72CYDxpeOuK6Qwy
+    text: Outillage
+    img: icons/svg/d20-grey.svg
+    documentId: jC7yUlkvSmIsDjzA
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.v72CYDxpeOuK6Qwy'
+  - type: document
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: OYOt5LJRPxxvHIvl
+    text: Pièces de Véhicules
+    img: icons/svg/d20-grey.svg
+    documentId: yoecVdoNEKD8JH5Y
+    flags: {}
+    documentCollection: RollTable
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.OYOt5LJRPxxvHIvl'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: roKGuAAnx7mCAPjT
+    text: Gilet jaune, triangle…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.roKGuAAnx7mCAPjT'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: TUN3hKizQVyQEAMP
+    text: Couverture de survie
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.TUN3hKizQVyQEAMP'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: OHxUWyY0BUdA26vZ
+    text: Marteau brise vitre
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!Ti1LvKX5Rb4s6QNh.OHxUWyY0BUdA26vZ'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!Ti1LvKX5Rb4s6QNh'
+

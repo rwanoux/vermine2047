@@ -1,0 +1,146 @@
+folder: 9T2HfAyfS29pS42O
+name: Communication
+_id: a8TkzGcWwu7GNowm
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 3L33StdqTXLo4jRc
+    text: 'Radio (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.3L33StdqTXLo4jRc'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: VeH3M1UdvEhbbYKk
+    text: 'Tablette (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.VeH3M1UdvEhbbYKk'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: rWDY8zJA4BY1yLSd
+    text: 'Smartphone (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.rWDY8zJA4BY1yLSd'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 2Vp1H6B4gQ2xtPcM
+    text: 'Montre connectée (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.2Vp1H6B4gQ2xtPcM'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 7gChShAcKJJtCoSX
+    text: 'Écouteurs avec micro (F : 5)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.7gChShAcKJJtCoSX'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: FRmSeKKi2VVY2p8H
+    text: 'Radio CB (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.FRmSeKKi2VVY2p8H'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Mf9zJj4yEyqRYsGx
+    text: 'Téléphone cellulaire (F : 9)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.Mf9zJj4yEyqRYsGx'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: PYUUVglTLGJXbddf
+    text: 'Ordinateur (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.PYUUVglTLGJXbddf'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: ZxlLXkFv5LbMm2jG
+    text: 'Station de morse (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.ZxlLXkFv5LbMm2jG'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: aaYFhCxhZ4ibmBHr
+    text: 'Téléphone satellite (F : 7)'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!a8TkzGcWwu7GNowm.aaYFhCxhZ4ibmBHr'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!a8TkzGcWwu7GNowm'
+

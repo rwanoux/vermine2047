@@ -1,0 +1,150 @@
+folder: 2MYjLakLwB6C0V3K
+name: Médicaments
+_id: lvrw1KDUsbEF98uk
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: YJFphpw2aJUirJ7k
+    text: Antiviraux - Bonus aux jets de soin contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.YJFphpw2aJUirJ7k'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: edbExJrsMtt6a6MB
+    text: Antibiotiques - Bonus aux jets de soin contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.edbExJrsMtt6a6MB'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: MXJPsU8UAE72qDJ3
+    text: Antihistaminiques - Bonus aux jets de soin contre certains poisons
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.MXJPsU8UAE72qDJ3'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: 1QtRGwoOXKksdIqj
+    text: Probiotiques - Bonus au jet de Santé contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.1QtRGwoOXKksdIqj'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: 2X5BfluPRGaBzjdq
+    text: >-
+      Antalgiques - Restaure 1D de Réserve de Sang-Froid perdu à cause de la
+      douleur
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.2X5BfluPRGaBzjdq'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: zTXkuGchy3uBY76s
+    text: Aspirine - Bonus aux jets de soin contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.zTXkuGchy3uBY76s'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: Z0lR2Sz9q9ds6peO
+    text: Antiinflammatoire - Restaure 1D de Réserve d’Effort
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.Z0lR2Sz9q9ds6peO'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: Cz0QdGBBtz4ivTAC
+    text: Antidiarrhéiques - Bonus aux jets de soin contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.Cz0QdGBBtz4ivTAC'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: SzlV2UHmGYdFW9MY
+    text: >-
+      Seringue d’adrénaline - Confère +1D de Réserve d’Effort puis -2D de
+      Réserve d’Effort 4 h après
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.SzlV2UHmGYdFW9MY'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: Fum13VJnU6uVTBdB
+    text: Sirop - Bonus aux jets de soin contre certaines maladies
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!lvrw1KDUsbEF98uk.Fum13VJnU6uVTBdB'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291767734
+  modifiedTime: 1732291767734
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!lvrw1KDUsbEF98uk'
+

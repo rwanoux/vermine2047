@@ -1,0 +1,20 @@
+name: Protection
+sorting: a
+folder: null
+type: Item
+_id: cDPaY8tYofGA559j
+sort: 100000
+color: null
+flags: {}
+_stats:
+  compendiumSource: Folder.cDPaY8tYofGA559j
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294422452
+  modifiedTime: 1732294422594
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+description: ''
+_key: '!folders!cDPaY8tYofGA559j'
+

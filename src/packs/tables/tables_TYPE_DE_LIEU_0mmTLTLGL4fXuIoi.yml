@@ -1,0 +1,158 @@
+folder: 6oZ2nytAVyR5lCgQ
+name: TYPE DE LIEU
+_id: 0mmTLTLGL4fXuIoi
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: roQEaLFwqcQPPkhj
+    text: >-
+      Souterrains artifificiels (métro, cave, égout, carrière, parking
+      souterrain)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.roQEaLFwqcQPPkhj'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: z9OhA69SXtEpR2wr
+    text: Zones dangereuses, fortififiées (base militaire, prison, centrale)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.z9OhA69SXtEpR2wr'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: DpW4McYogWKm5Qn2
+    text: Anciens lieux de dépôt (entrepôt, wagon, dock, abattoir, hangar, port)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.DpW4McYogWKm5Qn2'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: Z7Edcy3UCoztvGnz
+    text: Lieux de culte (église, cathédrale, prieuré, crypte, mosquée)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.Z7Edcy3UCoztvGnz'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: bj0uvYn0zdDjyd1a
+    text: >-
+      Zones à ressources (château d’eau, corps de ferme, forêt giboyeuse, ancien
+      verger, bibliothèque)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.bj0uvYn0zdDjyd1a'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: VQ2nQTgPdBrIcYq2
+    text: >-
+      Anciens noeuds d’activités (gare, aéroport, aire d’autoroute, centre
+      commercial)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.VQ2nQTgPdBrIcYq2'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: bTxYaKGmTtmU8bwo
+    text: Anciens terrains aménagés (camping, lotissement, hameau, centre équestre)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.bTxYaKGmTtmU8bwo'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: ZEG3BU5dl5T1sP36
+    text: >-
+      Ruines (épave de navire, carlingue d’avion, immeuble, train accidenté,
+      pont écroulé)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.ZEG3BU5dl5T1sP36'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: gUiTws5eZ1yIutbv
+    text: >-
+      Anciens établissements dédiés (école, garage, magasin, gendarmerie,
+      caserne)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.gUiTws5eZ1yIutbv'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: vSWmgOSKbUpcsQAd
+    text: >-
+      Structures mystérieuses (fourmilière abandonnée, trou dans le sol)* * :
+      Uniquement en Mode Cauchemar ou Apocalypse, relancer en Mode Survie.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!0mmTLTLGL4fXuIoi.vSWmgOSKbUpcsQAd'
+replacement: true
+displayRoll: true
+sort: 100000
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291761159
+  modifiedTime: 1732291761159
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!0mmTLTLGL4fXuIoi'
+

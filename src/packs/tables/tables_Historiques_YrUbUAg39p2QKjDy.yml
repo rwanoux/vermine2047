@@ -13,7 +13,7 @@ results:
     drawn: false
     _id: X6MVePGTCpDvcpye
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.X6MVePGTCpDvcpye'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.X6MVePGTCpDvcpye'
   - text: Compagnon animal majeur
     type: document
     documentCollection: Item
@@ -26,7 +26,7 @@ results:
     drawn: false
     _id: QPTY1NYdwXN4D42b
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.QPTY1NYdwXN4D42b'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.QPTY1NYdwXN4D42b'
   - text: Compagnon animal mineur
     type: document
     documentCollection: Item
@@ -39,7 +39,7 @@ results:
     drawn: false
     _id: IvD2LcTs6PoZEp0M
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.IvD2LcTs6PoZEp0M'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.IvD2LcTs6PoZEp0M'
   - text: Objet fétiche
     type: document
     documentCollection: Item
@@ -52,7 +52,7 @@ results:
     drawn: false
     _id: 2cXsqFKK66cMKZeL
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.2cXsqFKK66cMKZeL'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.2cXsqFKK66cMKZeL'
   - text: Héros local
     type: document
     documentCollection: Item
@@ -65,7 +65,7 @@ results:
     drawn: false
     _id: I9dllgjwWqMf7sAn
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.I9dllgjwWqMf7sAn'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.I9dllgjwWqMf7sAn'
   - text: Mental d'acier
     type: document
     documentCollection: Item
@@ -78,7 +78,7 @@ results:
     drawn: false
     _id: yg18gLo2KgV2XaMi
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.yg18gLo2KgV2XaMi'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.yg18gLo2KgV2XaMi'
   - text: Nomade
     type: document
     documentCollection: Item
@@ -91,7 +91,7 @@ results:
     drawn: false
     _id: 1uDVmxo1E6kL7jjD
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.1uDVmxo1E6kL7jjD'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.1uDVmxo1E6kL7jjD'
   - text: Organisation alliée
     type: document
     documentCollection: Item
@@ -104,7 +104,7 @@ results:
     drawn: false
     _id: N7hyFnErNAhmYfFN
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.N7hyFnErNAhmYfFN'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.N7hyFnErNAhmYfFN'
   - text: Refuge secret
     type: document
     documentCollection: Item
@@ -117,7 +117,7 @@ results:
     drawn: false
     _id: 76B2ZqYbFVJ9hi0E
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.76B2ZqYbFVJ9hi0E'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.76B2ZqYbFVJ9hi0E'
   - text: Relique
     type: document
     documentCollection: Item
@@ -130,7 +130,7 @@ results:
     drawn: false
     _id: hcI1rdESMXAp61EH
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.hcI1rdESMXAp61EH'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.hcI1rdESMXAp61EH'
   - text: Réseau
     type: document
     documentCollection: Item
@@ -143,7 +143,7 @@ results:
     drawn: false
     _id: cSFuzQJFACZJKOtI
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.cSFuzQJFACZJKOtI'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.cSFuzQJFACZJKOtI'
   - text: Vieil ami
     type: document
     documentCollection: Item
@@ -156,27 +156,28 @@ results:
     drawn: false
     _id: ymnitiW2yAuk75M3
     flags: {}
-    _key: '!tables.results!dXo0EN9ieo1tSnRY.ymnitiW2yAuk75M3'
+    _key: '!tables.results!YrUbUAg39p2QKjDy.ymnitiW2yAuk75M3'
 formula: 1d12
 img: icons/svg/clockwork.svg
 replacement: true
 displayRoll: true
 folder: null
 flags:
-  core: {}
+  core:
+    sourceId: Compendium.vermine2047.table.RollTable.dXo0EN9ieo1tSnRY
 _stats:
-  systemId: vermine2047
-  systemVersion: 0.1.12
-  coreVersion: '12.327'
-  createdTime: 1694086932003
-  modifiedTime: 1694101186092
-  lastModifiedBy: F3zbj3L14DMaK5jv
-  compendiumSource: null
+  compendiumSource: Compendium.vermine2047.table.RollTable.dXo0EN9ieo1tSnRY
   duplicateSource: null
-_id: dXo0EN9ieo1tSnRY
-sort: 0
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291757001
+  modifiedTime: 1732291757001
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
 ownership:
   default: 0
-  F3zbj3L14DMaK5jv: 3
-_key: '!tables!dXo0EN9ieo1tSnRY'
+  7CP3rbvwLNGl5Ilf: 3
+_id: YrUbUAg39p2QKjDy
+sort: 0
+_key: '!tables!YrUbUAg39p2QKjDy'
 

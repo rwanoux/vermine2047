@@ -1,0 +1,146 @@
+folder: eZy1jYCnVZ8ZPNm7
+name: LIEU - ETAT
+_id: HELxXuyJtd9z70MG
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: xNEGR6jWR2Gpv78i
+    text: … infesté(e) de champignons toxiques
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.xNEGR6jWR2Gpv78i'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: FuX6QhsF3WMw8M2d
+    text: … qui cache une ressource rare (nourriture, médicaments)
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.FuX6QhsF3WMw8M2d'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: iCk1UtfFFkasKXyh
+    text: … d’où émane une présence hostile
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.iCk1UtfFFkasKXyh'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: aetwR9vneNWGy31q
+    text: … où s’est installée une communauté
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.aetwR9vneNWGy31q'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: ndS5CHopvE195who
+    text: … où les personnages viennent d’enterrer un compagnon
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.ndS5CHopvE195who'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: GyuqajfPMtJPTmhW
+    text: … d’où provenaient des appels à l’aide
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.GyuqajfPMtJPTmhW'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: IADmyxH1R6tCVQ3h
+    text: … qui ferait un excellent abri pour la nuit
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.IADmyxH1R6tCVQ3h'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: Ra1UkjzpqsZEMUbQ
+    text: … où le chaman ressent l’esprit d’un Totem particulier
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.Ra1UkjzpqsZEMUbQ'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: INmSF2bJuXiIGxMb
+    text: … où un massacre a eu lieu récemment
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.INmSF2bJuXiIGxMb'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: 9qBvqrNYhZhln239
+    text: … qui va s’effondrer très bientôt
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!HELxXuyJtd9z70MG.9qBvqrNYhZhln239'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291770580
+  modifiedTime: 1732291770580
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!HELxXuyJtd9z70MG'
+

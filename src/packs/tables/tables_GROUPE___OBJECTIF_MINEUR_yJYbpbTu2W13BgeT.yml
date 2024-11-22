@@ -1,0 +1,165 @@
+folder: E7wK1Y73yfokmf1U
+name: GROUPE - OBJECTIF MINEUR
+_id: yJYbpbTu2W13BgeT
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: 8Sfx9Z5X3bswIdcr
+    text: >-
+      Nous avons capté un appel à l’aide. Nous voulons trouver sa source et
+      porter secours à cette famille.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.8Sfx9Z5X3bswIdcr'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: beOxbdJhvj80VuGt
+    text: >-
+      L’un de nous a ingéré des baies empoisonnées. Il nous faut un antidote
+      rapidement.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.beOxbdJhvj80VuGt'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: aSthbcE8ocWfbZ5U
+    text: >-
+      Une lueur brille chaque nuit en haut de la colline. Nous voulons trouver
+      cette source de lumière et comprendre de quoi il retourne.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.aSthbcE8ocWfbZ5U'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: pqOE38GsVVVjDWRE
+    text: >-
+      Avant de mourir, Alan a souhaité qu’on répande ses cendres en mer. En
+      route !
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.pqOE38GsVVVjDWRE'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: yRCRDjOussmMu7VI
+    text: Notre véhicule est en rade. Il nous faut un alternateur de toute urgence.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.yRCRDjOussmMu7VI'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: d5Rbt88S0TJzJG8x
+    text: >-
+      Les fourmis nous rattrapent. Atteindre le fleuve et le traverser est notre
+      seule chance.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.d5Rbt88S0TJzJG8x'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: 8i9e842MldVtBdUh
+    text: >-
+      Nous n’avons plus de munitions. Rien. Que dalle. C’est une question de vie
+      ou de mort.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.8i9e842MldVtBdUh'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: 1P8pH39ADiN6rsTm
+    text: >-
+      Une jeune femme nous parle en rêve et nous attire dans cette forêt. Il
+      faut que ça cesse, d’une manière ou d’une autre.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.1P8pH39ADiN6rsTm'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 3JPhipoqm16fcHAb
+    text: >-
+      On a repoussé les loups la nuit dernière. Il nous faut une meilleure
+      position pour leur faire la peau la nuit prochaine.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.3JPhipoqm16fcHAb'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: vaS7Vlz6dEh5L5zT
+    text: >-
+      On a enfin trouvé un ruisseau, mais son eau est viciée par des cadavres
+      d’animaux dont les plus petits arrivent jusqu’à nous. Il nous faut
+      remonter à la source.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!yJYbpbTu2W13BgeT.vaS7Vlz6dEh5L5zT'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291855331
+  modifiedTime: 1732291855331
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!yJYbpbTu2W13BgeT'
+

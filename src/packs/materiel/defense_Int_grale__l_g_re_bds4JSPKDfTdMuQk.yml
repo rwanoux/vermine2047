@@ -1,0 +1,61 @@
+folder: cDPaY8tYofGA559j
+name: Intégrale, légère
+type: defense
+_id: bds4JSPKDfTdMuQk
+img: systems/vermine2047/assets/icons/items/defense.webp
+system:
+  description: ''
+  rarity:
+    value: 5
+    handicap: 0
+  reliability: 5
+  handicap: 0
+  quantity: 1
+  weight: 0
+  traits: {}
+  damages:
+    value: 0
+    min: 0
+    max: 5
+    pannes:
+      - mineure
+      - mineure
+      - grave
+      - grave
+      - critique
+    state:
+      - endommagé
+      - endommagé
+      - défectueux
+      - défectueux
+      - hors d'usage
+    effect:
+      - bonus annulé
+      - bonus annulé
+      - malus 1D
+      - malus 1D
+      - inutilisable
+  level: 3
+  specificLevel:
+    label: ''
+    level: 0
+  mobility: 0
+  isShield: false
+effects: []
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732294422520
+  modifiedTime: 1732294422520
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+_key: '!items!bds4JSPKDfTdMuQk'
+

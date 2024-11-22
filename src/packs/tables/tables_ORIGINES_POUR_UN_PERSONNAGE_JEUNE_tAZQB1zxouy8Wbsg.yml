@@ -1,0 +1,176 @@
+folder: 1pvgIDHYjQZVdpjn
+name: ORIGINES POUR UN PERSONNAGE JEUNE
+_id: tAZQB1zxouy8Wbsg
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: JTtpByRseZkccUfg
+    text: >-
+      Nous vivions en famille dans une vieille ferme. Jusqu’à ce que les fourmis
+      nous poussent sur la route.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.JTtpByRseZkccUfg'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: YsnB9WBbsvJ7USb9
+    text: >-
+      Le bunker était froid et humide, mais il était solide. Et puis les
+      parasites ont transformé Jonas en monstre. Il a tué tout le monde. Sauf
+      moi. Pourquoi ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.YsnB9WBbsvJ7USb9'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: ad4PJxFdKf6od6uG
+    text: >-
+      J’étais parti chercher des fruits. Quand je suis revenu, les termites
+      avaient dévoré le béton de notre château d’eau. Je l’ai vu s’effondrer.
+      Avec tout mon clan à l’intérieur.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.ad4PJxFdKf6od6uG'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: GvYeUuE7knloHYca
+    text: >-
+      Ma soeur a entendu « les voix » une heure avant l’aube. Elles lui ont dit
+      de quitter le village. Les autres n’ont pas voulu nous suivre. Cachés dans
+      la forêt, nous avons entendu leurs cris toute la journée.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.GvYeUuE7knloHYca'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: IB5z1ea0pR5jwqbM
+    text: >-
+      Ma tribu marchait vers l’océan. Il y avait des rumeurs qui parlaient d’un
+      havre. Mais quand j’ai rencontré le Groupe, j’ai su que c’était avec eux
+      que j’écrirais mon destin. Irai-je un jour voir l’océan ?
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.IB5z1ea0pR5jwqbM'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: VciMSZwaWjqYTe9w
+    text: >-
+      Je n’avais pas dix ans quand notre convoi a atteint la base. Nous pensions
+      nous y réfugier. Nous pensions que l’armée nous protègerait. Mais ces
+      soldats n’avaient plus rien d’humain. Depuis, je fuis. Et j’ai peur.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.VciMSZwaWjqYTe9w'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: GiuPY1VQrsJM5H6w
+    text: >-
+      Ma communauté prospérait. La terre nous donnait à manger. La rivière nous
+      donnait de l’eau. Nous étions en sécurité. Pourquoi ai-je décidé de
+      prendre la route malgré tout ? Je l’ignore…
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.GiuPY1VQrsJM5H6w'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: U1JR89HiEfj9uCNP
+    text: >-
+      J’ai buté Marceau quand il a tenté de me violer. J’ai ouvert la gorge de
+      Souki quand elle m’a accusé pour Marceau. J’ai laissé Red pour mort dans
+      la rivière quand il a voulu se venger. Heureusement, ce nouveau Groupe
+      semble plus sain.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.U1JR89HiEfj9uCNP'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: pyN1YSAi9NABpWN7
+    text: >-
+      Je finis toujours par énerver les autres. Ça fait cinq ans que je change
+      de communauté au moins une fois par an. Personne ne me convient. Ou bien
+      je ne conviens à personne.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.pyN1YSAi9NABpWN7'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: p1RAzvFXsqKHlH0C
+    text: >-
+      Quand ce vieillard a fait fuir les araignées, il a exigé payement. Mes
+      parents ont accepté, et je suis parti avec lui. Quand il est mort, je ne
+      lui en voulais plus.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!tAZQB1zxouy8Wbsg.p1RAzvFXsqKHlH0C'
+replacement: true
+displayRoll: true
+sort: 0
+ownership:
+  default: 0
+  GXSW26kNdNoaabl8: 3
+  7CP3rbvwLNGl5Ilf: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: vermine2047
+  systemVersion: 0.1.13
+  createdTime: 1732291858078
+  modifiedTime: 1732291858078
+  lastModifiedBy: 7CP3rbvwLNGl5Ilf
+formula: d10
+_key: '!tables!tAZQB1zxouy8Wbsg'
+
