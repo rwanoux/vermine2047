@@ -1,33 +1,24 @@
 <form class="{{cssClass}}" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-    </div>
-  </header>
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item active" data-tab="description">{{ localize "VERMINE.stats" }}</a>
-  </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
 
-    <div class="tab flexrow" data-group="primary" data-tab="description">
-      <aside style="flex:1">
-        <div class="resource">
-          <label class="resource-label">{{ localize "VERMINE.type"}}</label>
-          <select name="system.type" data-dtype="String">
-            <option value="physical" {{#if (eq system.type "physical")}}selected{{/if}}>Physiologique</option>
-            <option value="psychological" {{#if (eq system.type "psychological")}}selected{{/if}}>Psychologique</option>
-          </select>
-        </div> 
-      </aside>    
-      <main class="editor-wrapper"  style="flex:10">
-        {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-      </main>
-    </div>
-  </section>
+		<div class="tb flexcol">
+
+			<h4 class="resource">
+				<label class="resource-label">{{ localize "VERMINE.type"}}</label>
+				<select name="system.type" data-dtype="String">
+					<option value="physical" {{#if (eq system.type "physical")}} selected {{/if}}>Physiologique</option>
+					<option value="psychological" {{#if (eq system.type "psychological")}} selected {{/if}}>Psychologique</option>
+				</select>
+			</h4>
+			<h2>description</h2>
+			{{editor system.description target="system.description" rollData=rollData
+button=true owner=owner editable=editable}}
+
+		</div>
+	</section>
 
 </form>

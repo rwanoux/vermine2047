@@ -1,42 +1,37 @@
 <form class="{{cssClass}}" autocomplete="off">
-	<header class="sheet-header">
-		<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-		<div class="header-fields">
-			<h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-
-		</div>
-	</header>
+	{{log this}}
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
 
 
 	{{!-- Sheet Body --}}
 	<section class="sheet-body ">
+
 		{{> "systems/vermine2047/templates/item/partials/traits.html"}}
+		<div class="resource align-center flexcol">
+			<label class="resource-label">compétence necessaire
+				<input type="checkbox" data-tooltip="ajouter la vigueur" name="system.needSkill.value" {{#if system.needSkill.value}} checked {{/if}}>
+			</label>
+			{{#if system.needSkill.value}}
+				<select name="system.needSkill.skill" class="skill-select">
+					<option value="">aucune</option>
+					{{#each @root.config.skillCategories as |skillCategory sckey|}}
+						<optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' sckey 'name' }}">
+							{{#each @root.config.model.Actor.character.skills as |skill key|}}
+								{{#ife skill.category sckey}}
+									<option value="{{key}}" {{#ife key @root.system.needSkill.skill}} selected {{/ife}}>{{ smarttlk 'SKILLS' key 'name' }}</option>
 
+								{{/ife}}
+							{{/each}}
+						</optgroup>
+					{{/each}}
+				</select>
 
-		<div class="flexrow">
-			{{!-- Description Tab --}}
-			<div class="resource">
-				<label class="resource-label">Rarity</label>
-				<input type="number" name="system.rarity" value="{{system.rarity}}" data-dtype="Number"/>
-			</div>
+			{{/if}}
 
-			<div class="resource">
-				<label class="resource-label">Reliability</label>
-				<input type="number" name="system.reliability" value="{{system.reliability}}" data-dtype="Number"/>
-			</div>
-
-			<div class="resource">
-				<label class="resource-label">Quantity</label>
-				<input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
-			</div>
-			<div class="resource">
-				<label class="resource-label">Weight</label>
-				<input type="text" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
-			</div>
 		</div>
-		<h2>Description</h2>
-		{{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
 
-		{{> "systems/vermine2047/templates/item/partials/damages.html"}}
+
+		{{> "systems/vermine2047/templates/item/partials/physicalItems.hbs"}}
+
 	</section>
 </form>

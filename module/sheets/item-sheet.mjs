@@ -11,7 +11,7 @@ export class VermineItemSheet extends ItemSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["vermine2047", "sheet", "item"],
       width: 450,
-      height: "auto",
+      height: "max-content",
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
     });
   }

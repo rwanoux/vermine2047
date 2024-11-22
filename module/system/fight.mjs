@@ -466,11 +466,13 @@ export class VermineCombatTracker extends CombatTracker {
     const combatant = combat.combatants.get(li.dataset.combatantId);
     let flag = combatant.getFlag("world", "attitude");
     if (flag == attitude) {
-      return await combatant.setFlag("world", "attitude", null);
+      await combatant.setFlag("world", "attitude", null);
     } else {
-      return await combatant.setFlag("world", "attitude", attitude);
+      await combatant.setFlag("world", "attitude", attitude);
     }
 
+    let actor = await game.actors.get(combatant.actorId)
+    console.log(actor, combatant)
   }
 }
 
