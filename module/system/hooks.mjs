@@ -11,7 +11,6 @@ export const registerHooks = function () {
     Hooks.once('diceSoNiceReady', async (dice3d) => {
         dice3d.addSystem({ id: "Vermine2047", name: "Vermine 2047" }, "preferred");
 
-
         game.users.forEach(user => {
             initUserDice(dice3d, user)
         });
@@ -42,8 +41,10 @@ export const registerHooks = function () {
         if (rerollTitle) {
             rerollTitle.addEventListener("click", () => { html[0].querySelector(".reroll").classList.toggle('visible') })
         }
-        if (message.author._id != game.user._id || !game.user.isGM) {
+        if (message.author?._id != game.user._id || !game.user.isGM) {
+            // désactiver les inputs pour les joueurs non-auteurs du message
             html[0].querySelectorAll("input").forEach(inp => inp.disabled = true);
+            //cacher le boutton reroll
             html[0].querySelectorAll("div.reroll-from-effort").forEach(el => el.style.display = "none")
             return
         }
@@ -59,7 +60,7 @@ export const registerHooks = function () {
     })
     Hooks.once("ready", async () => {
         console.info("Vermine 2047 | System Initialized.");
-        await registerTours();
+        //await registerTours();
 
     });
 
