@@ -1,4 +1,19 @@
-<div class="grid grid-2col">
+<div class="align-center">
+  <h4>situation de combat par défaut</h4>
+  <div class="flexrow align-center combat-status">
+    {{#each config.combatStatus as |dif label|}}
+    <div>
+      <label for="combatStatus1">{{label}}</label>
+      <input type="radio" style="width:1rem"
+        name="system.combatStatus.difficulty"
+        id="combatStatus1"
+        value="{{dif}}"
+        {{#ife @root.system.combatStatus.difficulty dif}}checked {{/ife}}>
+    </div>
+    {{/each}}
+  </div>
+</div>
+<div class="grid grid-3col">
   <div class="self-control-container flexcol align-center">
     <h4 class="align-center">
 
@@ -78,85 +93,94 @@
       {{/repeat}}
     </div>
   </div>
-</div>
-<h4 class="item-name  flexrow">{{ localize
-  "VERMINE.wounds.name"}}</h4>
-<ul class="unstyled">
-  <li class="row mdb">{{ localize 'VERMINE.wounds.light'}} <span
-      data-tooltip="seuil">({{
-      system.minorWound.threshold }})</span>
-    <div class="flexrow">
-      {{#repeat system.minorWound.max 1 "minorwoundmax"}}
-      <div
-        class="hexa ability{{#iflteq @minorwoundmax @root.system.minorWound.value }}
+  <div class="blessure-container flexcol align-center">
+    <h4 class="item-name  flexrow">{{ localize
+      "VERMINE.wounds.name"}}</h4>
+    <ul class="unstyled">
+      <li class="row mdb  align-center">{{ localize
+        'VERMINE.wounds.light'}} <span
+          data-tooltip="seuil">({{
+          system.minorWound.threshold }})</span>
+        <div class="flexrow align-center">
+          {{#repeat system.minorWound.max 1 "minorwoundmax"}}
+          <div
+            class="hexa ability{{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}">
-        <input type="radio" data-dtype="Number" name="system.minorWound.value"
-          value="{{@minorwoundmax}}" data-wound="minorWound"
-          class="
+            <input type="radio" data-dtype="Number"
+              name="system.minorWound.value"
+              value="{{@minorwoundmax}}" data-wound="minorWound"
+              class="
           {{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}
           "
-          {{#ife @minorwoundmax @root.system.minorWound.value }}
-          checked="true"
-          {{/ife}} />
-      </div>
-      {{/repeat}}
-    </div>
-  </li>
-  <li class="row mdb">{{ localize 'VERMINE.wounds.heavy'}}
-    <span>({{
-      system.majorWound.threshold }})</span>
-    <div class="flexrow">
-      {{#repeat system.majorWound.max 1 "majourwoundmax"}}
-      <div
-        class="hexa ability{{#iflteq @majourwoundmax @root.system.majorWound.value }}
+              {{#ife @minorwoundmax @root.system.minorWound.value }}
+              checked="true"
+              {{/ife}} />
+          </div>
+          {{/repeat}}
+        </div>
+      </li>
+      <li class="row mdb  align-center">{{ localize
+        'VERMINE.wounds.heavy'}}
+        <span>({{
+          system.majorWound.threshold }})</span>
+        <div class="flexrow align-center">
+          {{#repeat system.majorWound.max 1 "majourwoundmax"}}
+          <div
+            class="hexa ability{{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}">
-        <input type="radio" data-dtype="Number" name="system.majorWound.value"
-          value="{{@majourwoundmax}}" data-wound="majorWound"
-          class="
+            <input type="radio" data-dtype="Number"
+              name="system.majorWound.value"
+              value="{{@majourwoundmax}}" data-wound="majorWound"
+              class="
           {{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}
 
         "
-          {{#ife @majourwoundmax @root.system.majorWound.value }}
-          checked="true"
-          {{/ife}} />
+              {{#ife @majourwoundmax @root.system.majorWound.value }}
+              checked="true"
+              {{/ife}} />
 
-      </div>
-      {{/repeat}}
+          </div>
+          {{/repeat}}
 
-    </div>
-  </li>
-  <li class="row mdb">{{ localize 'VERMINE.wounds.deadly'}}
-    <span>({{
-      system.deadlyWound.threshold }})</span>
-    <div class="flexrow">
-      {{#repeat system.deadlyWound.max 1 "deadlywoundmax"}}
-      <div
-        class="hexa ability{{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
+        </div>
+      </li>
+      <li class="row mdb  align-center">{{ localize
+        'VERMINE.wounds.deadly'}}
+        <span>({{
+          system.deadlyWound.threshold }})</span>
+        <div class="flexrow align-center">
+          {{#repeat system.deadlyWound.max 1 "deadlywoundmax"}}
+          <div
+            class="hexa ability{{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}">
-        <input type="radio" data-dtype="Number" name="system.deadlyWound.value"
-          value="{{@deadlywoundmax}}" data-wound="deadlyWound"
-          class="
+            <input type="radio" data-dtype="Number"
+              name="system.deadlyWound.value"
+              value="{{@deadlywoundmax}}" data-wound="deadlyWound"
+              class="
           {{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}
 
         "
-          {{#ife @deadlywoundmax @root.system.deadlyWound.value }}
-          checked="true"
-          {{/ife}} />
-      </div>
-      {{/repeat}}
+              {{#ife @deadlywoundmax @root.system.deadlyWound.value }}
+              checked="true"
+              {{/ife}} />
+          </div>
+          {{/repeat}}
 
-    </div>
-  </li>
-</ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <h4 class="item-name effect-name flexrow">{{ localize "UI.effects.name"}}</h4>
 <ol class="items-list effects-list">
   {{#each effects as |section sid|}}

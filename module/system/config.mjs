@@ -252,4 +252,9 @@ VERMINE.damageTypes = [
   "feu",
   "balle"
 ];
+VERMINE.combatStatus = {
+  offensif: 5,
+  actif: 7,
+  passif: 9
+}
 
