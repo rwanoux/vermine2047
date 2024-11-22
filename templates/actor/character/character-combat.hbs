@@ -1,19 +1,25 @@
 <div class="align-center">
-  <h4>situation de combat par défaut</h4>
-  <div class="flexrow align-center combat-status">
-    {{#each config.combatStatus as |dif label|}}
-    <div>
-      <label for="combatStatus1">{{label}}</label>
-      <input type="radio" style="width:1rem"
-        name="system.combatStatus.difficulty"
-        id="combatStatus1"
-        value="{{dif}}"
-        {{#ife @root.system.combatStatus.difficulty dif}}checked {{/ife}}>
+  <div class="shadow">
+    <h4>situation de combat par défaut</h4>
+    <div class="flexrow align-center combat-status">
+      {{#each config.combatStatus as |dif label|}}
+        <div>
+          <label for="combatStatus1">{{label}}</label>
+          <input
+            type="radio"
+            style="width:1rem"
+            name="system.combatStatus.difficulty"
+            id="combatStatus1"
+            value="{{dif}}"
+            {{#ife @root.system.combatStatus.difficulty dif}}checked
+            {{/ife}}
+          >
+        </div>
+      {{/each}}
     </div>
-    {{/each}}
   </div>
 </div>
-<div class="grid grid-3col">
+<div class="flexrow">
   <div class="self-control-container flexcol align-center">
     <h4 class="align-center">
 
@@ -25,31 +31,34 @@
     <div class="reserve-grid">
       {{#repeat 4 1 "row"}}
 
-      <div class="flexrow">
-        {{#repeat @row @root.SCIndex "case"}}
-        <div class="hexa
+        <div class="flexrow">
+          {{#repeat @row @root.SCIndex "case"}}
+            <div class="hexa
        {{#iflteq @case @root.system.attributes.self_control.value }}
             checked
         {{/iflteq}}
         {{#ifgt @case @root.system.attributes.self_control.max }}
             unavailable
         {{/ifgt}}">
-          {{#iflteq @row @root.system.attributes.self_control.max }}
-          <input type="radio" data-dtype="Number"
-            name="system.attributes.self_control.value"
-            value="{{@case}}"
-            class="
+              {{#iflteq @row @root.system.attributes.self_control.max }}
+                <input
+                  type="radio"
+                  data-dtype="Number"
+                  name="system.attributes.self_control.value"
+                  value="{{@case}}"
+                  class="
         {{#iflteq @case @root.system.attributes.self_control.max }}
             checked
         {{/iflteq}}
 
-        " />
-          {{/iflteq}}
+        "
+                />
+              {{/iflteq}}
 
+            </div>
+            {{setVar "SCIndex" (math_add @root.SCIndex 1)}}
+          {{/repeat}}
         </div>
-        {{setVar "SCIndex" (math_add @root.SCIndex 1)}}
-        {{/repeat}}
-      </div>
       {{/repeat}}
     </div>
   </div>
@@ -65,60 +74,65 @@
     <div class="reserve-grid">
       {{#repeat 4 1 "row"}}
 
-      <div class="flexrow">
-        {{#repeat @row @root.EffIndex "case"}}
-        <div class="hexa
+        <div class="flexrow">
+          {{#repeat @row @root.EffIndex "case"}}
+            <div class="hexa
        {{#iflteq @case @root.system.attributes.effort.value }}
             checked
         {{/iflteq}}
         {{#ifgt @case @root.system.attributes.effort.max }}
             unavailable
         {{/ifgt}}">
-          {{#iflteq @row @root.system.attributes.effort.max }}
-          <input type="radio" data-dtype="Number"
-            name="system.attributes.effort.value"
-            value="{{@case}}"
-            class="
+              {{#iflteq @row @root.system.attributes.effort.max }}
+                <input
+                  type="radio"
+                  data-dtype="Number"
+                  name="system.attributes.effort.value"
+                  value="{{@case}}"
+                  class="
         {{#iflteq @case @root.system.attributes.effort.max }}
             checked
         {{/iflteq}}
 
-        " />
-          {{/iflteq}}
+        "
+                />
+              {{/iflteq}}
 
+            </div>
+            {{setVar "EffIndex" (math_add @root.EffIndex 1)}}
+          {{/repeat}}
         </div>
-        {{setVar "EffIndex" (math_add @root.EffIndex 1)}}
-        {{/repeat}}
-      </div>
       {{/repeat}}
     </div>
   </div>
-  <div class="blessure-container flexcol align-center">
+  <div class="blessure-container flexlarge flexcol align-center">
     <h4 class="item-name  flexrow">{{ localize
       "VERMINE.wounds.name"}}</h4>
     <ul class="unstyled">
       <li class="row mdb  align-center">{{ localize
-        'VERMINE.wounds.light'}} <span
-          data-tooltip="seuil">({{
+        'VERMINE.wounds.light'}} <span data-tooltip="seuil">({{
           system.minorWound.threshold }})</span>
         <div class="flexrow align-center">
           {{#repeat system.minorWound.max 1 "minorwoundmax"}}
-          <div
-            class="hexa ability{{#iflteq @minorwoundmax @root.system.minorWound.value }}
+            <div class="hexa ability{{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}">
-            <input type="radio" data-dtype="Number"
-              name="system.minorWound.value"
-              value="{{@minorwoundmax}}" data-wound="minorWound"
-              class="
+              <input
+                type="radio"
+                data-dtype="Number"
+                name="system.minorWound.value"
+                value="{{@minorwoundmax}}"
+                data-wound="minorWound"
+                class="
           {{#iflteq @minorwoundmax @root.system.minorWound.value }}
             checked
           {{/iflteq}}
           "
-              {{#ife @minorwoundmax @root.system.minorWound.value }}
-              checked="true"
-              {{/ife}} />
-          </div>
+                {{#ife @minorwoundmax @root.system.minorWound.value }}
+                checked="true"
+                {{/ife}}
+              />
+            </div>
           {{/repeat}}
         </div>
       </li>
@@ -128,24 +142,27 @@
           system.majorWound.threshold }})</span>
         <div class="flexrow align-center">
           {{#repeat system.majorWound.max 1 "majourwoundmax"}}
-          <div
-            class="hexa ability{{#iflteq @majourwoundmax @root.system.majorWound.value }}
+            <div class="hexa ability{{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}">
-            <input type="radio" data-dtype="Number"
-              name="system.majorWound.value"
-              value="{{@majourwoundmax}}" data-wound="majorWound"
-              class="
+              <input
+                type="radio"
+                data-dtype="Number"
+                name="system.majorWound.value"
+                value="{{@majourwoundmax}}"
+                data-wound="majorWound"
+                class="
           {{#iflteq @majourwoundmax @root.system.majorWound.value }}
             checked
           {{/iflteq}}
 
         "
-              {{#ife @majourwoundmax @root.system.majorWound.value }}
-              checked="true"
-              {{/ife}} />
+                {{#ife @majourwoundmax @root.system.majorWound.value }}
+                checked="true"
+                {{/ife}}
+              />
 
-          </div>
+            </div>
           {{/repeat}}
 
         </div>
@@ -156,23 +173,25 @@
           system.deadlyWound.threshold }})</span>
         <div class="flexrow align-center">
           {{#repeat system.deadlyWound.max 1 "deadlywoundmax"}}
-          <div
-            class="hexa ability{{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
+            <div class="hexa ability{{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}">
-            <input type="radio" data-dtype="Number"
-              name="system.deadlyWound.value"
-              value="{{@deadlywoundmax}}" data-wound="deadlyWound"
-              class="
-          {{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
+              <input
+                type="radio"
+                data-dtype="Number"
+                name="system.deadlyWound.value"
+                value="{{@deadlywoundmax}}"
+                data-wound="deadlyWound"
+                class="          {{#iflteq @deadlywoundmax @root.system.deadlyWound.value }}
             checked
           {{/iflteq}}
 
         "
-              {{#ife @deadlywoundmax @root.system.deadlyWound.value }}
-              checked="true"
-              {{/ife}} />
-          </div>
+                {{#ife @deadlywoundmax @root.system.deadlyWound.value }}
+                checked="true"
+                {{/ife}}
+              />
+            </div>
           {{/repeat}}
 
         </div>
@@ -184,51 +203,71 @@
 <h4 class="item-name effect-name flexrow">{{ localize "UI.effects.name"}}</h4>
 <ol class="items-list effects-list">
   {{#each effects as |section sid|}}
-  <li class="items-header flexrow" data-effect-type="{{section.type}}">
-    <p class="item-name effect-name flexrow">{{#if (eq section.type
+    <li
+      class="items-header flexrow"
+      data-effect-type="{{section.type}}"
+    >
+      <p class="item-name effect-name flexrow">{{#if (eq section.type
       'temporary')}}
-      {{localize "UI.effects.temporary" }}
-      {{else if (eq section.type 'passive')}}
-      {{localize "UI.effects.passive" }}
-      {{else if (eq section.type 'inactive')}}
-      {{localize "UI.effects.inactive" }}
-      {{/if}}
-    </p>
-    <div class="effect-source">{{localize 'UI.source'}}</div>
-    <div class="effect-source">{{localize 'UI.duration'}}</div>
-    <div class="item-controls effect-controls flexrow">
-      <a class="effect-control" data-action="create"
-        title="{{localize 'UI.effect_create'}}">
-        <i class="fas fa-plus"></i> {{localize "UI.add"}}
-      </a>
-    </div>
-  </li>
-
-  <ol class="item-list">
-    {{#each section.effects as |effect|}}
-    <li class="item effect flexrow" data-effect-id="{{effect.id}}">
-      <div class="item-name effect-name">
-        <a class="effect-control flexrow flex-group-center items-center"
-          data-action="edit" title="{{localize 'UI.effect_edit'}}">
-          <img class="item-image" src="{{effect.icon}}" />
-          <span>{{effect.label}}</span>
-        </a>
-      </div>
-      <div class="effect-source">{{effect.sourceName}}</div>
-      <div class="effect-duration">{{effect.duration.label}}</div>
+          {{localize "UI.effects.temporary" }}
+        {{else if (eq section.type 'passive')}}
+          {{localize "UI.effects.passive" }}
+        {{else if (eq section.type 'inactive')}}
+          {{localize "UI.effects.inactive" }}
+        {{/if}}
+      </p>
+      <div class="effect-source">{{localize 'UI.source'}}</div>
+      <div class="effect-source">{{localize 'UI.duration'}}</div>
       <div class="item-controls effect-controls flexrow">
-        <a class="effect-control" data-action="toggle"
-          title="{{localize 'UI.effect_toggle'}}">
-          <i
-            class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
-        </a>
-        <a class="effect-control" data-action="delete"
-          title="{{localize 'UI.effect_delete'}}">
-          <i class="fas fa-trash"></i>
+        <a
+          class="effect-control"
+          data-action="create"
+          title="{{localize 'UI.effect_create'}}"
+        >
+          <i class="fas fa-plus"></i> {{localize "UI.add"}}
         </a>
       </div>
     </li>
-    {{/each}}
-  </ol>
+
+    <ol class="item-list">
+      {{#each section.effects as |effect|}}
+        <li
+          class="item effect flexrow"
+          data-effect-id="{{effect.id}}"
+        >
+          <div class="item-name effect-name">
+            <a
+              class="effect-control flexrow flex-group-center items-center"
+              data-action="edit"
+              title="{{localize 'UI.effect_edit'}}"
+            >
+              <img
+                class="item-image"
+                src="{{effect.icon}}"
+              />
+              <span>{{effect.label}}</span>
+            </a>
+          </div>
+          <div class="effect-source">{{effect.sourceName}}</div>
+          <div class="effect-duration">{{effect.duration.label}}</div>
+          <div class="item-controls effect-controls flexrow">
+            <a
+              class="effect-control"
+              data-action="toggle"
+              title="{{localize 'UI.effect_toggle'}}"
+            >
+              <i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
+            </a>
+            <a
+              class="effect-control"
+              data-action="delete"
+              title="{{localize 'UI.effect_delete'}}"
+            >
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+    </ol>
   {{/each}}
 </ol>
