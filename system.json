@@ -40,8 +40,12 @@
       "label": "Adaptations / Mutations",
       "system": "vermine2047",
       "path": "packs/adaptationsmutations",
+      "banner": "systems/vermine2047/assets/icons/items/ability.webp",
       "type": "Item",
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "traumatismes",
@@ -49,7 +53,11 @@
       "system": "vermine2047",
       "path": "packs/traumatismes",
       "type": "Item",
-      "private": false
+      "banner": "systems/vermine2047/assets/icons/items/trauma.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "historiques",
@@ -57,7 +65,11 @@
       "system": "vermine2047",
       "path": "packs/historiques",
       "type": "Item",
-      "private": false
+      "banner": "systems/vermine2047/assets/icons/items/background.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "rites",
@@ -65,7 +77,11 @@
       "system": "vermine2047",
       "path": "packs/rites",
       "type": "Item",
-      "private": false
+      "banner": "systems/vermine2047/assets/icons/items/rite.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "table",
@@ -73,7 +89,22 @@
       "system": "vermine2047",
       "path": "packs/tables",
       "type": "RollTable",
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "matériel",
+      "label": "Matériel",
+      "system": "vermine2047",
+      "path": "packs/materiel",
+      "banner": "systems/vermine2047/assets/icons/items/item.webp",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "pretires",
@@ -81,7 +112,11 @@
       "system": "vermine2047",
       "path": "packs/pretires",
       "type": "Actor",
-      "private": false
+      "banner": "systems/vermine2047/assets/icons/actors/character.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "deck-creatures",
@@ -89,7 +124,11 @@
       "system": "vermine2047",
       "path": "packs/deck-creatures",
       "type": "Actor",
-      "private": false
+      "banner": "systems/vermine2047/assets/icons/actors/creature.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "grid": {
