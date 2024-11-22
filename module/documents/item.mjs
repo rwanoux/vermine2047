@@ -28,6 +28,21 @@ export class VermineItem extends Item {
       default:
         break;
     }
+    if (this.system.damages?.value) {
+      this.damagedLabel = this.system.damages.state[parseInt(this.system.damages?.value) - 1];
+      switch (this.damagedLabel) {
+        case "endommagé":
+          this.damagedIcon = '<i class="fas fa-exclamation-circle" style:"color="yellow"></i>';
+          break;
+        case "défectueux":
+          this.damagedIcon = '<i class="fas fa-exclamation-triangle" style:"color="orange"></i>';
+          break;
+        case "hors d'usage":
+          this.damagedIcon = '<i class="fas fa-star-exclamation" style:"color="red"></i>';
+          break;
+
+      }
+    }
   }
 
   /**
