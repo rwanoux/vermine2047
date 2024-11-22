@@ -39,6 +39,10 @@
   flex: 2;
 }
 
+.flexsmall {
+  flex: 0.5
+}
+
 // Alignment styles.
 .align-left {
   justify-content: flex-start;

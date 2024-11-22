@@ -225,9 +225,8 @@ ul.unstyled li {
 .system-vermine2047 .sheet.actor form div.hexa {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
-  height: unset;
+  height: 1.5rem;
   max-width: 1.5rem;
-  aspect-ratio: 1/1;
   color: black;
   transform: rotate(90deg);
   transition: 0.2s;
@@ -377,9 +376,8 @@ ul.unstyled li {
   &.hexa {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
-    height: unset;
+    height: 1.5rem;
     max-width: 1.5rem;
-    aspect-ratio: 1/1;
     color: black
   }
 
@@ -725,9 +723,9 @@ ul.unstyled li {
   text-align: center;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background: radial-gradient(circle, rgba(255, 255, 255, 0.425) 0%, rgba(0, 0, 0, 0.288) 100%);
-  max-height: 1.2rem;
-  max-width: 1.2rem;
-  min-width: 1.2rem;
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  min-width: 1.5rem;
   aspect-ratio: 1/1;
   color: black;
   vertical-align: center;
