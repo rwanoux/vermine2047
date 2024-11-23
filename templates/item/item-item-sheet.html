@@ -14,11 +14,12 @@
 			{{#if system.needSkill.value}}
 				<select name="system.needSkill.skill" class="skill-select">
 					<option value="">aucune</option>
+					{{log config}}
 					{{#each @root.config.skillCategories as |skillCategory sckey|}}
 						<optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' sckey 'name' }}">
 							{{#each @root.config.model.Actor.character.skills as |skill key|}}
 								{{#ife skill.category sckey}}
-									<option value="{{key}}" {{#ife key @root.system.needSkill.skill}} selected {{/ife}}>{{ smarttlk 'SKILLS' key 'name' }}</option>
+									<option value="{{sckey}}" {{#ife sckey @root.system.needSkill.skill}} selected {{/ife}}>{{ smarttlk 'SKILLS' key 'name' }}</option>
 
 								{{/ife}}
 							{{/each}}
