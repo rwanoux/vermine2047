@@ -41,7 +41,6 @@ export class VermineUtils {
     let roll = new Roll(formula, actor.getRollData());
     //effectuer le lancé
     await roll.evaluate();
-    roll.dice.forEach(die => die.options.appearance = { system: "vermine2047" })
     //afficher le lancer 3d
     await VermineUtils.showDiceSoNice(roll);
     // afficher le résultat dans le chat

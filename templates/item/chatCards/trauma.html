@@ -1,0 +1,24 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
+
+
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
+
+		<div class="tb flexcol">
+
+			<h4 class="resource">
+				<label class="resource-label">{{ localize "VERMINE.type"}}</label>
+				<select name="system.type" data-dtype="String">
+					<option value="physical" {{#if (eq system.type "physical")}} selected {{/if}}>Physiologique</option>
+					<option value="psychological" {{#if (eq system.type "psychological")}} selected {{/if}}>Psychologique</option>
+				</select>
+			</h4>
+			<h2>description</h2>
+			{{editor system.description target="system.description" rollData=rollData
+button=true owner=owner editable=editable}}
+
+		</div>
+	</section>
+
+</form>

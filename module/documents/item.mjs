@@ -13,21 +13,15 @@ export class VermineItem extends Item {
   }
   prepareBaseData() {
     const actorType = (this.actor !== null) ? this.actor.type : 'character';
+    const itemType = this.type;
 
-    switch (this.type) {
-      case 'ability':
-        if (this.system.type == "") {
-          // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
-          this.system.type = actorType;
-        }
-        if (this.system.totem == "" && this.actor !== null && this.actor.system.identity.totem != "") {
-          // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
-          this.system.totem = this.actor.system.identity.totem;
-        }
-        break;
-      default:
-        break;
+
+    // Vérifie si une méthode spécifique au type existe// preparedData specifique au type
+    if (typeof this[`prepare${itemType.charAt(0).toUpperCase() + itemType.slice(1)}Data`] === 'function') {
+      this[`prepare${itemType.charAt(0).toUpperCase() + itemType.slice(1)}Data`]();
     }
+
+    // si dégats sur l'item, application du damage label et damage icon
     if (this.system.damages?.value) {
       this.damagedLabel = this.system.damages.state[parseInt(this.system.damages?.value) - 1];
       switch (this.damagedLabel) {
@@ -45,6 +39,19 @@ export class VermineItem extends Item {
     }
   }
 
+  prepareAbilityData() {
+    console.log('ability data', this)
+    const actorType = (this.actor !== null) ? this.actor.type : 'character';
+
+    if (this.system.type == "") {
+      // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
+      this.system.type = actorType;
+    }
+    if (this.system.totem == "" && this.actor !== null && this.actor.system.identity.totem != "") {
+      // console.log('je suis une capacité, avec pour sous-type', this.system.type, actorType);
+      this.system.totem = this.actor.system.identity.totem;
+    }
+  }
   /**
    * Prepare a data object which is passed to any Roll formulas which are created related to this Item
    * @private
@@ -65,9 +72,6 @@ export class VermineItem extends Item {
    * @private
    */
   async roll() {
-    if (this.type == "weapon") {
-      this.rollWeapon()
-    }
     const item = this;
 
     // Initialize chat data.
@@ -76,29 +80,15 @@ export class VermineItem extends Item {
     const label = `[${item.type}] ${item.name}`;
 
     // If there's no roll data, send a chat message.
-    if (!this.system.formula) {
-      ChatMessage.create({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-        content: item.system.description ?? ''
-      });
-    }
-    // Otherwise, create a roll and send a chat message from it.
-    else {
-      // Retrieve roll data.
-      const rollData = this.getRollData();
 
-      // Invoke the roll and submit it to chat.
-      const roll = new Roll(rollData.item.formula, rollData);
-      // If you need to store the value first, uncomment the next line.
-      // let result = await roll.roll({async: true});
-      roll.toMessage({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-      });
-      return roll;
-    }
+    let mess = new ChatMessage({
+      speaker: speaker,
+      rollMode: rollMode,
+      flavor: label,
+    });
+    mess.content = await renderTemplate(`systems/vermine2047/templates/item/chatCards/${this.type}.html`, { item: this, message: mess }) ?? null;
+    console.log(mess)
   }
+
 }
+

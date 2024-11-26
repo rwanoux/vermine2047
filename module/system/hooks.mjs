@@ -1,5 +1,6 @@
 import RollDialog from "./dialogs/rollDialog.mjs";
 import { initUserDice } from "./dice3d.mjs";
+import { DiceSystem } from '../../../../modules/dice-so-nice/api.js';
 import { VermineUtils } from "./roll.mjs";
 import { registerTours } from "./tour.mjs";
 
@@ -9,7 +10,8 @@ export const registerHooks = function () {
      */
     CONFIG.debug.hooks = true;
     Hooks.once('diceSoNiceReady', async (dice3d) => {
-        dice3d.addSystem({ id: "Vermine2047", name: "Vermine 2047" }, "preferred");
+        const vermineSystem = new DiceSystem('Vermine2047', 'Vermine 2047', "preferred", 'totem')
+        dice3d.addSystem(vermineSystem);
 
         game.users.forEach(user => {
             initUserDice(dice3d, user)
@@ -32,7 +34,7 @@ export const registerHooks = function () {
 
             system: "Vermine2047",
 
-        },);
+        });
 
     });
 

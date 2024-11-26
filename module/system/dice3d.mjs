@@ -20,8 +20,8 @@ export async function initUserDice(dice3d, user) {
         name: 'human_' + user.name,
         description: "human totem dice for " + user.name,
         category: "vermine 2047",
-        foreground: oppositeColor(lightenColor(baseColor, 60)),
-        background: lightenColor(baseColor, 60),
+        foreground: oppositeColor(lightenColor(baseColor, 70)),
+        background: lightenColor(baseColor, 70),
         outline: 'black',
         visibility: 'visible',
 
@@ -30,8 +30,8 @@ export async function initUserDice(dice3d, user) {
         name: 'adapted_' + user.name,
         description: "adapted totem dice for " + user.name,
         category: "vermine 2047",
-        foreground: oppositeColor(darkenColor(baseColor, 60)),
-        background: darkenColor(baseColor, 60),
+        foreground: oppositeColor(darkenColor(baseColor, 70)),
+        background: darkenColor(baseColor, 70),
         outline: 'black',
         visibility: 'visible',
 

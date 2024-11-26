@@ -327,66 +327,7 @@ export class VermineCombat extends Combat {
 
   async rollInitiative(ids, formula = undefined, messageOptions = {}) {
     console.log(`${game.system.title} | Combat.rollInitiative()`, ids, formula, messageOptions);
-    // Structure input data
-    ids = typeof ids === "string" ? [ids] : ids;
-
-    // étape 1 : on vérifie que le combattant est un pj
-    /*if (ids.length == 1){
-      console.log("il n'y a qu'un actor en lice");
-    } else {
-      console.log("il faut prendre le premier pj pour lancer la confrontation");
-    }*/
-    const combatant = this.combatants.get(ids[0]);
-    let token = canvas.scene.tokens.get(combatant.tokenId);
-    combatant.type = game.actors.get(combatant.actorId)?.type;
-    combatant.disposition = token.disposition;
-    let enemies = [];
-
-    let adversaries = this.combatants.filter((cbt) => {
-      let token = canvas.scene.tokens.get(cbt.tokenId);
-      let enemy = token.actor;
-      const isEnemy = (token.disposition == -1) ? true : false;
-      if (isEnemy) {
-        enemies.push({
-          id: enemy.id,
-          name: enemy.name,
-          img: enemy.img,
-          achievement: parseInt(enemy.system.reroll.achievement.value) + 7,
-          conservation: 7 - parseInt(enemy.system.reroll.conservation.value)
-        })
-      }
-      return isEnemy;
-    });
-
-    let allies = this.combatants.filter((cbt) => {
-      let token = canvas.scene.tokens.get(cbt.tokenId);
-      return (token.disposition == 1 && cbt.id != combatant.id) ? true : false;
-    });
-
-    if (combatant.type != 'character') {
-      let warningDialogHTML = await renderTemplate('systems/vermine2047/templates/dialogs/warning.html', {
-        warningText: "Seuls les PJs peuvent initier des confrontations. Relancer l'opération au tour du PJ actif."
-      });
-      Dialog.prompt({
-        title: "Avertissement",
-        content: warningDialogHTML,
-        label: 'Okay !',
-        callback: () => {
-          // console.log('Il a compris');
-        },
-      });
-    } else {
-      // étape 2 : on envoie les infos
-      let fightingActor = game.actors.get(combatant.actorId);
-      VermineFight.ui({
-        speakerId: combatant.actorId,
-        speakerWeapons: fightingActor.items.filter(item => item.type == 'weapon'),
-        speakerExperience: fightingActor.system.attributes.experience.value,
-        speakerEffects: token.actor.effects,
-        adversaries: enemies,
-        allies: allies
-      });
-    }
+    return super.rollInitiative(ids, formula, messageOptions)
 
   }
 

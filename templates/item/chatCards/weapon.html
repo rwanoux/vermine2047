@@ -1,0 +1,55 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
+
+
+	<section class="sheet-body">
+		{{> "systems/vermine2047/templates/item/partials/traits.html"}}
+
+
+		<h4 class="flexrow">
+			<div class="resource align-center flexcol">
+
+				<label class="resource-label">{{ localize "VERMINE.ranges"}}</label>
+				<div class="flexrow align-center">
+					<div class="hexa">
+						<input type="number" name="system.min_range" value="{{system.min_range}}" data-dtype="Number"/>
+					</div>/
+					<div class="hexa">
+						<input type="number" name="system.max_range" value="{{system.max_range}}" data-dtype="Number"/></div>
+				</div>
+			</div>
+			<div class="resource align-center flexcol">
+
+				<label class="resource-label">{{ localize "VERMINE.damages"}}</label>
+				<div class="flexcol align-center">
+					<div class="flexrow">
+						<div class="hexa">
+							<input type="number" name="system.damage.value" value="{{system.damage.value}}" data-dtype="Number"/>
+						</div>
+						<span>
+							<input type="checkbox" data-tooltip="ajouter la vigueur" name="system.damage.addVigor" {{#if system.damage.addVigor}} checked {{/if}}>
+						</span>
+					</div>
+					<select name="system.damage.type">
+						<option value="0">type</option>
+						{{#each config.damageTypes as |label index|}}
+							<option value="{{label}}" {{#ife @root.system.damage.type label}} selected {{/ife}}>
+								{{label}}
+							</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+			<div class="resource align-center flexcol">
+				<label class="resource-label">{{ localize "VERMINE.ammo"}}</label>
+				<div class="hexa"><input type="number" name="system.ammo" value="{{system.ammo}}" data-dtype="Number"/></div>
+			</div>
+
+
+		</h4>
+
+
+		{{> "systems/vermine2047/templates/item/partials/physicalItems.hbs"}}
+	</section>
+
+</form>

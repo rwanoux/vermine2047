@@ -1,0 +1,27 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<header class="sheet-header">
+		<img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+		<div class="header-fields">
+			<h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+			<select name="system.skill" class="skill-select">
+				{{#each @root.config.skillCategories as |skillCategory sckey|}}
+					{{log skillCategory}}
+
+
+					<optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' sckey 'name' }}">
+
+						{{#each @root.config.model.Actor.character.skills as |skill key|}}
+
+
+							{{#ife skill.category sckey}}
+								<option value="{{key}}" {{#ife key @root.item.system.skill}} selected {{/ife}}>{{ smarttlk 'SKILLS' key 'name' }}</option>
+							{{/ife}}
+						{{/each}}
+					</optgroup>
+				{{/each}}
+			</select>
+
+		</div>
+	</header>
+
+</form>

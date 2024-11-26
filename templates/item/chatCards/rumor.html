@@ -1,0 +1,11 @@
+<form class="{{cssClass}}" autocomplete="off">
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
+
+
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
+
+		{{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+
+	</section>
+</form>

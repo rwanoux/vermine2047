@@ -53,6 +53,8 @@ Hooks.once('init', async function () {
 
   CONFIG.ui.combat = VermineCombatTracker;
   CONFIG.Combatant.documentClass = VermineCombatant;
+  CONFIG.Combat.documentClass = VermineCombat;
+
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);

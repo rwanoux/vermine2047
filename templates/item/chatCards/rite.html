@@ -1,0 +1,41 @@
+{{!-- This template is a fallback for when items don't have more specific templates. --}}
+{{!-- Generally, you'll want to make more specific templates when possible. --}}
+<form class="{{cssClass}} form" autocomplete="off">
+	{{> "systems/vermine2047/templates/item/partials/header.hbs"}}
+
+
+	{{!-- Sheet Body --}}
+	<section class="sheet-body">
+		<aside style="flex:20%;">
+			<div class="resource">
+
+				<label class="resource-label">{{ localize "VERMINE.ability"}}</label>
+				<select name="system.ability" data-dtype="String">
+					<option value="">-- Aucune --</option>
+					{{#each config.abilities as |ability akey| }}
+						<option value="{{ akey }}" {{#if (eq akey @root.system.ability)}} selected="selected" {{/if}}>{{ localize ability}}</option>
+					{{/each}}
+				</select>
+			</div>
+		</aside>
+		<main style="flex:10">
+			<div class="editor-wrapper">
+				{{editor system.description target="system.description" button=true owner=owner editable=editable}}
+			</div>
+		</main>
+		<div class="grid">
+			<div>
+				<h4>{{ localize 'ITEMS.rituel'}}</h4>
+				<textarea name="system.rituel">{{ system.rituel }}</textarea>
+			</div>
+			<div>
+				<h4>{{ localize 'ITEMS.transe'}}</h4>
+				<textarea name="system.transe">{{ system.transe }}</textarea>
+			</div>
+		</div>
+		<h4>{{ localize 'ITEMS.effects'}}</h4>
+		<div class="editor-wrapper">
+			{{editor system.effects target="system.effects" button=true owner=owner editable=editable}}
+		</div>
+	</div>
+</form>

@@ -134,7 +134,6 @@ export class VermineCharacterSheet extends VermineActorSheet {
       if (input.name != "flags.world.editMode") {
         input.setAttribute('disabled', true)
       }
-
     }
     for (let select of html.find('select')) {
       select.setAttribute('disabled', true)
