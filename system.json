@@ -139,7 +139,7 @@
   "secondaryTokenAttribute": "power",
   "url": "https://gitlab.com/init-status/fvtt_systems/vermine2047",
   "manifest": "https://raw.githubusercontent.com/rwanoux/vermine2047/refs/heads/main/system.json",
-  "download": "https://gitlab.com/api/v4/projects/46618912/repository/archive.zip",
+  "download": "https://github.com/rwanoux/vermine2047/archive/refs/heads/main.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }
