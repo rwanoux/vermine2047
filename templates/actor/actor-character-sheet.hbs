@@ -1,22 +1,38 @@
-<form class="{{cssClass}} {{actor.type}} flexcol form" autocomplete="off">
+<form
+  class="{{cssClass}} {{actor.type}} flexcol form"
+  autocomplete="off"
+>
 
   <div class="form">
     {{log this}}
     <aside>
-      <div class="flexrow" id="edit">
+      <div
+        class="flexrow"
+        id="edit"
+      >
         <span>mode jeu</span>
-        <input type="checkbox" name="flags.world.editMode"
+        <input
+          type="checkbox"
+          name="flags.world.editMode"
           {{#if actor.flags.world.editMode}}
           checked
-          {{/if}} />
+          {{/if}}
+        />
         <span>mode edit</span>
 
       </div>
-      <img class="logo mx-auto"
-        src="systems/vermine2047/assets/images/ui/logo.webp" width="200"
-        alt="logo Vermine" />
+      <img
+        class="logo mx-auto"
+        src="systems/vermine2047/assets/images/ui/logo.webp"
+        width="200"
+        alt="logo Vermine"
+      />
 
-      <div class="sidebar" data-group="dashboard" data-tab="sidebar">
+      <div
+        class="sidebar"
+        data-group="dashboard"
+        data-tab="sidebar"
+      >
         <!--ID -->
         {{> "systems/vermine2047/templates/actor/character/character-id.hbs"}}
       </div>
@@ -26,29 +42,46 @@
       {{> "systems/vermine2047/templates/actor/character/character-header.hbs"}}
 
       <!-- SHEET NAVIGATION -->
-      <nav class="sheet-navigation sheet-tabs tabs flex-group-center"
-        data-group="primary">
-        <a class="item" data-tab="character"
-          data-tooltip="{{localize "VERMINE.tabs.abilities"}}">
+      <nav
+        class="sheet-navigation sheet-tabs tabs flex-group-center"
+        data-group="primary"
+      >
+        <a
+          class="item"
+          data-tab="character"
+          data-tooltip="{{localize "VERMINE.tabs.abilities"}}"
+        >
           <i class="fas fa-address-card"></i>
         </a>
 
-        <a class="item" data-tab="totem"
-          data-tooltip="{{localize "VERMINE.tabs.totem"}}">
+        <a
+          class="item"
+          data-tab="totem"
+          data-tooltip="{{localize "VERMINE.tabs.totem"}}"
+        >
           <i class="fas fa-star"></i>
         </a>
-        <a class="item" data-tab="equipment"
-          data-tooltip="{{localize "VERMINE.tabs.equipment"}}">
+        <a
+          class="item"
+          data-tab="equipment"
+          data-tooltip="{{localize "VERMINE.tabs.equipment"}}"
+        >
           <i class="fas fa-hammer"></i>
         </a>
 
-        <a class="item" data-tab="stories"
-          data-tooltip="{{localize "VERMINE.tabs.stories"}}">
+        <a
+          class="item"
+          data-tab="stories"
+          data-tooltip="{{localize "VERMINE.tabs.stories"}}"
+        >
           <i class="fas fa-book-open-reader"></i>
         </a>
 
-        <a class="item" data-tab="combat"
-          data-tooltip="{{localize "VERMINE.tabs.combat"}}">
+        <a
+          class="item"
+          data-tab="combat"
+          data-tooltip="{{localize "VERMINE.tabs.combat"}}"
+        >
           <i class="fas fa-medal"></i>
         </a>
 
@@ -60,30 +93,49 @@
       <!-- BODY -->
       <section class="sheet-body">
         <section class="sheet-content">
-          <div class="tab character character-pane active" data-group="primary"
-            data-tab="character">
+          <div
+            class="tab character character-pane active"
+            data-group="primary"
+            data-tab="character"
+          >
             <!-- Character -->
             {{>
             "systems/vermine2047/templates/actor/character/character-features.hbs"}}
           </div>
-          <div class="tab totem" data-group="primary" data-tab="totem">
+          <div
+            class="tab totem"
+            data-group="primary"
+            data-tab="totem"
+          >
             <h3>{{ localize 'IDENTITY.totem'}}</h3>
             {{>
             "systems/vermine2047/templates/actor/character/character-totem.hbs"}}
           </div>
-          <div class="tab equipment" data-group="primary" data-tab="equipment">
+          <div
+            class="tab equipment"
+            data-group="primary"
+            data-tab="equipment"
+          >
             <h3>{{ localize 'VERMINE.equipment'}}</h3>
             <!-- Rituals -->
             {{> "systems/vermine2047/templates/actor/parts/actor-items.hbs"}}
           </div>
-          <div class="tab combat" data-group="primary" data-tab="combat">
+          <div
+            class="tab combat"
+            data-group="primary"
+            data-tab="combat"
+          >
             <h3>{{ localize 'VERMINE.combat'}}</h3>
             <!-- effects -->
             {{>
             "systems/vermine2047/templates/actor/character/character-combat.hbs"}}
           </div>
 
-          <div class="tab stories" data-group="primary" data-tab="stories">
+          <div
+            class="tab stories"
+            data-group="primary"
+            data-tab="stories"
+          >
             <h3>{{ localize 'VERMINE.stories'}}</h3>
             {{>
             "systems/vermine2047/templates/actor/character/character-stories.hbs"}}

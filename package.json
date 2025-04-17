@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "launch Foundry12": "cd C:/Program Files/Foundry Virtual Tabletop_V12/resources/app && node main.js",
+    "launch_Foundry12": "node /home/rwan/foundry/foundry_software/FoundryVTT-12.331/resources/app/main.js",
     "watch": "gulp watch",
     "buildStyle": "gulp buildStyles",
+    "dev": "npm run launch_Foundry12 & xdg-open http://localhost:30000/",
     "pushLDBtoYAML": "node ./tools/pushLDBtoYAML.mjs",
     "pullYAMLtoLDB": "node ./tools/pullYAMLtoLDB.mjs"
   },

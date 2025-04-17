@@ -4,12 +4,11 @@
     <div class="flexrow align-center combat-status">
       {{#each config.combatStatus as |dif label|}}
         <div>
-          <label for="combatStatus1">{{label}}</label>
+          <label for="combat-status-{{diff}}">{{label}}</label>
           <input
+            id="combat-status-{{diff}}"
             type="radio"
-            style="width:1rem"
             name="system.combatStatus.difficulty"
-            id="combatStatus1"
             value="{{dif}}"
             {{#ife @root.system.combatStatus.difficulty dif}}checked
             {{/ife}}

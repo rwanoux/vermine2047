@@ -10,8 +10,15 @@
   },
   "authors": [
     {
-      "name": "François-Xavier Guillois",
-      "flags": {}
+      "name": "François-Xavier Guillois"
+    },
+    {
+      "name": "Rwanoux",
+      "discord": "rwanoux"
+    },
+    {
+      "name": "Pretre",
+      "discord": "pretre"
     }
   ],
   "esmodules": [
@@ -141,5 +148,19 @@
   "manifest": "https://raw.githubusercontent.com/rwanoux/vermine2047/refs/heads/main/system.json",
   "download": "https://github.com/rwanoux/vermine2047/archive/refs/heads/main.zip",
   "license": "LICENSE.txt",
-  "changelog": "CHANGELOG.md"
+  "changelog": "CHANGELOG.md",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "assets",
+        "lang",
+        "templates"
+      ]
+    }
+  }
 }

@@ -679,11 +679,17 @@ ul.unstyled li {
   }
 }
 
-.system-vermine2047 .sheet.actor .preferred {
+.system-vermine2047 .sheet.actor .skill-category {
+  padding: .3rem;
 
-  h4,
-  label {
-    text-shadow: 0px 0px 5px rgba(0, 128, 0, 0.411)
+  &.preferred {
+
+    h4,
+    label {
+      text-shadow: 0px 0px 5px rgba(0, 128, 0, 0.411)
+    }
+
+    box-shadow: 0px 0px 30px rgba(0, 128, 0, 0.306) inset;
   }
 }
 

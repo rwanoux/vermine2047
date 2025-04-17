@@ -47,10 +47,14 @@ export default class RollDialog extends Dialog {
         rolltype: null,
         NoD: 1,
         Reroll: false,
-        actorId: game.user.character.id
+        actorId: game.user.character?.id || canvas.tokens.controlled[0]?.actor.id
     }) {
         // Retrieve the actor data based on the actorId
         data.actor = await game.actors.get(data.actorId);
+        if (!data.actor) {
+            return await ui.notifications.warn("Vous n'avez pas de personnage attitré ou de token selectionné");
+
+        }
         console.log(data.actor)
         data.availableSpecialties = data.actor.items.filter(it => it.type == "specialty");
         console.log(data.availableSpecialties)
@@ -177,13 +181,9 @@ export default class RollDialog extends Dialog {
         return html.querySelector('select#ability').options[html.querySelector('select#ability').selectedIndex].dataset.label
     }
     displaySpecialties() {
-        console.log(this)
         let specialties = this.element[0].querySelectorAll('[data-spec-skill]');
         for (let specEl of specialties) {
-            if (specEl.dataset.specSkill != this.getLabel()) {
-                specEl.style.display = "none";
-                specEl.querySelector('input').checked = null;
-            } else { specEl.style.display = "inline" }
+            specEl.style.display = "inline"
         }
     }
     /**

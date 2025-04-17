@@ -34,19 +34,6 @@ Hooks.once('init', async function () {
     VermineCombat
   };
 
-  // Add custom constants for configuration.
-  CONFIG.VERMINE = VERMINE;
-  CONFIG.VERMINE.model = game.system.template;
-
-  /**
-   * Set an initiative formula for the system
-   * @type {String}
-   */
-  CONFIG.Combat.initiative = {
-    formula: "(@abilities.reflexes.value + @skills.alertness.value)d10cs>=@combatStatus.difficulty",
-    decimals: 2
-  };
-
   // Define custom Document classes
   CONFIG.Actor.documentClass = VermineActor;
   CONFIG.Item.documentClass = VermineItem;
@@ -84,8 +71,30 @@ Hooks.once('init', async function () {
   registerHooks(); // register Hooks
   registerSettings(); // register Vermine Settings
 
+
+  //CONFIG AFTER INIT documentypes
+
+  // Add custom constants for configuration.
+  CONFIG.VERMINE = VERMINE;
+  CONFIG.VERMINE.model = {
+    Actor: game.system.template.Actor,
+    Item: game.system.template.Item
+  }
+
+  /**
+   * Set an initiative formula for the system
+   * @type {String}
+   */
+  CONFIG.Combat.initiative = {
+    formula: "(@abilities.reflexes.value + @skills.alertness.value)d10cs>=@combatStatus.difficulty",
+    decimals: 2
+  };
+
+
+
   //afficher le mode de jeu
   let mode = game.settings.get('vermine2047', 'game-mode');
+  if (!mode) { mode = '1'; await game.settings.set('vermine2047', 'game-mode', '1') }
   let el = document.createElement('SPAN');
   switch (mode) {
     case '1':

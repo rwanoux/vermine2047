@@ -1,12 +1,32 @@
-<form id="dice-pool-form" class="vermine form"
-  data-actor-id="{{ speakerId }}">
-  {{log this}}
-  <input type="hidden" name="label" id="label" value="{{ label }}" />
-  <input type="hidden" name="rollType" id="rollType" value="{{ rollType }}" />
-  <input type="hidden" name="abilityScore" id="abilityScore"
-    value="{{ abilityScore }}" />
-  <input type="hidden" name="skillScore" id="skillScore"
-    value="{{ skillScore }}" />
+<form
+  id="dice-pool-form"
+  class="vermine form"
+  data-actor-id="{{ speakerId }}"
+>
+  <input
+    type="hidden"
+    name="label"
+    id="label"
+    value="{{ label }}"
+  />
+  <input
+    type="hidden"
+    name="rollType"
+    id="rollType"
+    value="{{ rollType }}"
+  />
+  <input
+    type="hidden"
+    name="abilityScore"
+    id="abilityScore"
+    value="{{ abilityScore }}"
+  />
+  <input
+    type="hidden"
+    name="skillScore"
+    id="skillScore"
+    value="{{ skillScore }}"
+  />
   <div class="dice-pool flexcol">
     <h1 class="flexrow row lgb flex-group-center">
       <span>Type de jet <strong>{{#if (eq rollType 'skill')}}{{ localize
@@ -18,30 +38,54 @@
     <div class="flexrow">
       <label class="label">{{localize
         'VERMINE.difficulty'}}</label>
-      <select class="info-value" data-roll="tue"
+      <select
+        class="info-value"
+        data-roll="tue"
         data-dtype="String"
-        type="number" name="difficulty" id="difficulty" min="3" max="10">
+        type="number"
+        name="difficulty"
+        id="difficulty"
+        min="3"
+        max="10"
+      >
         {{#select difficulty }}
-        <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 1}} -
-          {{ diffLevel 'difficulty' 1}}</option>
-        <option value="{{ diffLevel 'difficulty' 2}}">{{ diffLevel 'label' 2}} -
-          {{ diffLevel 'difficulty' 2}}</option>
-        <option value="{{ diffLevel 'difficulty' 3}}" selected>{{ diffLevel
+          <option value="{{ diffLevel 'difficulty' 1}}">{{ diffLevel 'label' 1}} -
+            {{ diffLevel 'difficulty' 1}}
+          </option>
+          <option value="{{ diffLevel 'difficulty' 2}}">{{ diffLevel 'label' 2}} -
+            {{ diffLevel 'difficulty' 2}}
+          </option>
+          <option
+            value="{{ diffLevel 'difficulty' 3}}"
+            selected
+          >{{ diffLevel
           'label' 3}} - {{ diffLevel 'difficulty' 3}}</option>
-        <option value="{{ diffLevel 'difficulty' 4}}">{{ diffLevel 'label' 4}} -
-          {{ diffLevel 'difficulty' 4}}</option>
-        <option value="{{ diffLevel 'difficulty' 5}}">{{ diffLevel 'label' 5}} -
-          {{ diffLevel 'difficulty' 5}}</option>
+          <option value="{{ diffLevel 'difficulty' 4}}">{{ diffLevel 'label' 4}} -
+            {{ diffLevel 'difficulty' 4}}
+          </option>
+          <option value="{{ diffLevel 'difficulty' 5}}">{{ diffLevel 'label' 5}} -
+            {{ diffLevel 'difficulty' 5}}
+          </option>
         {{/select}}
       </select>
       <label for="handicap">Handicap</label>
-      <select class="info-value" data-roll="tue"
+      <select
+        class="info-value"
+        data-roll="tue"
         data-dtype="String"
-        type="number" name="handicap" id="handicap" min="0" max="2">
+        type="number"
+        name="handicap"
+        id="handicap"
+        min="0"
+        max="2"
+      >
         {{#select difficulty }}
-        <option value="1" selected>aucun</option>
-        <option value="2">(I)</option>
-        <option value="3">(II)</option>
+          <option
+            value="1"
+            selected
+          >aucun</option>
+          <option value="2">(I)</option>
+          <option value="3">(II)</option>
         {{/select}}
       </select>
     </div>
@@ -49,28 +93,37 @@
       <h2 class="flexcol">
         <label class="label">{{localize
           'VERMINE.ability'}}</label>
-        <select class="info-value" data-roll="true"
+        <select
+          class="info-value"
+          data-roll="true"
           data-dtype="String"
-          type="number" name="ability" id="ability" min="1" max="5">
+          type="number"
+          name="ability"
+          id="ability"
+          min="1"
+          max="5"
+        >
           <option value="0">-- Choisissez une caractéristique
             --</option>
           {{#each config.abilityCategories as |abilCategory catkey|}}
 
-          <optgroup label="{{ smarttlk 'ABILITY_CATEGORIES' catkey 'name' }}">
-            {{#each @root.actor.system.abilities as |abil key|}}
-            {{#ife abil.category catkey}}
-            <option value="{{abil.value}}"
-              data-label="{{key}}"
-              {{#ife @root.rollType "ability"}}
-              {{#ife @root.labelKey key}}
-              selected="true"
-              {{/ife}}
-              {{/ife}}>{{ smarttlk 'ABILITIES' key 'name'
+            <optgroup label="{{ smarttlk 'ABILITY_CATEGORIES' catkey 'name' }}">
+              {{#each @root.actor.system.abilities as |abil key|}}
+                {{#ife abil.category catkey}}
+                  <option
+                    value="{{abil.value}}"
+                    data-label="{{key}}"
+                    {{#ife @root.rollType "ability"}}
+                    {{#ife @root.labelKey key}}
+                    selected="true"
+                    {{/ife}}
+                    {{/ife}}
+                  >{{ smarttlk 'ABILITIES' key 'name'
               }} / {{abil.value}}</option>
-            {{/ife}}
-            {{/each}}
+                {{/ife}}
+              {{/each}}
 
-          </optgroup>
+            </optgroup>
 
           {{/each}}
         </select>
@@ -78,53 +131,71 @@
       <h3 class="flexcol">
         <label class="label">{{localize
           'VERMINE.skill_title'}}</label>
-        <select class="info-value" data-roll="true"
+        <select
+          class="info-value"
+          data-roll="true"
           data-dtype="String"
-          type="number" name="skill" id="skill" min="1" max="5">
+          type="number"
+          name="skill"
+          id="skill"
+          min="1"
+          max="5"
+        >
           <option>-- Choisissez une compétence
             --</option>
           {{#each config.skillCategories as |skillCategory catkey|}}
-          <optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' catkey 'name' }}">
-            {{#each @root.actor.system.skills as |skill key|}}
-            {{#ife skill.category catkey}}
-            <option value="{{skill.value}}" data-pool="{{skillLevel "dicePool"
+            <optgroup label="{{ smarttlk 'SKILLS_CATEGORIES' catkey 'name' }}">
+              {{#each @root.actor.system.skills as |skill key|}}
+                {{#ife skill.category catkey}}
+                  <option
+                    value="{{skill.value}}"
+                    data-pool="{{skillLevel "dicePool"
               skill.value}}"
-              data-label="{{key}}"
-              data-reroll="{{skillLevel "reroll" skill.value}}"
-              {{#ife @root.rollType "skill"}}
-              {{#ife @root.labelKey key}}
-              selected="true"
-              {{/ife}}
-              {{/ife}}>
-              <b>{{ smarttlk 'SKILLS' key 'name' }},</b>
-              <i>{{skillLevel "label" skill.value}}</i>
-            </option>
-            {{/ife}}
-            {{/each}}
-          </optgroup>
+                    data-label="{{key}}"
+                    data-reroll="{{skillLevel "reroll" skill.value}}"
+                    {{#ife @root.rollType "skill"}}
+                    {{#ife @root.labelKey key}}
+                    selected="true"
+                    {{/ife}}
+                    {{/ife}}
+                  >
+                    <b>{{ smarttlk 'SKILLS' key 'name' }},</b>
+                    <i>{{skillLevel "label" skill.value}}</i>
+                  </option>
+                {{/ife}}
+              {{/each}}
+            </optgroup>
           {{/each}}
         </select>
-        {{log availableSpecialties.length}}
         {{#if availableSpecialties.length}}
-        <label class="label">{{localize 'VERMINE.specialty'}} (+1D)</label>
-        <div class="flexrow">
-          <span data-spec-skill="{{spec.system.skill}}">
-            <i>aucunes</i>
-            <input type="radio" data-roll="true" name="usingSpecialization"
-              id="usingSpecialization"
-              value="aucune">
-          </span>
-          {{#each availableSpecialties as |spec ind|}}
+          <label class="label">{{localize 'VERMINE.specialty'}} (+1D)</label>
+          <div class="flexrow">
+            <span data-spec-skill="{{spec.system.skill}}">
+              <i>aucunes</i>
+              <input
+                type="radio"
+                data-roll="true"
+                name="usingSpecialization"
+                id="usingSpecialization"
+                value="aucune"
+              >
+            </span>
+            {{#each availableSpecialties as |spec ind|}}
 
-          <span data-spec-skill="{{spec.system.skill}}">
-            <i>{{spec.name}}</i>
-            <input type="radio" data-roll="true" name="usingSpecialization"
-              id="usingSpecialization"
-              value="{{spec.name}}" {{#if specialty}}checked{{/if}}>
-          </span>
-          {{/each}}
+              <span data-spec-skill="{{spec.system.skill}}">
+                <i>{{spec.name}}</i>
+                <input
+                  type="radio"
+                  data-roll="true"
+                  name="usingSpecialization"
+                  id="usingSpecialization"
+                  value="{{spec.name}}"
+                  {{#if specialty}}checked{{/if}}
+                >
+              </span>
+            {{/each}}
 
-        </div>
+          </div>
         {{/if}}
       </h3>
     </div>
@@ -132,25 +203,44 @@
     <div class="grid grid-2col">
       <div class="flexrow row smb">
         <label class="label">{{localize 'VERMINE.help'}} (+1D)</label>
-        <input type="checkbox" data-roll="true" name="helped" id="helped"
-          value="1" {{#if
-          help}}checked{{/if}}>
+        <input
+          type="checkbox"
+          data-roll="true"
+          name="helped"
+          id="helped"
+          value="1"
+          {{#if
+          help}}checked{{/if}}
+        >
       </div>
       <div class="flexrow row mdb">
         <label class="label">{{localize
           'VERMINE.group'}}</label>
-        <input type="number" data-roll="true" class="numeric-entry"
+        <input
+          type="number"
+          data-roll="true"
+          class="numeric-entry"
           style="text-align: center;"
-          name="group" id="group" min="0" max="5" value="0">
+          name="group"
+          id="group"
+          min="0"
+          max="5"
+          value="0"
+        >
       </div>
       <div class="flexrow row mdb">
         <label class="label">{{localize
           'VERMINE.self_control'}} + <span id="self_control_value">0</span>D
         </label>
-        <input type="range" id="self_control" data-roll="true"
+        <input
+          type="range"
+          id="self_control"
+          data-roll="true"
           name="self_control"
           min="0"
-          max="0" value="0" />
+          max="0"
+          value="0"
+        />
       </div>
       <div class="flexcol row mdb">
         <label class="label">{{localize 'VERMINE.tooling'}} (+1D)</label>
@@ -158,16 +248,26 @@
         <div class="item-list grid grid-4col">
           <h3>
             <i>Auncun</i>
-            <input type="radio" data-roll="true" name="usingTools"
-              id="usingTools" value="0" checked>
+            <input
+              type="radio"
+              data-roll="true"
+              name="usingTools"
+              id="usingTools"
+              value="0"
+              checked
+            >
           </h3>
           {{#each availableItems as |item ind|}}
-          <span>
-            <i>{{item.name}}</i>
-            <input type="radio" data-roll="true" name="usingTools"
-              id="usingTools"
-              value="{{item.name}}">
-          </span>
+            <span>
+              <i>{{item.name}}</i>
+              <input
+                type="radio"
+                data-roll="true"
+                name="usingTools"
+                id="usingTools"
+                value="{{item.name}}"
+              >
+            </span>
           {{/each}}
         </div>
       </div>
@@ -176,25 +276,42 @@
         <label class="label">utiliser des dés totems ?
         </label>
         {{#ifgt @root.actor.system.adaptation.totems.human.value 0}}
-        <div class="totem-human">
-          <h4 for="human-totem">totem humain </h4>
-          <input type="checkbox" data-roll="true" name="human-totem"
-            id="human-totem"
-            value="1">
-        </div>
+          <div class="totem-human">
+            <h4 for="human-totem">totem humain </h4>
+            <input
+              type="checkbox"
+              data-roll="true"
+              name="human-totem"
+              id="human-totem"
+              value="1"
+            >
+          </div>
         {{/ifgt}}
         {{#ifgt @root.actor.system.adaptation.totems.adapted.value 0}}
-        <div class="totem-adapted">
-          <h4 for="human-totem">totem adapté </h4>
-          <input type="checkbox" data-roll="true" name="adapted-totem"
-            id="adapted-totem"
-            value="1">
-        </div>
+          <div class="totem-adapted">
+            <h4 for="human-totem">totem adapté </h4>
+            <input
+              type="checkbox"
+              data-roll="true"
+              name="adapted-totem"
+              id="adapted-totem"
+              value="1"
+            >
+          </div>
         {{/ifgt}}
       </div>
 
     </div>
   </div>
-  <p><input type="hidden" name="speakerId" value="{{ speakerId }}" />
-    <input type="hidden" name="skillLabel" value="{{ skill }}" /></p>
+  <p><input
+      type="hidden"
+      name="speakerId"
+      value="{{ speakerId }}"
+    />
+    <input
+      type="hidden"
+      name="skillLabel"
+      value="{{ skill }}"
+    />
+  </p>
 </form>

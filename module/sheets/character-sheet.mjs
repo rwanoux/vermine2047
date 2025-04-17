@@ -182,7 +182,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
     event.preventDefault();
     const element = event.currentTarget;
     const dataset = element.dataset;
-    console.log("Ceci est un jet d'un personnage joueur");
+    console.log("Ceci est un jet d'un personnage joueur", this.actor);
     // Handle item rolls.
     if (dataset.rollType) {
       if (dataset.rollType == 'item') {
@@ -197,7 +197,7 @@ export class VermineCharacterSheet extends VermineActorSheet {
       dataset.rollType = dataset.type;
 
       let data = {
-        actorId: this.actor.id,
+        actorId: this.object.id,
         rollType: dataset.rollType,
         labelKey: dataset.label,
 
@@ -205,8 +205,9 @@ export class VermineCharacterSheet extends VermineActorSheet {
       };
 
       let dial = await RollDialog.create(data);
-      dial.render(true)
-      return true;
+      console.log("from sheet", data, this)
+      return dial.render(true)
+
     }
   }
 

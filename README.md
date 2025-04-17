@@ -34,6 +34,7 @@
 - [X] faire l'update l' l'actor juste après s'etre accorder des rerolls, et avoir utiliser le sang-froid
 - [X] update des reserves de sang-froids lors de jets 
 - [X] ajout des domaines de prédilections
+- [ ] gérer le dés en +/- selon l'influence du totem adapté ou humain selon les domaines
 - [ ] gérer les réussites auto
 - [ ] gérer les seuils auto si compétence non maitrisée
 

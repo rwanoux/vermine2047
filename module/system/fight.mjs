@@ -421,7 +421,6 @@ export class VermineCombatant extends Combatant {
   constructor(data, context) {
     super(data, context);
     this.setDefaultAttitude();
-    console.log(this)
 
   }
   setDefaultAttitude() {
@@ -429,7 +428,6 @@ export class VermineCombatant extends Combatant {
   }
   _getInitiativeFormula() {
 
-    console.log(this);
     return String(CONFIG.Combat.initiative.formula || game.system.initiative);
   }
 

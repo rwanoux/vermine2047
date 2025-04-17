@@ -46,6 +46,20 @@ export class VermineActor extends Actor {
     // things organized.
     this._prepareCharacterData(actorData);
     this._prepareNpcData(actorData);
+
+    //combat initiative reaction difficulty
+    console.log(this.system.combatStatus)
+    switch (parseInt(this.system.combatStatus.difficulty)) {
+      case 5: this.system.combatStatus.label = "Offensif";
+        break;
+      case 7: this.system.combatStatus.label = "Actif";
+        break;
+      case 9: this.system.combatStatus.label = "Passif";
+        break;
+      default:
+        this.system.combatStatus.label = "Passif";
+        this.system.combatStatus.difficulty = "9";
+    }
   }
 
   /**
