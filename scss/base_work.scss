@@ -383,6 +383,11 @@ ul.unstyled li {
 
 }
 
+.system-vermine2047 .sheet.actor form input[disabled],
+.system-vermine2047 .sheet.actor form select[disabled] {
+  cursor: not-allowed;
+}
+
 .system-vermine2047 .sheet.actor form input[type=text]:hover:not(:disabled),
 .system-vermine2047 .sheet.actor form input[type=text]:focus,
 .system-vermine2047 .sheet.actor form select:hover:not(:disabled),

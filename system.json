@@ -153,13 +153,9 @@
     "hotReload": {
       "extensions": [
         "css",
+        "scss",
         "hbs",
         "json"
-      ],
-      "paths": [
-        "assets",
-        "lang",
-        "templates"
       ]
     }
   }
