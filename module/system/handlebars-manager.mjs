@@ -43,6 +43,8 @@ export const preloadHandlebarsTemplates = async function () {
     "systems/vermine2047/templates/item/partials/traits.html",
     "systems/vermine2047/templates/item/partials/header.hbs",
     "systems/vermine2047/templates/item/partials/physicalItems.hbs",
+    "systems/vermine2047/templates/item/chatCards/parts/base.html",
+
 
   ]);
 };
@@ -125,6 +127,7 @@ export const registerHandlebarsHelpers = function () {
   });
   //return damge data 
   Handlebars.registerHelper('getDamagesData', function (damageObject, prop) {
+
     let propObject = damageObject[prop]
     let propValue = propObject[damageObject.value - 1]
     return propValue

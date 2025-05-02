@@ -15,6 +15,15 @@
   /* Text color for window titles and menu all across Foundry */
 }
 
+.vermine2047.sheet.actor {
+
+  header.sheet-header,
+  .windoow-content {
+    min-height: fit-content
+  }
+
+}
+
 /* Character and Item Name Titles Text style! */
 .sheet .charname input {
   color: #191813;

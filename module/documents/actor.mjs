@@ -21,10 +21,7 @@ export class VermineActor extends Actor {
     // documents or derived data.
 
     if (this.type == 'character') {
-      this._setAgeType();
-      this._setCharacterEffort();
-      this._setCharacterSelfControl();
-      this._setCharacterThresholds();
+
     }
   }
 
@@ -44,11 +41,41 @@ export class VermineActor extends Actor {
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
-    this._prepareCharacterData(actorData);
-    this._prepareNpcData(actorData);
+    switch (this.type) {
+      case "character":
+        this._prepareCharacterData(actorData);
+        break;
+      case "npc":
+        this._prepareNpcData(actorData);
+        break;
 
+    }
+
+
+  }
+
+  /**
+   * Prepare Character type specific data
+   */
+  _prepareCharacterData(actorData) {
+    if (actorData.type !== 'character') return;
+    this._setAgeType();
+    this._setCharacterEffort();
+    this._setCharacterSelfControl();
+    this._setCharacterThresholds();
+    // Make modifications to data here. For example:
+    const systemData = actorData.system;
+
+    // Loop through ability scores, and add their modifiers to our sheet output.
+    for (let [key, ability] of Object.entries(systemData.abilities)) {
+      // Calculate the modifier using d20 rules.
+      ability.mod = Math.floor((ability.value - 10) / 2);
+    }
+    this.prepareCombatStatus();
+
+  }
+  prepareCombatStatus() {
     //combat initiative reaction difficulty
-    console.log(this.system.combatStatus)
     switch (parseInt(this.system.combatStatus.difficulty)) {
       case 5: this.system.combatStatus.label = "Offensif";
         break;
@@ -59,24 +86,8 @@ export class VermineActor extends Actor {
       default:
         this.system.combatStatus.label = "Passif";
         this.system.combatStatus.difficulty = "9";
+        break;
     }
-  }
-
-  /**
-   * Prepare Character type specific data
-   */
-  _prepareCharacterData(actorData) {
-    if (actorData.type !== 'character') return;
-
-    // Make modifications to data here. For example:
-    const systemData = actorData.system;
-
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
-    }
-
   }
 
   /**
@@ -88,6 +99,7 @@ export class VermineActor extends Actor {
     // Make modifications to data here. For example:
     const systemData = actorData.system;
     systemData.xp = (systemData.cr * systemData.cr) * 100;
+    this.prepareCombatStatus()
   }
 
   /**

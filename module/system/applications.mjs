@@ -131,7 +131,7 @@ export class TraitSelector extends Application {
   /* -------------------------------------------- */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      id: "TRAITS_SELECTOR",
+      classes: ["vermine2047", "trait-selector"],
       title: game.i18n.localize("VERMINE.traits_selector"),
       template: 'systems/vermine2047/templates/applications/choose-traits.hbs',
       popOut: true,
@@ -161,7 +161,7 @@ export class TraitSelector extends Application {
         if (inp.type == "checkbox") {
           inp.checked = true
         }
-             }
+      }
     }
     await this.render(true)
   }

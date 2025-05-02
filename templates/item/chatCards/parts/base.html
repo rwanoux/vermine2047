@@ -1,8 +1,11 @@
 <header class="flexrow align-center">
-	<img src="{{img}}" alt="image de {{name}}">
-	<h3>{{name}}</h3>
+	<img
+		src="{{item.img}}"
+		alt="image de {{item.name}}"
+	>
+	<h3>{{item.name}}</h3>
 
 </header>
 <section class="item-desc">
-	<p>{{{ system.description}}}</p>
+	<p>{{{ item.system.description }}}</p>
 </section>

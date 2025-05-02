@@ -31,6 +31,7 @@ export default class RollDialog extends Dialog {
                 }
             },
             close: close,
+
         }
         return super({ ...conf, ...data }, options);
     };

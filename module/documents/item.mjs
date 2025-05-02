@@ -81,13 +81,13 @@ export class VermineItem extends Item {
 
     // If there's no roll data, send a chat message.
 
-    let mess = new ChatMessage({
+    let mess = {
       speaker: speaker,
       rollMode: rollMode,
       flavor: label,
-    });
+    };
     mess.content = await renderTemplate(`systems/vermine2047/templates/item/chatCards/${this.type}.html`, { item: this, message: mess }) ?? null;
-    console.log(mess)
+    ChatMessage.create(mess)
   }
 
 }

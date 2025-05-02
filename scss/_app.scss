@@ -1,0 +1,21 @@
+.app.vermine2047.trait-selector {
+    .form-group {
+        box-shadow: 0 0 30px gray;
+        padding: 0.3rem 0.5rem;
+
+        border: 3px solid rgb(142, 144, 16);
+
+        &:has(input[type="checkbox"]:checked) {
+            border: 3px solid green
+        }
+
+        label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid black
+        }
+    }
+}
